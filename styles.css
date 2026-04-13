@@ -1165,6 +1165,14 @@ body.loaded .loader {
     flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+    .project-result {
+        gap: 1.25rem;
+        padding: 1.25rem 0;
+        margin-bottom: 1.25rem;
+    }
+}
+
 .project-result-item {
     display: flex;
     flex-direction: column;
@@ -1800,6 +1808,16 @@ body.loaded .loader {
     color: rgba(255, 255, 255, 0.45);
 }
 
+@media (max-width: 768px) {
+    .process-container {
+        padding: 0 1.5rem;
+    }
+
+    .process-header {
+        margin-bottom: 2.5rem;
+    }
+}
+
 @media (max-width: 900px) {
     .process-step {
         grid-template-columns: 3rem 1fr;
@@ -2030,10 +2048,23 @@ body.loaded .loader {
         padding: 0 1.5rem;
     }
 
+    .about-header {
+        margin-bottom: 2rem;
+    }
+
+    .about-manifesto {
+        margin-bottom: 2.5rem;
+    }
+
+    .manifesto-text {
+        font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+    }
+
     .about-value-row {
         grid-template-columns: 2rem 1fr;
         grid-template-rows: auto auto;
         gap: 0.75rem;
+        padding: 1.5rem 0;
     }
 
     .value-desc {
@@ -2153,10 +2184,15 @@ body.loaded .loader {
 
     .testimonial-footer {
         justify-content: flex-start;
+        white-space: normal;
     }
 
     .testimonial-cite {
         align-items: flex-start;
+    }
+
+    .testimonial-item {
+        padding: 2rem 0;
     }
 }
 
@@ -2888,14 +2924,38 @@ body.loaded .loader {
 
 @media (max-width: 768px) {
     .subsidy-container {
-        padding: 0 1.5rem;
+        padding: 1.75rem 1.5rem;
         grid-template-columns: 1fr;
-        gap: 0.6rem;
+        gap: 0.75rem;
     }
 
+    .subsidy-headline {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* CTA becomes a proper pill button on mobile */
     .subsidy-cta {
-        margin-top: 0.25rem;
-        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        padding: 0.85rem 1.75rem;
+        background: var(--color-accent);
+        color: #0A0A0A;
+        border-radius: var(--radius-pill);
+        font-size: 0.875rem;
+        font-weight: 500;
+        white-space: normal;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .subsidy-cta:hover {
+        color: #0A0A0A;
+        background: #ff7d4a;
+        box-shadow: 0 10px 28px rgba(255, 107, 53, 0.4);
     }
 }
 
