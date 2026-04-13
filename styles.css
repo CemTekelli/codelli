@@ -1986,6 +1986,20 @@ body.loaded .loader {
     }
 }
 
+@media (max-width: 420px) {
+    .tech-container {
+        padding: 0 1.25rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-category {
+        padding: 1rem 1.25rem;
+    }
+}
+
 
 /* ═══════════════════════════════════════════════════════════════
    ABOUT SECTION - Manifesto Style
