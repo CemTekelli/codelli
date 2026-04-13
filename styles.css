@@ -3178,11 +3178,14 @@ body.loaded .loader {
     /* Account for iPhone home indicator */
     padding-bottom: env(safe-area-inset-bottom, 0px);
     transform: translateY(100%);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.4s ease;
 }
 
 .sticky-mobile-cta.visible {
     transform: translateY(0);
+    opacity: 1;
 }
 
 /* When cookie banner is active, push sticky CTA above it */
