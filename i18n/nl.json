@@ -1,0 +1,290 @@
+{
+  "lang": "nl",
+  "meta": {
+    "title": "Codelli — AI Studio & Digitaal Bureau | Brussel, België",
+    "description": "AI studio gevestigd in Brussel, gespecialiseerd in AI-integratie, webontwikkeling en UX/UI design voor KMO's en startups. Van idee tot lancering in 6 weken.",
+    "keywords": "AI studio brussel, digitaal bureau brussel, webontwikkeling brussel, AI integratie KMO, app ontwikkeling antwerpen, gent, brugge, leuven, hasselt, chatbot bedrijf, automatisering AI, startup belgie, KMO digitale transformatie",
+    "og": {
+      "title": "Codelli | AI Studio & Digitaal Bureau in Brussel",
+      "description": "Design, ontwikkeling en AI-integratie voor KMO's en startups. Van idee tot lancering in 6 weken. Gevestigd in Brussel, actief in heel België."
+    },
+    "twitter": {
+      "title": "Codelli | AI Studio & Digitaal Bureau in Brussel",
+      "description": "Websites, apps & AI-integratie voor KMO's. Expert studio in Brussel. Ontdek ons werk en start uw project vandaag."
+    }
+  },
+  "nav": {
+    "services": "Diensten",
+    "about": "Over ons",
+    "process": "Aanpak",
+    "stack": "Stack",
+    "contact": "Contact",
+    "closeMenu": "Menu sluiten",
+    "auditCta": "Reserveer een gratis gesprek",
+    "auditCtaShort": "Gratis gesprek"
+  },
+  "hero": {
+    "line1": "Wij ontwerpen,",
+    "line2": "bouwen &",
+    "line3": "leveren met AI",
+    "subtitle": "AI studio in Brussel voor KMO's en startups. Van idee tot lancering in 6 weken — design, ontwikkeling en AI onder één dak.",
+    "primaryCta": "Reserveer een gratis gesprek",
+    "secondaryCta": "Bekijk onze diensten",
+    "location": "Brussel, België",
+    "studio": "AI Studio",
+    "availability": "Beschikbaar Q2 2026",
+    "cta": "Ontdekken"
+  },
+  "services": {
+    "title": "Wat wij voor u bouwen",
+    "ai": {
+      "title": "AI",
+      "tagline": "Chatbots, automatisering & intelligente agents",
+      "desc": "Wij identificeren waar AI echte waarde creëert in uw bedrijf en bouwen het.",
+      "price": "Vanaf €5.000"
+    },
+    "web": {
+      "title": "Product",
+      "tagline": "Web apps, mobiel & platformen",
+      "desc": "Full-stack ontwikkeling 2-3x sneller geleverd dankzij AI-ondersteunde workflows.",
+      "price": "Vanaf €15.000"
+    },
+    "design": {
+      "title": "Design",
+      "tagline": "Interfaces die converteren",
+      "desc": "Gebruikerservaringen die er mooi uitzien en meetbare bedrijfsresultaten opleveren.",
+      "price": "Vanaf €3.000"
+    }
+  },
+  "subsidy": {
+    "headline": "Belgische KMO? Uw project kan gedeeltelijk gesubsidieerd worden.",
+    "desc": "Afhankelijk van uw regio: Innoviris (Brussel), Chèques-entreprises (Wallonië) of VLAIO (Vlaanderen) kunnen een deel van de kosten dekken. Wij helpen u met de aanvraag.",
+    "cta": "Controleer uw eligibiliteit →"
+  },
+  "about": {
+    "title": "Waarom bedrijven Codelli vertrouwen",
+    "lead": "Cem Tekelli richtte Codelli op met één overtuiging: KMO's verdienen dezelfde digitale kwaliteit als grote bedrijven. Full-stack studio in Brussel — design, ontwikkeling en AI onder één dak.",
+    "values": {
+      "roof": {
+        "title": "Alles onder één dak",
+        "desc": "Design + Ontwikkeling + AI. Één team, geen onderaanneming, geen informatieverlies tussen teams."
+      },
+      "ai": {
+        "title": "AI-versnelde levering",
+        "desc": "Wij gebruiken AI in ons eigen ontwikkelingsproces — 2-3x sneller dan traditionele bureaus."
+      },
+      "price": {
+        "title": "Vaste prijs, geen verrassingen",
+        "desc": "Wij engageren ons voor een scope, een prijs en een leveringsdatum vóór we beginnen. Geen verrassingen onderweg."
+      },
+      "local": {
+        "title": "Brusselse studio, meertalig",
+        "desc": "Lokaal team. Wij spreken Frans, Engels en Nederlands. Wij begrijpen de AVG, Belgische subsidies en EU-regelgeving."
+      }
+    },
+    "cta": "Reserveer een gratis gesprek"
+  },
+  "testimonials": {
+    "title": "Wat klanten zeggen",
+    "items": {
+      "1": {
+        "text": "Codelli heeft onze online aanwezigheid volledig getransformeerd. Binnen enkele weken hadden we een site die de identiteit van Baba Events echt weerspiegelt en echte leads genereert. Het resultaat overtrof onze verwachtingen.",
+        "name": "Rifat Balaj",
+        "role": "Owner, Baba Events"
+      },
+      "2": {
+        "text": "Cem begrijpt wat ondernemers nodig hebben. Hij leverde niet zomaar een app — hij leverde een oplossing die mijn team elke dag tijd bespaart. Professioneel, responsief en echt betrokken bij het project.",
+        "name": "Obaida Isarti",
+        "role": "Owner, Obimi Developments"
+      },
+      "3": {
+        "text": "We zochten een betrouwbare technische partner om een deel van onze activiteiten bij Nautilus te digitaliseren. Codelli leverde op tijd, binnen budget, en het product werkt precies zoals gepland. Ik beveel ze zonder aarzeling aan.",
+        "name": "Fuat Yuksel",
+        "role": "Managing Director, Nautilus"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Resultaten die we hebben geleverd",
+    "subtitle": "Geselecteerde projecten waar we trots op zijn",
+    "tags": {
+      "web": "Web App",
+      "mobile": "Mobiele App",
+      "strategy": "Strategie"
+    },
+    "projects": {
+      "1": {
+        "tag": "Ticketplatform",
+        "title": "Baba Events",
+        "desc": "Volledig ticketplatform met op maat gemaakt backoffice — evenementenbeheer, geïntegreerde QR-scanner, online betalingen via Mollie en realtime rapportage. Ontwikkeld voor een Brusselse evenementenorganisator.",
+        "result1": "meer online verkopen",
+        "result2": "ticketfraude"
+      },
+      "2": {
+        "tag": "SaaS Platform",
+        "title": "Noctix",
+        "desc": "Een onafhankelijk alternatief voor Eventbrite voor zelfstandige organisatoren — ticketverkoop, capaciteitsbeheer, geïntegreerde Mollie-betalingen en gedetailleerde analytics, zonder commissie op verkopen.",
+        "result1": "in ontwikkeling",
+        "result2": "commissie op verkopen"
+      },
+      "3": {
+        "tag": "n8n Automatisering",
+        "title": "Lead Gen — Google Maps",
+        "desc": "Volledig geautomatiseerde B2B lead generatiepipeline — extractie van bedrijfsgegevens via de Google Maps Places API, gestuurd door configureerbare postcodes en bedrijfscategorieën in Google Sheets. Resultaten realtime verrijkt: naam, telefoon, website, GPS-coördinaten, beoordeling en klantenreviews.",
+        "result1": "leads per campagne verzameld",
+        "result2": "zonder handmatige tussenkomst"
+      }
+    },
+    "cta": "Reserveer een gratis gesprek"
+  },
+  "process": {
+    "title": "Hoe wij leveren",
+    "steps": {
+      "discovery": {
+        "name": "Ontdekking",
+        "duration": "1–2 wkn",
+        "desc": "We leren uw business kennen en bepalen scope, budget en planning."
+      },
+      "design": {
+        "name": "Design",
+        "duration": "2–3 wkn",
+        "desc": "U valideert echte mockups voordat er één regel code is geschreven."
+      },
+      "build": {
+        "name": "Bouwen",
+        "duration": "3–6 wkn",
+        "desc": "AI-versnelde ontwikkeling. Opgeleverd 2–3x sneller dan een traditioneel bureau."
+      },
+      "launch": {
+        "name": "Lancering & Groei",
+        "duration": "Doorlopend",
+        "desc": "Wij deployen en blijven uw technische partner op lange termijn."
+      }
+    }
+  },
+  "tech": {
+    "title": "Stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloud": "Cloud"
+    }
+  },
+  "contact": {
+    "title": "Laten we iets slims bouwen",
+    "calendlyLabel": "Snel starten",
+    "calendlyTitle": "Reserveer een gratis gesprek — 30 minuten, zonder engagement",
+    "calendlyDesc": "We bespreken uw project, uw behoeften en definiëren samen de volgende stappen.",
+    "form": {
+      "name": "Naam",
+      "email": "E-mail",
+      "company": "Bedrijf (optioneel)",
+      "message": "Vertel ons over uw project...",
+      "submit": "Versturen"
+    }
+  },
+  "footer": {
+    "tagline": "AI Studio — Brussel",
+    "navigation": "Navigatie",
+    "connect": "Volg ons",
+    "copyright": "© 2026 Codelli. Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid",
+    "terms": "Juridische kennisgeving",
+    "cookies": "Cookies",
+    "ctaText": "Klaar om uw project te starten?"
+  },
+  "ui": {
+    "scrollToTop": "Terug naar boven",
+    "contactFab": "Reserveer een gratis gesprek",
+    "skipToMain": "Ga naar hoofdinhoud",
+    "bookAudit": "Reserveer een gratis gesprek",
+    "bookCall": "Reserveer een gratis gesprek"
+  },
+  "cookies": {
+    "text": "Wij gebruiken cookies om uw ervaring te verbeteren en het verkeer te analyseren.",
+    "learnMore": "Meer info",
+    "accept": "Accepteren",
+    "reject": "Weigeren"
+  },
+  "images": {
+    "logoAlt": "Codelli — AI Studio & Digitaal Bureau in Brussel, België"
+  },
+  "social": {
+    "linkedin": "Bezoek onze LinkedIn-pagina",
+    "instagram": "Volg ons op Instagram"
+  },
+  "audit": {
+    "meta": {
+      "title": "Gratis kennismakingsgesprek — Laten we uw project starten | Codelli",
+      "description": "Reserveer een gratis gesprek van 30 minuten met Codelli. We definiëren samen uw project — design, ontwikkeling of AI-integratie. Digitaal studio in Brussel."
+    },
+    "nav": {
+      "back": "Terug naar de site"
+    },
+    "hero": {
+      "overline": "Kennismakingsgesprek · Gratis · Zonder engagement",
+      "title1": "Laten we uw",
+      "title2": "project starten",
+      "meta": {
+        "durationLabel": "Videogesprek",
+        "freeVal": "Gratis",
+        "freeLabel": "Zonder engagement",
+        "planVal": "Actieplan",
+        "planLabel": "Verstuurd binnen 24u",
+        "locationLabel": "Lokaal team"
+      }
+    },
+    "info": {
+      "whatLabel": "Wat u krijgt",
+      "step1Title": "Een heldere analyse van uw situatie",
+      "step1Desc": "We begrijpen uw bedrijf, uw beperkingen en doelstellingen — geen generieke vragen.",
+      "step2Title": "Concrete kansen geïdentificeerd",
+      "step2Desc": "Design, ontwikkeling, AI — we identificeren wat de meeste impact heeft voor uw activiteit.",
+      "step3Title": "Een schriftelijk actieplan",
+      "step3Desc": "Scope, geschatte budget, volgende stappen — per e-mail verstuurd binnen 24u.",
+      "forWhomLabel": "Voor wie",
+      "forWhom1": "KMO's en startups van 5 tot 100 medewerkers in België, Frankrijk of Luxemburg.",
+      "forWhom2": "Bedrijfsleiders die een website, een app of een AI-integratie willen — en niet weten waar ze moeten beginnen.",
+      "forWhom3": "Bedrijven die concrete antwoorden zoeken, geen PowerPoint-presentaties.",
+      "subsidyLabel": "Belgische subsidies — KMO",
+      "subsidy": {
+        "brussels": {
+          "tag": "Brussel",
+          "title": "Innoviris — Start AI Voucher",
+          "desc": "Tot <strong>€10.000</strong>, met dekking van <strong>75%</strong> van de AI-studiekosten voor Brusselse KMO's. Begeleid door een erkend expertisecentrum.",
+          "link": "innoviris.brussels →"
+        },
+        "wallonia": {
+          "tag": "Wallonië",
+          "title": "Chèques-entreprises — Digitale Maturiteit",
+          "desc": "Tot <strong>€50.000 excl. btw</strong> over 3 jaar, met een interventievoet van <strong>50%</strong>. Elektronische portefeuille van €200.000 over 3 jaar (max. €100.000/jaar).",
+          "link": "cheques-entreprises.be →"
+        },
+        "flanders": {
+          "tag": "Vlaanderen",
+          "title": "VLAIO — KMO-portefeuille",
+          "desc": "<strong>20 tot 30%</strong> korting op digitaliseringsopleidingen. Vanaf februari 2026 is digitaal advies niet meer gesubsidieerd (behalve cybersecurity: 35–45%). Digitale investeringsaftrek beschikbaar.",
+          "link": "vlaio.be →"
+        }
+      },
+      "subsidyNote": "Programma's veranderen regelmatig. Bedragen en voorwaarden zijn die van kracht op het moment van publicatie. We helpen u uw subsidiabiliteit te controleren tijdens het gesprek."
+    },
+    "calendly": {
+      "label": "Kies uw tijdslot",
+      "fallbackText": "Rechtstreeks reserveren",
+      "fallbackBtn": "Kies een tijdslot"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussel, België · BCE 1006.208.714",
+      "home": "Startpagina",
+      "privacy": "Privacybeleid"
+    },
+    "cookies": {
+      "text": "Wij gebruiken cookies om uw ervaring te verbeteren.",
+      "learnMore": "Meer info",
+      "accept": "Accepteren",
+      "reject": "Weigeren"
+    }
+  }
+}

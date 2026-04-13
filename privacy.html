@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité & Mentions légales | Codelli</title>
+    <meta name="description" content="Politique de confidentialité, mentions légales et politique cookies de Codelli — Studio digital IA à Bruxelles, Belgique. BCE 1006.208.714.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0F0F0F">
+    <link rel="canonical" href="https://codelli.tech/privacy">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N6J49WQW');</script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0F0F0F;
+            --text: #FEFEF8;
+            --accent: #FF6B35;
+            --border: rgba(255,255,255,0.06);
+            --muted: rgba(255,255,255,0.35);
+            --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.7;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Nav */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-back {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+            transition: color 0.25s;
+        }
+
+        .nav-back:hover { color: rgba(255,255,255,0.7); text-decoration: none; }
+
+        /* Content */
+        .page-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 3rem 7rem;
+        }
+
+        .page-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .page-updated {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 4rem;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .section:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.7);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 0.85rem;
+        }
+
+        ul {
+            margin: 0.75rem 0 0.85rem 1.25rem;
+        }
+
+        ul li {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 0.4rem;
+        }
+
+        .info-box {
+            border: 1px solid var(--border);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .info-box p { margin-bottom: 0.4rem; }
+        .info-box p:last-child { margin-bottom: 0; }
+
+        strong { color: rgba(255,255,255,0.75); font-weight: 600; }
+
+        /* Table */
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .cookie-table th {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            color: rgba(255,255,255,0.5);
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .cookie-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: rgba(255,255,255,0.5);
+            vertical-align: top;
+        }
+
+        .cookie-table tr:last-child td { border-bottom: none; }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border);
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-copy {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.2);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-link {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.2);
+            transition: color 0.25s;
+        }
+
+        .footer-link:hover { color: rgba(255,255,255,0.5); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .nav { padding: 1.25rem 1.5rem; }
+            .page-content { padding: 3rem 1.5rem 5rem; }
+            .footer { padding: 1.25rem 1.5rem; flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6J49WQW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Nav -->
+    <nav class="nav">
+        <a href="/" class="nav-logo">Codelli</a>
+        <a href="/" class="nav-back">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+            Retour au site
+        </a>
+    </nav>
+
+    <main class="page-content">
+        <h1 class="page-title">Politique de confidentialité & Mentions légales</h1>
+        <p class="page-updated">Dernière mise à jour : 13 avril 2026</p>
+
+        <!-- ─── MENTIONS LÉGALES ─── -->
+        <section class="section" id="mentions">
+            <h2 class="section-title">Mentions légales</h2>
+
+            <div class="info-box">
+                <p><strong>Dénomination sociale :</strong> Codelli Engineering</p>
+                <p><strong>Forme juridique :</strong> Entreprise individuelle</p>
+                <p><strong>BCE / TVA :</strong> 1006.208.714</p>
+                <p><strong>Siège social :</strong> Bruxelles, Belgique</p>
+                <p><strong>Email :</strong> <a href="mailto:hello@codelli.tech">hello@codelli.tech</a></p>
+                <p><strong>Téléphone :</strong> +32 472 62 84 30</p>
+                <p><strong>Responsable de publication :</strong> Cem Tekelli</p>
+            </div>
+
+            <p>Le site <strong>codelli.tech</strong> est édité par Codelli Engineering. Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Codelli Engineering, sauf mention contraire.</p>
+        </section>
+
+        <!-- ─── POLITIQUE DE CONFIDENTIALITÉ ─── -->
+        <section class="section" id="confidentialite">
+            <h2 class="section-title">Politique de confidentialité (RGPD)</h2>
+
+            <p>Codelli Engineering, en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.</p>
+
+            <h3 class="section-subtitle">Données collectées</h3>
+            <p>Lors de votre utilisation du site ou de la prise de contact, nous pouvons collecter les données suivantes :</p>
+            <ul>
+                <li>Nom et prénom</li>
+                <li>Adresse email professionnelle</li>
+                <li>Nom de votre entreprise</li>
+                <li>Message et description de votre projet</li>
+                <li>Données de navigation (via cookies — voir section Cookies)</li>
+            </ul>
+
+            <h3 class="section-subtitle">Finalités du traitement</h3>
+            <ul>
+                <li><strong>Répondre à vos demandes de contact</strong> — base légale : exécution d'un contrat ou mesures précontractuelles</li>
+                <li><strong>Organiser des appels découverte</strong> (via Calendly) — base légale : consentement</li>
+                <li><strong>Analyser le trafic et améliorer le site</strong> (via Google Analytics via GTM) — base légale : consentement</li>
+            </ul>
+
+            <h3 class="section-subtitle">Durée de conservation</h3>
+            <p>Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation sont conservées <strong>13 mois</strong> conformément aux recommandations de la CNIL/APD.</p>
+
+            <h3 class="section-subtitle">Destinataires des données</h3>
+            <p>Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :</p>
+            <ul>
+                <li><strong>Calendly Inc.</strong> — pour la prise de rendez-vous (politique disponible sur calendly.com)</li>
+                <li><strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)</li>
+            </ul>
+            <p>Ces sous-traitants sont soumis à des garanties contractuelles appropriées (Clauses Contractuelles Types ou Privacy Shield successor) pour tout transfert hors UE.</p>
+
+            <h3 class="section-subtitle">Vos droits</h3>
+            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+            <ul>
+                <li><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
+                <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+                <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+                <li><strong>Droit d'opposition</strong> — vous opposer au traitement pour motif légitime</li>
+                <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
+                <li><strong>Droit de limitation</strong> — limiter le traitement de vos données</li>
+            </ul>
+            <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:hello@codelli.tech">hello@codelli.tech</a>. Nous répondons dans un délai de <strong>30 jours</strong>. Vous disposez également du droit d'introduire une réclamation auprès de l'<a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">Autorité de Protection des Données (APD)</a>.</p>
+        </section>
+
+        <!-- ─── COOKIES ─── -->
+        <section class="section" id="cookies">
+            <h2 class="section-title">Politique cookies</h2>
+
+            <p>Ce site utilise des cookies. Un cookie est un petit fichier texte déposé sur votre terminal lors de votre visite. Vous pouvez les accepter ou les refuser via la bannière de consentement affichée lors de votre première visite.</p>
+
+            <h3 class="section-subtitle">Cookies utilisés</h3>
+            <table class="cookie-table" aria-label="Liste des cookies utilisés">
+                <thead>
+                    <tr>
+                        <th>Cookie</th>
+                        <th>Fournisseur</th>
+                        <th>Finalité</th>
+                        <th>Durée</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>_ga</code>, <code>_ga_*</code></td>
+                        <td>Google Analytics</td>
+                        <td>Analyse du trafic et comportement des visiteurs</td>
+                        <td>13 mois</td>
+                    </tr>
+                    <tr>
+                        <td><code>_gtm_*</code></td>
+                        <td>Google Tag Manager</td>
+                        <td>Gestion des balises de tracking</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td><code>codelli_cookie_consent</code></td>
+                        <td>Codelli (1st party)</td>
+                        <td>Mémoriser votre choix de consentement</td>
+                        <td>12 mois</td>
+                    </tr>
+                    <tr>
+                        <td><code>codelli-lang</code></td>
+                        <td>Codelli (1st party)</td>
+                        <td>Mémoriser votre préférence de langue</td>
+                        <td>Persistent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="section-subtitle">Gestion de vos préférences</h3>
+            <p>Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur ou en utilisant les paramètres de confidentialité de votre navigateur :</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/fr-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+            </ul>
+            <p>Vous pouvez également vous opposer au suivi Google Analytics via le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module de désactivation officiel</a>.</p>
+        </section>
+
+        <!-- ─── RESPONSABILITÉ ─── -->
+        <section class="section">
+            <h2 class="section-title">Limitation de responsabilité</h2>
+            <p>Codelli Engineering s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli Engineering ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.</p>
+            <p>Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli Engineering quant à leur contenu.</p>
+        </section>
+
+        <!-- ─── CONTACT ─── -->
+        <section class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="info-box">
+                <p><strong>Codelli Engineering</strong></p>
+                <p>Bruxelles, Belgique · BCE 1006.208.714</p>
+                <p><a href="mailto:hello@codelli.tech">hello@codelli.tech</a></p>
+                <p>+32 472 62 84 30</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span class="footer-copy">© 2026 Codelli · Bruxelles, Belgique · BCE 1006.208.714</span>
+        <div class="footer-links">
+            <a href="/" class="footer-link">Accueil</a>
+            <a href="mailto:hello@codelli.tech" class="footer-link">hello@codelli.tech</a>
+        </div>
+    </footer>
+</body>
+
+</html>

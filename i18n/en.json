@@ -1,0 +1,290 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Codelli - Web Agency & Mobile App Development | Brussels, Belgium",
+    "description": "Brussels-based digital agency specializing in website creation, mobile app development and digital transformation. React & Node.js experts. Free consultation.",
+    "keywords": "web agency brussels, website creation belgium, mobile app development, digital consulting, seo expert, web developer, react developer, node.js, startup belgium, antwerp, liege",
+    "og": {
+      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
+      "description": "Transform your digital vision with Codelli. High-performance websites, iOS/Android mobile apps and digital strategy. Based in Brussels, we support businesses across Belgium."
+    },
+    "twitter": {
+      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
+      "description": "Websites, mobile apps & digital transformation. Expert React & Node.js agency in Brussels. Discover our work and start your project today."
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "process": "Process",
+    "stack": "Stack",
+    "contact": "Contact",
+    "closeMenu": "Close menu",
+    "auditCta": "Book a free call",
+    "auditCtaShort": "Free call"
+  },
+  "hero": {
+    "line1": "We design,",
+    "line2": "build &",
+    "line3": "deliver with AI",
+    "subtitle": "Brussels-based digital studio for SMEs and startups. From idea to launch in 6 weeks — design, development, and AI under one roof.",
+    "primaryCta": "Book a free call",
+    "secondaryCta": "See our services",
+    "location": "Brussels, Belgium",
+    "studio": "AI Studio",
+    "availability": "Available Q2 2026",
+    "cta": "Explore"
+  },
+  "services": {
+    "title": "What we build for you",
+    "ai": {
+      "title": "AI",
+      "tagline": "Chatbots, automation & intelligent agents",
+      "desc": "We identify where AI creates real value in your business and build it.",
+      "price": "From €5,000"
+    },
+    "web": {
+      "title": "Product",
+      "tagline": "Web apps, mobile & platforms",
+      "desc": "Full-stack development delivered 2-3x faster with AI-powered workflows.",
+      "price": "From €15,000"
+    },
+    "design": {
+      "title": "Design",
+      "tagline": "Interfaces that convert",
+      "desc": "User experiences that look great and drive measurable business results.",
+      "price": "From €3,000"
+    }
+  },
+  "subsidy": {
+    "headline": "Belgian SME? Your project may be partially subsidised.",
+    "desc": "Depending on your region: Innoviris (Brussels), Chèques-entreprises (Wallonia) or VLAIO (Flanders) can cover part of the cost. We handle the application.",
+    "cta": "Check your eligibility →"
+  },
+  "about": {
+    "title": "Why companies trust Codelli",
+    "lead": "Cem Tekelli founded Codelli with one conviction: SMEs deserve the same level of digital quality as large corporations. Full-stack studio based in Brussels — design, development, and AI under one roof.",
+    "values": {
+      "roof": {
+        "title": "Everything under one roof",
+        "desc": "Design + Development + AI. One team, no subcontracting, no communication gaps."
+      },
+      "ai": {
+        "title": "AI-powered delivery",
+        "desc": "We use AI in our own development process — delivering 2-3x faster than traditional agencies."
+      },
+      "price": {
+        "title": "Fixed price, no surprises",
+        "desc": "We commit to a scope, a price, and a deadline before we start. No surprises along the way."
+      },
+      "local": {
+        "title": "Brussels-based, multilingual",
+        "desc": "Local team. We speak French, English, Dutch. We understand GDPR, Belgian subsidies, and EU regulations."
+      }
+    },
+    "cta": "Book a free call"
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "items": {
+      "1": {
+        "text": "Codelli completely transformed our online presence. Within weeks, we had a site that truly reflects Baba Events' identity and generates real leads. The result exceeded our expectations.",
+        "name": "Rifat Balaj",
+        "role": "Owner, Baba Events"
+      },
+      "2": {
+        "text": "Cem understands what entrepreneurs need. He didn't just deliver an app — he delivered a solution that saves my team time every single day. Professional, responsive, and genuinely invested in the project.",
+        "name": "Obaida Isarti",
+        "role": "Owner, Obimi Developments"
+      },
+      "3": {
+        "text": "We were looking for a reliable technical partner to digitise part of our operations at Nautilus. Codelli delivered on time, on budget, and the product works exactly as planned. I recommend them without hesitation.",
+        "name": "Fuat Yuksel",
+        "role": "Managing Director, Nautilus"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Results we've delivered",
+    "subtitle": "Selected projects we're proud of",
+    "tags": {
+      "web": "Web App",
+      "mobile": "Mobile App",
+      "strategy": "Strategy"
+    },
+    "projects": {
+      "1": {
+        "tag": "Ticketing platform",
+        "title": "Baba Events",
+        "desc": "Full-featured ticketing platform with a custom backoffice — event management, integrated QR scanner, online payments via Mollie, and real-time reporting. Built for a Brussels-based event organiser.",
+        "result1": "increase in online sales",
+        "result2": "ticket fraud"
+      },
+      "2": {
+        "tag": "SaaS Platform",
+        "title": "Noctix",
+        "desc": "A sovereign alternative to Eventbrite for independent organisers — ticketing, capacity management, integrated Mollie payments and detailed analytics, with zero commission on sales.",
+        "result1": "in development",
+        "result2": "commission on sales"
+      },
+      "3": {
+        "tag": "n8n Automation",
+        "title": "Lead Gen — Google Maps",
+        "desc": "Fully automated B2B lead generation pipeline — business data extraction via the Google Maps Places API, driven by configurable zip codes and business categories stored in Google Sheets. Results enriched in real time: name, phone, website, GPS coordinates, rating and customer reviews.",
+        "result1": "leads collected per campaign",
+        "result2": "zero manual intervention"
+      }
+    },
+    "cta": "Book a free call"
+  },
+  "process": {
+    "title": "How we deliver",
+    "steps": {
+      "discovery": {
+        "name": "Discovery",
+        "duration": "1–2 wks",
+        "desc": "We learn your business and define scope, budget, and timeline."
+      },
+      "design": {
+        "name": "Design",
+        "duration": "2–3 wks",
+        "desc": "You validate real mockups before a single line of code is written."
+      },
+      "build": {
+        "name": "Build",
+        "duration": "3–6 wks",
+        "desc": "AI-accelerated development. Delivered 2–3x faster than a traditional agency."
+      },
+      "launch": {
+        "name": "Launch & Grow",
+        "duration": "Ongoing",
+        "desc": "We deploy, then stay as your long-term technical partner."
+      }
+    }
+  },
+  "tech": {
+    "title": "Stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloud": "Cloud"
+    }
+  },
+  "contact": {
+    "title": "Let's build something smart",
+    "calendlyLabel": "Quick start",
+    "calendlyTitle": "Book a free call — 30 minutes, no commitment",
+    "calendlyDesc": "We discuss your project, your needs, and define the next steps together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company (optional)",
+      "message": "Tell us about your project...",
+      "submit": "Send message"
+    }
+  },
+  "footer": {
+    "tagline": "AI Digital Studio — Brussels",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "copyright": "© 2026 Codelli. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Legal Notice",
+    "cookies": "Cookies",
+    "ctaText": "Ready to start your project?"
+  },
+  "ui": {
+    "scrollToTop": "Back to top",
+    "contactFab": "Book a free call",
+    "skipToMain": "Skip to main content",
+    "bookAudit": "Book a free call",
+    "bookCall": "Book a free call"
+  },
+  "cookies": {
+    "text": "We use cookies to improve your experience and analyze traffic.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "reject": "Decline"
+  },
+  "images": {
+    "logoAlt": "Codelli - Web Agency & Mobile Development in Brussels, Belgium"
+  },
+  "social": {
+    "linkedin": "Visit our LinkedIn page",
+    "instagram": "Follow us on Instagram"
+  },
+  "audit": {
+    "meta": {
+      "title": "Free Discovery Call — Let's Start Your Project | Codelli",
+      "description": "Book a free 30-minute call with Codelli. We define your project together — design, development or AI integration. Digital studio in Brussels."
+    },
+    "nav": {
+      "back": "Back to site"
+    },
+    "hero": {
+      "overline": "Discovery Call · Free · No commitment",
+      "title1": "Let's start",
+      "title2": "your project together",
+      "meta": {
+        "durationLabel": "Video call",
+        "freeVal": "Free",
+        "freeLabel": "No commitment",
+        "planVal": "Action plan",
+        "planLabel": "Sent within 24h",
+        "locationLabel": "Local team"
+      }
+    },
+    "info": {
+      "whatLabel": "What you get",
+      "step1Title": "A clear analysis of your situation",
+      "step1Desc": "We understand your business, constraints and objectives — no generic questions.",
+      "step2Title": "Concrete opportunities identified",
+      "step2Desc": "Design, development, AI — we identify what has the most impact for your business.",
+      "step3Title": "A written action plan",
+      "step3Desc": "Scope, estimated budget, next steps — sent by email within 24h.",
+      "forWhomLabel": "Who it's for",
+      "forWhom1": "SMEs and startups with 5 to 100 employees in Belgium, France or Luxembourg.",
+      "forWhom2": "Founders who want a website, an app or an AI integration — and don't know where to start.",
+      "forWhom3": "Companies looking for concrete answers, not PowerPoint presentations.",
+      "subsidyLabel": "Belgian subsidies — SMEs",
+      "subsidy": {
+        "brussels": {
+          "tag": "Brussels",
+          "title": "Innoviris — Start AI Voucher",
+          "desc": "Up to <strong>€10,000</strong>, covering <strong>75%</strong> of AI study costs for Brussels SMEs. Led by an approved expertise centre.",
+          "link": "innoviris.brussels →"
+        },
+        "wallonia": {
+          "tag": "Wallonia",
+          "title": "Chèques-entreprises — Digital Maturity",
+          "desc": "Up to <strong>€50,000 excl. VAT</strong> over 3 years, with a <strong>50%</strong> intervention rate. Electronic portfolio of €200,000 over 3 years (max. €100,000/year).",
+          "link": "cheques-entreprises.be →"
+        },
+        "flanders": {
+          "tag": "Flanders",
+          "title": "VLAIO — SME Portfolio",
+          "desc": "<strong>20 to 30%</strong> discount on digitisation training. Since February 2026, digital consulting is no longer subsidised (except cybersecurity: 35–45%). Digital investment deduction available.",
+          "link": "vlaio.be →"
+        }
+      },
+      "subsidyNote": "Programmes change regularly. Amounts and conditions are those in effect at the time of publication. We help you verify your eligibility during the call."
+    },
+    "calendly": {
+      "label": "Choose your time slot",
+      "fallbackText": "Book directly",
+      "fallbackBtn": "Pick a time slot"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussels, Belgium · BCE 1006.208.714",
+      "home": "Home",
+      "privacy": "Privacy"
+    },
+    "cookies": {
+      "text": "We use cookies to improve your experience.",
+      "learnMore": "Learn more",
+      "accept": "Accept",
+      "reject": "Decline"
+    }
+  }
+}
