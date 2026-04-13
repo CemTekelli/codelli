@@ -346,6 +346,7 @@ body.loaded .loader {
 
 .hero {
     min-height: 100vh;
+    min-height: 100svh; /* iOS Safari: excludes browser chrome */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -503,10 +504,11 @@ body.loaded .loader {
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.05em;
-    padding: 0.4rem 0.75rem;
+    padding: 0.55rem 0.75rem; /* min height ~44px on mobile via nav overlay */
     cursor: pointer;
     transition: all 0.2s ease;
     border-radius: var(--radius-pill);
+    min-height: 36px; /* accessible tap target */
 }
 
 .lang-btn:hover {
@@ -631,23 +633,38 @@ body.loaded .loader {
 
 /* Mobile Hero */
 @media (max-width: 768px) {
-    .hero-top-bar,
-    .hero-bottom-bar {
+    .hero-top-bar {
         padding: 1.25rem 1.5rem;
+    }
+
+    .hero-bottom-bar {
+        padding: 1.5rem;
+        justify-content: center; /* center the scroll CTA alone */
+    }
+
+    /* Hide meta text — too noisy at this width */
+    .hero-meta {
+        display: none;
     }
 
     .hero-content {
         padding: 0 1.5rem;
-        padding-bottom: 8vh;
+        padding-bottom: 6vh;
     }
 
     .hero-title {
-        font-size: clamp(2.8rem, 16vw, 5rem);
+        font-size: clamp(2.5rem, 13vw, 4.5rem);
         letter-spacing: -0.04em;
     }
 
     .lang-switcher {
         display: none;
+    }
+
+    /* Menu trigger: ensure 44px min height for tap target */
+    .hero-menu-trigger {
+        min-height: 44px;
+        padding: 0 1.5rem;
     }
 }
 
@@ -743,6 +760,25 @@ body.loaded .loader {
 
 .nav-item:hover .nav-text {
     color: var(--color-accent);
+}
+
+.nav-overlay-footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+/* Language switcher inside nav overlay (mobile only) */
+.nav-lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
 }
 
 .nav-overlay-footer {
@@ -914,17 +950,64 @@ body.loaded .loader {
         padding: 0 1.5rem;
     }
 
-    .service-title {
-        font-size: clamp(2.8rem, 14vw, 5rem);
-    }
-
-    .service-tagline {
-        font-size: 0.72rem;
-        max-width: 130px;
+    /* Row 1: title (full width)
+       Row 2: tagline (left) + price (right) */
+    .service-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.55rem;
+        padding: 1.75rem 0;
+        align-items: start;
+        /* no hover shift on touch */
+        transition: none;
     }
 
     .service-block:hover {
         padding-left: 0;
+    }
+
+    /* Disable accent bar animation — no hover on touch */
+    .service-block::before {
+        display: none;
+    }
+
+    /* Title: was rgba(255,255,255,0.08) ghost — make it readable */
+    .service-title {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        color: rgba(255, 255, 255, 0.88);
+        line-height: 1;
+    }
+
+    /* Right side becomes a horizontal row: tagline | price */
+    .service-block-right {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .service-tagline {
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.38);
+        text-align: left;
+        max-width: none;
+        flex: 1;
+        padding-bottom: 0;
+    }
+
+    .service-price {
+        opacity: 1;
+        font-size: 0.7rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .service-desc {
+        display: none;
     }
 }
 
@@ -1167,7 +1250,7 @@ body.loaded .loader {
     }
 
     .project-visual {
-        height: 320px;
+        height: 280px;
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.06);
     }
@@ -1177,9 +1260,22 @@ body.loaded .loader {
     }
 }
 
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 0 1.5rem;
+    }
+
+    .portfolio-header {
+        margin-bottom: 2.5rem;
+    }
+}
+
 @media (max-width: 600px) {
-    .portfolio-container { padding: 0 1.5rem; }
-.project-title { font-size: 1.5rem; }
+    .project-visual {
+        height: 220px;
+    }
+
+    .project-title { font-size: 1.5rem; }
     .project-result-item .value { font-size: 1.4rem; }
 }
 /* ─── Mockup: Baba Events ─── */
@@ -1819,11 +1915,13 @@ body.loaded .loader {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .tech-container {
         padding: 0 1.5rem;
     }
+}
 
+@media (max-width: 600px) {
     .tech-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -2329,7 +2427,7 @@ body.loaded .loader {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .contact-container {
         padding: 0 1.5rem;
     }
@@ -2729,15 +2827,7 @@ body.loaded .loader {
     box-shadow: 0 12px 32px rgba(255, 107, 53, 0.45);
 }
 
-@media (max-width: 768px) {
-    .service-block-right {
-        max-width: 140px;
-    }
-
-    .service-desc {
-        display: none; /* Keep clean on mobile */
-    }
-}
+/* service-desc hidden on mobile — handled in service-block mobile override above */
 
 
 /* ═══════════════════════════════════════════════════════════════
@@ -2988,12 +3078,19 @@ body.loaded .loader {
     z-index: 900;
     background: var(--color-accent);
     padding: 0;
+    /* Account for iPhone home indicator */
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     transform: translateY(100%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sticky-mobile-cta.visible {
     transform: translateY(0);
+}
+
+/* When cookie banner is active, push sticky CTA above it */
+body.cookie-visible .sticky-mobile-cta {
+    bottom: var(--cookie-banner-height, 0px);
 }
 
 .sticky-mobile-cta-link {
@@ -3016,7 +3113,7 @@ body.loaded .loader {
 
     /* Push content up so sticky bar doesn't cover it */
     .footer {
-        padding-bottom: calc(var(--space-l) + 54px);
+        padding-bottom: calc(var(--space-l) + 54px + env(safe-area-inset-bottom, 0px));
     }
 }
 
@@ -3034,6 +3131,8 @@ body.loaded .loader {
     background: rgba(18, 18, 18, 0.97);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     padding: 1.25rem 2rem;
+    /* Account for iPhone home indicator */
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     animation: slideInFromBottom 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;

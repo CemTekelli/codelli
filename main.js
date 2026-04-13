@@ -346,6 +346,11 @@ function initNavigation() {
                 { opacity: 0, y: 10 },
                 { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, delay: 0.65, ease: "power2.out" }
             );
+            // Animate mobile lang switcher in nav overlay
+            gsap.fromTo('.nav-lang-switcher',
+                { opacity: 0, y: 10 },
+                { opacity: 1, y: 0, duration: 0.4, delay: 0.7, ease: "power2.out" }
+            );
         });
     }
 
@@ -1541,13 +1546,21 @@ document.addEventListener('visibilitychange', () => {
 
     if (!banner) return;
 
+    function showBanner() {
+        banner.style.display = 'block';
+        // Push sticky CTA above the cookie banner on mobile
+        requestAnimationFrame(() => {
+            const h = banner.offsetHeight;
+            document.documentElement.style.setProperty('--cookie-banner-height', h + 'px');
+            document.body.classList.add('cookie-visible');
+        });
+    }
+
     // Check if consent already given
     const consent = localStorage.getItem('codelli_cookie_consent');
     if (!consent) {
         // Show after a short delay
-        setTimeout(() => {
-            banner.style.display = 'block';
-        }, 1500);
+        setTimeout(showBanner, 1500);
     } else if (consent === 'accepted') {
         // GA4 already configured, nothing to do
     }
@@ -1555,6 +1568,8 @@ document.addEventListener('visibilitychange', () => {
     function hideBanner() {
         banner.style.opacity = '0';
         banner.style.transition = 'opacity 0.3s ease';
+        document.body.classList.remove('cookie-visible');
+        document.documentElement.style.removeProperty('--cookie-banner-height');
         setTimeout(() => { banner.style.display = 'none'; }, 300);
     }
 
