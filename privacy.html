@@ -54,6 +54,7 @@
             line-height: 1.7;
             overflow-x: hidden;
             min-height: 100vh;
+            min-height: 100svh;
         }
 
         a { color: var(--accent); text-decoration: none; }
@@ -166,11 +167,22 @@
 
         strong { color: rgba(255,255,255,0.75); font-weight: 600; }
 
-        /* Table */
+        /* Table — scrollable on mobile */
+        .table-wrap {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 1rem 0 1.5rem;
+            /* subtle scroll hint shadow */
+            background:
+                linear-gradient(to right, #0F0F0F 0%, transparent 2rem),
+                linear-gradient(to left,  #0F0F0F 0%, transparent 2rem);
+            background-attachment: local, local;
+        }
+
         .cookie-table {
             width: 100%;
+            min-width: 520px; /* force scroll below 520px instead of squishing */
             border-collapse: collapse;
-            margin: 1rem 0 1.5rem;
             font-size: 0.85rem;
         }
 
@@ -184,6 +196,7 @@
             font-size: 0.72rem;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+            white-space: nowrap;
         }
 
         .cookie-table td {
@@ -227,7 +240,18 @@
         @media (max-width: 768px) {
             .nav { padding: 1.25rem 1.5rem; }
             .page-content { padding: 3rem 1.5rem 5rem; }
-            .footer { padding: 1.25rem 1.5rem; flex-direction: column; align-items: flex-start; }
+            .footer {
+                padding: 1.25rem 1.5rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+            .footer-links {
+                gap: 1.25rem;
+                flex-wrap: wrap;
+            }
+            /* nav-back tap target */
+            .nav-back { min-height: 44px; }
         }
     </style>
 </head>
@@ -324,42 +348,44 @@
             <p>Ce site utilise des cookies. Un cookie est un petit fichier texte déposé sur votre terminal lors de votre visite. Vous pouvez les accepter ou les refuser via la bannière de consentement affichée lors de votre première visite.</p>
 
             <h3 class="section-subtitle">Cookies utilisés</h3>
-            <table class="cookie-table" aria-label="Liste des cookies utilisés">
-                <thead>
-                    <tr>
-                        <th>Cookie</th>
-                        <th>Fournisseur</th>
-                        <th>Finalité</th>
-                        <th>Durée</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>_ga</code>, <code>_ga_*</code></td>
-                        <td>Google Analytics</td>
-                        <td>Analyse du trafic et comportement des visiteurs</td>
-                        <td>13 mois</td>
-                    </tr>
-                    <tr>
-                        <td><code>_gtm_*</code></td>
-                        <td>Google Tag Manager</td>
-                        <td>Gestion des balises de tracking</td>
-                        <td>Session</td>
-                    </tr>
-                    <tr>
-                        <td><code>codelli_cookie_consent</code></td>
-                        <td>Codelli (1st party)</td>
-                        <td>Mémoriser votre choix de consentement</td>
-                        <td>12 mois</td>
-                    </tr>
-                    <tr>
-                        <td><code>codelli-lang</code></td>
-                        <td>Codelli (1st party)</td>
-                        <td>Mémoriser votre préférence de langue</td>
-                        <td>Persistent</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrap">
+                <table class="cookie-table" aria-label="Liste des cookies utilisés">
+                    <thead>
+                        <tr>
+                            <th>Cookie</th>
+                            <th>Fournisseur</th>
+                            <th>Finalité</th>
+                            <th>Durée</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>_ga</code>, <code>_ga_*</code></td>
+                            <td>Google Analytics</td>
+                            <td>Analyse du trafic et comportement des visiteurs</td>
+                            <td>13 mois</td>
+                        </tr>
+                        <tr>
+                            <td><code>_gtm_*</code></td>
+                            <td>Google Tag Manager</td>
+                            <td>Gestion des balises de tracking</td>
+                            <td>Session</td>
+                        </tr>
+                        <tr>
+                            <td><code>codelli_cookie_consent</code></td>
+                            <td>Codelli (1st party)</td>
+                            <td>Mémoriser votre choix de consentement</td>
+                            <td>12 mois</td>
+                        </tr>
+                        <tr>
+                            <td><code>codelli-lang</code></td>
+                            <td>Codelli (1st party)</td>
+                            <td>Mémoriser votre préférence de langue</td>
+                            <td>Persistent</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h3 class="section-subtitle">Gestion de vos préférences</h3>
             <p>Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur ou en utilisant les paramètres de confidentialité de votre navigateur :</p>

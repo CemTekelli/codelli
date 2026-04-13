@@ -126,6 +126,7 @@
             line-height: 1.5;
             overflow-x: hidden;
             min-height: 100vh;
+            min-height: 100svh;
         }
 
         a { text-decoration: none; color: inherit; }
@@ -212,6 +213,8 @@
         @media (max-width: 768px) {
             .nav { padding: 1.25rem 1.5rem; }
             .lang-switcher { display: none; }
+            /* nav-back stays as only right element — ensure min tap target */
+            .nav-back { min-height: 44px; }
         }
 
         /* ─── Page hero ─── */
@@ -528,8 +531,12 @@
                 padding: 1.25rem 1.5rem;
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 0.75rem;
             }
-            .footer-links { gap: 1.5rem; }
+            .footer-links {
+                gap: 1.25rem;
+                flex-wrap: wrap;
+            }
         }
 
         /* ─── Cookie consent ─── */
@@ -541,7 +548,15 @@
             border-top: 1px solid var(--border);
             backdrop-filter: blur(16px);
             padding: 1.25rem 2rem;
+            padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
             display: none;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-bar { padding: 1.25rem 1.5rem; padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
+            .cookie-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .cookie-actions { width: 100%; }
+            .cookie-btn { flex: 1; text-align: center; }
         }
 
         .cookie-inner {
