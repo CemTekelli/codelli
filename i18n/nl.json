@@ -185,7 +185,12 @@
       "email": "E-mail",
       "company": "Bedrijf (optioneel)",
       "message": "Vertel ons over uw project...",
-      "submit": "Versturen"
+      "submit": "Versturen",
+      "notify": {
+        "validationError": "Gelieve de fouten in het formulier te corrigeren.",
+        "sending": "Bezig met verzenden...",
+        "success": "Bericht succesvol verzonden! We antwoorden u binnen 24u."
+      }
     }
   },
   "footer": {

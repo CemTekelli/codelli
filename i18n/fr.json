@@ -185,7 +185,12 @@
       "email": "Email",
       "company": "Entreprise (optionnel)",
       "message": "Parlez-nous de votre projet...",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "notify": {
+        "validationError": "Veuillez corriger les erreurs dans le formulaire.",
+        "sending": "Envoi en cours...",
+        "success": "Message envoyé avec succès ! Nous vous répondrons sous 24h."
+      }
     }
   },
   "footer": {

@@ -774,7 +774,7 @@ function initSectionReveals() {
         // Steps with premium staggered animations
         gsap.utils.toArray('.process-step').forEach((step, i) => {
             // Step number - slides in from left
-            const stepNumber = step.querySelector('.step-number');
+            const stepNumber = step.querySelector('.step-index');
             if (stepNumber) {
                 gsap.fromTo(stepNumber,
                     { x: -20, opacity: 0 },
@@ -1052,7 +1052,7 @@ function initPortfolioAnimations() {
     );
 
     // Cards — staggered scrub reveal
-    gsap.utils.toArray('.portfolio-card').forEach((card, i) => {
+    gsap.utils.toArray('.project-row').forEach((card, i) => {
         gsap.fromTo(card,
             { y: 50, opacity: 0 },
             {
@@ -1068,22 +1068,6 @@ function initPortfolioAnimations() {
             }
         );
     });
-
-    // CTA button
-    gsap.fromTo(".portfolio-cta-btn",
-        { y: 20, opacity: 0 },
-        {
-            y: 0,
-            opacity: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".portfolio-cta",
-                start: "top 95%",
-                end: "top 80%",
-                scrub: 0.5
-            }
-        }
-    );
 }
 
 
@@ -1372,7 +1356,7 @@ if (contactForm) {
         });
 
         if (!allValid) {
-            showNotification('Veuillez corriger les erreurs dans le formulaire.', 'error');
+            showNotification(window.I18n ? window.I18n.t('contact.form.notify.validationError') : 'Veuillez corriger les erreurs dans le formulaire.', 'error');
             return;
         }
 
@@ -1382,7 +1366,7 @@ if (contactForm) {
 
         submitButton.innerHTML = `
             <span style="display: inline-block; width: 16px; height: 16px; border: 2px solid transparent; border-top: 2px solid currentColor; border-radius: 50%; animation: spin 1s linear infinite;"></span>
-            Envoi en cours...
+            ${window.I18n ? window.I18n.t('contact.form.notify.sending') : 'Envoi en cours...'}
         `;
         submitButton.disabled = true;
         submitButton.style.opacity = '0.7';
@@ -1397,12 +1381,16 @@ if (contactForm) {
         `;
         document.head.appendChild(style);
 
-        // Simulate API call with better UX
-        setTimeout(() => {
-            // Success message
-            showNotification('Message envoyé avec succès ! Nous vous répondrons sous 24h', 'success');
+        // Submit to Netlify Forms
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(contactForm)).toString()
+        })
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            showNotification(window.I18n ? window.I18n.t('contact.form.notify.success') : 'Message envoyé avec succès ! Nous vous répondrons sous 24h.', 'success');
 
-            // Reset form and clear validation states
             contactForm.reset();
             formFields.forEach(field => {
                 clearValidationState(field);
@@ -1410,16 +1398,16 @@ if (contactForm) {
                     field.classList.remove('has-value');
                 }
             });
-
+        })
+        .catch(() => {
+            showNotification(window.I18n ? window.I18n.t('contact.form.notify.validationError') : 'Erreur lors de l\'envoi. Veuillez réessayer.', 'error');
+        })
+        .finally(() => {
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
             submitButton.style.opacity = '';
-
-            // Remove spinner style
-            setTimeout(() => {
-                style.remove();
-            }, 100);
-        }, 1500);
+            setTimeout(() => { style.remove(); }, 100);
+        });
     });
 }
 
@@ -1598,20 +1586,4 @@ document.addEventListener('visibilitychange', () => {
             }
         });
     }
-})();
-
-
-// ─────────────────────────────────────────────────────────────────
-// NAV OVERLAY CTA — animate in with other nav elements
-// ─────────────────────────────────────────────────────────────────
-(function patchNavOverlayCta() {
-    const navTrigger = document.getElementById('nav-trigger');
-    if (!navTrigger) return;
-
-    navTrigger.addEventListener('click', () => {
-        gsap.fromTo('.nav-overlay-cta',
-            { opacity: 0, y: 20 },
-            { opacity: 1, y: 0, duration: 0.5, delay: 0.7, ease: 'power2.out' }
-        );
-    });
 })();

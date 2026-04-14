@@ -185,7 +185,12 @@
       "email": "Email",
       "company": "Company (optional)",
       "message": "Tell us about your project...",
-      "submit": "Send message"
+      "submit": "Send message",
+      "notify": {
+        "validationError": "Please fix the errors in the form.",
+        "sending": "Sending...",
+        "success": "Message sent successfully! We'll get back to you within 24h."
+      }
     }
   },
   "footer": {
