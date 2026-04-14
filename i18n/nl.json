@@ -59,7 +59,9 @@
   "subsidy": {
     "headline": "Belgische KMO? Uw project kan gedeeltelijk gesubsidieerd worden.",
     "desc": "Afhankelijk van uw regio: Innoviris (Brussel), Chèques-entreprises (Wallonië) of VLAIO (Vlaanderen) kunnen een deel van de kosten dekken. Wij helpen u met de aanvraag.",
-    "cta": "Controleer uw eligibiliteit →"
+    "cta": "Controleer uw eligibiliteit →",
+    "tag": "Belgische KMO",
+    "ariaLabel": "Belgische AI-subsidies"
   },
   "about": {
     "title": "Waarom bedrijven Codelli vertrouwen",
@@ -169,7 +171,8 @@
       "backend": "Backend",
       "database": "Database",
       "cloud": "Cloud"
-    }
+    },
+    "ariaLabel": "Technische stack"
   },
   "contact": {
     "title": "Laten we iets slims bouwen",
@@ -205,7 +208,8 @@
     "text": "Wij gebruiken cookies om uw ervaring te verbeteren en het verkeer te analyseren.",
     "learnMore": "Meer info",
     "accept": "Accepteren",
-    "reject": "Weigeren"
+    "reject": "Weigeren",
+    "ariaLabel": "Cookie-toestemming"
   },
   "images": {
     "logoAlt": "Codelli — AI Studio & Digitaal Bureau in Brussel, België"
@@ -232,7 +236,8 @@
         "freeLabel": "Zonder engagement",
         "planVal": "Actieplan",
         "planLabel": "Verstuurd binnen 24u",
-        "locationLabel": "Lokaal team"
+        "locationLabel": "Lokaal team",
+          "city": "Brussel"
       }
     },
     "info": {
@@ -285,6 +290,127 @@
       "learnMore": "Meer info",
       "accept": "Accepteren",
       "reject": "Weigeren"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacybeleid & Juridische kennisgeving | Codelli",
+      "description": "Privacybeleid, juridische kennisgeving en cookiebeleid van Codelli — AI-studio in Brussel, België. KBO 1006.208.714."
+    },
+    "nav": {
+      "back": "Terug naar de site"
+    },
+    "page": {
+      "title": "Privacybeleid & Juridische kennisgeving",
+      "updated": "Laatste update: 13 april 2026"
+    },
+    "legal": {
+      "title": "Juridische kennisgeving",
+      "label": {
+        "company": "Bedrijfsnaam:",
+        "form": "Rechtsvorm:",
+        "vat": "KBO / BTW:",
+        "address": "Maatschappelijke zetel:",
+        "email": "E-mail:",
+        "phone": "Telefoon:",
+        "publisher": "Verantwoordelijke uitgever:"
+      },
+      "value": {
+        "form": "Eenmanszaak",
+        "address": "Brussel, België",
+        "publisher": "Cem Tekelli"
+      },
+      "desc": "De website <strong>codelli.tech</strong> wordt uitgegeven door Codelli Engineering. Alle inhoud op deze site (teksten, afbeeldingen, logo's, graphics) is beschermd door het auteursrecht en blijft de exclusieve eigendom van Codelli Engineering, tenzij anders vermeld."
+    },
+    "gdpr": {
+      "title": "Privacybeleid (AVG)",
+      "intro": "Codelli Engineering, als verwerkingsverantwoordelijke, verbindt zich ertoe uw persoonsgegevens te beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG — EU 2016/679) en de toepasselijke Belgische wetgeving.",
+      "dataTitle": "Verzamelde gegevens",
+      "dataIntro": "Bij uw gebruik van de site of het opnemen van contact kunnen we de volgende gegevens verzamelen:",
+      "dataItems": {
+        "1": "Voor- en achternaam",
+        "2": "Professioneel e-mailadres",
+        "3": "Naam van uw bedrijf",
+        "4": "Bericht en projectbeschrijving",
+        "5": "Navigatiegegevens (via cookies — zie sectie Cookies)"
+      },
+      "purposesTitle": "Verwerkingsdoeleinden",
+      "purposes": {
+        "1": "<strong>Beantwoorden van uw contactverzoeken</strong> — rechtsgrond: uitvoering van een overeenkomst of precontractuele maatregelen",
+        "2": "<strong>Organiseren van kennismakingsgesprekken</strong> (via Calendly) — rechtsgrond: toestemming",
+        "3": "<strong>Analyse van verkeer en verbetering van de site</strong> (via Google Analytics via GTM) — rechtsgrond: toestemming"
+      },
+      "retentionTitle": "Bewaringstermijn",
+      "retention": "Contactgegevens worden bewaard gedurende <strong>3 jaar</strong> na het laatste contact. Navigatiegegevens worden bewaard gedurende <strong>13 maanden</strong> overeenkomstig de aanbevelingen van de CNIL/GBA.",
+      "recipientsTitle": "Ontvangers van de gegevens",
+      "recipientsIntro": "Uw gegevens worden niet verkocht aan derden. Ze kunnen worden gedeeld met:",
+      "recipients": {
+        "1": "<strong>Calendly Inc.</strong> — voor het inplannen van afspraken (beleid beschikbaar op calendly.com)",
+        "2": "<strong>Google LLC</strong> — voor publieksanalyse (Google Analytics via GTM)"
+      },
+      "recipientsNote": "Deze verwerkers zijn onderworpen aan passende contractuele waarborgen (Standaard Contractbepalingen of Privacy Shield opvolger) voor elke overdracht buiten de EU.",
+      "rightsTitle": "Uw rechten",
+      "rightsIntro": "Overeenkomstig de AVG beschikt u over de volgende rechten:",
+      "rights": {
+        "1": "<strong>Recht op inzage</strong> — een kopie van uw gegevens ontvangen",
+        "2": "<strong>Recht op rectificatie</strong> — onjuiste gegevens corrigeren",
+        "3": "<strong>Recht op wissing</strong> — verwijdering van uw gegevens verzoeken",
+        "4": "<strong>Recht van bezwaar</strong> — bezwaar maken tegen verwerking om gerechtvaardigde redenen",
+        "5": "<strong>Recht op gegevensoverdraagbaarheid</strong> — uw gegevens ontvangen in een gestructureerd formaat",
+        "6": "<strong>Recht op beperking</strong> — de verwerking van uw gegevens beperken"
+      },
+      "rightsContact": "Om deze rechten uit te oefenen, kunt u contact met ons opnemen via: <a href=\"mailto:hello@codelli.tech\">hello@codelli.tech</a>. We antwoorden binnen <strong>30 dagen</strong>. U heeft ook het recht om een klacht in te dienen bij de <a href=\"https://www.autoriteprotectiondonnees.be\" target=\"_blank\" rel=\"noopener\">Gegevensbeschermingsautoriteit (GBA)</a>."
+    },
+    "cookiePolicy": {
+      "title": "Cookiebeleid",
+      "intro": "Deze site maakt gebruik van cookies. Een cookie is een klein tekstbestand dat bij uw bezoek op uw apparaat wordt geplaatst. U kunt ze accepteren of weigeren via de toestemmingsbanner die bij uw eerste bezoek wordt weergegeven.",
+      "listTitle": "Gebruikte cookies",
+      "tableLabel": "Lijst van gebruikte cookies",
+      "thead": {
+        "name": "Cookie",
+        "provider": "Aanbieder",
+        "purpose": "Doel",
+        "duration": "Duur"
+      },
+      "rows": {
+        "ga": {
+          "purpose": "Verkeersanalyse en bezoekersgedrag",
+          "duration": "13 maanden"
+        },
+        "gtm": {
+          "purpose": "Tagbeheer",
+          "duration": "Sessie"
+        },
+        "consent": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Uw toestemmingskeuze onthouden",
+          "duration": "12 maanden"
+        },
+        "lang": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Uw taalvoorkeur onthouden",
+          "duration": "Blijvend"
+        }
+      },
+      "prefsTitle": "Beheer van uw voorkeuren",
+      "prefsIntro": "U kunt uw voorkeuren op elk moment wijzigen door cookies te verwijderen uit uw browser of door de privacy-instellingen van uw browser te gebruiken:",
+      "browserChrome": "<a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a>",
+      "browserFirefox": "<a href=\"https://support.mozilla.org/nl/kb/cookies-in-en-uitschakelen-websites-toestaan-en-ver\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a>",
+      "browserSafari": "<a href=\"https://support.apple.com/nl-be/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a>",
+      "gaOptout": "U kunt zich ook verzetten tegen Google Analytics tracking via de <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">officiële opt-out module</a>."
+    },
+    "liability": {
+      "title": "Aansprakelijkheidsbeperking",
+      "p1": "Codelli Engineering streeft ernaar nauwkeurige en actuele informatie op deze site te onderhouden. We garanderen echter niet de juistheid, volledigheid of actualiteit van de gepubliceerde informatie. Codelli Engineering kan niet aansprakelijk worden gesteld voor directe of indirecte schade als gevolg van het gebruik van deze site.",
+      "p2": "Hyperlinks naar sites van derden impliceren geen aansprakelijkheid van Codelli Engineering voor hun inhoud."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Brussel, België · KBO 1006.208.714"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussel, België · KBO 1006.208.714",
+      "home": "Startpagina"
     }
   }
 }

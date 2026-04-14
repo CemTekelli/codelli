@@ -59,7 +59,9 @@
   "subsidy": {
     "headline": "PME belge ? Votre projet peut être partiellement subventionné.",
     "desc": "Selon votre région : Innoviris (Bruxelles), Chèques-entreprises (Wallonie) ou VLAIO (Flandre) peuvent couvrir une partie du coût. Nous gérons le dossier.",
-    "cta": "Vérifiez votre éligibilité →"
+    "cta": "Vérifiez votre éligibilité →",
+    "tag": "PME Belge",
+    "ariaLabel": "Subsides belges pour l'IA"
   },
   "about": {
     "title": "Pourquoi les entreprises font confiance à Codelli",
@@ -169,7 +171,8 @@
       "backend": "Backend",
       "database": "Base de données",
       "cloud": "Cloud"
-    }
+    },
+    "ariaLabel": "Stack technique"
   },
   "contact": {
     "title": "Construisons quelque chose d'intelligent",
@@ -205,7 +208,8 @@
     "text": "Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic.",
     "learnMore": "En savoir plus",
     "accept": "Accepter",
-    "reject": "Refuser"
+    "reject": "Refuser",
+    "ariaLabel": "Consentement cookies"
   },
   "images": {
     "logoAlt": "Codelli - Agence Web & Développement Mobile à Bruxelles, Belgique"
@@ -232,7 +236,8 @@
         "freeLabel": "Sans engagement",
         "planVal": "Plan d'action",
         "planLabel": "Envoyé dans les 24h",
-        "locationLabel": "Équipe locale"
+        "locationLabel": "Équipe locale",
+          "city": "Bruxelles"
       }
     },
     "info": {
@@ -285,6 +290,127 @@
       "learnMore": "En savoir plus",
       "accept": "Accepter",
       "reject": "Refuser"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité & Mentions légales | Codelli",
+      "description": "Politique de confidentialité, mentions légales et politique cookies de Codelli — Studio digital IA à Bruxelles, Belgique. BCE 1006.208.714."
+    },
+    "nav": {
+      "back": "Retour au site"
+    },
+    "page": {
+      "title": "Politique de confidentialité & Mentions légales",
+      "updated": "Dernière mise à jour : 13 avril 2026"
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "label": {
+        "company": "Dénomination sociale :",
+        "form": "Forme juridique :",
+        "vat": "BCE / TVA :",
+        "address": "Siège social :",
+        "email": "Email :",
+        "phone": "Téléphone :",
+        "publisher": "Responsable de publication :"
+      },
+      "value": {
+        "form": "Entreprise individuelle",
+        "address": "Bruxelles, Belgique",
+        "publisher": "Cem Tekelli"
+      },
+      "desc": "Le site <strong>codelli.tech</strong> est édité par Codelli Engineering. Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Codelli Engineering, sauf mention contraire."
+    },
+    "gdpr": {
+      "title": "Politique de confidentialité (RGPD)",
+      "intro": "Codelli Engineering, en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.",
+      "dataTitle": "Données collectées",
+      "dataIntro": "Lors de votre utilisation du site ou de la prise de contact, nous pouvons collecter les données suivantes :",
+      "dataItems": {
+        "1": "Nom et prénom",
+        "2": "Adresse email professionnelle",
+        "3": "Nom de votre entreprise",
+        "4": "Message et description de votre projet",
+        "5": "Données de navigation (via cookies — voir section Cookies)"
+      },
+      "purposesTitle": "Finalités du traitement",
+      "purposes": {
+        "1": "<strong>Répondre à vos demandes de contact</strong> — base légale : exécution d'un contrat ou mesures précontractuelles",
+        "2": "<strong>Organiser des appels découverte</strong> (via Calendly) — base légale : consentement",
+        "3": "<strong>Analyser le trafic et améliorer le site</strong> (via Google Analytics via GTM) — base légale : consentement"
+      },
+      "retentionTitle": "Durée de conservation",
+      "retention": "Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation sont conservées <strong>13 mois</strong> conformément aux recommandations de la CNIL/APD.",
+      "recipientsTitle": "Destinataires des données",
+      "recipientsIntro": "Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :",
+      "recipients": {
+        "1": "<strong>Calendly Inc.</strong> — pour la prise de rendez-vous (politique disponible sur calendly.com)",
+        "2": "<strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)"
+      },
+      "recipientsNote": "Ces sous-traitants sont soumis à des garanties contractuelles appropriées (Clauses Contractuelles Types ou Privacy Shield successor) pour tout transfert hors UE.",
+      "rightsTitle": "Vos droits",
+      "rightsIntro": "Conformément au RGPD, vous disposez des droits suivants :",
+      "rights": {
+        "1": "<strong>Droit d'accès</strong> — obtenir une copie de vos données",
+        "2": "<strong>Droit de rectification</strong> — corriger des données inexactes",
+        "3": "<strong>Droit à l'effacement</strong> — demander la suppression de vos données",
+        "4": "<strong>Droit d'opposition</strong> — vous opposer au traitement pour motif légitime",
+        "5": "<strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré",
+        "6": "<strong>Droit de limitation</strong> — limiter le traitement de vos données"
+      },
+      "rightsContact": "Pour exercer ces droits, contactez-nous à : <a href=\"mailto:hello@codelli.tech\">hello@codelli.tech</a>. Nous répondons dans un délai de <strong>30 jours</strong>. Vous disposez également du droit d'introduire une réclamation auprès de l'<a href=\"https://www.autoriteprotectiondonnees.be\" target=\"_blank\" rel=\"noopener\">Autorité de Protection des Données (APD)</a>."
+    },
+    "cookiePolicy": {
+      "title": "Politique cookies",
+      "intro": "Ce site utilise des cookies. Un cookie est un petit fichier texte déposé sur votre terminal lors de votre visite. Vous pouvez les accepter ou les refuser via la bannière de consentement affichée lors de votre première visite.",
+      "listTitle": "Cookies utilisés",
+      "tableLabel": "Liste des cookies utilisés",
+      "thead": {
+        "name": "Cookie",
+        "provider": "Fournisseur",
+        "purpose": "Finalité",
+        "duration": "Durée"
+      },
+      "rows": {
+        "ga": {
+          "purpose": "Analyse du trafic et comportement des visiteurs",
+          "duration": "13 mois"
+        },
+        "gtm": {
+          "purpose": "Gestion des balises de tracking",
+          "duration": "Session"
+        },
+        "consent": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Mémoriser votre choix de consentement",
+          "duration": "12 mois"
+        },
+        "lang": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Mémoriser votre préférence de langue",
+          "duration": "Persistant"
+        }
+      },
+      "prefsTitle": "Gestion de vos préférences",
+      "prefsIntro": "Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur ou en utilisant les paramètres de confidentialité de votre navigateur :",
+      "browserChrome": "<a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a>",
+      "browserFirefox": "<a href=\"https://support.mozilla.org/fr/kb/activer-desactiver-cookies\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a>",
+      "browserSafari": "<a href=\"https://support.apple.com/fr-be/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a>",
+      "gaOptout": "Vous pouvez également vous opposer au suivi Google Analytics via le <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">module de désactivation officiel</a>."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "p1": "Codelli Engineering s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli Engineering ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.",
+      "p2": "Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli Engineering quant à leur contenu."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Bruxelles, Belgique · BCE 1006.208.714"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Bruxelles, Belgique · BCE 1006.208.714",
+      "home": "Accueil"
     }
   }
 }

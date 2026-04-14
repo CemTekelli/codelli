@@ -59,7 +59,9 @@
   "subsidy": {
     "headline": "Belgian SME? Your project may be partially subsidised.",
     "desc": "Depending on your region: Innoviris (Brussels), Chèques-entreprises (Wallonia) or VLAIO (Flanders) can cover part of the cost. We handle the application.",
-    "cta": "Check your eligibility →"
+    "cta": "Check your eligibility →",
+    "tag": "Belgian SME",
+    "ariaLabel": "Belgian AI subsidies"
   },
   "about": {
     "title": "Why companies trust Codelli",
@@ -169,7 +171,8 @@
       "backend": "Backend",
       "database": "Database",
       "cloud": "Cloud"
-    }
+    },
+    "ariaLabel": "Technical stack"
   },
   "contact": {
     "title": "Let's build something smart",
@@ -205,7 +208,8 @@
     "text": "We use cookies to improve your experience and analyze traffic.",
     "learnMore": "Learn more",
     "accept": "Accept",
-    "reject": "Decline"
+    "reject": "Decline",
+    "ariaLabel": "Cookie consent"
   },
   "images": {
     "logoAlt": "Codelli - Web Agency & Mobile Development in Brussels, Belgium"
@@ -232,7 +236,8 @@
         "freeLabel": "No commitment",
         "planVal": "Action plan",
         "planLabel": "Sent within 24h",
-        "locationLabel": "Local team"
+        "locationLabel": "Local team",
+          "city": "Brussels"
       }
     },
     "info": {
@@ -285,6 +290,127 @@
       "learnMore": "Learn more",
       "accept": "Accept",
       "reject": "Decline"
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy & Legal Notice | Codelli",
+      "description": "Privacy policy, legal notice and cookie policy of Codelli — AI digital studio in Brussels, Belgium. BCE 1006.208.714."
+    },
+    "nav": {
+      "back": "Back to site"
+    },
+    "page": {
+      "title": "Privacy Policy & Legal Notice",
+      "updated": "Last updated: 13 April 2026"
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "label": {
+        "company": "Legal name:",
+        "form": "Legal form:",
+        "vat": "BCE / VAT:",
+        "address": "Registered office:",
+        "email": "Email:",
+        "phone": "Phone:",
+        "publisher": "Editor in chief:"
+      },
+      "value": {
+        "form": "Sole proprietorship",
+        "address": "Brussels, Belgium",
+        "publisher": "Cem Tekelli"
+      },
+      "desc": "The website <strong>codelli.tech</strong> is published by Codelli Engineering. All content on this site (texts, images, logos, graphics) is protected by copyright and remains the exclusive property of Codelli Engineering, unless otherwise stated."
+    },
+    "gdpr": {
+      "title": "Privacy Policy (GDPR)",
+      "intro": "Codelli Engineering, as data controller, is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR — EU 2016/679) and applicable Belgian legislation.",
+      "dataTitle": "Data collected",
+      "dataIntro": "When you use the site or get in touch, we may collect the following data:",
+      "dataItems": {
+        "1": "First and last name",
+        "2": "Professional email address",
+        "3": "Your company name",
+        "4": "Message and project description",
+        "5": "Browsing data (via cookies — see Cookies section)"
+      },
+      "purposesTitle": "Purposes of processing",
+      "purposes": {
+        "1": "<strong>Responding to your contact requests</strong> — legal basis: performance of a contract or pre-contractual measures",
+        "2": "<strong>Organising discovery calls</strong> (via Calendly) — legal basis: consent",
+        "3": "<strong>Analysing traffic and improving the site</strong> (via Google Analytics via GTM) — legal basis: consent"
+      },
+      "retentionTitle": "Data retention",
+      "retention": "Contact data is retained for <strong>3 years</strong> from the last exchange. Navigation data is retained for <strong>13 months</strong> in accordance with CNIL/DPA recommendations.",
+      "recipientsTitle": "Data recipients",
+      "recipientsIntro": "Your data is not sold to third parties. It may be shared with:",
+      "recipients": {
+        "1": "<strong>Calendly Inc.</strong> — for appointment scheduling (policy available at calendly.com)",
+        "2": "<strong>Google LLC</strong> — for audience analysis (Google Analytics via GTM)"
+      },
+      "recipientsNote": "These processors are subject to appropriate contractual safeguards (Standard Contractual Clauses or Privacy Shield successor) for any transfer outside the EU.",
+      "rightsTitle": "Your rights",
+      "rightsIntro": "In accordance with the GDPR, you have the following rights:",
+      "rights": {
+        "1": "<strong>Right of access</strong> — obtain a copy of your data",
+        "2": "<strong>Right of rectification</strong> — correct inaccurate data",
+        "3": "<strong>Right to erasure</strong> — request the deletion of your data",
+        "4": "<strong>Right to object</strong> — object to processing for legitimate reasons",
+        "5": "<strong>Right to data portability</strong> — receive your data in a structured format",
+        "6": "<strong>Right to restriction</strong> — restrict the processing of your data"
+      },
+      "rightsContact": "To exercise these rights, contact us at: <a href=\"mailto:hello@codelli.tech\">hello@codelli.tech</a>. We respond within <strong>30 days</strong>. You also have the right to lodge a complaint with the <a href=\"https://www.autoriteprotectiondonnees.be\" target=\"_blank\" rel=\"noopener\">Data Protection Authority (DPA)</a>."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "intro": "This site uses cookies. A cookie is a small text file placed on your device when you visit. You can accept or refuse them via the consent banner displayed on your first visit.",
+      "listTitle": "Cookies used",
+      "tableLabel": "List of cookies used",
+      "thead": {
+        "name": "Cookie",
+        "provider": "Provider",
+        "purpose": "Purpose",
+        "duration": "Duration"
+      },
+      "rows": {
+        "ga": {
+          "purpose": "Traffic analysis and visitor behaviour",
+          "duration": "13 months"
+        },
+        "gtm": {
+          "purpose": "Tag management",
+          "duration": "Session"
+        },
+        "consent": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Remember your consent choice",
+          "duration": "12 months"
+        },
+        "lang": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Remember your language preference",
+          "duration": "Persistent"
+        }
+      },
+      "prefsTitle": "Managing your preferences",
+      "prefsIntro": "You can change your preferences at any time by deleting cookies from your browser or using your browser's privacy settings:",
+      "browserChrome": "<a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a>",
+      "browserFirefox": "<a href=\"https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a>",
+      "browserSafari": "<a href=\"https://support.apple.com/en-gb/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a>",
+      "gaOptout": "You can also opt out of Google Analytics tracking via the <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">official opt-out module</a>."
+    },
+    "liability": {
+      "title": "Limitation of liability",
+      "p1": "Codelli Engineering strives to maintain accurate and up-to-date information on this site. However, we do not guarantee the accuracy, completeness or currency of the information published. Codelli Engineering cannot be held responsible for direct or indirect damages resulting from the use of this site.",
+      "p2": "Hyperlinks to third-party sites do not imply any responsibility on the part of Codelli Engineering for their content."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Brussels, Belgium · BCE 1006.208.714"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussels, Belgium · BCE 1006.208.714",
+      "home": "Home"
     }
   }
 }

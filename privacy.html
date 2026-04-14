@@ -10,6 +10,12 @@
     <meta name="theme-color" content="#0F0F0F">
     <link rel="canonical" href="https://codelli.tech/privacy">
 
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="fr" href="https://codelli.tech/privacy">
+    <link rel="alternate" hreflang="nl" href="https://codelli.tech/privacy?lang=nl">
+    <link rel="alternate" hreflang="en" href="https://codelli.tech/privacy?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://codelli.tech/privacy">
+
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" href="favicon.ico">
@@ -76,6 +82,33 @@
             color: var(--text);
             text-decoration: none;
         }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            color: var(--muted);
+            font-family: var(--font-display);
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            padding: 0.25rem 0.4rem;
+            transition: color 0.2s;
+        }
+
+        .lang-btn:hover,
+        .lang-btn.active { color: var(--text); }
 
         .nav-back {
             display: flex;
@@ -172,7 +205,6 @@
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             margin: 1rem 0 1.5rem;
-            /* subtle scroll hint shadow */
             background:
                 linear-gradient(to right, #0F0F0F 0%, transparent 2rem),
                 linear-gradient(to left,  #0F0F0F 0%, transparent 2rem);
@@ -181,7 +213,7 @@
 
         .cookie-table {
             width: 100%;
-            min-width: 520px; /* force scroll below 520px instead of squishing */
+            min-width: 520px;
             border-collapse: collapse;
             font-size: 0.85rem;
         }
@@ -239,6 +271,7 @@
 
         @media (max-width: 768px) {
             .nav { padding: 1.25rem 1.5rem; }
+            .nav-right { gap: 1rem; }
             .page-content { padding: 3rem 1.5rem 5rem; }
             .footer {
                 padding: 1.25rem 1.5rem;
@@ -250,7 +283,6 @@
                 gap: 1.25rem;
                 flex-wrap: wrap;
             }
-            /* nav-back tap target */
             .nav-back { min-height: 44px; }
         }
     </style>
@@ -265,151 +297,158 @@
     <!-- Nav -->
     <nav class="nav">
         <a href="/" class="nav-logo">Codelli</a>
-        <a href="/" class="nav-back">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 12H5M12 5l-7 7 7 7"/>
-            </svg>
-            Retour au site
-        </a>
+        <div class="nav-right">
+            <div class="lang-switcher">
+                <button data-lang="fr" class="lang-btn">FR</button>
+                <button data-lang="nl" class="lang-btn">NL</button>
+                <button data-lang="en" class="lang-btn">EN</button>
+            </div>
+            <a href="/" class="nav-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 5l-7 7 7 7"/>
+                </svg>
+                <span data-i18n="privacy.nav.back">Retour au site</span>
+            </a>
+        </div>
     </nav>
 
     <main class="page-content">
-        <h1 class="page-title">Politique de confidentialité & Mentions légales</h1>
-        <p class="page-updated">Dernière mise à jour : 13 avril 2026</p>
+        <h1 class="page-title" data-i18n="privacy.page.title">Politique de confidentialité &amp; Mentions légales</h1>
+        <p class="page-updated" data-i18n="privacy.page.updated">Dernière mise à jour : 13 avril 2026</p>
 
         <!-- ─── MENTIONS LÉGALES ─── -->
         <section class="section" id="mentions">
-            <h2 class="section-title">Mentions légales</h2>
+            <h2 class="section-title" data-i18n="privacy.legal.title">Mentions légales</h2>
 
             <div class="info-box">
-                <p><strong>Dénomination sociale :</strong> Codelli Engineering</p>
-                <p><strong>Forme juridique :</strong> Entreprise individuelle</p>
-                <p><strong>BCE / TVA :</strong> 1006.208.714</p>
-                <p><strong>Siège social :</strong> Bruxelles, Belgique</p>
-                <p><strong>Email :</strong> <a href="mailto:hello@codelli.tech">hello@codelli.tech</a></p>
-                <p><strong>Téléphone :</strong> +32 472 62 84 30</p>
-                <p><strong>Responsable de publication :</strong> Cem Tekelli</p>
+                <p><strong data-i18n="privacy.legal.label.company">Dénomination sociale :</strong> Codelli Engineering</p>
+                <p><strong data-i18n="privacy.legal.label.form">Forme juridique :</strong> <span data-i18n="privacy.legal.value.form">Entreprise individuelle</span></p>
+                <p><strong data-i18n="privacy.legal.label.vat">BCE / TVA :</strong> 1006.208.714</p>
+                <p><strong data-i18n="privacy.legal.label.address">Siège social :</strong> <span data-i18n="privacy.legal.value.address">Bruxelles, Belgique</span></p>
+                <p><strong data-i18n="privacy.legal.label.email">Email :</strong> <a href="mailto:hello@codelli.tech">hello@codelli.tech</a></p>
+                <p><strong data-i18n="privacy.legal.label.phone">Téléphone :</strong> +32 472 62 84 30</p>
+                <p><strong data-i18n="privacy.legal.label.publisher">Responsable de publication :</strong> <span data-i18n="privacy.legal.value.publisher">Cem Tekelli</span></p>
             </div>
 
-            <p>Le site <strong>codelli.tech</strong> est édité par Codelli Engineering. Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Codelli Engineering, sauf mention contraire.</p>
+            <p data-i18n-html="privacy.legal.desc">Le site <strong>codelli.tech</strong> est édité par Codelli Engineering. Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Codelli Engineering, sauf mention contraire.</p>
         </section>
 
         <!-- ─── POLITIQUE DE CONFIDENTIALITÉ ─── -->
         <section class="section" id="confidentialite">
-            <h2 class="section-title">Politique de confidentialité (RGPD)</h2>
+            <h2 class="section-title" data-i18n="privacy.gdpr.title">Politique de confidentialité (RGPD)</h2>
 
-            <p>Codelli Engineering, en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.</p>
+            <p data-i18n="privacy.gdpr.intro">Codelli Engineering, en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.</p>
 
-            <h3 class="section-subtitle">Données collectées</h3>
-            <p>Lors de votre utilisation du site ou de la prise de contact, nous pouvons collecter les données suivantes :</p>
+            <h3 class="section-subtitle" data-i18n="privacy.gdpr.dataTitle">Données collectées</h3>
+            <p data-i18n="privacy.gdpr.dataIntro">Lors de votre utilisation du site ou de la prise de contact, nous pouvons collecter les données suivantes :</p>
             <ul>
-                <li>Nom et prénom</li>
-                <li>Adresse email professionnelle</li>
-                <li>Nom de votre entreprise</li>
-                <li>Message et description de votre projet</li>
-                <li>Données de navigation (via cookies — voir section Cookies)</li>
+                <li data-i18n="privacy.gdpr.dataItems.1">Nom et prénom</li>
+                <li data-i18n="privacy.gdpr.dataItems.2">Adresse email professionnelle</li>
+                <li data-i18n="privacy.gdpr.dataItems.3">Nom de votre entreprise</li>
+                <li data-i18n="privacy.gdpr.dataItems.4">Message et description de votre projet</li>
+                <li data-i18n="privacy.gdpr.dataItems.5">Données de navigation (via cookies — voir section Cookies)</li>
             </ul>
 
-            <h3 class="section-subtitle">Finalités du traitement</h3>
+            <h3 class="section-subtitle" data-i18n="privacy.gdpr.purposesTitle">Finalités du traitement</h3>
             <ul>
-                <li><strong>Répondre à vos demandes de contact</strong> — base légale : exécution d'un contrat ou mesures précontractuelles</li>
-                <li><strong>Organiser des appels découverte</strong> (via Calendly) — base légale : consentement</li>
-                <li><strong>Analyser le trafic et améliorer le site</strong> (via Google Analytics via GTM) — base légale : consentement</li>
+                <li data-i18n-html="privacy.gdpr.purposes.1"><strong>Répondre à vos demandes de contact</strong> — base légale : exécution d'un contrat ou mesures précontractuelles</li>
+                <li data-i18n-html="privacy.gdpr.purposes.2"><strong>Organiser des appels découverte</strong> (via Calendly) — base légale : consentement</li>
+                <li data-i18n-html="privacy.gdpr.purposes.3"><strong>Analyser le trafic et améliorer le site</strong> (via Google Analytics via GTM) — base légale : consentement</li>
             </ul>
 
-            <h3 class="section-subtitle">Durée de conservation</h3>
-            <p>Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation sont conservées <strong>13 mois</strong> conformément aux recommandations de la CNIL/APD.</p>
+            <h3 class="section-subtitle" data-i18n="privacy.gdpr.retentionTitle">Durée de conservation</h3>
+            <p data-i18n-html="privacy.gdpr.retention">Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation sont conservées <strong>13 mois</strong> conformément aux recommandations de la CNIL/APD.</p>
 
-            <h3 class="section-subtitle">Destinataires des données</h3>
-            <p>Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :</p>
+            <h3 class="section-subtitle" data-i18n="privacy.gdpr.recipientsTitle">Destinataires des données</h3>
+            <p data-i18n="privacy.gdpr.recipientsIntro">Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :</p>
             <ul>
-                <li><strong>Calendly Inc.</strong> — pour la prise de rendez-vous (politique disponible sur calendly.com)</li>
-                <li><strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)</li>
+                <li data-i18n-html="privacy.gdpr.recipients.1"><strong>Calendly Inc.</strong> — pour la prise de rendez-vous (politique disponible sur calendly.com)</li>
+                <li data-i18n-html="privacy.gdpr.recipients.2"><strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)</li>
             </ul>
-            <p>Ces sous-traitants sont soumis à des garanties contractuelles appropriées (Clauses Contractuelles Types ou Privacy Shield successor) pour tout transfert hors UE.</p>
+            <p data-i18n="privacy.gdpr.recipientsNote">Ces sous-traitants sont soumis à des garanties contractuelles appropriées (Clauses Contractuelles Types ou Privacy Shield successor) pour tout transfert hors UE.</p>
 
-            <h3 class="section-subtitle">Vos droits</h3>
-            <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+            <h3 class="section-subtitle" data-i18n="privacy.gdpr.rightsTitle">Vos droits</h3>
+            <p data-i18n="privacy.gdpr.rightsIntro">Conformément au RGPD, vous disposez des droits suivants :</p>
             <ul>
-                <li><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
-                <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
-                <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
-                <li><strong>Droit d'opposition</strong> — vous opposer au traitement pour motif légitime</li>
-                <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
-                <li><strong>Droit de limitation</strong> — limiter le traitement de vos données</li>
+                <li data-i18n-html="privacy.gdpr.rights.1"><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
+                <li data-i18n-html="privacy.gdpr.rights.2"><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+                <li data-i18n-html="privacy.gdpr.rights.3"><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+                <li data-i18n-html="privacy.gdpr.rights.4"><strong>Droit d'opposition</strong> — vous opposer au traitement pour motif légitime</li>
+                <li data-i18n-html="privacy.gdpr.rights.5"><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
+                <li data-i18n-html="privacy.gdpr.rights.6"><strong>Droit de limitation</strong> — limiter le traitement de vos données</li>
             </ul>
-            <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:hello@codelli.tech">hello@codelli.tech</a>. Nous répondons dans un délai de <strong>30 jours</strong>. Vous disposez également du droit d'introduire une réclamation auprès de l'<a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">Autorité de Protection des Données (APD)</a>.</p>
+            <p data-i18n-html="privacy.gdpr.rightsContact">Pour exercer ces droits, contactez-nous à : <a href="mailto:hello@codelli.tech">hello@codelli.tech</a>. Nous répondons dans un délai de <strong>30 jours</strong>. Vous disposez également du droit d'introduire une réclamation auprès de l'<a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">Autorité de Protection des Données (APD)</a>.</p>
         </section>
 
         <!-- ─── COOKIES ─── -->
         <section class="section" id="cookies">
-            <h2 class="section-title">Politique cookies</h2>
+            <h2 class="section-title" data-i18n="privacy.cookiePolicy.title">Politique cookies</h2>
 
-            <p>Ce site utilise des cookies. Un cookie est un petit fichier texte déposé sur votre terminal lors de votre visite. Vous pouvez les accepter ou les refuser via la bannière de consentement affichée lors de votre première visite.</p>
+            <p data-i18n="privacy.cookiePolicy.intro">Ce site utilise des cookies. Un cookie est un petit fichier texte déposé sur votre terminal lors de votre visite. Vous pouvez les accepter ou les refuser via la bannière de consentement affichée lors de votre première visite.</p>
 
-            <h3 class="section-subtitle">Cookies utilisés</h3>
+            <h3 class="section-subtitle" data-i18n="privacy.cookiePolicy.listTitle">Cookies utilisés</h3>
             <div class="table-wrap">
-                <table class="cookie-table" aria-label="Liste des cookies utilisés">
+                <table class="cookie-table" data-i18n-aria="privacy.cookiePolicy.tableLabel" aria-label="Liste des cookies utilisés">
                     <thead>
                         <tr>
-                            <th>Cookie</th>
-                            <th>Fournisseur</th>
-                            <th>Finalité</th>
-                            <th>Durée</th>
+                            <th data-i18n="privacy.cookiePolicy.thead.name">Cookie</th>
+                            <th data-i18n="privacy.cookiePolicy.thead.provider">Fournisseur</th>
+                            <th data-i18n="privacy.cookiePolicy.thead.purpose">Finalité</th>
+                            <th data-i18n="privacy.cookiePolicy.thead.duration">Durée</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><code>_ga</code>, <code>_ga_*</code></td>
                             <td>Google Analytics</td>
-                            <td>Analyse du trafic et comportement des visiteurs</td>
-                            <td>13 mois</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.ga.purpose">Analyse du trafic et comportement des visiteurs</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.ga.duration">13 mois</td>
                         </tr>
                         <tr>
                             <td><code>_gtm_*</code></td>
                             <td>Google Tag Manager</td>
-                            <td>Gestion des balises de tracking</td>
-                            <td>Session</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.gtm.purpose">Gestion des balises de tracking</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.gtm.duration">Session</td>
                         </tr>
                         <tr>
                             <td><code>codelli_cookie_consent</code></td>
-                            <td>Codelli (1st party)</td>
-                            <td>Mémoriser votre choix de consentement</td>
-                            <td>12 mois</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.consent.provider">Codelli (1st party)</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.consent.purpose">Mémoriser votre choix de consentement</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.consent.duration">12 mois</td>
                         </tr>
                         <tr>
                             <td><code>codelli-lang</code></td>
-                            <td>Codelli (1st party)</td>
-                            <td>Mémoriser votre préférence de langue</td>
-                            <td>Persistent</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.lang.provider">Codelli (1st party)</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.lang.purpose">Mémoriser votre préférence de langue</td>
+                            <td data-i18n="privacy.cookiePolicy.rows.lang.duration">Persistant</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3 class="section-subtitle">Gestion de vos préférences</h3>
-            <p>Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur ou en utilisant les paramètres de confidentialité de votre navigateur :</p>
+            <h3 class="section-subtitle" data-i18n="privacy.cookiePolicy.prefsTitle">Gestion de vos préférences</h3>
+            <p data-i18n="privacy.cookiePolicy.prefsIntro">Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur ou en utilisant les paramètres de confidentialité de votre navigateur :</p>
             <ul>
-                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
-                <li><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li>
-                <li><a href="https://support.apple.com/fr-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+                <li data-i18n-html="privacy.cookiePolicy.browserChrome"><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                <li data-i18n-html="privacy.cookiePolicy.browserFirefox"><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                <li data-i18n-html="privacy.cookiePolicy.browserSafari"><a href="https://support.apple.com/fr-be/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
             </ul>
-            <p>Vous pouvez également vous opposer au suivi Google Analytics via le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module de désactivation officiel</a>.</p>
+            <p data-i18n-html="privacy.cookiePolicy.gaOptout">Vous pouvez également vous opposer au suivi Google Analytics via le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module de désactivation officiel</a>.</p>
         </section>
 
         <!-- ─── RESPONSABILITÉ ─── -->
         <section class="section">
-            <h2 class="section-title">Limitation de responsabilité</h2>
-            <p>Codelli Engineering s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli Engineering ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.</p>
-            <p>Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli Engineering quant à leur contenu.</p>
+            <h2 class="section-title" data-i18n="privacy.liability.title">Limitation de responsabilité</h2>
+            <p data-i18n="privacy.liability.p1">Codelli Engineering s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli Engineering ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.</p>
+            <p data-i18n="privacy.liability.p2">Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli Engineering quant à leur contenu.</p>
         </section>
 
         <!-- ─── CONTACT ─── -->
         <section class="section">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" data-i18n="privacy.contact.title">Contact</h2>
             <div class="info-box">
                 <p><strong>Codelli Engineering</strong></p>
-                <p>Bruxelles, Belgique · BCE 1006.208.714</p>
+                <p data-i18n="privacy.contact.address">Bruxelles, Belgique · BCE 1006.208.714</p>
                 <p><a href="mailto:hello@codelli.tech">hello@codelli.tech</a></p>
                 <p>+32 472 62 84 30</p>
             </div>
@@ -418,12 +457,30 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <span class="footer-copy">© 2026 Codelli · Bruxelles, Belgique · BCE 1006.208.714</span>
+        <span class="footer-copy" data-i18n="privacy.footer.copy">© 2026 Codelli · Bruxelles, Belgique · BCE 1006.208.714</span>
         <div class="footer-links">
-            <a href="/" class="footer-link">Accueil</a>
+            <a href="/" class="footer-link" data-i18n="privacy.footer.home">Accueil</a>
             <a href="mailto:hello@codelli.tech" class="footer-link">hello@codelli.tech</a>
         </div>
     </footer>
+
+    <!-- i18n Internationalization -->
+    <script src="i18n/i18n.js" defer></script>
+
+    <script>
+        // Override updateMetaTags to use privacy-specific keys
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.I18n) {
+                I18n.updateMetaTags = function() {
+                    const privacyMeta = this.translations[this.currentLang]?.privacy?.meta;
+                    if (!privacyMeta) return;
+                    if (privacyMeta.title) document.title = privacyMeta.title;
+                    const desc = document.querySelector('meta[name="description"]');
+                    if (desc && privacyMeta.description) desc.setAttribute('content', privacyMeta.description);
+                };
+            }
+        });
+    </script>
 </body>
 
 </html>
