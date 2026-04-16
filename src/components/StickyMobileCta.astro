@@ -1,0 +1,49 @@
+---
+import { type Lang, t } from '../i18n/utils';
+import { CALENDLY_URL } from '../config';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<div class="sticky-mobile-cta" id="stickyMobileCta" aria-live="polite">
+  <a
+    href={CALENDLY_URL}
+    target="_blank"
+    rel="noopener"
+    class="sticky-mobile-cta-link"
+    onclick="trackCalendlyClick('sticky_mobile')"
+  >
+    {t(lang, 'ui.bookCall')}
+  </a>
+</div>
+
+<script>
+  (function initStickyMobileCta() {
+    const stickyCta = document.getElementById('stickyMobileCta');
+    if (!stickyCta) return;
+
+    let isVisible = false;
+
+    function update() {
+      if (window.innerWidth > 768) {
+        stickyCta.classList.remove('visible');
+        return;
+      }
+      const hero = document.getElementById('hero');
+      if (!hero) return;
+      const shouldShow = hero.getBoundingClientRect().bottom < 0;
+      if (shouldShow !== isVisible) {
+        isVisible = shouldShow;
+        stickyCta.classList.toggle('visible', isVisible);
+      }
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  })();
+</script>

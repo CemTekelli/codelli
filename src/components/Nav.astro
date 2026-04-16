@@ -1,0 +1,262 @@
+---
+import { type Lang, t, localePath } from '../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+  /** Override lang switcher URLs (e.g. for blog, articles). Keys: fr/en/nl. */
+  langUrls?: { fr?: string; en?: string; nl?: string };
+  /** If set, shows a back button in the nav bar with this href. */
+  backHref?: string;
+  /** Label for the back button (default: "Retour") */
+  backLabel?: string;
+}
+
+const { lang, langUrls, backHref, backLabel } = Astro.props;
+
+const frUrl = langUrls?.fr ?? '/';
+const nlUrl = langUrls?.nl ?? '/nl/';
+const enUrl = langUrls?.en ?? '/en/';
+
+const isSubPage = !!backHref;
+---
+
+<!-- Animated Gradient Background -->
+<div class="hero-gradient-bg" aria-hidden="true">
+  <div class="gradient-orb gradient-orb-1"></div>
+  <div class="gradient-orb gradient-orb-2"></div>
+  <div class="gradient-orb gradient-orb-3"></div>
+</div>
+
+<!-- Skip to main content -->
+<a href="#hero" class="skip-to-main">{t(lang, 'ui.skipToMain')}</a>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- Loader -->
+<div class="loader">
+  <div class="loader-logo">Codelli</div>
+</div>
+
+<!-- Full-screen nav overlay -->
+<div id="nav-overlay">
+  <button id="menu-close" aria-label={t(lang, 'nav.closeMenu')}>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M18 6L6 18M6 6l12 12" />
+    </svg>
+  </button>
+
+  <nav class="nav-links-overlay">
+    <a href={`${localePath(lang, '/')}#services`} class="nav-item">
+      <span class="nav-index">01</span>
+      <span class="nav-text">{t(lang, 'nav.services')}</span>
+    </a>
+    <a href={`${localePath(lang, '/')}#processus`} class="nav-item">
+      <span class="nav-index">02</span>
+      <span class="nav-text">{t(lang, 'nav.process')}</span>
+    </a>
+    <a href={`${localePath(lang, '/')}#about`} class="nav-item">
+      <span class="nav-index">03</span>
+      <span class="nav-text">{t(lang, 'nav.about')}</span>
+    </a>
+    <a href={`${localePath(lang, '/')}#contact`} class="nav-item">
+      <span class="nav-index">04</span>
+      <span class="nav-text">{t(lang, 'nav.contact')}</span>
+    </a>
+    <a href={localePath(lang, '/blog/')} class="nav-item">
+      <span class="nav-index">05</span>
+      <span class="nav-text">{t(lang, 'nav.blog')}</span>
+    </a>
+  </nav>
+
+  <div class="nav-overlay-footer">
+    <a href="mailto:hello@codelli.tech" class="nav-email">hello@codelli.tech</a>
+    <div class="nav-overlay-footer-right">
+      <div class="nav-lang-switcher">
+        <a href={frUrl} class={`lang-btn${lang === 'fr' ? ' active' : ''}`}>FR</a>
+        <a href={nlUrl} class={`lang-btn${lang === 'nl' ? ' active' : ''}`}>NL</a>
+        <a href={enUrl} class={`lang-btn${lang === 'en' ? ' active' : ''}`}>EN</a>
+      </div>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/company/codelli-engineering/" target="_blank" rel="noopener"
+           aria-label={t(lang, 'social.linkedin')}>Li</a>
+        <a href="https://www.instagram.com/codelli.tech/" target="_blank" rel="noopener"
+           aria-label={t(lang, 'social.instagram')}>Ig</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top navigation bar -->
+<div class={`hero-top-bar${isSubPage ? ' hero-top-bar--fixed' : ''}`}>
+  <div class="hero-logo" id="nav-logo">
+    {isSubPage
+      ? <a href={localePath(lang, '/')} class="logo-text logo-link">Codelli</a>
+      : <span class="logo-text">Codelli</span>
+    }
+  </div>
+  <div class="hero-top-right">
+    {isSubPage && (
+      <a href={backHref} class="nav-back-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M19 12H5M12 5l-7 7 7 7"/>
+        </svg>
+        {backLabel}
+      </a>
+    )}
+    <div class="lang-switcher">
+      <a href={frUrl} class={`lang-btn${lang === 'fr' ? ' active' : ''}`}>FR</a>
+      <a href={nlUrl} class={`lang-btn${lang === 'nl' ? ' active' : ''}`}>NL</a>
+      <a href={enUrl} class={`lang-btn${lang === 'en' ? ' active' : ''}`}>EN</a>
+    </div>
+    <button class="hero-menu-trigger" id="nav-trigger">
+      <span>Menu</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  // ─── LENIS + GSAP init ───────────────────────────────────────────
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
+
+  // Custom easing curves
+  if (typeof CustomEase !== 'undefined') {
+    CustomEase.create('smoothOut', '0.16, 1, 0.3, 1');
+    CustomEase.create('smoothInOut', '0.65, 0, 0.35, 1');
+  }
+
+  // Lenis smooth scroll (desktop only)
+  if (!prefersReducedMotion && !isMobile && typeof Lenis !== 'undefined') {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      infinite: false,
+      autoRaf: false,
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+    window.lenis = lenis;
+  }
+
+  // ─── CUSTOM CURSOR ───────────────────────────────────────────────
+  const cursor = document.getElementById('cursor');
+  let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
+
+  if (cursor && window.matchMedia('(hover: hover)').matches && !prefersReducedMotion) {
+    document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
+
+    gsap.ticker.add(() => {
+      cursorX += (mouseX - cursorX) * 0.15;
+      cursorY += (mouseY - cursorY) * 0.15;
+      gsap.set(cursor, { x: cursorX - 6, y: cursorY - 6 });
+    });
+
+    document.querySelectorAll('a:not(.nav-item), button, .process-step, .tech-item, input, textarea, select')
+      .forEach(el => {
+        el.addEventListener('mouseenter', () => { cursor.classList.add('hovering'); cursor.classList.remove('hovering-title', 'hovering-nav'); });
+        el.addEventListener('mouseleave', () => { cursor.classList.remove('hovering'); });
+      });
+
+    document.querySelectorAll('.service-title').forEach(t => {
+      t.addEventListener('mouseenter', () => { cursor.classList.add('hovering-title'); cursor.classList.remove('hovering', 'hovering-nav'); });
+      t.addEventListener('mouseleave', () => { cursor.classList.remove('hovering-title'); });
+    });
+
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('mouseenter', () => { cursor.classList.add('hovering-nav'); cursor.classList.remove('hovering', 'hovering-title'); });
+      item.addEventListener('mouseleave', () => { cursor.classList.remove('hovering-nav'); });
+    });
+
+    document.addEventListener('mouseleave', () => gsap.to(cursor, { opacity: 0, duration: 0.3 }));
+    document.addEventListener('mouseenter', () => gsap.to(cursor, { opacity: 1, duration: 0.3 }));
+  } else if (cursor) {
+    cursor.style.display = 'none';
+  }
+
+  // ─── NAVIGATION ─────────────────────────────────────────────────
+  const navTrigger = document.getElementById('nav-trigger');
+  const navOverlay = document.getElementById('nav-overlay');
+  const menuClose = document.getElementById('menu-close');
+  const navLogo = document.getElementById('nav-logo');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  function closeMenu() {
+    if (!navOverlay) return;
+    gsap.to('.nav-item', {
+      y: -20, opacity: 0, duration: 0.25, stagger: 0.04, ease: 'power2.in',
+      onComplete: () => {
+        navOverlay.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    });
+  }
+
+  if (navTrigger && navOverlay) {
+    navTrigger.addEventListener('click', () => {
+      navOverlay.classList.add('active');
+      document.body.classList.add('menu-open');
+
+      gsap.fromTo('.nav-item', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, stagger: 0.1, delay: 0.2, ease: 'power3.out' });
+      gsap.fromTo('#menu-close', { opacity: 0, rotate: -90, scale: 0.8 }, { opacity: 1, rotate: 0, scale: 1, duration: 0.6, delay: 0.1, ease: 'power3.out' });
+      gsap.fromTo('.nav-email', { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, delay: 0.55, ease: 'power2.out' });
+      gsap.fromTo('.nav-social a', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08, delay: 0.65, ease: 'power2.out' });
+      gsap.fromTo('.nav-lang-switcher', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.4, delay: 0.7, ease: 'power2.out' });
+    });
+  }
+
+  if (menuClose) menuClose.addEventListener('click', closeMenu);
+
+  navItems.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+      if (!href.includes('#')) {
+        closeMenu();
+        setTimeout(() => { window.location.href = href; }, 350);
+        return;
+      }
+      const hash = href.includes('#') ? '#' + href.split('#')[1] : null;
+      if (hash) {
+        e.preventDefault();
+        closeMenu();
+        setTimeout(() => {
+          const target = document.querySelector(hash);
+          if (target) {
+            if (window.lenis) window.lenis.scrollTo(target, { offset: 0, duration: 1.2 });
+            else target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 400);
+      }
+    });
+  });
+
+  if (navLogo) {
+    navLogo.addEventListener('click', () => {
+      if (window.lenis) window.lenis.scrollTo(0);
+      else window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navOverlay?.classList.contains('active')) closeMenu();
+  });
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        if (window.lenis) window.lenis.scrollTo(target, { offset: 0, duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+        else target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>

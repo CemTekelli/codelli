@@ -1,0 +1,39 @@
+---
+import { type Lang, t } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const stack = {
+  frontend: ['React', 'Next.js', 'Vue', 'TypeScript'],
+  backend:  ['Node.js', 'Python', 'GraphQL', 'REST'],
+  database: ['PostgreSQL', 'MongoDB', 'Redis', 'Supabase'],
+  cloud:    ['AWS', 'Vercel', 'Docker', 'Azure'],
+} as const;
+---
+
+<section
+  class="tech-section tech-section--minimal"
+  id="technologies"
+  aria-label={t(lang, 'tech.ariaLabel')}
+>
+  <div class="tech-container">
+    <header class="tech-header">
+      <h2 class="tech-title">{t(lang, 'tech.title')}</h2>
+    </header>
+
+    <div class="tech-grid">
+      {(Object.entries(stack) as [keyof typeof stack, readonly string[]][]).map(([cat, items]) => (
+        <div class="tech-category">
+          <span class="tech-category-name">{t(lang, `tech.categories.${cat}`)}</span>
+          <div class="tech-items">
+            {items.map((item) => <span class="tech-item">{item}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

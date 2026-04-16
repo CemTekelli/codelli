@@ -1,0 +1,36 @@
+---
+import { type Lang, t } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const items = ['1', '2', '3'] as const;
+---
+
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-container">
+    <header class="testimonials-header">
+      <h2 class="testimonials-title">{t(lang, 'testimonials.title')}</h2>
+    </header>
+
+    <div class="testimonials-stack">
+      {items.map((i) => (
+        <article class="testimonial-item">
+          <blockquote class="testimonial-quote">
+            <p>{t(lang, `testimonials.items.${i}.text`)}</p>
+          </blockquote>
+          <footer class="testimonial-footer">
+            <span class="testimonial-dash">—</span>
+            <cite class="testimonial-cite">
+              <span class="cite-name">{t(lang, `testimonials.items.${i}.name`)}</span>
+              <span class="cite-role">{t(lang, `testimonials.items.${i}.role`)}</span>
+            </cite>
+          </footer>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

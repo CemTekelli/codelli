@@ -1,0 +1,33 @@
+---
+import { type Lang, t } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const steps = ['discovery', 'design', 'build', 'launch'] as const;
+const indices = ['01', '02', '03', '04'];
+---
+
+<section class="process-section" id="processus">
+  <div class="process-container">
+    <header class="process-header">
+      <h2 class="process-title">{t(lang, 'process.title')}</h2>
+    </header>
+
+    <div class="process-steps">
+      {steps.map((step, i) => (
+        <div class="process-step">
+          <span class="step-index">{indices[i]}</span>
+          <div class="step-content">
+            <h3 class="step-name">{t(lang, `process.steps.${step}.name`)}</h3>
+            <p class="step-desc">{t(lang, `process.steps.${step}.desc`)}</p>
+          </div>
+          <span class="step-duration">{t(lang, `process.steps.${step}.duration`)}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

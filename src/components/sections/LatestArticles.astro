@@ -1,0 +1,59 @@
+---
+import { type Lang, t, localePath } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+// Slugs par langue — les articles EN/NL ont un suffixe de langue dans leur URL
+const suffix = lang === 'fr' ? '' : `-${lang}`;
+const articles = [
+  {
+    num: '01',
+    tagKey: 'blog.article1.tag',
+    titleKey: 'blog.article1.title',
+    descKey: 'blog.article1.desc',
+    slug: `integrer-chatbot-ia-pme-belgique${suffix}`,
+  },
+  {
+    num: '02',
+    tagKey: 'blog.article2.tag',
+    titleKey: 'blog.article2.title',
+    descKey: 'blog.article2.desc',
+    slug: `fastapi-vs-nodejs-mvp-2026${suffix}`,
+  },
+];
+---
+
+<section class="latest-articles-section" id="blog" aria-label={t(lang, 'blog.title')}>
+  <div class="latest-articles-container">
+    <header class="latest-articles-header">
+      <span class="latest-articles-label">{t(lang, 'blog.label')}</span>
+      <div class="latest-articles-title-row">
+        <h2 class="latest-articles-title">{t(lang, 'blog.title')}</h2>
+        <a href={localePath(lang, '/blog/')} class="latest-articles-all">
+          {t(lang, 'blog.viewAll')}
+        </a>
+      </div>
+    </header>
+
+    <div class="latest-articles-list">
+      {articles.map((article) => (
+        <a
+          href={localePath(lang, `/blog/${article.slug}`)}
+          class="latest-article-row fade-in"
+        >
+          <span class="latest-article-num">{article.num}</span>
+          <div class="latest-article-body">
+            <span class="latest-article-tag">{t(lang, article.tagKey)}</span>
+            <h3 class="latest-article-title">{t(lang, article.titleKey)}</h3>
+            <p class="latest-article-desc">{t(lang, article.descKey)}</p>
+          </div>
+          <span class="latest-article-arrow">→</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

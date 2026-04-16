@@ -1,0 +1,210 @@
+---
+import { type Lang, HTML_LANG, getLangFromUrl, getTranslations, localePath } from '../i18n/utils';
+
+export interface Props {
+  lang?: Lang;
+  /** Override page title */
+  title?: string;
+  /** Override meta description */
+  description?: string;
+  /** Canonical URL path, e.g. "/" or "/blog/mon-article" */
+  canonical?: string;
+  /** OG image URL (absolute) */
+  ogImage?: string;
+  /** Additional <head> content passed via named slot */
+  bodyClass?: string;
+  /**
+   * Override hreflang alternate URLs — use for pages where slug differs per lang (blog articles).
+   * Keys: 'fr' | 'en' | 'nl'. Omitted langs are excluded from alternates.
+   */
+  hreflangUrls?: Partial<Record<Lang, string>>;
+}
+
+const {
+  lang = getLangFromUrl(Astro.url),
+  title,
+  description,
+  canonical,
+  ogImage = 'https://codelli.tech/og-image.jpg',
+  bodyClass = 'loading',
+  hreflangUrls,
+} = Astro.props;
+
+const tr = getTranslations(lang);
+const meta = tr.meta ?? {};
+
+const pageTitle      = title       ?? meta.title       ?? 'Codelli — Studio Digital IA à Bruxelles';
+const pageDesc       = description ?? meta.description ?? 'Studio digital IA fondé par Cem Tekelli à Bruxelles.';
+const pageKeywords   = meta.keywords ?? '';
+const ogTitle        = meta.og?.title   ?? pageTitle;
+const ogDesc         = meta.og?.description ?? pageDesc;
+const twitterTitle   = meta.twitter?.title  ?? ogTitle;
+const twitterDesc    = meta.twitter?.description ?? ogDesc;
+
+const siteUrl        = 'https://codelli.tech';
+const canonicalHref  = canonical ? `${siteUrl}${canonical}` : `${siteUrl}${Astro.url.pathname}`;
+
+// OG locale — dynamic per language
+const ogLocale = lang === 'nl' ? 'nl_BE' : lang === 'en' ? 'en' : 'fr_BE';
+const ogLocaleAlternates = (['fr_BE', 'nl_BE', 'en'] as const).filter(l => l !== ogLocale);
+
+// Hreflang alternates
+const hreflangAlternates = (() => {
+  if (hreflangUrls) {
+    // Per-article override: only emit alternates for langs that exist
+    const entries: { hreflang: string; href: string }[] = [];
+    if (hreflangUrls.fr) {
+      const href = `${siteUrl}${hreflangUrls.fr}`;
+      entries.push({ hreflang: 'fr', href }, { hreflang: 'fr-BE', href }, { hreflang: 'fr-FR', href }, { hreflang: 'fr-LU', href });
+    }
+    if (hreflangUrls.nl) {
+      const href = `${siteUrl}${hreflangUrls.nl}`;
+      entries.push({ hreflang: 'nl', href }, { hreflang: 'nl-BE', href }, { hreflang: 'nl-NL', href });
+    }
+    if (hreflangUrls.en) {
+      entries.push({ hreflang: 'en', href: `${siteUrl}${hreflangUrls.en}` });
+    }
+    // x-default = FR if available, else first available
+    const xDefault = hreflangUrls.fr ?? hreflangUrls.en ?? hreflangUrls.nl;
+    if (xDefault) entries.push({ hreflang: 'x-default', href: `${siteUrl}${xDefault}` });
+    return entries;
+  }
+  // Generic: same path structure across all langs
+  const p = (() => {
+    const raw = Astro.url.pathname;
+    if (raw.startsWith('/en')) return raw.slice(3) || '/';
+    if (raw.startsWith('/nl')) return raw.slice(3) || '/';
+    return raw;
+  })();
+  return [
+    { hreflang: 'fr',       href: `${siteUrl}${p}` },
+    { hreflang: 'fr-BE',    href: `${siteUrl}${p}` },
+    { hreflang: 'fr-FR',    href: `${siteUrl}${p}` },
+    { hreflang: 'fr-LU',    href: `${siteUrl}${p}` },
+    { hreflang: 'nl',       href: `${siteUrl}/nl${p}` },
+    { hreflang: 'nl-BE',    href: `${siteUrl}/nl${p}` },
+    { hreflang: 'nl-NL',    href: `${siteUrl}/nl${p}` },
+    { hreflang: 'en',       href: `${siteUrl}/en${p}` },
+    { hreflang: 'x-default',href: `${siteUrl}${p}` },
+  ];
+})();
+---
+
+<!doctype html>
+<html lang={HTML_LANG[lang]}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDesc} />
+  {pageKeywords && <meta name="keywords" content={pageKeywords} />}
+  <meta name="author" content="Cem Tekelli" />
+  <meta name="creator" content="Cem Tekelli — Codelli" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0F0F0F" />
+  <link rel="canonical" href={canonicalHref} />
+
+  <!-- Hreflang -->
+  {hreflangAlternates.map(({ hreflang, href }) => (
+    <link rel="alternate" hreflang={hreflang} href={href} />
+  ))}
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalHref} />
+  <meta property="og:title" content={ogTitle} />
+  <meta property="og:description" content={ogDesc} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:locale" content={ogLocale} />
+  {ogLocaleAlternates.map(alt => <meta property="og:locale:alternate" content={alt} />)}
+  <meta property="og:site_name" content="Codelli" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={canonicalHref} />
+  <meta property="twitter:title" content={twitterTitle} />
+  <meta property="twitter:description" content={twitterDesc} />
+  <meta property="twitter:image" content={ogImage} />
+
+  <!-- Schema.org (slot for page-specific JSON-LD) -->
+  <slot name="schema" />
+
+  <!-- Google Fonts (non-blocking via JS swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script is:inline>
+    (function(){
+      function loadFont(href){
+        var l=document.createElement('link');
+        l.rel='stylesheet';l.href=href;
+        document.head.appendChild(l);
+      }
+      if(document.readyState==='loading'){
+        document.addEventListener('DOMContentLoaded',function(){
+          loadFont('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+          loadFont('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap');
+        });
+      } else {
+        loadFont('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+        loadFont('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap');
+      }
+    })();
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" />
+  </noscript>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="/styles/global.css" />
+
+  <!-- Extra head content from pages -->
+  <slot name="head" />
+
+  <!-- Google Tag Manager -->
+  <script is:inline>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N6J49WQW');
+  </script>
+
+  <!-- Calendly click tracking helper -->
+  <script is:inline>
+    function trackCalendlyClick(source) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'calendly_click',
+        'event_category': 'conversion',
+        'event_label': source || 'unknown'
+      });
+    }
+  </script>
+</head>
+
+<body class={bodyClass}>
+  <!-- GTM noscript -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6J49WQW"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- Page content -->
+  <slot />
+
+  <!-- GSAP + ScrollTrigger + CustomEase (vendor bundle) -->
+  <script is:inline src="/vendor/gsap.bundle.min.js"></script>
+  <!-- Lenis Smooth Scroll -->
+  <script is:inline src="/vendor/lenis.min.js"></script>
+  <!-- Main animation engine -->
+  <script is:inline src="/scripts/main.js"></script>
+</body>
+</html>

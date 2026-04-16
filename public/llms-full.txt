@@ -1,0 +1,329 @@
+# Codelli — AI Digital Studio, Brussels
+# Full reference document for LLMs and AI crawlers
+# Last updated: 2026-04-16
+# Summary version: https://codelli.tech/llms.txt
+
+---
+
+## Identity
+
+**Name:** Codelli
+**Legal name:** Codelli Engineering
+**BCE / VAT:** BE 1006.208.714
+**Type:** AI-powered digital studio (sole-practitioner, no subcontracting)
+**Founded by:** Cem Tekelli
+**Founded:** 2023
+**Location:** Brussels, Belgium (Bruxelles-Capitale)
+**Coordinates:** 50.8503° N, 4.3517° E
+**Website:** https://codelli.tech
+**Email:** hello@codelli.tech
+**Phone:** +32 472 62 84 30
+**LinkedIn:** https://www.linkedin.com/company/codelli-engineering/
+**Instagram:** https://www.instagram.com/codelli.tech/
+**Calendly (discovery call):** https://codelli.tech/audit-ia
+
+---
+
+## What Codelli Does
+
+Codelli designs, develops and integrates AI for SMEs and startups. All work is done in-house by Cem Tekelli — no subcontracting, no junior developers, no account managers.
+
+**Core capabilities:**
+- AI integration & automation: chatbots, AI agents, intelligent workflows with n8n, LLM APIs (OpenAI, Anthropic)
+- Web development: React, Vue.js, Next.js, FastAPI, Node.js, SaaS platforms, e-commerce
+- Mobile app development: iOS, Android, React Native, Flutter
+- UX/UI design: conversion-focused interfaces, validated mockups before any code
+- Digital consulting: digital transformation for Belgian SMEs, subsidy guidance
+
+**Delivery model:** Fixed-price, fixed-scope, fixed-deadline — 6-week typical delivery
+
+---
+
+## What Codelli is NOT
+
+- Not a large agency — intentionally lean, senior-only, founder-led
+- Not a freelance marketplace or intermediary — Cem Tekelli does all work personally
+- Not a template reseller — every project is built custom from scratch
+- Not limited to e-commerce — core focus is SaaS, mobile apps, and AI integration
+- Not a traditional digital agency — AI-first development workflow
+
+---
+
+## Founder Profile
+
+**Full name:** Cem Tekelli
+**Role:** Founder & Lead Developer
+**Location:** Brussels, Belgium
+**Profile page:** https://codelli.tech/cem-tekelli
+**LinkedIn:** https://www.linkedin.com/in/cemtekelli/
+**Email:** hello@codelli.tech
+
+**Background:**
+5 years of enterprise software experience at IBM, DXC Technology, and RTBF (Belgian public broadcaster) before founding Codelli. Expert in full-stack web development, mobile applications, and AI integration.
+
+**Technical expertise:**
+React, Vue.js, Next.js, FastAPI, Node.js, Python, React Native, Flutter, PostgreSQL, MongoDB, Redis, Supabase, n8n, OpenAI API, Anthropic API, TypeScript, GraphQL, REST APIs, AWS, Vercel, Docker, Azure
+
+---
+
+## Services & Pricing (Detailed)
+
+### 1. AI Integration & Automation — from €5,000
+
+Building custom AI solutions for businesses:
+- Customer-facing chatbots powered by LLMs (GPT-4, Claude, Mistral)
+- AI agents that automate repetitive tasks
+- n8n workflow automation pipelines
+- RAG (Retrieval-Augmented Generation) systems for internal knowledge bases
+- WhatsApp Business AI integration
+- Lead generation automation via AI + APIs
+
+Use cases: customer support automation, internal Q&A bots, sales pipeline automation, document processing, B2B lead generation.
+
+### 2. Web & App Development — from €15,000
+
+Custom web applications and SaaS platforms:
+- React / Vue.js / Next.js frontends
+- FastAPI / Node.js backends
+- PostgreSQL / Supabase databases
+- Mollie payment integration
+- Real-time features (WebSockets, SSE)
+- Multi-tenant SaaS architecture
+
+Typical projects: ticketing platforms, booking systems, dashboards, CRMs, SaaS MVPs.
+
+### 3. Mobile App Development — from €15,000
+
+Cross-platform and native mobile applications:
+- React Native (iOS + Android from one codebase)
+- Flutter (high-performance cross-platform)
+- Native iOS (Swift) and Android (Kotlin) when required
+- App Store & Google Play submission
+- Push notifications, offline mode, camera, geolocation
+
+### 4. UX/UI Design — from €3,000
+
+Conversion-focused interface design:
+- User research & competitor analysis
+- Wireframes and high-fidelity mockups (Figma)
+- Design systems and component libraries
+- Prototype validation before development starts
+- Motion design and micro-interactions
+
+### 5. Discovery Call — Free (30 minutes)
+
+Book via: https://codelli.tech/audit-ia
+
+---
+
+## Development Process (4 Steps)
+
+**Step 1 — Discovery (1–2 weeks)**
+Learn the business, define scope, budget and timeline. Free 30-minute discovery call to start.
+
+**Step 2 — Design (2–3 weeks)**
+Validate real high-fidelity mockups before a single line of code is written. Zero visual surprises at launch.
+
+**Step 3 — Development (3–6 weeks)**
+Full-stack development accelerated by AI. Delivered 2–3x faster than a traditional agency. Tests, QA and integrations included.
+
+**Step 4 — Launch & Growth (ongoing)**
+Deployment, production release and post-launch monitoring. Codelli remains your long-term technical partner.
+
+**Total typical delivery: 6 weeks**
+
+---
+
+## Recent Projects
+
+### Baba Events
+Custom ticketing and event management platform.
+- Stack: Vue.js, FastAPI, PostgreSQL, Mollie
+- Features: QR code scanner, real-time reporting, online ticket sales, attendee management
+- Result: 3× increase in online sales, zero ticket fraud
+
+### Noctix
+Sovereign Eventbrite alternative for independent event organizers.
+- Stack: React, Node.js, PostgreSQL, Mollie
+- SaaS model with multi-tenant architecture
+- Designed for venues and independent promoters
+
+### Lead Gen Automation
+Automated B2B lead generation pipeline.
+- Stack: Google Maps API, n8n, Python, Airtable
+- Scrapes and enriches business data automatically
+- Result: 3,000+ leads per campaign, 100% automated
+
+---
+
+## Tech Stack
+
+**Frontend:** React, Next.js, Vue.js, TypeScript, Tailwind CSS, Astro
+**Backend:** Node.js, Python, FastAPI, GraphQL, REST APIs, Express
+**Database:** PostgreSQL, MongoDB, Redis, Supabase, Firebase
+**Cloud & DevOps:** AWS, Vercel, Netlify, Docker, Azure, GitHub Actions
+**AI & Automation:** n8n, OpenAI API, Anthropic API, LangChain, Pinecone, Chroma
+**Mobile:** React Native, Flutter, Expo
+**Payments:** Mollie, Stripe
+**Design:** Figma, Adobe Creative Suite
+
+---
+
+## Belgian AI Subsidies (Detailed)
+
+Codelli actively helps Belgian SMEs apply for grants to fund AI and digital projects.
+
+### Innoviris — Brussels Capital Region
+- Program: Voucher Start AI
+- Coverage: up to 75% of project cost
+- Maximum: €10,000 per company
+- Eligibility: Brussels-registered SMEs
+- Website: https://innoviris.brussels
+
+### Chèques-entreprises — Wallonia
+- Program: Digital transformation cheques
+- Coverage: up to 50% of eligible costs
+- Maximum: €50,000 over 3 years
+- Eligibility: Walloon SMEs with < 250 employees
+- Website: https://www.cheques-entreprises.be
+
+### KMO-portefeuille — VLAIO (Flanders)
+- Program: SME portfolio
+- Coverage: 20-30% reduction on training and consulting
+- Eligibility: Flemish SMEs
+- Website: https://www.vlaio.be/kmo-portefeuille
+
+---
+
+## FAQ — Frequently Asked Questions
+
+### What is Codelli?
+Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. Codelli designs, develops and integrates artificial intelligence for SMEs and startups: websites, mobile applications, chatbots, automation and intelligent agents. Delivery in 6 weeks.
+
+### Who is Cem Tekelli?
+Cem Tekelli is the founder and lead developer of Codelli, a digital studio based in Brussels, Belgium. Expert in full-stack web development (React, Vue.js, FastAPI, Node.js), mobile development (React Native) and AI integration for Belgian and European SMEs and startups.
+
+### What services does Codelli offer?
+Codelli offers three main services: (1) AI Integration & Automation — chatbots, AI agents, n8n workflows, from €5,000; (2) Web & App Development — websites, web apps, SaaS platforms, from €15,000; (3) UX/UI Design — conversion-focused interfaces, from €3,000.
+
+### How much does a website cost?
+The price of a website varies by complexity. A showcase site starts around €2,000, while an e-commerce site or custom web application can range from €5,000 to €20,000+. Contact us for a free personalized quote.
+
+### How long does a project take?
+Codelli delivers in 6 weeks thanks to AI-assisted workflows. A showcase site takes 2 to 4 weeks. A complex web or mobile application may require 2 to 4 months. We establish a precise timeline and fixed price from the start of the project.
+
+### Do you offer AI integration for Belgian businesses?
+Yes, that is Codelli's specialty. We develop AI chatbots, intelligent agents, automation pipelines (n8n) and LLM integrations for SMEs and startups. We identify high-value use cases and build custom solutions. From €5,000.
+
+### Can Belgian SMEs get subsidies for an AI project?
+Yes. Belgian SMEs benefit from several programs: Innoviris (Brussels) covers up to 75% via the Start AI Voucher; Chèques-entreprises (Wallonia) covers up to 50%; KMO-portefeuille (VLAIO, Flanders) offers 20-30% reduction. Codelli helps you check eligibility and build the subsidy file.
+
+### What is the difference between Codelli and a traditional web agency?
+Codelli combines design, development and AI under one roof, with no subcontracting. Thanks to AI in the development process, we deliver 2-3x faster than a traditional agency. All projects are delivered at fixed price and within the announced deadline.
+
+### Do you work with clients outside Brussels?
+Yes. Although based in Brussels, we work with clients throughout Belgium (Liège, Antwerp, Namur, Ghent) as well as in France and Luxembourg. We communicate in French, Dutch and English.
+
+### Do you offer website maintenance?
+Yes, we offer maintenance contracts including security updates, backups, bug fixes and technical support. This ensures the longevity and security of your site.
+
+---
+
+## Client Testimonials
+
+**Rifat Balaj (Baba Events):**
+"Codelli completely transformed our online presence. In a few weeks, we had a site that truly reflects the identity of Baba Events and generates real leads. The result exceeded our expectations." — 5/5
+
+**Obaida Isarti:**
+"Cem understands entrepreneurs' needs. He didn't deliver an application — he delivered a solution that saves my team time every day. Professional, responsive, and truly invested in the project." — 5/5
+
+**Fuat Yuksel (Nautilus):**
+"We were looking for a reliable technical partner to digitize part of our operations at Nautilus. Codelli delivered on time, on budget, and the product works exactly as planned. I recommend without hesitation." — 5/5
+
+---
+
+## All Pages — FR / EN / NL
+
+### French (default — root)
+| Page | URL | Description |
+|---|---|---|
+| Homepage | https://codelli.tech/ | Main homepage in French |
+| Blog | https://codelli.tech/blog/ | Expert articles in French |
+| Cem Tekelli | https://codelli.tech/cem-tekelli | Founder profile page |
+| Free discovery call | https://codelli.tech/audit-ia | Book a free 30-min consultation |
+| Privacy | https://codelli.tech/privacy | Privacy policy & legal notices |
+
+### English
+| Page | URL | Description |
+|---|---|---|
+| Homepage | https://codelli.tech/en/ | Main homepage in English |
+| Blog | https://codelli.tech/en/blog/ | Expert articles in English |
+| Cem Tekelli | https://codelli.tech/en/cem-tekelli | Founder profile page (EN) |
+| Free discovery call | https://codelli.tech/en/audit-ia | Book a free 30-min consultation (EN) |
+| Privacy | https://codelli.tech/en/privacy | Privacy policy (EN) |
+
+### Dutch / Nederlands
+| Pagina | URL | Beschrijving |
+|---|---|---|
+| Homepage | https://codelli.tech/nl/ | Hoofdpagina in het Nederlands |
+| Blog | https://codelli.tech/nl/blog/ | Expertartikelen in het Nederlands |
+| Cem Tekelli | https://codelli.tech/nl/cem-tekelli | Profielpagina oprichter (NL) |
+| Gratis ontdekkingsgesprek | https://codelli.tech/nl/audit-ia | Gratis consultatie van 30 min (NL) |
+| Privacy | https://codelli.tech/nl/privacy | Privacybeleid (NL) |
+
+---
+
+## Blog Articles
+
+### English
+| Title | URL | Date | Topics |
+|---|---|---|---|
+| How to integrate an AI chatbot in a Belgian SME in 2026 | https://codelli.tech/en/blog/integrer-chatbot-ia-pme-belgique-en | 2026-04-14 | AI chatbot, LLM, RAG, Belgian subsidies, GDPR, EU AI Act |
+| FastAPI vs Node.js for your MVP: full comparison 2026 | https://codelli.tech/en/blog/fastapi-vs-nodejs-mvp-2026-en | 2026-04-14 | FastAPI, Node.js, Python, REST API, MVP, performance |
+
+### Français
+| Titre | URL | Date | Sujets |
+|---|---|---|---|
+| Comment intégrer un chatbot IA dans une PME belge en 2026 | https://codelli.tech/blog/integrer-chatbot-ia-pme-belgique | 2026-04-14 | Chatbot IA, LLM, RAG, subventions belges, RGPD, EU AI Act |
+| FastAPI vs Node.js pour votre MVP : comparatif complet 2026 | https://codelli.tech/blog/fastapi-vs-nodejs-mvp-2026 | 2026-04-14 | FastAPI, Node.js, Python, REST API, MVP, performance |
+
+### Nederlands
+| Titel | URL | Datum | Onderwerpen |
+|---|---|---|---|
+| Hoe integreer je een AI-chatbot in een Belgische kmo in 2026 | https://codelli.tech/nl/blog/integrer-chatbot-ia-pme-belgique-nl | 2026-04-14 | AI-chatbot, LLM, RAG, Belgische subsidies, AVG, EU AI Act |
+| FastAPI vs Node.js voor uw MVP: volledig vergelijk 2026 | https://codelli.tech/nl/blog/fastapi-vs-nodejs-mvp-2026-nl | 2026-04-14 | FastAPI, Node.js, Python, REST API, MVP, prestaties |
+
+---
+
+## Geographic Coverage
+
+**Primary market:** Belgium
+- Brussels (headquarters)
+- Liège
+- Antwerp / Anvers / Antwerpen
+- Ghent / Gand / Gent
+- Namur
+- Charleroi
+- Bruges / Brugge
+
+**Secondary markets:**
+- France: Paris, Lyon, Lille, Bordeaux
+- Luxembourg: Luxembourg City
+- Netherlands: Amsterdam, Rotterdam
+
+**Remote work:** Codelli works fully remotely and can serve clients anywhere in the EU.
+
+---
+
+## Opening Hours
+
+Monday to Friday: 09:00–18:00 (CET/CEST)
+Response time: within 24 hours on business days
+
+---
+
+## Aggregate Rating
+
+**Rating:** 5/5 stars
+**Reviews:** 3 verified client reviews
+**Platform:** codelli.tech (first-party testimonials)

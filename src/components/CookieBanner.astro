@@ -1,0 +1,81 @@
+---
+import { type Lang, t, localePath } from '../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<div
+  class="cookie-consent"
+  id="cookieConsent"
+  role="dialog"
+  aria-label={t(lang, 'cookies.ariaLabel')}
+  style="display:none;"
+>
+  <div class="cookie-consent-content">
+    <p class="cookie-consent-text">
+      {t(lang, 'cookies.text')}
+      <a href={`${localePath(lang, '/privacy')}#cookies`}>{t(lang, 'cookies.learnMore')}</a>.
+    </p>
+    <div class="cookie-consent-actions">
+      <button class="cookie-btn cookie-btn--accept" id="cookieAccept">
+        {t(lang, 'cookies.accept')}
+      </button>
+      <button class="cookie-btn cookie-btn--reject" id="cookieReject">
+        {t(lang, 'cookies.reject')}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function initCookieConsent() {
+    const banner = document.getElementById('cookieConsent');
+    const acceptBtn = document.getElementById('cookieAccept');
+    const rejectBtn = document.getElementById('cookieReject');
+    if (!banner) return;
+
+    function showBanner() {
+      banner.style.display = 'block';
+      requestAnimationFrame(() => {
+        const h = banner.offsetHeight;
+        document.documentElement.style.setProperty('--cookie-banner-height', h + 'px');
+        document.body.classList.add('cookie-visible');
+      });
+    }
+
+    function hideBanner() {
+      banner.style.opacity = '0';
+      banner.style.transition = 'opacity 0.3s ease';
+      document.body.classList.remove('cookie-visible');
+      document.documentElement.style.removeProperty('--cookie-banner-height');
+      setTimeout(() => { banner.style.display = 'none'; }, 300);
+    }
+
+    const consent = localStorage.getItem('codelli_cookie_consent');
+    if (!consent) setTimeout(showBanner, 1500);
+
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('codelli_cookie_consent', 'accepted');
+        hideBanner();
+        if (typeof gtag !== 'undefined') {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+        }
+      });
+    }
+
+    if (rejectBtn) {
+      rejectBtn.addEventListener('click', () => {
+        localStorage.setItem('codelli_cookie_consent', 'rejected');
+        hideBanner();
+        if (typeof gtag !== 'undefined') {
+          gtag('consent', 'update', { analytics_storage: 'denied' });
+        }
+      });
+    }
+  })();
+</script>

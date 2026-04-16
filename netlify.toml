@@ -1,9 +1,155 @@
+[build]
+  command   = "npm run build"
+  publish   = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# ── Redirects ──────────────────────────────────────────────────────────────────
+
+# Anciennes URLs HTML → nouvelles URLs Astro (SEO: 301 permanent)
 [[redirects]]
-  from = "/audit-ia"
-  to = "/audit-ia.html"
-  status = 200
+  from   = "/blog/integrer-chatbot-ia-pme-belgique.html"
+  to     = "/blog/integrer-chatbot-ia-pme-belgique/"
+  status = 301
+  force  = true
 
 [[redirects]]
-  from = "/privacy"
-  to = "/privacy.html"
-  status = 200
+  from   = "/en/blog/integrer-chatbot-ia-pme-belgique-en.html"
+  to     = "/en/blog/integrer-chatbot-ia-pme-belgique-en/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/nl/blog/integrer-chatbot-ia-pme-belgique-nl.html"
+  to     = "/nl/blog/integrer-chatbot-ia-pme-belgique-nl/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/fastapi-vs-nodejs-mvp-2026.html"
+  to     = "/blog/fastapi-vs-nodejs-mvp-2026/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/en/blog/fastapi-vs-nodejs-mvp-2026-en.html"
+  to     = "/en/blog/fastapi-vs-nodejs-mvp-2026-en/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/nl/blog/fastapi-vs-nodejs-mvp-2026-nl.html"
+  to     = "/nl/blog/fastapi-vs-nodejs-mvp-2026-nl/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/blog/index.html"
+  to     = "/blog/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/audit-ia.html"
+  to     = "/audit-ia/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/cem-tekelli.html"
+  to     = "/cem-tekelli/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/privacy.html"
+  to     = "/privacy/"
+  status = 301
+  force  = true
+
+# 404 fallback pour les routes inconnues
+[[redirects]]
+  from   = "/*"
+  to     = "/404.html"
+  status = 404
+
+# ── Headers de sécurité ────────────────────────────────────────────────────────
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options         = "DENY"
+    X-Content-Type-Options  = "nosniff"
+    Referrer-Policy         = "strict-origin-when-cross-origin"
+    Permissions-Policy      = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com https://api.fontshare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com; font-src 'self' https://fonts.gstatic.com https://api.fontshare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src https://www.googletagmanager.com https://calendly.com"
+
+# Cache long pour assets statiques avec hash (Astro bundle)
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache pour les assets publics
+[[headers]]
+  for = "/vendor/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/styles/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/scripts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Cache pour les images et favicons
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Sitemap et robots : pas de cache agressif
+[[headers]]
+  for = "/sitemap*.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms-full.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/.well-known/security.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

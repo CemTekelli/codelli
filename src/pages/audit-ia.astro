@@ -1,0 +1,516 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { t, localePath } from '../i18n/utils';
+import { CALENDLY_URL, CALENDLY_URL_BRANDED } from '../config';
+
+const lang = 'fr';
+const canonical = '/audit-ia';
+---
+
+<PageLayout
+  lang={lang}
+  title={t(lang, 'audit.meta.title')}
+  description={t(lang, 'audit.meta.description')}
+  canonical={canonical}
+  bodyClass=""
+  navLangUrls={{ fr: '/audit-ia', nl: '/nl/audit-ia', en: '/en/audit-ia' }}
+  navBackHref={localePath(lang, '/')}
+  navBackLabel={t(lang, 'blog.nav.back')}
+>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://codelli.tech/audit-ia#webpage",
+        "url": "https://codelli.tech/audit-ia",
+        "name": "Appel découverte gratuit — Démarrons votre projet | Codelli",
+        "description": "Réservez un appel gratuit de 30 minutes avec Codelli. Nous définissons ensemble votre projet — design, développement ou intégration IA.",
+        "isPartOf": {"@id": "https://codelli.tech/#website"},
+        "inLanguage": "fr-BE",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://codelli.tech/"},
+            {"@type": "ListItem", "position": 2, "name": "Appel découverte gratuit", "item": "https://codelli.tech/audit-ia"}
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Appel découverte gratuit — Consultation digitale",
+        "description": "Appel de 30 minutes gratuit et sans engagement avec Codelli. Analyse de votre situation, identification des opportunités digitales et plan d'action envoyé sous 24h.",
+        "provider": {"@id": "https://codelli.tech/#organization"},
+        "areaServed": [
+          {"@type": "Country", "name": "Belgique"},
+          {"@type": "Country", "name": "France"},
+          {"@type": "Country", "name": "Luxembourg"}
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "description": "Appel découverte 30 minutes — gratuit et sans engagement"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Calendly widget script -->
+  <script slot="head" type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async is:inline></script>
+
+  <div class="audit-page">
+
+    <!-- Hero -->
+    <section class="audit-hero">
+      <p class="audit-hero-overline">{t(lang, 'audit.hero.overline')}</p>
+      <h1 class="audit-hero-title">
+        <span>{t(lang, 'audit.hero.title1')}</span><br>
+        <em>{t(lang, 'audit.hero.title2')}</em>
+      </h1>
+      <div class="audit-hero-meta">
+        <div class="audit-hero-meta-item">
+          <strong>30 min</strong>
+          <span>{t(lang, 'audit.hero.meta.durationLabel')}</span>
+        </div>
+        <div class="audit-hero-meta-item">
+          <strong>{t(lang, 'audit.hero.meta.freeVal')}</strong>
+          <span>{t(lang, 'audit.hero.meta.freeLabel')}</span>
+        </div>
+        <div class="audit-hero-meta-item">
+          <strong>{t(lang, 'audit.hero.meta.planVal')}</strong>
+          <span>{t(lang, 'audit.hero.meta.planLabel')}</span>
+        </div>
+        <div class="audit-hero-meta-item">
+          <strong>{t(lang, 'audit.hero.meta.city')}</strong>
+          <span>{t(lang, 'audit.hero.meta.locationLabel')}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main grid -->
+    <div class="audit-main">
+      <!-- Left: info column -->
+      <div class="audit-info">
+
+        <!-- What you get -->
+        <div class="audit-info-section">
+          <p class="audit-info-label">{t(lang, 'audit.info.whatLabel')}</p>
+          <div class="audit-step-list">
+            <div class="audit-step">
+              <span class="audit-step-num">01</span>
+              <div class="audit-step-body">
+                <span class="audit-step-title">{t(lang, 'audit.info.step1Title')}</span>
+                <span class="audit-step-desc">{t(lang, 'audit.info.step1Desc')}</span>
+              </div>
+            </div>
+            <div class="audit-step">
+              <span class="audit-step-num">02</span>
+              <div class="audit-step-body">
+                <span class="audit-step-title">{t(lang, 'audit.info.step2Title')}</span>
+                <span class="audit-step-desc">{t(lang, 'audit.info.step2Desc')}</span>
+              </div>
+            </div>
+            <div class="audit-step">
+              <span class="audit-step-num">03</span>
+              <div class="audit-step-body">
+                <span class="audit-step-title">{t(lang, 'audit.info.step3Title')}</span>
+                <span class="audit-step-desc">{t(lang, 'audit.info.step3Desc')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- For who -->
+        <div class="audit-info-section">
+          <p class="audit-info-label">{t(lang, 'audit.info.forWhomLabel')}</p>
+          <div class="audit-step-list">
+            <div class="audit-step">
+              <span class="audit-step-num">—</span>
+              <div class="audit-step-body">
+                <span class="audit-step-desc">{t(lang, 'audit.info.forWhom1')}</span>
+              </div>
+            </div>
+            <div class="audit-step">
+              <span class="audit-step-num">—</span>
+              <div class="audit-step-body">
+                <span class="audit-step-desc">{t(lang, 'audit.info.forWhom2')}</span>
+              </div>
+            </div>
+            <div class="audit-step">
+              <span class="audit-step-num">—</span>
+              <div class="audit-step-body">
+                <span class="audit-step-desc">{t(lang, 'audit.info.forWhom3')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Belgian subsidies -->
+        <div class="audit-info-section">
+          <p class="audit-info-label">{t(lang, 'audit.info.subsidyLabel')}</p>
+          <div class="audit-subsidy-details">
+
+            <div class="audit-subsidy-region">
+              <span class="audit-subsidy-tag">{t(lang, 'audit.info.subsidy.brussels.tag')}</span>
+              <div class="audit-subsidy-body">
+                <span class="audit-subsidy-title">{t(lang, 'audit.info.subsidy.brussels.title')}</span>
+                <span class="audit-subsidy-desc" set:html={t(lang, 'audit.info.subsidy.brussels.desc')} />
+                <a href="https://www.innoviris.brussels/program/innovation-vouchers-start-ai" target="_blank" rel="noopener" class="audit-subsidy-link">
+                  {t(lang, 'audit.info.subsidy.brussels.link')}
+                </a>
+              </div>
+            </div>
+
+            <div class="audit-subsidy-region">
+              <span class="audit-subsidy-tag">{t(lang, 'audit.info.subsidy.wallonia.tag')}</span>
+              <div class="audit-subsidy-body">
+                <span class="audit-subsidy-title">{t(lang, 'audit.info.subsidy.wallonia.title')}</span>
+                <span class="audit-subsidy-desc" set:html={t(lang, 'audit.info.subsidy.wallonia.desc')} />
+                <a href="https://www.cheques-entreprises.be/cheques/maturite-numerique/" target="_blank" rel="noopener" class="audit-subsidy-link">
+                  {t(lang, 'audit.info.subsidy.wallonia.link')}
+                </a>
+              </div>
+            </div>
+
+            <div class="audit-subsidy-region">
+              <span class="audit-subsidy-tag">{t(lang, 'audit.info.subsidy.flanders.tag')}</span>
+              <div class="audit-subsidy-body">
+                <span class="audit-subsidy-title">{t(lang, 'audit.info.subsidy.flanders.title')}</span>
+                <span class="audit-subsidy-desc" set:html={t(lang, 'audit.info.subsidy.flanders.desc')} />
+                <a href="https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille" target="_blank" rel="noopener" class="audit-subsidy-link">
+                  {t(lang, 'audit.info.subsidy.flanders.link')}
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <p class="audit-subsidy-note">{t(lang, 'audit.info.subsidyNote')}</p>
+        </div>
+
+      </div>
+
+      <!-- Right: Calendly column -->
+      <div class="audit-calendly-col">
+        <p class="audit-calendly-label">{t(lang, 'audit.calendly.label')}</p>
+        <div class="audit-calendly-wrap">
+          <div
+            class="calendly-inline-widget"
+            data-url={CALENDLY_URL_BRANDED}
+            style="min-width:320px;height:660px;"
+          ></div>
+          <div class="audit-calendly-fallback" id="calendlyFallback">
+            <p class="audit-calendly-fallback-text">{t(lang, 'audit.calendly.fallbackText')}</p>
+            <a href={CALENDLY_URL} target="_blank" rel="noopener" class="audit-calendly-fallback-btn">
+              {t(lang, 'audit.calendly.fallbackBtn')}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script is:inline>
+    // Show Calendly fallback if widget fails to load
+    setTimeout(function() {
+      var w = document.querySelector('.calendly-inline-widget');
+      if (w && !w.querySelector('iframe')) {
+        document.getElementById('calendlyFallback').style.display = 'block';
+        w.style.display = 'none';
+      }
+    }, 5000);
+
+    // Track Calendly events via GTM
+    window.addEventListener('message', function(e) {
+      if (e.origin === 'https://calendly.com' && e.data.event && e.data.event.indexOf('calendly') === 0) {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'calendly_' + e.data.event.replace('calendly.', ''), { event_category: 'conversion' });
+        }
+      }
+    });
+  </script>
+</PageLayout>
+
+<style is:global>
+  /* ─── Audit page ────────────────────────────────────────────── */
+  .audit-page {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Back button bar */
+  /* Hero */
+  .audit-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 3rem 4rem;
+    text-align: center;
+  }
+
+  .audit-hero-overline {
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1.75rem;
+  }
+
+  .audit-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 5vw, 3.75rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+    margin-bottom: 2.5rem;
+  }
+
+  .audit-hero-title em {
+    font-style: normal;
+    color: var(--color-accent);
+  }
+
+  .audit-hero-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .audit-hero-meta-item {
+    padding: 1rem 2.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .audit-hero-meta-item:last-child { border-right: none; }
+
+  .audit-hero-meta-item strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 0.2rem;
+  }
+
+  /* Main grid */
+  .audit-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 3rem 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  /* Info column */
+  .audit-info { display: flex; flex-direction: column; }
+
+  .audit-info-section {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 2.5rem 0;
+  }
+
+  .audit-info-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1.75rem;
+  }
+
+  .audit-step-list { display: flex; flex-direction: column; gap: 0; }
+
+  .audit-step {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: start;
+  }
+
+  .audit-step:last-child { border-bottom: none; }
+
+  .audit-step-num {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    opacity: 0.6;
+    padding-top: 0.15rem;
+  }
+
+  .audit-step-body { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  .audit-step-title {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .audit-step-desc {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.55;
+  }
+
+  /* Subsidy rows */
+  .audit-subsidy-details { display: flex; flex-direction: column; }
+
+  .audit-subsidy-region {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: start;
+  }
+
+  .audit-subsidy-region:last-child { border-bottom: none; }
+
+  .audit-subsidy-tag {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    white-space: nowrap;
+    padding-top: 0.15rem;
+    min-width: 70px;
+  }
+
+  .audit-subsidy-body { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  .audit-subsidy-title {
+    font-family: var(--font-display);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .audit-subsidy-desc {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.55;
+  }
+
+  .audit-subsidy-link {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.25);
+    text-decoration: none;
+    transition: color 0.25s;
+    margin-top: 0.2rem;
+    display: inline-block;
+  }
+
+  .audit-subsidy-link:hover { color: rgba(255,255,255,0.6); }
+
+  .audit-subsidy-note {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.2);
+    line-height: 1.5;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 0.5rem;
+  }
+
+  /* Calendly column */
+  .audit-calendly-col {
+    position: sticky;
+    top: 6rem;
+  }
+
+  .audit-calendly-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1.25rem;
+  }
+
+  .audit-calendly-wrap {
+    border: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
+    background: rgba(255,255,255,0.02);
+  }
+
+  .audit-calendly-fallback {
+    display: none;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .audit-calendly-fallback-text {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.5rem;
+  }
+
+  .audit-calendly-fallback-btn {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0A0A0A;
+    background: var(--color-accent);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .audit-calendly-fallback-btn:hover {
+    background: #ff7d4a;
+    transform: translateY(-2px);
+  }
+
+  /* Responsive */
+  @media (max-width: 960px) {
+    .audit-main {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .audit-calendly-col { position: static; }
+  }
+
+  @media (max-width: 768px) {
+    .audit-hero { padding: 3rem 1.5rem 2.5rem; }
+    .audit-hero-meta { flex-direction: column; }
+    .audit-hero-meta-item {
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      width: 100%;
+      text-align: left;
+      padding: 1rem 0;
+    }
+    .audit-hero-meta-item:last-child { border-bottom: none; }
+  }
+</style>

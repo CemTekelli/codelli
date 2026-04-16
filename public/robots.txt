@@ -1,0 +1,44 @@
+# Robots.txt — codelli.tech
+# https://codelli.tech/robots.txt
+
+# ── All crawlers ──────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /api/
+Sitemap: https://codelli.tech/sitemap-index.xml
+
+# ── AI crawlers — explicitly allowed ─────────────────────
+
+# OpenAI
+User-agent: GPTBot              # training
+Allow: /
+User-agent: OAI-SearchBot       # ChatGPT Search index
+Allow: /
+User-agent: ChatGPT-User        # user-initiated fetch
+Allow: /
+
+# Anthropic (anthropic-ai / Claude-Web are deprecated since early 2026)
+User-agent: ClaudeBot           # training
+Allow: /
+User-agent: Claude-User         # real-time user fetch
+Allow: /
+User-agent: Claude-SearchBot    # search indexing
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google
+User-agent: Google-Extended     # Gemini & AI Overviews (correct token, no "bot")
+Allow: /
+User-agent: GoogleOther         # misc Google products
+Allow: /
+
+# Others
+User-agent: cohere-ai
+Allow: /
+User-agent: Meta-ExternalAgent  # Meta / Llama
+Allow: /
+User-agent: Applebot-Extended   # Apple Intelligence
+Allow: /

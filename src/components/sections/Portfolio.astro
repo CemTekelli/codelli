@@ -1,0 +1,127 @@
+---
+import { type Lang, t } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="portfolio-section" id="portfolio">
+  <div class="portfolio-container">
+    <header class="portfolio-header">
+      <h2 class="portfolio-title">{t(lang, 'portfolio.title')}</h2>
+    </header>
+
+    <div class="project-list">
+      <!-- Projet 1 : Baba Events -->
+      <article class="project-row">
+        <div class="project-visual">
+          <div class="mockup-baba">
+            <img
+              src="/ex1.png"
+              alt="Baba Events — backoffice commandes"
+              loading="lazy"
+              decoding="async"
+              style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;"
+            />
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-tag">{t(lang, 'portfolio.projects.1.tag')}</span>
+          </div>
+          <h3 class="project-title">{t(lang, 'portfolio.projects.1.title')}</h3>
+          <p class="project-desc">{t(lang, 'portfolio.projects.1.desc')}</p>
+          <div class="project-result">
+            <div class="project-result-item">
+              <span class="value">3×</span>
+              <span class="label">{t(lang, 'portfolio.projects.1.result1')}</span>
+            </div>
+            <div class="project-result-item">
+              <span class="value">0</span>
+              <span class="label">{t(lang, 'portfolio.projects.1.result2')}</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>Vue.js</span><span>FastAPI</span><span>PostgreSQL</span><span>Mollie</span><span>OVH</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 2 : Noctix -->
+      <article class="project-row">
+        <div class="project-visual">
+          <div class="mockup-noctix">
+            <img
+              src="/ex2.png"
+              alt="Noctix — discovery page"
+              loading="lazy"
+              decoding="async"
+              style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;"
+            />
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-tag">{t(lang, 'portfolio.projects.2.tag')}</span>
+          </div>
+          <h3 class="project-title">{t(lang, 'portfolio.projects.2.title')}</h3>
+          <p class="project-desc">{t(lang, 'portfolio.projects.2.desc')}</p>
+          <div class="project-result">
+            <div class="project-result-item">
+              <span class="value">{t(lang, 'portfolio.projects.2.value1')}</span>
+              <span class="label">{t(lang, 'portfolio.projects.2.result1')}</span>
+            </div>
+            <div class="project-result-item">
+              <span class="value">0%</span>
+              <span class="label">{t(lang, 'portfolio.projects.2.result2')}</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Mollie</span><span>OVH</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 3 : Lead Gen -->
+      <article class="project-row">
+        <div class="project-visual">
+          <div class="mockup-ex3">
+            <img
+              src="/ex3.png"
+              alt="Lead Generation — n8n Google Maps workflow"
+              loading="lazy"
+              decoding="async"
+              style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;"
+            />
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <span class="project-tag">{t(lang, 'portfolio.projects.3.tag')}</span>
+          </div>
+          <h3 class="project-title">{t(lang, 'portfolio.projects.3.title')}</h3>
+          <p class="project-desc">{t(lang, 'portfolio.projects.3.desc')}</p>
+          <div class="project-result">
+            <div class="project-result-item">
+              <span class="value">+3 000</span>
+              <span class="label">{t(lang, 'portfolio.projects.3.result1')}</span>
+            </div>
+            <div class="project-result-item">
+              <span class="value">100%</span>
+              <span class="label">{t(lang, 'portfolio.projects.3.result2')}</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>n8n</span><span>Google Maps API</span><span>Google Sheets API</span><span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

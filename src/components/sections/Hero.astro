@@ -1,0 +1,61 @@
+---
+import { type Lang, t, localePath } from '../../i18n/utils';
+import { CALENDLY_URL } from '../../config';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="hero" id="hero">
+  <!-- Ambient Particles -->
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <div class="hero-content">
+    <h1 class="hero-title" id="hero-title">
+      <span class="title-line">
+        <span class="title-line-inner">{t(lang, 'hero.line1')}</span>
+      </span>
+      <span class="title-line">
+        <span class="title-line-inner">{t(lang, 'hero.line2')}</span>
+      </span>
+      <span class="title-line title-line-accent">
+        <span class="title-line-inner">{t(lang, 'hero.line3')}</span>
+      </span>
+    </h1>
+    <div class="hero-cta-group">
+      <a
+        href={CALENDLY_URL}
+        target="_blank"
+        rel="noopener"
+        class="hero-primary-cta"
+        onclick="trackCalendlyClick('hero')"
+      >
+        {t(lang, 'hero.primaryCta')}
+      </a>
+      <a href={`${localePath(lang, '/')}#services`} class="hero-secondary-cta">
+        {t(lang, 'hero.secondaryCta')}
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Info Bar -->
+  <div class="hero-bottom-bar">
+    <div class="hero-meta">
+      <span>{t(lang, 'hero.location')}</span>
+      <span class="meta-dot">·</span>
+      <span>{t(lang, 'hero.studio')}</span>
+      <span class="meta-dot">·</span>
+      <span>{t(lang, 'hero.availability')}</span>
+    </div>
+    <a href={`${localePath(lang, '/')}#services`} class="hero-scroll-cta">
+      <span>{t(lang, 'hero.cta')}</span>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(ls -la /c/Users/Tekel/OneDrive/Bureau/codelli-astro/dist/*.xml)",
+      "Bash(find /c/Users/Tekel/OneDrive/Bureau/codelli-astro/public -type f \\\\\\( -name \"*.png\" -o -name \"*.jpg\" -o -name \"*.gif\" -o -name \"*.webp\" \\\\\\) -exec ls -lh {} \\\\;)",
+      "Bash(wc -l \"c:\\\\Users\\\\Tekel\\\\OneDrive\\\\Bureau\\\\codelli-astro\\\\src\\\\components\\\\sections\"/*.astro)",
+      "Bash(grep -r \"console\\\\\\\\.log\\\\|TODO\\\\|FIXME\\\\|DEBUG\" /c/Users/Tekel/OneDrive/Bureau/codelli-astro/src --include=\"*.astro\" --include=\"*.ts\" --include=\"*.js\")",
+      "Bash(file /c/Users/Tekel/OneDrive/Bureau/codelli-astro/public/*.png /c/Users/Tekel/OneDrive/Bureau/codelli-astro/public/*.jpg)",
+      "WebFetch(domain:support.claude.com)",
+      "WebFetch(domain:developers.openai.com)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:openai.com)"
+    ]
+  }
+}

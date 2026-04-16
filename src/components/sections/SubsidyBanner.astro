@@ -1,0 +1,27 @@
+---
+import { type Lang, t, localePath } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section
+  class="subsidy-banner"
+  id="subsides"
+  aria-label={t(lang, 'subsidy.ariaLabel')}
+>
+  <div class="subsidy-container">
+    <p class="subsidy-tag">{t(lang, 'subsidy.tag')}</p>
+    <p class="subsidy-headline">{t(lang, 'subsidy.headline')}</p>
+    <a
+      href={localePath(lang, '/audit-ia')}
+      class="subsidy-cta"
+      onclick="trackCalendlyClick('subsidy_banner')"
+    >
+      {t(lang, 'subsidy.cta')}
+    </a>
+  </div>
+</section>

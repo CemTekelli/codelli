@@ -1,0 +1,55 @@
+---
+import { type Lang, t, localePath } from '../../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="services-section" id="services">
+  <div class="services-container">
+    <header class="services-header">
+      <h2 class="services-title">{t(lang, 'services.title')}</h2>
+    </header>
+
+    <div class="services-stack">
+      <!-- Service 1 — IA (featured) -->
+      <article class="service-block service-block--featured">
+        <div class="service-block-left">
+          <h3 class="service-title">{t(lang, 'services.ai.title')}</h3>
+        </div>
+        <div class="service-block-right">
+          <span class="service-tagline">{t(lang, 'services.ai.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.ai.desc')}</p>
+          <span class="service-price">{t(lang, 'services.ai.price')}</span>
+        </div>
+      </article>
+
+      <!-- Service 2 — Produit -->
+      <article class="service-block">
+        <div class="service-block-left">
+          <h3 class="service-title">{t(lang, 'services.web.title')}</h3>
+        </div>
+        <div class="service-block-right">
+          <span class="service-tagline">{t(lang, 'services.web.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.web.desc')}</p>
+          <span class="service-price">{t(lang, 'services.web.price')}</span>
+        </div>
+      </article>
+
+      <!-- Service 3 — Design -->
+      <article class="service-block">
+        <div class="service-block-left">
+          <h3 class="service-title">{t(lang, 'services.design.title')}</h3>
+        </div>
+        <div class="service-block-right">
+          <span class="service-tagline">{t(lang, 'services.design.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.design.desc')}</p>
+          <span class="service-price">{t(lang, 'services.design.price')}</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

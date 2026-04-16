@@ -1,0 +1,79 @@
+---
+import { type Lang, t, localePath } from '../i18n/utils';
+
+export interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href={localePath(lang, '/#hero')} class="footer-logo">
+          <img src="/codelli-logo.svg" alt={t(lang, 'images.logoAlt')} class="footer-logo-img" />
+        </a>
+        <p class="footer-tagline">{t(lang, 'footer.tagline')}</p>
+        <p class="footer-address">Bruxelles, Belgique · BCE 1006.208.714</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-label">{t(lang, 'footer.navigation')}</span>
+          <div class="footer-col-links">
+            <a href={`${localePath(lang, '/')}#services`} class="footer-link">{t(lang, 'nav.services')}</a>
+            <a href={`${localePath(lang, '/')}#about`} class="footer-link">{t(lang, 'nav.about')}</a>
+            <a href={`${localePath(lang, '/')}#processus`} class="footer-link">{t(lang, 'nav.process')}</a>
+            <a href={`${localePath(lang, '/')}#contact`} class="footer-link">{t(lang, 'nav.contact')}</a>
+            <a href={localePath(lang, '/blog/')} class="footer-link">{t(lang, 'nav.blog')}</a>
+            <a href={localePath(lang, '/cem-tekelli')} class="footer-link">{t(lang, 'footer.founder')}</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-label">{t(lang, 'footer.connect')}</span>
+          <div class="footer-col-links">
+            <a href="https://www.linkedin.com/company/codelli-engineering/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="https://www.instagram.com/codelli.tech/" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+            <a href="mailto:hello@codelli.tech" class="footer-link">hello@codelli.tech</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copyright">{t(lang, 'footer.copyright')}</span>
+      <div class="footer-legal">
+        <a href={localePath(lang, '/privacy')} class="footer-legal-link">{t(lang, 'footer.privacy')}</a>
+        <a href={`${localePath(lang, '/privacy')}#mentions`} class="footer-legal-link">{t(lang, 'footer.terms')}</a>
+        <a href={`${localePath(lang, '/privacy')}#cookies`} class="footer-legal-link">{t(lang, 'footer.cookies')}</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Footer scroll animation
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
+
+  if (!prefersReducedMotion && !isMobile && typeof gsap !== 'undefined') {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+      gsap.fromTo('.footer-brand',
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, ease: 'none', scrollTrigger: { trigger: '.footer', start: 'top 95%', end: 'top 75%', scrub: 0.5 } }
+      );
+      gsap.utils.toArray('.footer-col').forEach((col) => {
+        gsap.fromTo(col,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, ease: 'none', scrollTrigger: { trigger: col, start: 'top 98%', end: 'top 85%', scrub: 0.5 } }
+        );
+      });
+    }
+  } else if (typeof gsap !== 'undefined') {
+    gsap.set('.footer-brand, .footer-col', { opacity: 1, y: 0 });
+  }
+</script>

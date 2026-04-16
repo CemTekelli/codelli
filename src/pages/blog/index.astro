@@ -1,0 +1,282 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import { t, localePath } from '../../i18n/utils';
+
+const lang = 'fr';
+const canonical = '/blog/';
+
+const allPosts = await getCollection('blog', ({ data }) => data.lang === 'fr');
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const dateFormat = new Intl.DateTimeFormat('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<PageLayout
+  lang={lang}
+  title={t(lang, 'blog.meta.title')}
+  description={t(lang, 'blog.meta.description')}
+  canonical={canonical}
+  bodyClass=""
+  navLangUrls={{ fr: '/blog/', nl: '/nl/blog/', en: '/en/blog/' }}
+  navBackHref={localePath(lang, '/')}
+  navBackLabel={t(lang, 'blog.nav.back') || 'Retour'}
+>
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://codelli.tech/blog/#blog",
+        "name": "Blog Codelli",
+        "description": "Articles d'expertise sur l'intégration IA, le développement web et mobile, et la digitalisation des PME en Belgique, France et Luxembourg.",
+        "url": "https://codelli.tech/blog/",
+        "publisher": { "@id": "https://codelli.tech/#organization" },
+        "author": { "@id": "https://codelli.tech/cem-tekelli#person" },
+        "inLanguage": ["fr-BE", "nl-BE", "en"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://codelli.tech/"},
+          {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://codelli.tech/blog/"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <div class="blog-list-page">
+    <!-- Hero -->
+    <section class="blog-list-hero">
+      <p class="blog-list-overline">{t(lang, 'blog.label')}</p>
+      <h1 class="blog-list-title">{t(lang, 'blog.title')}</h1>
+      <div class="blog-list-meta-bar">
+        <span class="blog-list-meta-item">{posts.length} articles</span>
+        <span class="blog-list-meta-item">{t(lang, 'blog.list.topics')}</span>
+        <span class="blog-list-meta-item">{t(lang, 'blog.list.by')}</span>
+      </div>
+    </section>
+
+    <!-- Articles list -->
+    <section class="blog-articles-section" aria-label={t(lang, 'blog.title')}>
+      <div class="blog-articles-list">
+        {posts.map((post, i) => (
+          <a href={`/blog/${post.id}`} class="blog-article-row">
+            <span class="blog-article-num">{String(i + 1).padStart(2, '0')}</span>
+            <div class="blog-article-content">
+              <div class="blog-article-meta">
+                <span class="blog-article-tag">{post.data.category}</span>
+                <span class="blog-article-date">{dateFormat.format(post.data.pubDate)}</span>
+                <span class="blog-article-reading">{post.data.readingTime}</span>
+              </div>
+              <h2 class="blog-article-title">{post.data.title}</h2>
+              <p class="blog-article-excerpt">{post.data.description}</p>
+            </div>
+            <span class="blog-article-cta">{t(lang, 'blog.index.readArticle')}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- Coming soon articles -->
+    <div class="blog-articles-coming-soon">
+      <div class="blog-article-row blog-article-row--soon">
+        <span class="blog-article-num">03</span>
+        <div class="blog-article-content">
+          <div class="blog-article-meta">
+            <span class="blog-article-tag">{t(lang, 'blog.index.a3tag')}</span>
+            <span class="blog-article-soon-badge">{t(lang, 'blog.index.soon')}</span>
+          </div>
+          <h2 class="blog-article-title">{t(lang, 'blog.index.a3title')}</h2>
+          <p class="blog-article-excerpt">{t(lang, 'blog.index.a3excerpt')}</p>
+        </div>
+      </div>
+      <div class="blog-article-row blog-article-row--soon">
+        <span class="blog-article-num">04</span>
+        <div class="blog-article-content">
+          <div class="blog-article-meta">
+            <span class="blog-article-tag">{t(lang, 'blog.index.a4tag')}</span>
+            <span class="blog-article-soon-badge">{t(lang, 'blog.index.soon')}</span>
+          </div>
+          <h2 class="blog-article-title">{t(lang, 'blog.index.a4title')}</h2>
+          <p class="blog-article-excerpt">{t(lang, 'blog.index.a4excerpt')}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author strip -->
+    <section class="blog-author-strip">
+      <div class="blog-author-strip-inner">
+        <div class="blog-author-info">
+          <span class="blog-author-label">{t(lang, 'blog.index.authorLabel')}</span>
+          <a href={localePath(lang, '/cem-tekelli')} class="blog-author-name">Cem Tekelli</a>
+          <p class="blog-author-role">{t(lang, 'blog.index.authorRole')}</p>
+        </div>
+        <a href={localePath(lang, '/cem-tekelli')} class="blog-author-cta">{t(lang, 'blog.index.authorCta')}</a>
+      </div>
+    </section>
+  </div>
+</PageLayout>
+
+<style is:global>
+  /* ─── Blog list page ─────────────────────────────────────────── */
+  .blog-list-page { position: relative; z-index: 2; }
+
+  /* Hero */
+  .blog-list-hero {
+    max-width: 1400px; margin: 0 auto;
+    padding: 4rem 3rem 5.5rem;
+  }
+  .blog-list-overline {
+    font-family: var(--font-display); font-size: 0.75rem; font-weight: 500;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: rgba(255,255,255,0.35); margin-bottom: 2.5rem;
+  }
+  .blog-list-title {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 11vw, 9rem);
+    font-weight: 500; line-height: 0.95;
+    letter-spacing: -0.05em; color: var(--color-text);
+    margin-bottom: 5rem;
+  }
+  .blog-list-meta-bar {
+    display: flex; align-items: center; flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem;
+  }
+  .blog-list-meta-item {
+    font-family: var(--font-sans); font-size: 0.78rem; font-weight: 500;
+    color: rgba(255,255,255,0.35); letter-spacing: 0.04em;
+    padding-right: 1.75rem; margin-right: 1.75rem;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+  .blog-list-meta-item:last-child { border-right: none; padding-right: 0; margin-right: 0; }
+
+  /* Articles list */
+  .blog-articles-section {
+    max-width: 1400px; margin: 0 auto; padding: 0 3rem 6rem;
+  }
+  .blog-articles-list {
+    display: flex; flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .blog-article-row {
+    display: grid; grid-template-columns: 4rem 1fr auto;
+    gap: 0 3rem; padding: 2.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: start; text-decoration: none; color: inherit;
+    position: relative;
+    transition: padding-left 0.4s cubic-bezier(0.16,1,0.3,1);
+  }
+  .blog-article-row::before {
+    content: ''; position: absolute;
+    left: -3rem; top: -1px; bottom: -1px;
+    width: 2px; background: var(--color-accent);
+    opacity: 0; transition: opacity 0.25s ease;
+  }
+  .blog-article-row:hover::before { opacity: 1; }
+  .blog-article-num {
+    font-family: var(--font-display); font-size: 0.72rem; font-weight: 500;
+    color: rgba(255,255,255,0.2); letter-spacing: 0.1em; padding-top: 0.3rem;
+  }
+  .blog-article-row:hover .blog-article-num { color: var(--color-accent); }
+  .blog-article-content { display: flex; flex-direction: column; gap: 0.65rem; }
+  .blog-article-meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .blog-article-tag {
+    font-family: var(--font-display); font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);
+  }
+  .blog-article-date, .blog-article-reading {
+    font-family: var(--font-sans); font-size: 0.78rem; color: rgba(255,255,255,0.25);
+  }
+  .blog-article-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2.2vw, 1.85rem); font-weight: 500;
+    color: rgba(255,255,255,0.85); letter-spacing: -0.03em; line-height: 1.1;
+    transition: color 0.25s;
+  }
+  .blog-article-row:hover .blog-article-title { color: rgba(255,255,255,1); }
+  .blog-article-excerpt {
+    font-family: var(--font-sans); font-size: 0.875rem;
+    color: rgba(255,255,255,0.35); line-height: 1.7; max-width: 60ch;
+  }
+  .blog-article-cta {
+    font-family: var(--font-display); font-size: 0.68rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.35rem 1rem; border-radius: 100px;
+    margin-top: 0.25rem; white-space: nowrap;
+    transition: border-color 0.25s, color 0.25s;
+  }
+  .blog-article-row:hover .blog-article-cta {
+    border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.45);
+  }
+
+  /* Coming soon articles */
+  .blog-articles-coming-soon {
+    max-width: 1400px; margin: 0 auto; padding: 0 3rem;
+    display: flex; flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .blog-article-row--soon {
+    opacity: 0.4; pointer-events: none;
+    display: grid; grid-template-columns: 4rem 1fr;
+    gap: 0 3rem; padding: 2.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: start;
+  }
+  .blog-article-soon-badge {
+    font-family: var(--font-display);
+    font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.2rem 0.65rem; border-radius: 100px;
+  }
+
+  /* Author strip */
+  .blog-author-strip {
+    max-width: 1400px; margin: 0 auto;
+    padding: 3rem; border-top: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 3rem;
+  }
+  .blog-author-strip-inner {
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;
+  }
+  .blog-author-info { display: flex; flex-direction: column; gap: 0.3rem; }
+  .blog-author-label {
+    font-family: var(--font-display); font-size: 0.65rem; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.35);
+  }
+  .blog-author-name {
+    font-family: var(--font-display); font-size: 1.1rem; font-weight: 500;
+    color: var(--color-text); text-decoration: none; transition: opacity 0.2s;
+  }
+  .blog-author-name:hover { opacity: 0.7; }
+  .blog-author-role { font-family: var(--font-sans); font-size: 0.82rem; color: rgba(255,255,255,0.4); }
+  .blog-author-cta {
+    font-family: var(--font-display); font-size: 0.82rem; font-weight: 500;
+    color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.6rem 1.5rem; border-radius: 100px; text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+  .blog-author-cta:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.35); }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .blog-list-hero { padding: 2.5rem 1.5rem 3rem; }
+    .blog-list-title { font-size: clamp(3rem, 12vw, 5rem); margin-bottom: 2.5rem; }
+    .blog-list-meta-bar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+    .blog-list-meta-item { border-right: none; padding-right: 0; margin-right: 0; }
+    .blog-articles-section { padding: 0 1.5rem 4rem; }
+    .blog-article-row { grid-template-columns: 2.5rem 1fr; gap: 0 1.25rem; padding: 2rem 0; }
+    .blog-article-cta { display: none; }
+    .blog-articles-coming-soon { padding: 0 1.5rem; }
+    .blog-author-strip { padding: 2.5rem 1.5rem; }
+  }
+  @media (max-width: 480px) {
+    .blog-list-title { font-size: clamp(2.5rem, 14vw, 4rem); }
+  }
+</style>

@@ -1,0 +1,175 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import FabButtons from '../../components/FabButtons.astro';
+import Hero from '../../components/sections/Hero.astro';
+import Services from '../../components/sections/Services.astro';
+import Portfolio from '../../components/sections/Portfolio.astro';
+import About from '../../components/sections/About.astro';
+import Testimonials from '../../components/sections/Testimonials.astro';
+import Process from '../../components/sections/Process.astro';
+import SubsidyBanner from '../../components/sections/SubsidyBanner.astro';
+import TechStack from '../../components/sections/TechStack.astro';
+import FAQ from '../../components/sections/FAQ.astro';
+import LatestArticles from '../../components/sections/LatestArticles.astro';
+import Contact from '../../components/sections/Contact.astro';
+
+const lang = 'nl';
+const canonical = '/nl/';
+---
+
+<PageLayout lang={lang} canonical={canonical}>
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://codelli.tech/#organization",
+        "name": "Codelli",
+        "legalName": "Codelli Engineering",
+        "description": "Codelli is een AI digitaal studio opgericht door Cem Tekelli in Brussel. Gespecialiseerd in AI-integratie, web- en mobiele ontwikkeling en UX/UI design voor kmo's en startups.",
+        "image": "https://codelli.tech/codelli-logo.svg",
+        "logo": { "@type": "ImageObject", "url": "https://codelli.tech/codelli-logo.svg", "width": 512, "height": 512 },
+        "url": "https://codelli.tech",
+        "telephone": "+32472628430",
+        "email": "hello@codelli.tech",
+        "founder": { "@id": "https://codelli.tech/#cem-tekelli" },
+        "employee": { "@id": "https://codelli.tech/#cem-tekelli" },
+        "knowsAbout": [
+          "Webontwikkeling","Mobiele app-ontwikkeling","AI-integratie",
+          "AI-automatisering","Chatbots","AI-agenten","FastAPI","Vue.js","React","Next.js","Node.js","Python",
+          "n8n","SaaS-ontwikkeling","MVP-ontwikkeling","UX/UI Design","Digitale transformatie",
+          "Startupontwikkeling","PostgreSQL","React Native","LLM-integratie"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Brussel", "addressRegion": "Brussels-Hoofdstedelijk Gewest", "addressCountry": "BE" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 50.8503, "longitude": 4.3517 },
+        "areaServed": [
+          { "@type": "Country", "name": "België" },
+          { "@type": "Country", "name": "Frankrijk" },
+          { "@type": "Country", "name": "Luxemburg" },
+          { "@type": "Country", "name": "Nederland" },
+          { "@type": "City", "name": "Brussel" },
+          { "@type": "City", "name": "Luik" },
+          { "@type": "City", "name": "Antwerpen" },
+          { "@type": "City", "name": "Namen" },
+          { "@type": "City", "name": "Gent" },
+          { "@type": "City", "name": "Parijs" },
+          { "@type": "City", "name": "Luxemburg-Stad" }
+        ],
+        "availableLanguage": [
+          { "@type": "Language", "name": "French", "alternateName": "fr" },
+          { "@type": "Language", "name": "Dutch", "alternateName": "nl" },
+          { "@type": "Language", "name": "English", "alternateName": "en" }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/codelli-engineering/",
+          "https://www.instagram.com/codelli.tech/"
+        ],
+        "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+        "priceRange": "$$-$$$",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Codelli Diensten",
+          "itemListElement": [
+            { "@type": "OfferCatalog", "name": "AI-integratie & Automatisering" },
+            { "@type": "OfferCatalog", "name": "Webontwikkeling" },
+            { "@type": "OfferCatalog", "name": "Mobiele app-ontwikkeling" },
+            { "@type": "OfferCatalog", "name": "UX/UI Design" }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://codelli.tech/#cem-tekelli",
+        "name": "Cem Tekelli",
+        "givenName": "Cem",
+        "familyName": "Tekelli",
+        "jobTitle": "Oprichter & Lead Developer",
+        "description": "Cem Tekelli is de oprichter van Codelli, een AI digitaal studio in Brussel. 5 jaar enterprise-ervaring bij IBM, DXC Technology en RTBF voordat hij Codelli oprichtte. Full-stack expert gespecialiseerd in webontwikkeling, mobiele apps en AI-integratie voor kmo's en startups.",
+        "worksFor": { "@id": "https://codelli.tech/#organization" },
+        "url": "https://codelli.tech/nl/cem-tekelli",
+        "email": "hello@codelli.tech",
+        "knowsAbout": [
+          "Webontwikkeling","Mobiele app-ontwikkeling","AI-integratie","FastAPI","Vue.js","React","Next.js",
+          "Node.js","Python","n8n Automatisering","Digitale transformatie","UX/UI Design","SaaS-ontwikkeling",
+          "MVP-ontwikkeling","PostgreSQL","React Native","LLM-integratie"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Brussel", "addressCountry": "BE" },
+        "sameAs": ["https://www.linkedin.com/in/cemtekelli/", "https://www.linkedin.com/company/codelli-engineering/"]
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://codelli.tech/nl/#process",
+        "name": "Hoe Codelli uw digitaal project levert",
+        "description": "Het ontwikkelingsproces van Codelli in 4 stappen — van ontdekking tot lancering. Levering in 6 weken.",
+        "totalTime": "PT6W",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Ontdekking (1–2 weken)", "text": "We leren uw bedrijf kennen, definiëren de scope, het budget en de planning. Een gratis ontdekkingsgesprek van 30 minuten om te beginnen.", "url": "https://codelli.tech/nl/#process" },
+          { "@type": "HowToStep", "position": 2, "name": "Design (2–3 weken)", "text": "U valideert echte high-fidelity mockups voordat er één regel code wordt geschreven. Geen visuele verrassingen bij de lancering.", "url": "https://codelli.tech/nl/#process" },
+          { "@type": "HowToStep", "position": 3, "name": "Ontwikkeling (3–6 weken)", "text": "Full-stack ontwikkeling versneld door AI. 2–3x sneller geleverd dan een traditioneel bureau. Tests, QA en integraties inbegrepen.", "url": "https://codelli.tech/nl/#process" },
+          { "@type": "HowToStep", "position": 4, "name": "Lancering & Groei (doorlopend)", "text": "Implementatie, productirelease en monitoring na de lancering. Codelli blijft uw langetermijn technische partner.", "url": "https://codelli.tech/nl/#process" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codelli.tech/nl/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Wat is Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Codelli ontwerpt, ontwikkelt en integreert kunstmatige intelligentie voor kmo's en startups: websites, mobiele applicaties, chatbots, automatisering en intelligente agenten. Levering in 6 weken." } },
+          { "@type": "Question", "name": "Wie is Cem Tekelli?", "acceptedAnswer": { "@type": "Answer", "text": "Cem Tekelli is de oprichter en lead developer van Codelli, een digitaal studio gevestigd in Brussel, België. Expert in full-stack webontwikkeling (React, Vue.js, FastAPI, Node.js), mobiele ontwikkeling (React Native) en AI-integratie voor Belgische en Europese kmo's en startups." } },
+          { "@type": "Question", "name": "Welke diensten biedt Codelli aan?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli biedt drie hoofddiensten aan: (1) AI-integratie & Automatisering — chatbots, AI-agenten, n8n workflows, vanaf €5.000; (2) Web- en App-ontwikkeling — websites, web-apps, SaaS-platforms, vanaf €15.000; (3) UX/UI Design — conversiegericht ontwerp, vanaf €3.000." } },
+          { "@type": "Question", "name": "Hoeveel kost een website?", "acceptedAnswer": { "@type": "Answer", "text": "De prijs van een website varieert naargelang de complexiteit. Een presentatiewebsite begint rond €2.000, terwijl een e-commerce of maatwerk webapplicatie kan variëren van €5.000 tot €20.000+. Neem contact op voor een gratis gepersonaliseerde offerte." } },
+          { "@type": "Question", "name": "Hoe lang duurt een project?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli levert in 6 weken dankzij AI-ondersteunde workflows. Een presentatiewebsite duurt 2 tot 4 weken. Een complexe web- of mobiele applicatie kan 2 tot 4 maanden vergen. We stellen een nauwkeurige planning en vaste prijs vast bij de start van het project." } },
+          { "@type": "Question", "name": "Kunnen Belgische kmo's subsidies krijgen voor een AI-project?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Belgische kmo's profiteren van meerdere programma's: Innoviris (Brussel) dekt tot 75% via de Start AI-voucher; Chèques-entreprises (Wallonië) dekt tot 50%; KMO-portefeuille (VLAIO, Vlaanderen) biedt 20-30% korting. Codelli helpt u uw subsidiabiliteit te controleren en het dossier samen te stellen." } },
+          { "@type": "Question", "name": "Wat maakt Codelli anders dan een traditioneel webbureau?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli combineert design, ontwikkeling en AI onder één dak, zonder uitbesteding. Dankzij AI in het ontwikkelingsproces leveren we 2-3x sneller dan een traditioneel bureau. Alle projecten worden geleverd tegen een vaste prijs en binnen de aangekondigde deadline." } }
+        ]
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-1",
+        "reviewBody": "Codelli heeft onze online aanwezigheid volledig getransformeerd. In een paar weken hadden we een site die de identiteit van Baba Events echt weerspiegelt en echte leads genereert. Het resultaat overtrof onze verwachtingen.",
+        "author": {"@type": "Person", "name": "Rifat Balaj"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-2",
+        "reviewBody": "Cem begrijpt de behoeften van ondernemers. Hij leverde geen applicatie — hij leverde een oplossing die mijn team elke dag tijd bespaart. Professioneel, responsief en echt betrokken bij het project.",
+        "author": {"@type": "Person", "name": "Obaida Isarti"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-3",
+        "reviewBody": "We zochten een betrouwbare technische partner om een deel van onze activiteiten bij Nautilus te digitaliseren. Codelli leverde op tijd, binnen het budget, en het product werkt precies zoals gepland. Ik beveel het zonder aarzeling aan.",
+        "author": {"@type": "Person", "name": "Fuat Yuksel"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://codelli.tech/#website",
+        "url": "https://codelli.tech",
+        "name": "Codelli - AI Digitaal Studio Brussel",
+        "publisher": { "@id": "https://codelli.tech/#organization" },
+        "inLanguage": ["fr-BE", "nl-BE", "en"]
+      }
+    ]
+  }
+  </script>
+
+  <Hero lang={lang} />
+  <Services lang={lang} />
+  <Portfolio lang={lang} />
+  <About lang={lang} />
+  <Testimonials lang={lang} />
+  <Process lang={lang} />
+  <SubsidyBanner lang={lang} />
+  <TechStack lang={lang} />
+  <FAQ lang={lang} />
+  <FabButtons lang={lang} />
+  <LatestArticles lang={lang} />
+  <Contact lang={lang} />
+</PageLayout>

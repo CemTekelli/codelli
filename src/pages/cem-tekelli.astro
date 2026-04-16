@@ -1,0 +1,727 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { t, localePath } from '../i18n/utils';
+import { CALENDLY_URL } from '../config';
+
+const lang = 'fr';
+const canonical = '/cem-tekelli';
+---
+
+<PageLayout
+  lang={lang}
+  title={t(lang, 'person.meta.title')}
+  description={t(lang, 'person.meta.description')}
+  canonical={canonical}
+  bodyClass=""
+  navLangUrls={{ fr: '/cem-tekelli', nl: '/nl/cem-tekelli', en: '/en/cem-tekelli' }}
+  navBackHref={localePath(lang, '/')}
+  navBackLabel={t(lang, 'person.nav.back')}
+>
+  <!-- Override og:type and add profile meta via head slot -->
+  <meta property="og:type" content="profile" slot="head" />
+  <meta property="profile:first_name" content="Cem" slot="head" />
+  <meta property="profile:last_name" content="Tekelli" slot="head" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://codelli.tech/cem-tekelli#person",
+        "name": "Cem Tekelli",
+        "givenName": "Cem",
+        "familyName": "Tekelli",
+        "jobTitle": "Founder & Lead Developer",
+        "description": "Cem Tekelli est le fondateur de Codelli, studio digital IA basé à Bruxelles. 5 ans d'expérience enterprise (IBM, DXC Technology, RTBF) avant de lancer Codelli.",
+        "url": "https://codelli.tech/cem-tekelli",
+        "image": "https://codelli.tech/cem-tekelli.jpg",
+        "email": "tekelli.cem@outlook.com",
+        "worksFor": {
+          "@type": "Organization",
+          "@id": "https://codelli.tech/#organization",
+          "name": "Codelli",
+          "url": "https://codelli.tech"
+        },
+        "knowsAbout": ["Web Development","Mobile App Development","AI Integration","FastAPI","Vue.js","React","Next.js","Node.js","Python","n8n Automation","TypeScript","GraphQL"],
+        "knowsLanguage": [
+          {"@type": "Language", "name": "French", "alternateName": "fr"},
+          {"@type": "Language", "name": "Dutch", "alternateName": "nl"},
+          {"@type": "Language", "name": "English", "alternateName": "en"}
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bruxelles",
+          "addressRegion": "Bruxelles-Capitale",
+          "addressCountry": "BE"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/cemtekelli/",
+          "https://www.linkedin.com/company/codelli-engineering/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://codelli.tech/cem-tekelli#webpage",
+        "url": "https://codelli.tech/cem-tekelli",
+        "name": "Cem Tekelli — Fondateur de Codelli | Développeur Full-Stack & Expert IA",
+        "isPartOf": {"@id": "https://codelli.tech/#website"},
+        "about": {"@id": "https://codelli.tech/cem-tekelli#person"},
+        "inLanguage": "fr-BE",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://codelli.tech/"},
+            {"@type": "ListItem", "position": 2, "name": "Cem Tekelli", "item": "https://codelli.tech/cem-tekelli"}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <div class="ct-page">
+
+    <!-- Hero -->
+    <section class="ct-hero">
+      <p class="ct-hero-overline fade-in visible">{t(lang, 'person.hero.overline')}</p>
+      <h1 class="ct-hero-name fade-in visible fade-in-delay-1">Cem Tekelli</h1>
+      <div class="ct-hero-meta-bar fade-in visible fade-in-delay-2">
+        <span class="ct-meta-item">
+          <span class="ct-meta-dot"></span>
+          <span>{t(lang, 'person.hero.location')}</span>
+        </span>
+        <span class="ct-meta-item">{t(lang, 'person.hero.speciality')}</span>
+        <span class="ct-meta-item">{t(lang, 'person.hero.experience')}</span>
+        <span class="ct-meta-item">{t(lang, 'person.hero.availability')}</span>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="ct-section fade-in" aria-labelledby="ct-bio-label">
+      <p class="ct-section-label" id="ct-bio-label">{t(lang, 'person.bio.label')}</p>
+      <p class="ct-manifesto fade-in">{t(lang, 'person.bio.manifesto')}</p>
+      <div class="ct-bio-grid fade-in">
+        <div class="ct-bio-text">
+          <p>{t(lang, 'person.bio.p1')}</p>
+          <p>{t(lang, 'person.bio.p2')}</p>
+          <p>{t(lang, 'person.bio.p3')}</p>
+          <p>{t(lang, 'person.bio.p4')}</p>
+        </div>
+        <div class="ct-avatar-wrap">
+          <div class="ct-avatar">
+            <div class="ct-avatar-placeholder" aria-label="Photo de Cem Tekelli">
+              <span class="ct-avatar-initials">CT</span>
+              <span class="ct-avatar-hint">Photo à venir</span>
+            </div>
+          </div>
+          <div class="ct-avatar-meta">
+            <div class="ct-avatar-meta-row">
+              <span class="ct-avatar-meta-key">Rôle</span>
+              <span class="ct-avatar-meta-val">Founder & Lead Dev</span>
+            </div>
+            <div class="ct-avatar-meta-row">
+              <span class="ct-avatar-meta-key">Studio</span>
+              <span class="ct-avatar-meta-val">Codelli</span>
+            </div>
+            <div class="ct-avatar-meta-row">
+              <span class="ct-avatar-meta-key">Email</span>
+              <span class="ct-avatar-meta-val">
+                <a href="mailto:tekelli.cem@outlook.com" style="color:inherit;">tekelli.cem@outlook.com</a>
+              </span>
+            </div>
+            <div class="ct-avatar-meta-row">
+              <span class="ct-avatar-meta-key">LinkedIn</span>
+              <span class="ct-avatar-meta-val">
+                <a href="https://www.linkedin.com/in/cemtekelli/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.5);">linkedin.com/in/cemtekelli →</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise technique -->
+    <section class="ct-section fade-in" aria-labelledby="ct-expertise-label">
+      <p class="ct-section-label" id="ct-expertise-label">{t(lang, 'person.expertise.label')}</p>
+      <div class="ct-expertise-stack">
+        <div class="ct-expertise-row">
+          <span class="ct-expertise-cat">{t(lang, 'person.expertise.frontend')}</span>
+          <div class="ct-expertise-tags">
+            <span class="ct-expertise-tag">React</span>
+            <span class="ct-expertise-tag">Vue.js</span>
+            <span class="ct-expertise-tag">Next.js</span>
+            <span class="ct-expertise-tag">TypeScript</span>
+            <span class="ct-expertise-tag">Tailwind</span>
+          </div>
+        </div>
+        <div class="ct-expertise-row">
+          <span class="ct-expertise-cat">{t(lang, 'person.expertise.backend')}</span>
+          <div class="ct-expertise-tags">
+            <span class="ct-expertise-tag">FastAPI</span>
+            <span class="ct-expertise-tag">Node.js</span>
+            <span class="ct-expertise-tag">Python</span>
+            <span class="ct-expertise-tag">GraphQL</span>
+            <span class="ct-expertise-tag">REST</span>
+          </div>
+        </div>
+        <div class="ct-expertise-row">
+          <span class="ct-expertise-cat">{t(lang, 'person.expertise.ai')}</span>
+          <div class="ct-expertise-tags">
+            <span class="ct-expertise-tag">n8n</span>
+            <span class="ct-expertise-tag">OpenAI API</span>
+            <span class="ct-expertise-tag">Anthropic</span>
+            <span class="ct-expertise-tag">LLM Integration</span>
+            <span class="ct-expertise-tag">RAG</span>
+          </div>
+        </div>
+        <div class="ct-expertise-row">
+          <span class="ct-expertise-cat">{t(lang, 'person.expertise.database')}</span>
+          <div class="ct-expertise-tags">
+            <span class="ct-expertise-tag">PostgreSQL</span>
+            <span class="ct-expertise-tag">MongoDB</span>
+            <span class="ct-expertise-tag">Redis</span>
+            <span class="ct-expertise-tag">Supabase</span>
+          </div>
+        </div>
+        <div class="ct-expertise-row">
+          <span class="ct-expertise-cat">{t(lang, 'person.expertise.cloud')}</span>
+          <div class="ct-expertise-tags">
+            <span class="ct-expertise-tag">AWS</span>
+            <span class="ct-expertise-tag">Vercel</span>
+            <span class="ct-expertise-tag">Docker</span>
+            <span class="ct-expertise-tag">Azure</span>
+            <span class="ct-expertise-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours enterprise -->
+    <section class="ct-section fade-in" aria-labelledby="ct-exp-label">
+      <p class="ct-section-label" id="ct-exp-label">{t(lang, 'person.experience.label')}</p>
+      <p class="ct-exp-intro fade-in">{t(lang, 'person.experience.intro')}</p>
+
+      <div class="ct-exp-rows">
+        <div class="ct-exp-row">
+          <span class="ct-exp-num">01</span>
+          <span class="ct-exp-company">IBM</span>
+          <span class="ct-exp-desc">{t(lang, 'person.experience.ibmDesc')}</span>
+        </div>
+        <div class="ct-exp-row">
+          <span class="ct-exp-num">02</span>
+          <span class="ct-exp-company">DXC Technology</span>
+          <span class="ct-exp-desc">{t(lang, 'person.experience.dxcDesc')}</span>
+        </div>
+        <div class="ct-exp-row">
+          <span class="ct-exp-num">03</span>
+          <span class="ct-exp-company">RTBF</span>
+          <span class="ct-exp-desc">{t(lang, 'person.experience.rtbfDesc')}</span>
+        </div>
+      </div>
+
+      <div class="ct-exp-bottom">
+        <div>
+          <p class="ct-exp-col-label">{t(lang, 'person.experience.sectorsLabel')}</p>
+          <div class="ct-tag-group">
+            <span class="ct-tag">Assurances</span>
+            <span class="ct-tag">Laboratoires</span>
+            <span class="ct-tag">Énergie</span>
+            <span class="ct-tag">Médias</span>
+            <span class="ct-tag">Services financiers</span>
+          </div>
+        </div>
+        <div>
+          <p class="ct-exp-col-label">{t(lang, 'person.experience.typesLabel')}</p>
+          <div class="ct-tag-group">
+            <span class="ct-tag">Modernisation applicative</span>
+            <span class="ct-tag">Développement from-scratch</span>
+            <span class="ct-tag">Intégration systèmes</span>
+            <span class="ct-tag">Transformation digitale</span>
+            <span class="ct-tag">Architecture cloud</span>
+            <span class="ct-tag">APIs &amp; microservices</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="ct-cta-block fade-in">
+      <p class="ct-cta-label">{t(lang, 'person.cta.label')}</p>
+      <h2 class="ct-cta-title">{t(lang, 'person.cta.title')}</h2>
+      <p class="ct-cta-desc">{t(lang, 'person.cta.desc')}</p>
+      <a href={CALENDLY_URL} target="_blank" rel="noopener" class="ct-cta-btn" onclick="trackCalendlyClick('cem_tekelli_cta')">
+        <span>{t(lang, 'person.cta.btn')}</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Fade-in on scroll for non-hero elements -->
+  <script is:inline>
+    (function() {
+      var els = document.querySelectorAll('.ct-page .fade-in:not(.visible)');
+      if (!els.length) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      els.forEach(function(el) { observer.observe(el); });
+    })();
+  </script>
+</PageLayout>
+
+<style is:global>
+  /* ─── Cem Tekelli page ───────────────────────────────────────── */
+
+  /* Fade-in utility for this page */
+  .ct-page .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.75s cubic-bezier(0.16,1,0.3,1), transform 0.75s cubic-bezier(0.16,1,0.3,1);
+  }
+  .ct-page .fade-in.visible { opacity: 1; transform: translateY(0); }
+  .fade-in-delay-1 { transition-delay: 0.1s; }
+  .fade-in-delay-2 { transition-delay: 0.2s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ct-page .fade-in { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* Back button */
+  /* Hero */
+  .ct-hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 3rem 4rem;
+  }
+
+  .ct-hero-overline {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 2.5rem;
+  }
+
+  .ct-hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 11vw, 9rem);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    color: var(--color-text);
+    margin-bottom: 5rem;
+  }
+
+  .ct-hero-meta-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1.5rem;
+  }
+
+  .ct-meta-item {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.04em;
+    padding-right: 1.75rem;
+    margin-right: 1.75rem;
+    border-right: 1px solid rgba(255,255,255,0.06);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .ct-meta-item:last-child { border-right: none; padding-right: 0; margin-right: 0; }
+
+  .ct-meta-dot {
+    display: inline-block;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    flex-shrink: 0;
+  }
+
+  /* Section wrapper */
+  .ct-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5.25rem 3rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .ct-section-label {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 3rem;
+  }
+
+  /* Manifesto + bio */
+  .ct-manifesto {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+    font-weight: 400;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+    max-width: 900px;
+    margin-bottom: 4rem;
+  }
+
+  .ct-bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .ct-bio-text p {
+    font-size: 0.98rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .ct-bio-text p:last-child { margin-bottom: 0; }
+
+  /* Avatar */
+  .ct-avatar-wrap {
+    position: sticky;
+    top: 6rem;
+  }
+
+  .ct-avatar {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ct-avatar-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .ct-avatar-initials {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.08);
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .ct-avatar-hint {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.05em;
+  }
+
+  .ct-avatar-meta {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .ct-avatar-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .ct-avatar-meta-row:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+
+  .ct-avatar-meta-key {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .ct-avatar-meta-val {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* Expertise */
+  .ct-expertise-stack {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .ct-expertise-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    cursor: default;
+    transition: padding-left 0.5s cubic-bezier(0.16,1,0.3,1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ct-expertise-row::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: var(--color-accent);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .ct-expertise-row:hover::before { transform: scaleY(1); }
+  .ct-expertise-row:hover { padding-left: 1.5rem; }
+
+  .ct-expertise-cat {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 500;
+    line-height: 0.9;
+    color: rgba(255,255,255,0.08);
+    letter-spacing: -0.05em;
+    transition: color 0.4s ease;
+    user-select: none;
+    flex-shrink: 0;
+  }
+
+  .ct-expertise-row:hover .ct-expertise-cat { color: rgba(255,255,255,0.75); }
+
+  .ct-expertise-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    max-width: 420px;
+    align-self: center;
+  }
+
+  .ct-expertise-tag {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 100px;
+    color: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.03);
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .ct-expertise-row:hover .ct-expertise-tag {
+    border-color: rgba(255,107,53,0.25);
+    color: rgba(255,255,255,0.75);
+  }
+
+  /* Experience */
+  .ct-exp-intro {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 3.5rem;
+  }
+
+  .ct-exp-rows {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 3rem;
+  }
+
+  .ct-exp-row {
+    display: grid;
+    grid-template-columns: 3rem 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: start;
+    position: relative;
+    cursor: default;
+  }
+
+  .ct-exp-row::before {
+    content: '';
+    position: absolute;
+    left: -3rem; top: -1px; bottom: -1px;
+    width: 2px;
+    background: var(--color-accent);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .ct-exp-row:hover::before { opacity: 1; }
+
+  .ct-exp-num {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+    padding-top: 0.2rem;
+  }
+
+  .ct-exp-company {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    transition: color 0.25s;
+  }
+
+  .ct-exp-row:hover .ct-exp-company { color: rgba(255,255,255,1); }
+
+  .ct-exp-desc {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.7;
+  }
+
+  .ct-exp-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .ct-exp-col-label {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 0.9rem;
+  }
+
+  .ct-tag-group { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+  .ct-tag {
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 100px;
+    color: rgba(255,255,255,0.55);
+    background: rgba(255,255,255,0.03);
+  }
+
+  /* CTA block */
+  .ct-cta-block {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+  }
+
+  .ct-cta-label {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 1rem;
+  }
+
+  .ct-cta-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+
+  .ct-cta-desc {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 2.5rem;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ct-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 2.25rem;
+    background: var(--color-accent);
+    color: #0A0A0A;
+    font-family: var(--font-display);
+    font-size: 0.88rem;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .ct-cta-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .ct-bio-grid { grid-template-columns: 1fr 300px; gap: 3.5rem; }
+    .ct-exp-row { grid-template-columns: 3rem 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .ct-hero { padding: 3.5rem 1.5rem 3rem; }
+    .ct-hero-name { font-size: clamp(3rem, 12vw, 5rem); margin-bottom: 2.5rem; }
+    .ct-hero-meta-bar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+    .ct-meta-item { border-right: none; padding-right: 0; margin-right: 0; }
+    .ct-section { padding: 3rem 1.5rem; }
+    .ct-manifesto { font-size: clamp(1.2rem, 4.5vw, 1.5rem); margin-bottom: 2.5rem; }
+    .ct-cta-block { padding: 4rem 1.5rem; }
+    .ct-bio-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .ct-avatar-wrap { position: static; order: -1; }
+    .ct-avatar { aspect-ratio: 1/1; max-width: 200px; }
+    .ct-expertise-cat { font-size: clamp(2rem, 8vw, 3.5rem); }
+    .ct-expertise-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .ct-expertise-tags { max-width: 100%; justify-content: flex-start; }
+    .ct-exp-row { grid-template-columns: 2rem 1fr; grid-template-rows: auto auto; gap: 0.75rem; padding: 1.5rem 0; }
+    .ct-exp-desc { grid-column: 1 / -1; }
+    .ct-exp-bottom { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+
+  @media (max-width: 480px) {
+    .ct-hero-name { font-size: clamp(2.5rem, 14vw, 4rem); }
+  }
+</style>

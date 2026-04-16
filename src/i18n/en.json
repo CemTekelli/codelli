@@ -1,0 +1,548 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Codelli - Web Agency & Mobile App Development | Brussels, Belgium",
+    "description": "Brussels-based digital agency specializing in website creation, mobile app development and digital transformation. React & Node.js experts. Free consultation.",
+    "keywords": "Cem Tekelli, Codelli, web agency brussels, web developer belgium france luxembourg netherlands, AI integration SME, mobile app development, digital studio brussels, React Vue.js FastAPI Node.js, AI automation n8n, chatbot development, startup belgium, freelance developer brussels, MVP development europe",
+    "og": {
+      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
+      "description": "Transform your digital vision with Codelli. High-performance websites, iOS/Android mobile apps and digital strategy. Based in Brussels, we support businesses across Belgium."
+    },
+    "twitter": {
+      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
+      "description": "Websites, mobile apps & digital transformation. Expert React & Node.js agency in Brussels. Discover our work and start your project today."
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "process": "Process",
+    "stack": "Stack",
+    "contact": "Contact",
+    "blog": "Blog",
+    "closeMenu": "Close menu",
+    "auditCta": "Book a free call",
+    "auditCtaShort": "Free call"
+  },
+  "hero": {
+    "line1": "We design,",
+    "line2": "build &",
+    "line3": "deliver with AI",
+    "subtitle": "Brussels-based digital studio for SMEs and startups. From idea to launch in 6 weeks — design, development, and AI under one roof.",
+    "primaryCta": "Book a free call",
+    "secondaryCta": "See our services",
+    "location": "Brussels, Belgium",
+    "studio": "AI Studio",
+    "availability": "Available Q2 2026",
+    "cta": "Explore"
+  },
+  "services": {
+    "title": "What we build for you",
+    "ai": {
+      "title": "AI",
+      "tagline": "Chatbots, automation & intelligent agents",
+      "desc": "We identify where AI creates real value in your business and build it.",
+      "price": "From €5,000"
+    },
+    "web": {
+      "title": "Product",
+      "tagline": "Web apps, mobile & platforms",
+      "desc": "Full-stack development delivered 2-3x faster with AI-powered workflows.",
+      "price": "From €15,000"
+    },
+    "design": {
+      "title": "Design",
+      "tagline": "Interfaces that convert",
+      "desc": "User experiences that look great and drive measurable business results.",
+      "price": "From €3,000"
+    }
+  },
+  "subsidy": {
+    "headline": "Belgian SME? Your project may be partially subsidised.",
+    "desc": "Depending on your region: Innoviris (Brussels), Chèques-entreprises (Wallonia) or VLAIO (Flanders) can cover part of the cost. We handle the application.",
+    "cta": "Check your eligibility →",
+    "tag": "Belgian SME",
+    "ariaLabel": "Belgian AI subsidies"
+  },
+  "about": {
+    "title": "Why companies trust Codelli",
+    "lead": "founded Codelli with one conviction: SMEs deserve the same level of digital quality as large corporations. Full-stack studio based in Brussels — design, development, and AI under one roof.",
+    "founderProfile": "View profile →",
+    "allArticles": "All articles →",
+    "values": {
+      "roof": {
+        "title": "Everything under one roof",
+        "desc": "Design + Development + AI. One team, no subcontracting, no communication gaps."
+      },
+      "ai": {
+        "title": "AI-powered delivery",
+        "desc": "We use AI in our own development process — delivering 2-3x faster than traditional agencies."
+      },
+      "price": {
+        "title": "Fixed price, no surprises",
+        "desc": "We commit to a scope, a price, and a deadline before we start. No surprises along the way."
+      },
+      "local": {
+        "title": "Brussels-based, multilingual",
+        "desc": "Local team. We speak French, English, Dutch. We understand GDPR, Belgian subsidies, and EU regulations."
+      }
+    },
+    "cta": "Book a free call"
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "items": {
+      "1": {
+        "text": "Codelli completely transformed our online presence. Within weeks, we had a site that truly reflects Baba Events' identity and generates real leads. The result exceeded our expectations.",
+        "name": "Rifat Balaj",
+        "role": "Owner, Baba Events"
+      },
+      "2": {
+        "text": "Cem understands what entrepreneurs need. He didn't just deliver an app — he delivered a solution that saves my team time every single day. Professional, responsive, and genuinely invested in the project.",
+        "name": "Obaida Isarti",
+        "role": "Owner, Obimi Developments"
+      },
+      "3": {
+        "text": "We were looking for a reliable technical partner to digitise part of our operations at Nautilus. Codelli delivered on time, on budget, and the product works exactly as planned. I recommend them without hesitation.",
+        "name": "Fuat Yuksel",
+        "role": "Managing Director, Nautilus"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Results we've delivered",
+    "subtitle": "Selected projects we're proud of",
+    "tags": {
+      "web": "Web App",
+      "mobile": "Mobile App",
+      "strategy": "Strategy"
+    },
+    "projects": {
+      "1": {
+        "tag": "Ticketing platform",
+        "title": "Baba Events",
+        "desc": "Full-featured ticketing platform with a custom backoffice — event management, integrated QR scanner, online payments via Mollie, and real-time reporting. Built for a Brussels-based event organiser.",
+        "result1": "increase in online sales",
+        "result2": "ticket fraud"
+      },
+      "2": {
+        "tag": "SaaS Platform",
+        "title": "Noctix",
+        "desc": "A sovereign alternative to Eventbrite for independent organisers — ticketing, capacity management, integrated Mollie payments and detailed analytics, with zero commission on sales.",
+        "value1": "In progress",
+        "result1": "in development",
+        "result2": "commission on sales"
+      },
+      "3": {
+        "tag": "n8n Automation",
+        "title": "Lead Gen — Google Maps",
+        "desc": "Fully automated B2B lead generation pipeline — business data extraction via the Google Maps Places API, driven by configurable zip codes and business categories stored in Google Sheets. Results enriched in real time: name, phone, website, GPS coordinates, rating and customer reviews.",
+        "result1": "leads collected per campaign",
+        "result2": "zero manual intervention"
+      }
+    },
+    "cta": "Book a free call"
+  },
+  "process": {
+    "title": "How we deliver",
+    "steps": {
+      "discovery": {
+        "name": "Discovery",
+        "duration": "1–2 wks",
+        "desc": "We learn your business and define scope, budget, and timeline."
+      },
+      "design": {
+        "name": "Design",
+        "duration": "2–3 wks",
+        "desc": "You validate real mockups before a single line of code is written."
+      },
+      "build": {
+        "name": "Build",
+        "duration": "3–6 wks",
+        "desc": "AI-accelerated development. Delivered 2–3x faster than a traditional agency."
+      },
+      "launch": {
+        "name": "Launch & Grow",
+        "duration": "Ongoing",
+        "desc": "We deploy, then stay as your long-term technical partner."
+      }
+    }
+  },
+  "tech": {
+    "title": "Stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloud": "Cloud"
+    },
+    "ariaLabel": "Technical stack"
+  },
+  "contact": {
+    "title": "Let's build something smart",
+    "calendlyLabel": "Quick start",
+    "calendlyTitle": "Book a free call — 30 minutes, no commitment",
+    "calendlyDesc": "We discuss your project, your needs, and define the next steps together.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company (optional)",
+      "message": "Tell us about your project...",
+      "submit": "Send message",
+      "notify": {
+        "validationError": "Please fix the errors in the form.",
+        "sending": "Sending...",
+        "success": "Message sent successfully! We'll get back to you within 24h."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "AI Digital Studio — Brussels",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "copyright": "© 2026 Codelli. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Legal Notice",
+    "cookies": "Cookies",
+    "ctaText": "Ready to start your project?",
+    "founder": "Cem Tekelli"
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Latest articles",
+    "viewAll": "All articles →",
+    "meta": {
+      "title": "Codelli Blog — AI, Web Development & SME Digitalisation",
+      "description": "Expert articles on AI integration, web and mobile development, and SME digitalisation in Belgium, France and Luxembourg."
+    },
+    "nav": {
+      "back": "Back to site",
+      "backBlog": "Back to blog",
+      "updated": "Updated"
+    },
+    "list": {
+      "topics": "AI · Dev · Digitalisation",
+      "by": "By Cem Tekelli"
+    },
+    "index": {
+      "overline": "Expert articles by Cem Tekelli",
+      "meta1": "AI & Automation",
+      "meta2": "Web development",
+      "meta3": "SME digitalisation",
+      "meta4": "Belgium · France · Luxembourg",
+      "readArticle": "Read article",
+      "soon": "Coming soon",
+      "authorLabel": "Author",
+      "authorCta": "View profile →",
+      "authorRole": "Founder of Codelli",
+      "a1tag": "Artificial Intelligence",
+      "a1date": "14 April 2026",
+      "a1title": "How to integrate an AI chatbot in a Belgian SME in 2026",
+      "a1excerpt": "Concrete steps, real costs, deployment timelines and available grants (Chèques-entreprises, Innoviris, VLAIO). Everything they don't usually tell you.",
+      "a2tag": "Development",
+      "a2date": "14 April 2026",
+      "a2title": "FastAPI vs Node.js for your MVP: full comparison 2026",
+      "a2excerpt": "Performance, DX, scalability, team cost — an honest analysis to choose the right backend for your project, timeline and constraints.",
+      "a3tag": "Funding",
+      "a3title": "Belgian AI grants: complete guide Innoviris, Chèques-entreprises & VLAIO 2026",
+      "a3excerpt": "The definitive guide to funding your digitalisation project in Belgium according to your region and sector.",
+      "a4tag": "Mobile",
+      "a4title": "React Native in 2026: what agencies don't say before signing",
+      "a4excerpt": "Performance, limitations, hidden costs and real use cases — to make an informed decision before launching your mobile app."
+    },
+    "article1": {
+      "tag": "AI · SME",
+      "title": "Integrating an AI chatbot in your Belgian SME",
+      "desc": "Practical guide to choosing, deploying and making an AI chatbot profitable — with Belgian subsidies."
+    },
+    "article2": {
+      "tag": "Dev · Backend",
+      "title": "FastAPI vs Node.js for your MVP in 2026",
+      "desc": "Technical and business comparison to choose the right backend for your stack, timeline and budget."
+    }
+  },
+  "ui": {
+    "scrollToTop": "Back to top",
+    "contactFab": "Book a free call",
+    "skipToMain": "Skip to main content",
+    "bookAudit": "Book a free call",
+    "bookCall": "Book a free call"
+  },
+  "cookies": {
+    "text": "We use cookies to improve your experience and analyze traffic.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "reject": "Decline",
+    "ariaLabel": "Cookie consent"
+  },
+  "images": {
+    "logoAlt": "Codelli - Web Agency & Mobile Development in Brussels, Belgium"
+  },
+  "social": {
+    "linkedin": "Visit our LinkedIn page",
+    "instagram": "Follow us on Instagram"
+  },
+  "audit": {
+    "meta": {
+      "title": "Free Discovery Call — Let's Start Your Project | Codelli",
+      "description": "Book a free 30-minute call with Codelli. We define your project together — design, development or AI integration. Digital studio in Brussels."
+    },
+    "nav": {
+      "back": "Back to site"
+    },
+    "hero": {
+      "overline": "Discovery Call · Free · No commitment",
+      "title1": "Let's start",
+      "title2": "your project together",
+      "meta": {
+        "durationLabel": "Video call",
+        "freeVal": "Free",
+        "freeLabel": "No commitment",
+        "planVal": "Action plan",
+        "planLabel": "Sent within 24h",
+        "locationLabel": "Local team",
+          "city": "Brussels"
+      }
+    },
+    "info": {
+      "whatLabel": "What you get",
+      "step1Title": "A clear analysis of your situation",
+      "step1Desc": "We understand your business, constraints and objectives — no generic questions.",
+      "step2Title": "Concrete opportunities identified",
+      "step2Desc": "Design, development, AI — we identify what has the most impact for your business.",
+      "step3Title": "A written action plan",
+      "step3Desc": "Scope, estimated budget, next steps — sent by email within 24h.",
+      "forWhomLabel": "Who it's for",
+      "forWhom1": "SMEs and startups with 5 to 100 employees in Belgium, France or Luxembourg.",
+      "forWhom2": "Founders who want a website, an app or an AI integration — and don't know where to start.",
+      "forWhom3": "Companies looking for concrete answers, not PowerPoint presentations.",
+      "subsidyLabel": "Belgian subsidies — SMEs",
+      "subsidy": {
+        "brussels": {
+          "tag": "Brussels",
+          "title": "Innoviris — Start AI Voucher",
+          "desc": "Up to <strong>€10,000</strong>, covering <strong>75%</strong> of AI study costs for Brussels SMEs. Led by an approved expertise centre.",
+          "link": "innoviris.brussels →"
+        },
+        "wallonia": {
+          "tag": "Wallonia",
+          "title": "Chèques-entreprises — Digital Maturity",
+          "desc": "Up to <strong>€50,000 excl. VAT</strong> over 3 years, with a <strong>50%</strong> intervention rate. Electronic portfolio of €200,000 over 3 years (max. €100,000/year).",
+          "link": "cheques-entreprises.be →"
+        },
+        "flanders": {
+          "tag": "Flanders",
+          "title": "VLAIO — SME Portfolio",
+          "desc": "<strong>20 to 30%</strong> discount on digitisation training. Since February 2026, digital consulting is no longer subsidised (except cybersecurity: 35–45%). Digital investment deduction available.",
+          "link": "vlaio.be →"
+        }
+      },
+      "subsidyNote": "Programmes change regularly. Amounts and conditions are those in effect at the time of publication. We help you verify your eligibility during the call."
+    },
+    "calendly": {
+      "label": "Choose your time slot",
+      "fallbackText": "Book directly",
+      "fallbackBtn": "Pick a time slot"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussels, Belgium · BCE 1006.208.714",
+      "home": "Home",
+      "privacy": "Privacy"
+    },
+    "cookies": {
+      "text": "We use cookies to improve your experience.",
+      "learnMore": "Learn more",
+      "accept": "Accept",
+      "reject": "Decline"
+    }
+  },
+  "person": {
+    "meta": {
+      "title": "Cem Tekelli — Founder of Codelli | Full-Stack Developer & AI Expert",
+      "description": "Cem Tekelli is the founder of Codelli, an AI digital studio based in Brussels. Expert full-stack developer specializing in React, Vue.js, FastAPI, Node.js and AI integration for SMEs and startups across Belgium, France, Luxembourg and the Netherlands."
+    },
+    "nav": { "back": "Back to site" },
+    "hero": {
+      "overline": "Founder of Codelli · Full-Stack Developer · AI Expert",
+      "location": "Brussels, Belgium",
+      "speciality": "Full-Stack & AI",
+      "experience": "5 years enterprise",
+      "availability": "Available Q2 2026"
+    },
+    "bio": {
+      "label": "About",
+      "manifesto": "I build digital products that make a measurable difference — for SMEs that deserve enterprise-quality code.",
+      "p1": "Cem Tekelli is a full-stack developer and entrepreneur based in Brussels, specializing in web development, mobile applications and AI integration for businesses.",
+      "p2": "Before founding Codelli, Cem spent 5 years in large enterprises — IBM, DXC Technology, RTBF — working on application modernization and greenfield development projects for clients in insurance, laboratories, energy and media. Demanding environments that shaped a rigorous, scalable, results-driven approach.",
+      "p3": "Today, Codelli works with startups and SMEs across Belgium, France, Luxembourg and the Netherlands — building digital products, mobile apps, and integrating AI concretely into business processes.",
+      "p4": "His differentiator: he uses AI in his own development workflow, delivering 2–3x faster than a traditional agency — without compromising on quality."
+    },
+    "experience": {
+      "label": "Enterprise background",
+      "intro": "5 years of enterprise experience before launching Codelli. Complex projects in demanding large-scale environments — shaping a rigorous, scalable, results-oriented approach.",
+      "companiesLabel": "Companies",
+      "ibmDesc": "Integration and application modernization for major international accounts.",
+      "dxcDesc": "Development and digital transformation consulting for enterprise clients.",
+      "rtbfDesc": "Technical projects for the Belgian public media and broadcasting sector.",
+      "sectorsLabel": "Client sectors",
+      "typesLabel": "Project types"
+    },
+    "expertise": {
+      "label": "Technical Expertise",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "ai": "AI & Automation",
+      "cloud": "Cloud & DevOps"
+    },
+    "projects": {
+      "label": "Delivered Projects",
+      "1": { "title": "Baba Events", "tag": "Ticketing Platform", "desc": "Full platform with custom backoffice, QR scanner, Mollie payments and real-time reporting.", "r1": "3× online sales", "r2": "0 fraud" },
+      "2": { "title": "Noctix", "tag": "SaaS Platform", "desc": "Sovereign Eventbrite alternative for independent organizers — 0% commission on sales.", "r1": "Currently in development", "r2": "0% commission" },
+      "3": { "title": "Lead Gen Automation", "tag": "n8n Automation", "desc": "Automated B2B lead pipeline via Google Maps API — 3,000+ leads per campaign.", "r1": "+3,000 leads/campaign", "r2": "100% automated" }
+    },
+    "cta": {
+      "label": "Have a project?",
+      "title": "Let's talk.",
+      "desc": "30 minutes. Free. No commitment. We'll define your project and next steps together.",
+      "btn": "Book a free call"
+    },
+    "footer": { "copy": "© 2026 Codelli · Brussels, Belgium", "home": "Home", "studio": "Codelli Studio", "blog": "Blog", "privacy": "Privacy" }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is Codelli?",
+    "a1": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. We design, develop and integrate artificial intelligence for SMEs and startups — websites, mobile apps, chatbots and AI agents. From idea to launch in 6 weeks.",
+    "q2": "What services does Codelli offer?",
+    "a2": "Three services: AI Integration & Automation (chatbots, AI agents, n8n — from €5,000), Web & App Development (sites, apps, SaaS — from €15,000), and UX/UI Design (conversion-focused interfaces — from €3,000).",
+    "q3": "How much does a project cost?",
+    "a3": "A showcase website starts around €2,000. A custom web or mobile application ranges from €5,000 to €20,000+. All projects are delivered at a fixed price, no surprises. Contact us for a free quote.",
+    "q4": "Can Belgian SMEs get subsidies?",
+    "a4": "Yes. Innoviris (Brussels) covers up to 75% via the Voucher Start AI. Chèques-entreprises (Wallonia) covers up to 50%. KMO-portefeuille VLAIO (Flanders) offers 20-30% reduction. Codelli helps you check your eligibility.",
+    "q5": "What makes Codelli different from a traditional agency?",
+    "a5": "Design, development and AI under one roof, no subcontracting. Thanks to our AI-assisted workflows, we deliver 2-3x faster than a traditional agency — at an equivalent or lower cost.",
+    "q6": "Do you work outside Brussels?",
+    "a6": "Yes. We work with clients across Belgium (Liège, Antwerp, Namur, Ghent) and internationally (France, Luxembourg). We communicate in French, Dutch and English."
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy & Legal Notice | Codelli",
+      "description": "Privacy policy, legal notice and cookie policy of Codelli — AI digital studio in Brussels, Belgium. BCE 1006.208.714."
+    },
+    "nav": {
+      "back": "Back to site"
+    },
+    "page": {
+      "title": "Privacy Policy & Legal Notice",
+      "updated": "Last updated: 13 April 2026"
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "label": {
+        "company": "Legal name:",
+        "form": "Legal form:",
+        "vat": "BCE / VAT:",
+        "address": "Registered office:",
+        "email": "Email:",
+        "phone": "Phone:",
+        "publisher": "Editor in chief:"
+      },
+      "value": {
+        "form": "Sole proprietorship",
+        "address": "Brussels, Belgium",
+        "publisher": "Cem Tekelli"
+      },
+      "desc": "The website <strong>codelli.tech</strong> is published by Codelli Engineering. All content on this site (texts, images, logos, graphics) is protected by copyright and remains the exclusive property of Codelli Engineering, unless otherwise stated."
+    },
+    "gdpr": {
+      "title": "Privacy Policy (GDPR)",
+      "intro": "Codelli Engineering, as data controller, is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR — EU 2016/679) and applicable Belgian legislation.",
+      "dataTitle": "Data collected",
+      "dataIntro": "When you use the site or get in touch, we may collect the following data:",
+      "dataItems": {
+        "1": "First and last name",
+        "2": "Professional email address",
+        "3": "Your company name",
+        "4": "Message and project description",
+        "5": "Browsing data (via cookies — see Cookies section)"
+      },
+      "purposesTitle": "Purposes of processing",
+      "purposes": {
+        "1": "<strong>Responding to your contact requests</strong> — legal basis: performance of a contract or pre-contractual measures",
+        "2": "<strong>Organising discovery calls</strong> (via Calendly) — legal basis: consent",
+        "3": "<strong>Analysing traffic and improving the site</strong> (via Google Analytics via GTM) — legal basis: consent"
+      },
+      "retentionTitle": "Data retention",
+      "retention": "Contact data is retained for <strong>3 years</strong> from the last exchange. Navigation data is retained for <strong>13 months</strong> in accordance with CNIL/DPA recommendations.",
+      "recipientsTitle": "Data recipients",
+      "recipientsIntro": "Your data is not sold to third parties. It may be shared with:",
+      "recipients": {
+        "1": "<strong>Calendly Inc.</strong> — for appointment scheduling (policy available at calendly.com)",
+        "2": "<strong>Google LLC</strong> — for audience analysis (Google Analytics via GTM)"
+      },
+      "recipientsNote": "These processors are subject to appropriate contractual safeguards (Standard Contractual Clauses or Privacy Shield successor) for any transfer outside the EU.",
+      "rightsTitle": "Your rights",
+      "rightsIntro": "In accordance with the GDPR, you have the following rights:",
+      "rights": {
+        "1": "<strong>Right of access</strong> — obtain a copy of your data",
+        "2": "<strong>Right of rectification</strong> — correct inaccurate data",
+        "3": "<strong>Right to erasure</strong> — request the deletion of your data",
+        "4": "<strong>Right to object</strong> — object to processing for legitimate reasons",
+        "5": "<strong>Right to data portability</strong> — receive your data in a structured format",
+        "6": "<strong>Right to restriction</strong> — restrict the processing of your data"
+      },
+      "rightsContact": "To exercise these rights, contact us at: <a href=\"mailto:hello@codelli.tech\">hello@codelli.tech</a>. We respond within <strong>30 days</strong>. You also have the right to lodge a complaint with the <a href=\"https://www.autoriteprotectiondonnees.be\" target=\"_blank\" rel=\"noopener\">Data Protection Authority (DPA)</a>."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "intro": "This site uses cookies. A cookie is a small text file placed on your device when you visit. You can accept or refuse them via the consent banner displayed on your first visit.",
+      "listTitle": "Cookies used",
+      "tableLabel": "List of cookies used",
+      "thead": {
+        "name": "Cookie",
+        "provider": "Provider",
+        "purpose": "Purpose",
+        "duration": "Duration"
+      },
+      "rows": {
+        "ga": {
+          "purpose": "Traffic analysis and visitor behaviour",
+          "duration": "13 months"
+        },
+        "gtm": {
+          "purpose": "Tag management",
+          "duration": "Session"
+        },
+        "consent": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Remember your consent choice",
+          "duration": "12 months"
+        },
+        "lang": {
+          "provider": "Codelli (1st party)",
+          "purpose": "Remember your language preference",
+          "duration": "Persistent"
+        }
+      },
+      "prefsTitle": "Managing your preferences",
+      "prefsIntro": "You can change your preferences at any time by deleting cookies from your browser or using your browser's privacy settings:",
+      "browserChrome": "<a href=\"https://support.google.com/chrome/answer/95647\" target=\"_blank\" rel=\"noopener\">Google Chrome</a>",
+      "browserFirefox": "<a href=\"https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences\" target=\"_blank\" rel=\"noopener\">Mozilla Firefox</a>",
+      "browserSafari": "<a href=\"https://support.apple.com/en-gb/guide/safari/sfri11471/mac\" target=\"_blank\" rel=\"noopener\">Safari</a>",
+      "gaOptout": "You can also opt out of Google Analytics tracking via the <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" rel=\"noopener\">official opt-out module</a>."
+    },
+    "liability": {
+      "title": "Limitation of liability",
+      "p1": "Codelli Engineering strives to maintain accurate and up-to-date information on this site. However, we do not guarantee the accuracy, completeness or currency of the information published. Codelli Engineering cannot be held responsible for direct or indirect damages resulting from the use of this site.",
+      "p2": "Hyperlinks to third-party sites do not imply any responsibility on the part of Codelli Engineering for their content."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Brussels, Belgium · BCE 1006.208.714"
+    },
+    "footer": {
+      "copy": "© 2026 Codelli · Brussels, Belgium · BCE 1006.208.714",
+      "home": "Home"
+    }
+  }
+}

@@ -1,0 +1,226 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FabButtons from '../components/FabButtons.astro';
+import Hero from '../components/sections/Hero.astro';
+import Services from '../components/sections/Services.astro';
+import Portfolio from '../components/sections/Portfolio.astro';
+import About from '../components/sections/About.astro';
+import Testimonials from '../components/sections/Testimonials.astro';
+import Process from '../components/sections/Process.astro';
+import SubsidyBanner from '../components/sections/SubsidyBanner.astro';
+import TechStack from '../components/sections/TechStack.astro';
+import FAQ from '../components/sections/FAQ.astro';
+import LatestArticles from '../components/sections/LatestArticles.astro';
+import Contact from '../components/sections/Contact.astro';
+
+const lang = 'fr';
+const canonical = '/';
+---
+
+<PageLayout lang={lang} canonical={canonical}>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" slot="schema">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://codelli.tech/#organization",
+        "name": "Codelli",
+        "legalName": "Codelli Engineering",
+        "description": "Codelli est un studio digital IA fondé par Cem Tekelli à Bruxelles. Spécialisé en intégration d'intelligence artificielle, développement web & mobile et UX/UI design pour PME et startups.",
+        "image": "https://codelli.tech/codelli-logo.svg",
+        "logo": { "@type": "ImageObject", "url": "https://codelli.tech/codelli-logo.svg", "width": 512, "height": 512 },
+        "url": "https://codelli.tech",
+        "telephone": "+32472628430",
+        "email": "hello@codelli.tech",
+        "founder": { "@id": "https://codelli.tech/#cem-tekelli" },
+        "employee": { "@id": "https://codelli.tech/#cem-tekelli" },
+        "knowsAbout": [
+          "Développement Web","Développement d'Applications Mobiles","Intégration d'Intelligence Artificielle",
+          "Automatisation IA","Chatbots","Agents IA","FastAPI","Vue.js","React","Next.js","Node.js","Python",
+          "n8n","SaaS Development","MVP Development","UX/UI Design","Transformation Digitale",
+          "Startup Development","PostgreSQL","React Native"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Bruxelles", "addressRegion": "Bruxelles-Capitale", "addressCountry": "BE" },
+        "geo": { "@type": "GeoCoordinates", "latitude": 50.8503, "longitude": 4.3517 },
+        "areaServed": [
+          { "@type": "Country", "name": "Belgique" },
+          { "@type": "Country", "name": "France" },
+          { "@type": "Country", "name": "Luxembourg" },
+          { "@type": "Country", "name": "Pays-Bas" },
+          { "@type": "City", "name": "Bruxelles" },
+          { "@type": "City", "name": "Liège" },
+          { "@type": "City", "name": "Anvers" },
+          { "@type": "City", "name": "Namur" },
+          { "@type": "City", "name": "Gand" },
+          { "@type": "City", "name": "Paris" },
+          { "@type": "City", "name": "Lyon" },
+          { "@type": "City", "name": "Luxembourg-Ville" },
+          { "@type": "City", "name": "Amsterdam" },
+          { "@type": "City", "name": "Rotterdam" }
+        ],
+        "availableLanguage": [
+          { "@type": "Language", "name": "French", "alternateName": "fr" },
+          { "@type": "Language", "name": "Dutch", "alternateName": "nl" },
+          { "@type": "Language", "name": "English", "alternateName": "en" }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/codelli-engineering/",
+          "https://www.instagram.com/codelli.tech/"
+        ],
+        "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+        "priceRange": "$$-$$$",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services Codelli",
+          "itemListElement": [
+            { "@type": "OfferCatalog", "name": "Intégration IA & Automatisation" },
+            { "@type": "OfferCatalog", "name": "Développement Web" },
+            { "@type": "OfferCatalog", "name": "Applications Mobiles" },
+            { "@type": "OfferCatalog", "name": "Consulting Digital" }
+          ]
+        },
+      },
+      {
+        "@type": "Person",
+        "@id": "https://codelli.tech/#cem-tekelli",
+        "name": "Cem Tekelli",
+        "givenName": "Cem",
+        "familyName": "Tekelli",
+        "jobTitle": "Founder & Lead Developer",
+        "description": "Cem Tekelli est le fondateur de Codelli, studio digital IA à Bruxelles. 5 ans d'expérience enterprise (IBM, DXC Technology, RTBF) avant de lancer Codelli. Expert full-stack spécialisé en développement web, applications mobiles et intégration IA pour PME et startups.",
+        "worksFor": { "@id": "https://codelli.tech/#organization" },
+        "url": "https://codelli.tech/cem-tekelli",
+        "email": "hello@codelli.tech",
+        "knowsAbout": [
+          "Web Development","Mobile App Development","AI Integration","FastAPI","Vue.js","React","Next.js",
+          "Node.js","Python","n8n Automation","Digital Transformation","UX/UI Design","SaaS Development",
+          "MVP Development","PostgreSQL","React Native","LLM Integration"
+        ],
+        "address": { "@type": "PostalAddress", "addressLocality": "Bruxelles", "addressCountry": "BE" },
+        "sameAs": ["https://www.linkedin.com/in/cemtekelli/", "https://www.linkedin.com/company/codelli-engineering/"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-ai",
+        "serviceType": "AI Integration",
+        "name": "Intégration IA & Automatisation",
+        "description": "Codelli développe des chatbots IA, agents intelligents et systèmes d'automatisation (n8n) sur mesure pour PME et startups. Nous identifions les cas d'usage à valeur réelle et construisons les solutions d'IA adaptées à votre entreprise.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "5000", "priceCurrency": "EUR", "description": "À partir de 5.000€" },
+        "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-web",
+        "serviceType": "Web Development",
+        "name": "Développement Web & Applications",
+        "description": "Création de sites internet, applications web et plateformes SaaS sur mesure. Stack React, Vue.js, Next.js, FastAPI, Node.js. Livraison 2-3x plus rapide qu'une agence traditionnelle grâce aux workflows assistés par IA.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "EUR", "description": "À partir de 15.000€" },
+        "areaServed": {"@type": "Country", "name": "Belgique"},
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-mobile",
+        "serviceType": "Mobile App Development",
+        "name": "Développement Mobile",
+        "description": "Création d'applications mobiles iOS, Android et cross-platform (React Native, Flutter). Applications natives et hybrides pour startups et PME belges.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "areaServed": {"@type": "Country", "name": "Belgique"},
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-design",
+        "serviceType": "UX/UI Design",
+        "name": "UX/UI Design",
+        "description": "Conception d'interfaces utilisateur centrées sur la conversion et l'expérience. Maquettes validées avant tout développement. Design systems sur mesure.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "3000", "priceCurrency": "EUR", "description": "À partir de 3.000€" },
+        "areaServed": {"@type": "Country", "name": "Belgique"},
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://codelli.tech/#process",
+        "name": "Comment Codelli livre votre projet digital",
+        "description": "Le processus de développement de Codelli en 4 étapes — de la découverte au lancement. Livraison en 6 semaines.",
+        "totalTime": "PT6W",
+        "step": [
+          { "@type": "HowToStep", "position": 1, "name": "Découverte (1–2 semaines)", "text": "Nous apprenons votre métier, définissons le scope, le budget et le calendrier. Un appel découverte gratuit de 30 minutes pour démarrer.", "url": "https://codelli.tech/#processus" },
+          { "@type": "HowToStep", "position": 2, "name": "Design (2–3 semaines)", "text": "Vous validez de vraies maquettes haute fidélité avant qu'une seule ligne de code soit écrite. Zéro surprise visuelle au lancement.", "url": "https://codelli.tech/#processus" },
+          { "@type": "HowToStep", "position": 3, "name": "Développement (3–6 semaines)", "text": "Développement full-stack accéléré par IA. Livraison 2–3x plus rapide qu'une agence traditionnelle. Tests, QA et intégrations inclus.", "url": "https://codelli.tech/#processus" },
+          { "@type": "HowToStep", "position": 4, "name": "Lancement & Croissance (continu)", "text": "Déploiement, mise en production et suivi post-lancement. Codelli reste votre partenaire technique à long terme.", "url": "https://codelli.tech/#processus" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codelli.tech/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Qu'est-ce que Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Codelli conçoit, développe et intègre l'intelligence artificielle pour PME et startups : sites web, applications mobiles, chatbots, automatisation et agents intelligents. Livraison en 6 semaines." } },
+          { "@type": "Question", "name": "Qui est Cem Tekelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Cem Tekelli est le fondateur et développeur principal de Codelli, studio digital basé à Bruxelles, Belgique. Expert en développement web full-stack (React, Vue.js, FastAPI, Node.js), développement mobile (React Native) et intégration d'intelligence artificielle pour PME et startups belges et européens." } },
+          { "@type": "Question", "name": "Quels services propose Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli propose trois services principaux : (1) Intégration IA & Automatisation — chatbots, agents IA, workflows n8n, à partir de 5.000€ ; (2) Développement Web & Applications — sites, apps web, SaaS, plateformes, à partir de 15.000€ ; (3) UX/UI Design — interfaces conversion-focused, à partir de 3.000€." } },
+          { "@type": "Question", "name": "Combien coûte la création d'un site web ?", "acceptedAnswer": { "@type": "Answer", "text": "Le prix d'un site web varie selon sa complexité. Un site vitrine démarre autour de 2.000€, tandis qu'un e-commerce ou une application web sur mesure peut aller de 5.000€ à 20.000€+. Contactez-nous pour un devis personnalisé gratuit." } },
+          { "@type": "Question", "name": "Quel est le délai de développement d'un projet ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli livre en 6 semaines grâce à ses workflows assistés par IA. Un site vitrine prend 2 à 4 semaines. Une application web ou mobile complexe peut nécessiter 2 à 4 mois. Nous établissons un planning précis et un prix fixe dès le début du projet." } },
+          { "@type": "Question", "name": "Proposez-vous l'intégration d'intelligence artificielle pour les entreprises belges ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est la spécialité de Codelli. Nous développons des chatbots IA, agents intelligents, pipelines d'automatisation (n8n) et intégrations LLM pour PME et startups. Nous identifions les cas d'usage à valeur réelle et construisons les solutions sur mesure. À partir de 5.000€." } },
+          { "@type": "Question", "name": "Les PME belges peuvent-elles obtenir des subsides pour un projet IA ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les PME belges bénéficient de plusieurs programmes : Innoviris (Bruxelles) couvre jusqu'à 75% via le Voucher Start AI ; les Chèques-entreprises (Wallonie) couvrent jusqu'à 50% ; le KMO-portefeuille (VLAIO, Flandre) offre 20-30% de réduction. Codelli vous aide à vérifier votre éligibilité et à constituer le dossier de subvention." } },
+          { "@type": "Question", "name": "Quelle est la différence entre Codelli et une agence web traditionnelle ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli combine design, développement et IA sous un même toit, sans sous-traitance. Grâce à l'IA dans le processus de développement, nous livrons 2-3x plus vite qu'une agence traditionnelle. Tous les projets sont livrés à prix fixe et dans les délais annoncés." } },
+          { "@type": "Question", "name": "Travaillez-vous avec des clients hors de Bruxelles ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Bien que basés à Bruxelles, nous travaillons avec des clients dans toute la Belgique (Liège, Anvers, Namur, Gand) ainsi qu'en France et au Luxembourg. Nous communiquons en français, néerlandais et anglais." } },
+          { "@type": "Question", "name": "Proposez-vous la maintenance des sites web ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous proposons des contrats de maintenance incluant les mises à jour de sécurité, sauvegardes, corrections de bugs et support technique. Cela garantit la pérennité et la sécurité de votre site." } }
+        ]
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-1",
+        "reviewBody": "Codelli a complètement transformé notre présence en ligne. En quelques semaines, nous avions un site qui reflète vraiment l'identité de Baba Events et qui génère de vrais leads. Le résultat a dépassé nos attentes.",
+        "author": {"@type": "Person", "name": "Rifat Balaj"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-2",
+        "reviewBody": "Cem comprend les besoins des entrepreneurs. Il n'a pas livré une application — il a livré une solution qui fait gagner du temps à mon équipe chaque jour. Professionnel, réactif, et vraiment investi dans le projet.",
+        "author": {"@type": "Person", "name": "Obaida Isarti"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "Review",
+        "@id": "https://codelli.tech/#review-3",
+        "reviewBody": "Nous cherchions un partenaire technique fiable pour digitaliser une partie de nos opérations chez Nautilus. Codelli a livré dans les délais, dans le budget, et le produit fonctionne exactement comme prévu. Je recommande sans hésiter.",
+        "author": {"@type": "Person", "name": "Fuat Yuksel"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "itemReviewed": {"@id": "https://codelli.tech/#organization"}
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://codelli.tech/#website",
+        "url": "https://codelli.tech",
+        "name": "Codelli - Studio Digital IA Bruxelles",
+        "description": "Studio digital fondé par Cem Tekelli, expert en création de sites internet, applications mobiles et intégration IA en Belgique",
+        "publisher": { "@id": "https://codelli.tech/#organization" },
+        "inLanguage": ["fr-BE", "nl-BE", "en"]
+      }
+    ]
+  }
+  </script>
+
+  <Hero lang={lang} />
+  <Services lang={lang} />
+  <Portfolio lang={lang} />
+  <About lang={lang} />
+  <Testimonials lang={lang} />
+  <Process lang={lang} />
+  <SubsidyBanner lang={lang} />
+  <TechStack lang={lang} />
+  <FAQ lang={lang} />
+  <FabButtons lang={lang} />
+  <LatestArticles lang={lang} />
+  <Contact lang={lang} />
+</PageLayout>
