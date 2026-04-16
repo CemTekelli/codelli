@@ -168,6 +168,21 @@ const hreflangAlternates = (() => {
   <!-- Extra head content from pages -->
   <slot name="head" />
 
+  <!-- Google Consent Mode v2 — MUST be declared before GTM loads (EEA requirement) -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage':          'denied',
+      'ad_user_data':        'denied',
+      'ad_personalization':  'denied',
+      'analytics_storage':   'denied',
+      'wait_for_update':     500
+    });
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', false);
+  </script>
+
   <!-- Google Tag Manager -->
   <script is:inline>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

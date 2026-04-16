@@ -56,15 +56,36 @@ const { lang } = Astro.props;
     }
 
     const consent = localStorage.getItem('codelli_cookie_consent');
-    if (!consent) setTimeout(showBanner, 1500);
+    if (!consent) {
+      setTimeout(showBanner, 1500);
+    } else {
+      // Restore consent state for returning visitors on every page load
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      if (consent === 'accepted') {
+        gtag('consent', 'update', {
+          ad_storage:         'granted',
+          ad_user_data:       'granted',
+          ad_personalization: 'granted',
+          analytics_storage:  'granted'
+        });
+      }
+      // If 'rejected', defaults already set to denied — no update needed
+    }
 
     if (acceptBtn) {
       acceptBtn.addEventListener('click', () => {
         localStorage.setItem('codelli_cookie_consent', 'accepted');
         hideBanner();
-        if (typeof gtag !== 'undefined') {
-          gtag('consent', 'update', { analytics_storage: 'granted' });
-        }
+        // Consent Mode v2 update — all 4 required parameters
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'update', {
+          ad_storage:         'granted',
+          ad_user_data:       'granted',
+          ad_personalization: 'granted',
+          analytics_storage:  'granted'
+        });
       });
     }
 
@@ -72,9 +93,15 @@ const { lang } = Astro.props;
       rejectBtn.addEventListener('click', () => {
         localStorage.setItem('codelli_cookie_consent', 'rejected');
         hideBanner();
-        if (typeof gtag !== 'undefined') {
-          gtag('consent', 'update', { analytics_storage: 'denied' });
-        }
+        // Consent Mode v2 update — keep all denied
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'update', {
+          ad_storage:         'denied',
+          ad_user_data:       'denied',
+          ad_personalization: 'denied',
+          analytics_storage:  'denied'
+        });
       });
     }
   })();
