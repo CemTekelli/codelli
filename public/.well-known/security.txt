@@ -1,4 +1,4 @@
-Contact: mailto:hello@codelli.tech
+Contact: mailto:info@codelli.tech
 Expires: 2027-04-16T00:00:00.000Z
 Preferred-Languages: fr, nl, en
 Canonical: https://codelli.tech/.well-known/security.txt
