@@ -107,25 +107,29 @@ function initHeroScrollEffects() {
 
   const alreadyLoaded = sessionStorage.getItem('codelli_loaded');
 
+  const heroSubtitle = document.querySelector('.hero-subtitle');
+
   if (isMobile) {
     gsap.set(titleLines, { y: '0%', opacity: 1 });
     gsap.set(heroTopBar, { y: 0, opacity: 1 });
     gsap.set(heroBottomBar, { y: 0, opacity: 1 });
-    // Only animate title entrance on first visit
+    if (heroSubtitle) gsap.set(heroSubtitle, { opacity: 1 });
     if (!alreadyLoaded) {
       gsap.fromTo(titleLines, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.1, delay: 0.3, ease: 'power2.out' });
+      if (heroSubtitle) gsap.fromTo(heroSubtitle, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.7, delay: 0.8, ease: 'power2.out' });
     }
     return;
   }
 
   if (titleLines.length > 0) {
     if (alreadyLoaded) {
-      // Already visited — show immediately, no entrance animation
       gsap.set(titleLines, { y: '0%', opacity: 1 });
+      if (heroSubtitle) gsap.set(heroSubtitle, { opacity: 1 });
       gsap.to(titleLines, { scale: 1.01, duration: 2, stagger: 0.1, yoyo: true, repeat: -1, ease: 'sine.inOut', delay: 0.5 });
     } else {
       gsap.set(titleLines, { y: '100%', opacity: 0 });
       gsap.to(titleLines, { y: '0%', opacity: 1, duration: 1, stagger: 0.12, ease: 'power3.out', delay: 0.5 });
+      if (heroSubtitle) gsap.to(heroSubtitle, { y: 0, opacity: 1, duration: 0.8, delay: 1.3, ease: 'power2.out' });
       gsap.to(titleLines, { scale: 1.01, duration: 2, stagger: 0.1, yoyo: true, repeat: -1, ease: 'sine.inOut', delay: 2.5 });
     }
   }

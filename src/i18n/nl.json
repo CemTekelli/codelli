@@ -28,7 +28,7 @@
     "line1": "Wij ontwerpen,",
     "line2": "bouwen &",
     "line3": "leveren met AI",
-    "subtitle": "AI studio in Brussel gespecialiseerd in ChatGPT & LLM-integratie, webontwikkeling en mobiele apps. Voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Vaste prijs. Levering in 6 weken.",
+    "subtitle": "AI studio in Brussel gespecialiseerd in integratie van artificiële intelligentie, webontwikkeling en mobiele apps. Voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Vaste prijs.",
     "primaryCta": "Reserveer een gratis gesprek",
     "secondaryCta": "Bekijk onze diensten",
     "location": "Brussel, België",
@@ -38,7 +38,7 @@
   },
   "services": {
     "title": "Wat wij voor u bouwen",
-    "intro": "AI-integratie vanaf €5.000, web- en mobiele ontwikkeling vanaf €15.000, design vanaf €3.000. Levering in 6 weken, vaste prijs, geen uitbesteding.",
+    "intro": "AI-integratie vanaf €5.000, web- en mobiele ontwikkeling vanaf €15.000, design vanaf €3.000. Vaste prijs, geen uitbesteding.",
     "ai": {
       "title": "AI",
       "tagline": "Chatbots, automatisering & intelligente agents",

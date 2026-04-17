@@ -966,12 +966,13 @@ body:has(.hero-top-bar--fixed) main {
 
 .services-intro {
     font-family: var(--font-sans);
-    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-size: clamp(0.8rem, 1.1vw, 0.95rem);
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.5);
     line-height: 1.7;
-    max-width: 600px;
-    margin-top: 0.75rem;
+    max-width: 560px;
+    margin-top: 0.6rem;
+    letter-spacing: 0.01em;
 }
 
 /* Services Stack - Giant Typography */
@@ -3115,14 +3116,15 @@ body:has(.hero-top-bar--fixed) main {
 
 .hero-subtitle {
     font-family: var(--font-sans);
-    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    font-size: clamp(0.875rem, 1.3vw, 1.05rem);
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.45);
-    line-height: 1.7;
-    max-width: 520px;
-    margin: 2rem auto 2.5rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.75;
+    max-width: 540px;
+    margin: 1.5rem auto 0;
     text-align: center;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.015em;
+    opacity: 0;
 }
 
 .hero-cta-group {
