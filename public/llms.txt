@@ -105,7 +105,7 @@ Expert articles by Cem Tekelli on AI integration, web development and SME digita
 - **Blog (NL):** https://codelli.tech/nl/blog/
 - **Cem Tekelli (founder page):** https://codelli.tech/cem-tekelli
 - **Free discovery call:** https://codelli.tech/audit-ia
-- **Email:** hello@codelli.tech
+- **Email:** info@codelli.tech
 - **Phone:** +32 472 62 84 30
 - **LinkedIn:** https://www.linkedin.com/company/codelli-engineering/
 - **Instagram:** https://www.instagram.com/codelli.tech/

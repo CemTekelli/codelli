@@ -16,7 +16,7 @@
 **Location:** Brussels, Belgium (Bruxelles-Capitale)
 **Coordinates:** 50.8503° N, 4.3517° E
 **Website:** https://codelli.tech
-**Email:** hello@codelli.tech
+**Email:** info@codelli.tech
 **Phone:** +32 472 62 84 30
 **LinkedIn:** https://www.linkedin.com/company/codelli-engineering/
 **Instagram:** https://www.instagram.com/codelli.tech/
@@ -56,7 +56,7 @@ Codelli designs, develops and integrates AI for SMEs and startups. All work is d
 **Location:** Brussels, Belgium
 **Profile page:** https://codelli.tech/cem-tekelli
 **LinkedIn:** https://www.linkedin.com/in/cemtekelli/
-**Email:** hello@codelli.tech
+**Email:** info@codelli.tech
 
 **Background:**
 5 years of enterprise software experience at IBM, DXC Technology, and RTBF (Belgian public broadcaster) before founding Codelli. Expert in full-stack web development, mobile applications, and AI integration.
