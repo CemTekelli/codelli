@@ -1,5 +1,9 @@
 ---
 import { type Lang, t } from '../../i18n/utils';
+import { Image } from 'astro:assets';
+import imgEx1 from '../../assets/ex1.png';
+import imgEx2 from '../../assets/ex2.png';
+import imgEx3 from '../../assets/ex3.png';
 
 export interface Props {
   lang: Lang;
@@ -19,8 +23,8 @@ const { lang } = Astro.props;
       <article class="project-row">
         <div class="project-visual">
           <div class="mockup-baba">
-            <img
-              src="/ex1.png"
+            <Image
+              src={imgEx1}
               alt="Baba Events — backoffice commandes"
               loading="lazy"
               decoding="async"
@@ -55,8 +59,8 @@ const { lang } = Astro.props;
       <article class="project-row">
         <div class="project-visual">
           <div class="mockup-noctix">
-            <img
-              src="/ex2.png"
+            <Image
+              src={imgEx2}
               alt="Noctix — discovery page"
               loading="lazy"
               decoding="async"
@@ -91,8 +95,8 @@ const { lang } = Astro.props;
       <article class="project-row">
         <div class="project-visual">
           <div class="mockup-ex3">
-            <img
-              src="/ex3.png"
+            <Image
+              src={imgEx3}
               alt="Lead Generation — n8n Google Maps workflow"
               loading="lazy"
               decoding="async"

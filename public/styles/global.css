@@ -964,6 +964,16 @@ body:has(.hero-top-bar--fixed) main {
     text-transform: uppercase;
 }
 
+.services-intro {
+    font-family: var(--font-sans);
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-top: 0.75rem;
+}
+
 /* Services Stack - Giant Typography */
 .services-stack {
     display: flex;

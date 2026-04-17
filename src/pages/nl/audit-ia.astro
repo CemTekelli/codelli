@@ -54,6 +54,17 @@ const canonical = '/nl/audit-ia';
           "priceCurrency": "EUR",
           "description": "Gratis ontdekkingsgesprek van 30 minuten — zonder verbintenis"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codelli.tech/nl/audit-ia#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Wat is het Codelli-ontdekkingsgesprek?", "acceptedAnswer": { "@type": "Answer", "text": "Het ontdekkingsgesprek is een gratis, vrijblijvend gesprek van 30 minuten. We analyseren uw situatie, identificeren kansen voor AI-integratie of digitale ontwikkeling en sturen u binnen 24u een gepersonaliseerd actieplan." } },
+          { "@type": "Question", "name": "Wat gebeurt er na het ontdekkingsgesprek?", "acceptedAnswer": { "@type": "Answer", "text": "Binnen 24u na het gesprek ontvangt u een actieplan met aanbevelingen, een budgetschatting en een indicatieve planning. Geen verplichting tot verdere samenwerking — u beslist zelf vrijelijk of u wilt doorgaan." } },
+          { "@type": "Question", "name": "Is het ontdekkingsgesprek echt gratis en vrijblijvend?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, volledig gratis en vrijblijvend. Geen contract te ondertekenen, geen betaling vereist. Het gesprek dient alleen om uw project te begrijpen en te beoordelen of Codelli echte waarde kan toevoegen aan uw bedrijf." } },
+          { "@type": "Question", "name": "Kan Codelli mij helpen AI-subsidies te krijgen in België?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Belgische kmo's kunnen tot 75% van een AI-project financieren via Innoviris (Brussel), Chèques-entreprises (Wallonië) of het VLAIO KMO-portefeuille (Vlaanderen). Codelli helpt u het geschikte programma te identificeren en het dossier samen te stellen." } },
+          { "@type": "Question", "name": "Wat is het minimumbudget om met Codelli te werken?", "acceptedAnswer": { "@type": "Answer", "text": "AI-integratieprojecten starten vanaf €5.000, web- en mobiele ontwikkeling vanaf €15.000 en design vanaf €3.000. Na Belgische subsidies kan de nettokost voor een Innoviris-subsidiabel AI-project dalen tot €1.250." } }
+        ]
       }
     ]
   }
@@ -89,6 +100,7 @@ const canonical = '/nl/audit-ia';
           <span>{t(lang, 'audit.hero.meta.locationLabel')}</span>
         </div>
       </div>
+      <p class="audit-hero-intro">{t(lang, 'audit.hero.intro')}</p>
     </section>
 
     <!-- Main grid -->
@@ -274,6 +286,17 @@ const canonical = '/nl/audit-ia';
   .audit-hero-title em {
     font-style: normal;
     color: var(--color-accent);
+  }
+
+  .audit-hero-intro {
+    font-family: var(--font-sans);
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    text-align: center;
   }
 
   .audit-hero-meta {

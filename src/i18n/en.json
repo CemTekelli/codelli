@@ -1,16 +1,16 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Codelli - Web Agency & Mobile App Development | Brussels, Belgium",
-    "description": "Brussels-based digital agency specializing in website creation, mobile app development and digital transformation. React & Node.js experts. Free consultation.",
-    "keywords": "Cem Tekelli, Codelli, web agency brussels, web developer belgium france luxembourg netherlands, AI integration SME, mobile app development, digital studio brussels, React Vue.js FastAPI Node.js, AI automation n8n, chatbot development, startup belgium, freelance developer brussels, MVP development europe",
+    "title": "Codelli — AI Studio & Web Development B2B | Brussels, Belgium",
+    "description": "AI studio based in Brussels: ChatGPT & LLM integration, web and mobile app development for B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. Delivery in 6 weeks. Free consultation.",
+    "keywords": "AI studio brussels, AI integration agency belgium, ChatGPT integration SME, LLM integration B2B, web development agency belgium, Cem Tekelli, Codelli, web developer belgium france luxembourg netherlands, mobile app development, digital studio brussels, React Vue.js FastAPI Node.js, AI automation n8n, chatbot development, startup belgium, MVP development europe",
     "og": {
-      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
-      "description": "Transform your digital vision with Codelli. High-performance websites, iOS/Android mobile apps and digital strategy. Based in Brussels, we support businesses across Belgium."
+      "title": "Codelli | AI Studio & Web Development B2B — Brussels",
+      "description": "Brussels-based AI studio. ChatGPT & LLM integration, web and mobile app development for B2B SMEs. Active in Belgium, France, Luxembourg and the Netherlands. Delivery in 6 weeks."
     },
     "twitter": {
-      "title": "Codelli | Web Agency & Mobile Apps in Brussels",
-      "description": "Websites, mobile apps & digital transformation. Expert React & Node.js agency in Brussels. Discover our work and start your project today."
+      "title": "Codelli | AI Studio & Web Dev B2B — Brussels",
+      "description": "AI integration, web & mobile app development for B2B SMEs. AI studio in Brussels serving Belgium, France, Luxembourg and the Netherlands. 6-week delivery."
     }
   },
   "nav": {
@@ -28,7 +28,7 @@
     "line1": "We design,",
     "line2": "build &",
     "line3": "deliver with AI",
-    "subtitle": "Brussels-based digital studio for SMEs and startups. From idea to launch in 6 weeks — design, development, and AI under one roof.",
+    "subtitle": "AI studio in Brussels specialising in ChatGPT & LLM integration, web and mobile app development. For B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. Fixed price. 6-week delivery.",
     "primaryCta": "Book a free call",
     "secondaryCta": "See our services",
     "location": "Brussels, Belgium",
@@ -38,6 +38,7 @@
   },
   "services": {
     "title": "What we build for you",
+    "intro": "AI integration from €5,000, web & mobile development from €15,000, design from €3,000. 6-week delivery, fixed price, no subcontracting.",
     "ai": {
       "title": "AI",
       "tagline": "Chatbots, automation & intelligent agents",
@@ -294,6 +295,7 @@
       "overline": "Discovery Call · Free · No commitment",
       "title1": "Let's start",
       "title2": "your project together",
+      "intro": "Free 30-minute call, no commitment, to assess your project in Belgium, France, Luxembourg or the Netherlands. AI integration, web development or design — we define your roadmap and send it within 24h.",
       "meta": {
         "durationLabel": "Video call",
         "freeVal": "Free",

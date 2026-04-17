@@ -54,6 +54,17 @@ const canonical = '/en/audit-ia';
           "priceCurrency": "EUR",
           "description": "Free 30-minute discovery call — no commitment"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codelli.tech/en/audit-ia#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is the Codelli discovery call?", "acceptedAnswer": { "@type": "Answer", "text": "The discovery call is a free, no-commitment 30-minute meeting. We analyse your situation, identify AI integration or digital development opportunities, and send you a personalised action plan within 24h." } },
+          { "@type": "Question", "name": "What happens after the discovery call?", "acceptedAnswer": { "@type": "Answer", "text": "Within 24h of the call, you receive an action plan with recommendations, a budget estimate and an indicative timeline. No obligation to proceed — you decide freely whether to continue or not." } },
+          { "@type": "Question", "name": "Is the discovery call really free and non-binding?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely free and non-binding. No contract to sign, no payment required. The call only serves to understand your project and assess whether Codelli can bring real value to your business." } },
+          { "@type": "Question", "name": "Can Codelli help me get AI subsidies in Belgium?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Belgian SMEs can finance up to 75% of an AI project through Innoviris (Brussels), Chèques-entreprises (Wallonia) or the VLAIO KMO-portefeuille (Flanders). Codelli helps you identify your eligible programme and build the application file." } },
+          { "@type": "Question", "name": "What is the minimum budget to work with Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "AI integration projects start from €5,000, web and mobile development from €15,000, and design from €3,000. After Belgian subsidies, the net cost for an Innoviris-eligible AI project can be as low as €1,250." } }
+        ]
       }
     ]
   }
@@ -89,6 +100,7 @@ const canonical = '/en/audit-ia';
           <span>{t(lang, 'audit.hero.meta.locationLabel')}</span>
         </div>
       </div>
+      <p class="audit-hero-intro">{t(lang, 'audit.hero.intro')}</p>
     </section>
 
     <!-- Main grid -->
@@ -274,6 +286,17 @@ const canonical = '/en/audit-ia';
   .audit-hero-title em {
     font-style: normal;
     color: var(--color-accent);
+  }
+
+  .audit-hero-intro {
+    font-family: var(--font-sans);
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    text-align: center;
   }
 
   .audit-hero-meta {

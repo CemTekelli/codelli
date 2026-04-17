@@ -1,16 +1,16 @@
 {
   "lang": "fr",
   "meta": {
-    "title": "Codelli - Agence Web & Application Mobile | Bruxelles, Belgique",
-    "description": "Agence digitale à Bruxelles spécialisée en création de sites web, développement d'applications mobiles et transformation digitale. Experts React, Node.js. Devis gratuit.",
-    "keywords": "Cem Tekelli, Codelli, agence web bruxelles, développeur web belgique, création site internet france luxembourg pays-bas, développement application mobile, intégration IA PME, automatisation n8n, chatbot entreprise, consulting digital, développeur freelance bruxelles, studio digital IA, react node.js fastapi, startup belgique france luxembourg",
+    "title": "Codelli — Studio IA & Développement Web B2B | Bruxelles, Belgique",
+    "description": "Studio IA à Bruxelles : intégration ChatGPT & LLM, développement web et apps mobiles pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines. Devis gratuit.",
+    "keywords": "studio IA bruxelles, intégration IA PME belgique, agence intégration chatgpt belgique, développement web B2B bruxelles, automatisation n8n, chatbot entreprise belgique, agence IA france luxembourg, Cem Tekelli, Codelli, agence web bruxelles, développeur web belgique, création site internet france luxembourg pays-bas, développement application mobile, consulting digital, react node.js fastapi, startup belgique france luxembourg",
     "og": {
-      "title": "Codelli | Agence Web & Apps Mobiles à Bruxelles",
-      "description": "Transformez votre vision digitale avec Codelli. Création de sites web performants, applications mobiles iOS/Android et stratégie digitale. Basés à Bruxelles, nous accompagnons les entreprises belges."
+      "title": "Codelli | Studio IA & Développement Web B2B — Bruxelles",
+      "description": "Studio IA basé à Bruxelles. Intégration ChatGPT & LLM, développement web et apps mobiles pour PME B2B. Actif en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines."
     },
     "twitter": {
-      "title": "Codelli | Agence Web & Apps Mobiles à Bruxelles",
-      "description": "Sites web, apps mobiles & transformation digitale. Agence experte React & Node.js à Bruxelles. Découvrez nos réalisations et lancez votre projet."
+      "title": "Codelli | Studio IA & Dev Web B2B — Bruxelles",
+      "description": "Intégration IA, développement web & apps mobiles pour PME B2B. Studio IA à Bruxelles actif en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines."
     }
   },
   "nav": {
@@ -28,7 +28,7 @@
     "line1": "Nous concevons,",
     "line2": "développons &",
     "line3": "livrons avec l'IA",
-    "subtitle": "Studio digital bruxellois pour PME et startups. De l'idée au lancement en 6 semaines — design, développement et IA sous un même toit.",
+    "subtitle": "Studio IA à Bruxelles spécialisé en intégration ChatGPT & LLM, développement web et apps mobiles. Pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Prix fixe. Livraison en 6 semaines.",
     "primaryCta": "Réservez un appel gratuit",
     "secondaryCta": "Voir nos services",
     "location": "Bruxelles, Belgique",
@@ -38,6 +38,7 @@
   },
   "services": {
     "title": "Ce que nous créons pour vous",
+    "intro": "Intégration IA à partir de 5 000 €, développement web & mobile à partir de 15 000 €, design à partir de 3 000 €. Livraison en 6 semaines, prix fixe, zéro sous-traitance.",
     "ai": {
       "title": "IA",
       "tagline": "Chatbots, automatisation & agents intelligents",
@@ -294,6 +295,7 @@
       "overline": "Appel découverte · Gratuit · Sans engagement",
       "title1": "Démarrons votre",
       "title2": "projet ensemble",
+      "intro": "Appel de 30 minutes gratuit et sans engagement pour analyser votre projet en Belgique, France, Luxembourg ou Pays-Bas. Intégration IA, développement web ou design — nous définissons votre feuille de route et l'envoyons dans les 24h.",
       "meta": {
         "durationLabel": "Visioconférence",
         "freeVal": "Gratuit",

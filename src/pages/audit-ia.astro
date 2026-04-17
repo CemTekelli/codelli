@@ -54,6 +54,17 @@ const canonical = '/audit-ia';
           "priceCurrency": "EUR",
           "description": "Appel découverte 30 minutes — gratuit et sans engagement"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codelli.tech/audit-ia#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "À quoi sert l'appel découverte Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "L'appel découverte est un entretien de 30 minutes gratuit et sans engagement. Nous analysons votre situation, identifions les opportunités d'intégration IA ou de développement digital, et vous envoyons un plan d'action personnalisé dans les 24h." } },
+          { "@type": "Question", "name": "Que se passe-t-il après l'appel découverte ?", "acceptedAnswer": { "@type": "Answer", "text": "Dans les 24h suivant l'appel, vous recevez un plan d'action avec les recommandations, une estimation de budget et un calendrier indicatif. Aucune obligation de suite — vous décidez librement de continuer ou non." } },
+          { "@type": "Question", "name": "L'appel découverte est-il vraiment gratuit et sans engagement ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, totalement gratuit et sans engagement. Pas de contrat à signer, pas de paiement requis. L'appel sert uniquement à comprendre votre projet et à voir si Codelli peut vous apporter une valeur réelle." } },
+          { "@type": "Question", "name": "Codelli peut-il m'aider à obtenir des subventions IA en Belgique ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les PME belges peuvent financer jusqu'à 75% d'un projet IA via Innoviris (Bruxelles), les Chèques-entreprises (Wallonie) ou le KMO-portefeuille VLAIO (Flandre). Codelli vous aide à identifier votre programme éligible et à constituer le dossier." } },
+          { "@type": "Question", "name": "Quel budget minimum pour travailler avec Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Les projets d'intégration IA démarrent à partir de 5.000€, le développement web et mobile à partir de 15.000€, et le design à partir de 3.000€. Après subventions belges, le reste à charge peut descendre à 1.250€ pour un projet IA éligible Innoviris." } }
+        ]
       }
     ]
   }
@@ -89,6 +100,7 @@ const canonical = '/audit-ia';
           <span>{t(lang, 'audit.hero.meta.locationLabel')}</span>
         </div>
       </div>
+      <p class="audit-hero-intro">{t(lang, 'audit.hero.intro')}</p>
     </section>
 
     <!-- Main grid -->
@@ -274,6 +286,17 @@ const canonical = '/audit-ia';
   .audit-hero-title em {
     font-style: normal;
     color: var(--color-accent);
+  }
+
+  .audit-hero-intro {
+    font-family: var(--font-sans);
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+    text-align: center;
   }
 
   .audit-hero-meta {

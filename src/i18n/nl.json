@@ -2,15 +2,15 @@
   "lang": "nl",
   "meta": {
     "title": "Codelli — AI Studio & Digitaal Bureau | Brussel, België",
-    "description": "AI studio gevestigd in Brussel, gespecialiseerd in AI-integratie, webontwikkeling en UX/UI design voor KMO's en startups. Van idee tot lancering in 6 weken.",
-    "keywords": "Cem Tekelli, Codelli, AI studio brussel, digitaal bureau brussel, webontwikkeling nederland, app ontwikkeling amsterdam rotterdam, AI integratie KMO, chatbot bedrijf, automatisering n8n, web developer belgie nederland, freelance ontwikkelaar brussel, MVP ontwikkeling, startup belgie nederland luxemburg, React Vue.js FastAPI Node.js",
+    "description": "AI studio in Brussel: ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken. Gratis adviesgesprek.",
+    "keywords": "AI studio brussel, AI integratie bureau belgie, ChatGPT integratie KMO, LLM integratie B2B, webontwikkeling B2B brussel, digitaal bureau nederland, Cem Tekelli, Codelli, app ontwikkeling amsterdam rotterdam, chatbot bedrijf, automatisering n8n, web developer belgie nederland, MVP ontwikkeling, startup belgie nederland luxemburg, React Vue.js FastAPI Node.js",
     "og": {
-      "title": "Codelli | AI Studio & Digitaal Bureau in Brussel",
-      "description": "Design, ontwikkeling en AI-integratie voor KMO's en startups. Van idee tot lancering in 6 weken. Gevestigd in Brussel, actief in heel België."
+      "title": "Codelli | AI Studio & Webontwikkeling B2B — Brussel",
+      "description": "AI studio in Brussel. ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's. Actief in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken."
     },
     "twitter": {
-      "title": "Codelli | AI Studio & Digitaal Bureau in Brussel",
-      "description": "Websites, apps & AI-integratie voor KMO's. Expert studio in Brussel. Ontdek ons werk en start uw project vandaag."
+      "title": "Codelli | AI Studio & Webontwikkeling B2B — Brussel",
+      "description": "AI-integratie, webontwikkeling & mobiele apps voor B2B-kmo's. AI studio in Brussel actief in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken."
     }
   },
   "nav": {
@@ -28,7 +28,7 @@
     "line1": "Wij ontwerpen,",
     "line2": "bouwen &",
     "line3": "leveren met AI",
-    "subtitle": "AI studio in Brussel voor KMO's en startups. Van idee tot lancering in 6 weken — design, ontwikkeling en AI onder één dak.",
+    "subtitle": "AI studio in Brussel gespecialiseerd in ChatGPT & LLM-integratie, webontwikkeling en mobiele apps. Voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Vaste prijs. Levering in 6 weken.",
     "primaryCta": "Reserveer een gratis gesprek",
     "secondaryCta": "Bekijk onze diensten",
     "location": "Brussel, België",
@@ -38,6 +38,7 @@
   },
   "services": {
     "title": "Wat wij voor u bouwen",
+    "intro": "AI-integratie vanaf €5.000, web- en mobiele ontwikkeling vanaf €15.000, design vanaf €3.000. Levering in 6 weken, vaste prijs, geen uitbesteding.",
     "ai": {
       "title": "AI",
       "tagline": "Chatbots, automatisering & intelligente agents",
@@ -294,6 +295,7 @@
       "overline": "Kennismakingsgesprek · Gratis · Zonder engagement",
       "title1": "Laten we uw",
       "title2": "project starten",
+      "intro": "Gratis gesprek van 30 minuten, zonder verplichting, om uw project in België, Nederland, Frankrijk of Luxemburg te analyseren. AI-integratie, webontwikkeling of design — wij stellen uw routekaart op en sturen die binnen 24u.",
       "meta": {
         "durationLabel": "Videogesprek",
         "freeVal": "Gratis",

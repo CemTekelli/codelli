@@ -79,6 +79,30 @@ else if (nlSlug) hreflangUrls.nl = `/nl/blog/${nlSlug}`;
   navBackLabel={t(lang, 'blog.nav.backBlog') || 'Blog'}
 >
   <slot name="schema" slot="schema" />
+  <script type="application/ld+json" slot="schema" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": lang === 'en' ? 'Home' : lang === 'nl' ? 'Startpagina' : 'Accueil',
+        "item": `https://codelli.tech${localePath(lang, '/')}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": `https://codelli.tech${localePath(lang, '/blog/')}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": title,
+        "item": `https://codelli.tech${canonical}`
+      }
+    ]
+  })} />
   <meta property="og:type" content="article" slot="head" />
 
   <!-- Reading progress bar -->
