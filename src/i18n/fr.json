@@ -38,24 +38,30 @@
   },
   "services": {
     "title": "Ce que nous créons pour vous",
-    "intro": "Intégration IA à partir de 5 000 €, développement web & mobile à partir de 15 000 €, design à partir de 3 000 €. Prix fixe, zéro sous-traitance.",
+    "intro": "Site vitrine à partir de 1 000 €, intégration IA à partir de 2 500 €, développement web & mobile à partir de 10 000 €, design à partir de 2 000 €. Prix fixe, zéro sous-traitance.",
     "ai": {
       "title": "IA",
       "tagline": "Chatbots, automatisation & agents intelligents",
       "desc": "Nous identifions où l'IA crée de la vraie valeur dans votre entreprise et nous la construisons.",
-      "price": "À partir de 5 000 €"
+      "price": "À partir de 2 500 €"
     },
     "web": {
       "title": "Produit",
       "tagline": "Apps web, mobile & plateformes",
       "desc": "Développement full-stack livré 2-3x plus vite grâce à nos workflows assistés par IA.",
-      "price": "À partir de 15 000 €"
+      "price": "À partir de 10 000 €"
+    },
+    "showcase": {
+      "title": "Vitrine",
+      "tagline": "Sites web de présentation & landing pages",
+      "desc": "Présence en ligne soignée pour convertir — design, contenu et performance, prêts en 2 à 3 semaines.",
+      "price": "À partir de 1 000 €"
     },
     "design": {
       "title": "Design",
       "tagline": "Interfaces qui convertissent",
       "desc": "Expériences utilisateur qui allient esthétique et résultats business mesurables.",
-      "price": "À partir de 3 000 €"
+      "price": "À partir de 2 000 €"
     }
   },
   "subsidy": {
@@ -416,9 +422,9 @@
     "q1": "Qu'est-ce que Codelli ?",
     "a1": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Nous concevons, développons et intégrons l'intelligence artificielle pour PME et startups — sites web, applications mobiles, chatbots et agents intelligents. De l'idée au lancement en 6 semaines.",
     "q2": "Quels services propose Codelli ?",
-    "a2": "Trois services : Intégration IA & Automatisation (chatbots, agents IA, n8n — dès 5.000€), Développement Web & Applications (sites, apps, SaaS — dès 15.000€), et UX/UI Design (interfaces conversion-focused — dès 3.000€).",
+    "a2": "Quatre services : Site vitrine (présentation, landing pages — dès 1.000€), Intégration IA & Automatisation (chatbots, agents IA, n8n — dès 2.500€), Développement Web & Applications (apps, SaaS, plateformes — dès 10.000€), et UX/UI Design (interfaces conversion-focused — dès 2.000€).",
     "q3": "Combien coûte un projet ?",
-    "a3": "Un site vitrine démarre autour de 2.000€. Une application web ou mobile sur mesure de 5.000€ à 20.000€+. Tous les projets sont livrés à prix fixe, sans surprises. Contactez-nous pour un devis gratuit.",
+    "a3": "Un site vitrine démarre à 1.000€. Une application web ou mobile sur mesure de 10.000€ à 25.000€+. Tous les projets sont livrés à prix fixe, sans surprises. Contactez-nous pour un devis gratuit.",
     "q4": "Les PME belges peuvent-elles être subventionnées ?",
     "a4": "Oui. Innoviris (Bruxelles) couvre jusqu'à 75% via le Voucher Start AI. Les Chèques-entreprises (Wallonie) couvrent jusqu'à 50%. Le KMO-portefeuille VLAIO (Flandre) offre 20-30% de réduction. Codelli vous aide à vérifier votre éligibilité.",
     "q5": "Quelle est la différence avec une agence web classique ?",

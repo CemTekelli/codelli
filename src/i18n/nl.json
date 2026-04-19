@@ -38,24 +38,30 @@
   },
   "services": {
     "title": "Wat wij voor u bouwen",
-    "intro": "AI-integratie vanaf €5.000, web- en mobiele ontwikkeling vanaf €15.000, design vanaf €3.000. Vaste prijs, geen uitbesteding.",
+    "intro": "Presentatiewebsite vanaf €1.000, AI-integratie vanaf €2.500, web- en mobiele ontwikkeling vanaf €10.000, design vanaf €2.000. Vaste prijs, geen uitbesteding.",
     "ai": {
       "title": "AI",
       "tagline": "Chatbots, automatisering & intelligente agents",
       "desc": "Wij identificeren waar AI echte waarde creëert in uw bedrijf en bouwen het.",
-      "price": "Vanaf €5.000"
+      "price": "Vanaf €2.500"
     },
     "web": {
       "title": "Product",
       "tagline": "Web apps, mobiel & platformen",
       "desc": "Full-stack ontwikkeling 2-3x sneller geleverd dankzij AI-ondersteunde workflows.",
-      "price": "Vanaf €15.000"
+      "price": "Vanaf €10.000"
+    },
+    "showcase": {
+      "title": "Vitrine",
+      "tagline": "Presentatiewebsites & landing pages",
+      "desc": "Verzorgde online aanwezigheid die converteert — design, content en performance, klaar in 2 tot 3 weken.",
+      "price": "Vanaf €1.000"
     },
     "design": {
       "title": "Design",
       "tagline": "Interfaces die converteren",
       "desc": "Gebruikerservaringen die er mooi uitzien en meetbare bedrijfsresultaten opleveren.",
-      "price": "Vanaf €3.000"
+      "price": "Vanaf €2.000"
     }
   },
   "subsidy": {
@@ -416,9 +422,9 @@
     "q1": "Wat is Codelli?",
     "a1": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Wij ontwerpen, ontwikkelen en integreren kunstmatige intelligentie voor KMO's en startups — websites, mobiele apps, chatbots en AI-agenten. Van idee tot lancering in 6 weken.",
     "q2": "Welke diensten biedt Codelli aan?",
-    "a2": "Drie diensten: AI-integratie & Automatisering (chatbots, AI-agenten, n8n — vanaf €5.000), Web- & App-ontwikkeling (sites, apps, SaaS — vanaf €15.000), en UX/UI Design (conversiegericht — vanaf €3.000).",
+    "a2": "Vier diensten: Presentatiewebsite (landing pages, presentatiesites — vanaf €1.000), AI-integratie & Automatisering (chatbots, AI-agenten, n8n — vanaf €2.500), Web- & App-ontwikkeling (apps, SaaS, platformen — vanaf €10.000), en UX/UI Design (conversiegericht — vanaf €2.000).",
     "q3": "Wat kost een project?",
-    "a3": "Een visitekaartjesite begint rond €2.000. Een op maat gemaakte web- of mobiele applicatie loopt van €5.000 tot €20.000+. Alle projecten worden geleverd tegen een vaste prijs, geen verrassingen. Contacteer ons voor een gratis offerte.",
+    "a3": "Een presentatiewebsite begint vanaf €1.000. Een op maat gemaakte web- of mobiele applicatie loopt van €10.000 tot €25.000+. Alle projecten worden geleverd tegen een vaste prijs, geen verrassingen. Contacteer ons voor een gratis offerte.",
     "q4": "Kunnen Belgische KMO's subsidies krijgen?",
     "a4": "Ja. Innoviris (Brussel) dekt tot 75% via de Voucher Start AI. Chèques-entreprises (Wallonië) dekt tot 50%. KMO-portefeuille VLAIO (Vlaanderen) biedt 20-30% korting. Codelli helpt u uw subsidiemogelijkheden te controleren.",
     "q5": "Wat maakt Codelli anders dan een traditioneel bureau?",

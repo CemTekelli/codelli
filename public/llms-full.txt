@@ -68,7 +68,19 @@ React, Vue.js, Next.js, FastAPI, Node.js, Python, React Native, Flutter, Postgre
 
 ## Services & Pricing (Detailed)
 
-### 1. AI Integration & Automation — from €5,000
+### 1. Showcase Website & Landing Pages — from €1,000
+
+Presentation websites and landing pages for SMEs and startups:
+- Custom-designed showcase sites (single to multi-page)
+- High-converting landing pages
+- Content strategy & copywriting support
+- Performance-optimized (Core Web Vitals, SEO-ready)
+- Multilingual options (FR/NL/EN)
+- Delivery in 2 to 3 weeks
+
+Typical projects: company presentation sites, product landing pages, portfolio sites, local business sites.
+
+### 2. AI Integration & Automation — from €2,500
 
 Building custom AI solutions for businesses:
 - Customer-facing chatbots powered by LLMs (GPT-4, Claude, Mistral)
@@ -80,7 +92,7 @@ Building custom AI solutions for businesses:
 
 Use cases: customer support automation, internal Q&A bots, sales pipeline automation, document processing, B2B lead generation.
 
-### 2. Web & App Development — from €15,000
+### 3. Web & App Development — from €10,000
 
 Custom web applications and SaaS platforms:
 - React / Vue.js / Next.js frontends
@@ -92,7 +104,7 @@ Custom web applications and SaaS platforms:
 
 Typical projects: ticketing platforms, booking systems, dashboards, CRMs, SaaS MVPs.
 
-### 3. Mobile App Development — from €15,000
+### 4. Mobile App Development — from €10,000
 
 Cross-platform and native mobile applications:
 - React Native (iOS + Android from one codebase)
@@ -101,7 +113,7 @@ Cross-platform and native mobile applications:
 - App Store & Google Play submission
 - Push notifications, offline mode, camera, geolocation
 
-### 4. UX/UI Design — from €3,000
+### 5. UX/UI Design — from €2,000
 
 Conversion-focused interface design:
 - User research & competitor analysis
@@ -110,7 +122,7 @@ Conversion-focused interface design:
 - Prototype validation before development starts
 - Motion design and micro-interactions
 
-### 5. Discovery Call — Free (30 minutes)
+### 6. Discovery Call — Free (30 minutes)
 
 Book via: https://codelli.tech/audit-ia
 
@@ -204,16 +216,16 @@ Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. Codel
 Cem Tekelli is the founder and lead developer of Codelli, a digital studio based in Brussels, Belgium. Expert in full-stack web development (React, Vue.js, FastAPI, Node.js), mobile development (React Native) and AI integration for Belgian and European SMEs and startups.
 
 ### What services does Codelli offer?
-Codelli offers three main services: (1) AI Integration & Automation — chatbots, AI agents, n8n workflows, from €5,000; (2) Web & App Development — websites, web apps, SaaS platforms, from €15,000; (3) UX/UI Design — conversion-focused interfaces, from €3,000.
+Codelli offers four main services: (1) Showcase Website & Landing Pages — presentation sites, from €1,000; (2) AI Integration & Automation — chatbots, AI agents, n8n workflows, from €2,500; (3) Web & App Development — web apps, SaaS platforms, from €10,000; (4) UX/UI Design — conversion-focused interfaces, from €2,000.
 
 ### How much does a website cost?
-The price of a website varies by complexity. A showcase site starts around €2,000, while an e-commerce site or custom web application can range from €5,000 to €20,000+. Contact us for a free personalized quote.
+The price of a website varies by complexity. A showcase site starts from €1,000, while an e-commerce site or custom web application can range from €10,000 to €25,000+. Contact us for a free personalized quote.
 
 ### How long does a project take?
 Codelli delivers in 6 weeks thanks to AI-assisted workflows. A showcase site takes 2 to 4 weeks. A complex web or mobile application may require 2 to 4 months. We establish a precise timeline and fixed price from the start of the project.
 
 ### Do you offer AI integration for Belgian businesses?
-Yes, that is Codelli's specialty. We develop AI chatbots, intelligent agents, automation pipelines (n8n) and LLM integrations for SMEs and startups. We identify high-value use cases and build custom solutions. From €5,000.
+Yes, that is Codelli's specialty. We develop AI chatbots, intelligent agents, automation pipelines (n8n) and LLM integrations for SMEs and startups. We identify high-value use cases and build custom solutions. From €2,500.
 
 ### Can Belgian SMEs get subsidies for an AI project?
 Yes. Belgian SMEs benefit from several programs: Innoviris (Brussels) covers up to 75% via the Start AI Voucher; Chèques-entreprises (Wallonia) covers up to 50%; KMO-portefeuille (VLAIO, Flanders) offers 20-30% reduction. Codelli helps you check eligibility and build the subsidy file.

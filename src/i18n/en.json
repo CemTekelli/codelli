@@ -38,24 +38,30 @@
   },
   "services": {
     "title": "What we build for you",
-    "intro": "AI integration from €5,000, web & mobile development from €15,000, design from €3,000. Fixed price, no subcontracting.",
+    "intro": "Showcase website from €1,000, AI integration from €2,500, web & mobile development from €10,000, design from €2,000. Fixed price, no subcontracting.",
     "ai": {
       "title": "AI",
       "tagline": "Chatbots, automation & intelligent agents",
       "desc": "We identify where AI creates real value in your business and build it.",
-      "price": "From €5,000"
+      "price": "From €2,500"
     },
     "web": {
       "title": "Product",
       "tagline": "Web apps, mobile & platforms",
       "desc": "Full-stack development delivered 2-3x faster with AI-powered workflows.",
-      "price": "From €15,000"
+      "price": "From €10,000"
+    },
+    "showcase": {
+      "title": "Showcase",
+      "tagline": "Presentation websites & landing pages",
+      "desc": "A polished online presence built to convert — design, content and performance, ready in 2 to 3 weeks.",
+      "price": "From €1,000"
     },
     "design": {
       "title": "Design",
       "tagline": "Interfaces that convert",
       "desc": "User experiences that look great and drive measurable business results.",
-      "price": "From €3,000"
+      "price": "From €2,000"
     }
   },
   "subsidy": {
@@ -416,9 +422,9 @@
     "q1": "What is Codelli?",
     "a1": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. We design, develop and integrate artificial intelligence for SMEs and startups — websites, mobile apps, chatbots and AI agents. From idea to launch in 6 weeks.",
     "q2": "What services does Codelli offer?",
-    "a2": "Three services: AI Integration & Automation (chatbots, AI agents, n8n — from €5,000), Web & App Development (sites, apps, SaaS — from €15,000), and UX/UI Design (conversion-focused interfaces — from €3,000).",
+    "a2": "Four services: Showcase website (presentation sites, landing pages — from €1,000), AI Integration & Automation (chatbots, AI agents, n8n — from €2,500), Web & App Development (apps, SaaS, platforms — from €10,000), and UX/UI Design (conversion-focused interfaces — from €2,000).",
     "q3": "How much does a project cost?",
-    "a3": "A showcase website starts around €2,000. A custom web or mobile application ranges from €5,000 to €20,000+. All projects are delivered at a fixed price, no surprises. Contact us for a free quote.",
+    "a3": "A showcase website starts at €1,000. A custom web or mobile application ranges from €10,000 to €25,000+. All projects are delivered at a fixed price, no surprises. Contact us for a free quote.",
     "q4": "Can Belgian SMEs get subsidies?",
     "a4": "Yes. Innoviris (Brussels) covers up to 75% via the Voucher Start AI. Chèques-entreprises (Wallonia) covers up to 50%. KMO-portefeuille VLAIO (Flanders) offers 20-30% reduction. Codelli helps you check your eligibility.",
     "q5": "What makes Codelli different from a traditional agency?",

@@ -1,5 +1,5 @@
 ---
-import { type Lang, t, localePath } from '../../i18n/utils';
+import { type Lang, t } from '../../i18n/utils';
 
 export interface Props {
   lang: Lang;
@@ -40,7 +40,19 @@ const { lang } = Astro.props;
         </div>
       </article>
 
-      <!-- Service 3 — Design -->
+      <!-- Service 3 — Site vitrine -->
+      <article class="service-block">
+        <div class="service-block-left">
+          <h3 class="service-title">{t(lang, 'services.showcase.title')}</h3>
+        </div>
+        <div class="service-block-right">
+          <span class="service-tagline">{t(lang, 'services.showcase.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.showcase.desc')}</p>
+          <span class="service-price">{t(lang, 'services.showcase.price')}</span>
+        </div>
+      </article>
+
+      <!-- Service 4 — Design -->
       <article class="service-block">
         <div class="service-block-left">
           <h3 class="service-title">{t(lang, 'services.design.title')}</h3>

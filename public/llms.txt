@@ -38,10 +38,11 @@
 
 | Service | Description | Starting price |
 |---|---|---|
-| AI Integration & Automation | Chatbots, AI agents, n8n workflows, LLM integration | €5,000 |
-| Web & App Development | Web apps, SaaS platforms, e-commerce | €15,000 |
-| Mobile Development | iOS, Android, React Native | €15,000 |
-| UX/UI Design | User interfaces, design systems | €3,000 |
+| Showcase Website & Landing Pages | Presentation sites, landing pages, conversion-focused | €1,000 |
+| AI Integration & Automation | Chatbots, AI agents, n8n workflows, LLM integration | €2,500 |
+| Web & App Development | Web apps, SaaS platforms, e-commerce | €10,000 |
+| Mobile Development | iOS, Android, React Native | €10,000 |
+| UX/UI Design | User interfaces, design systems | €2,000 |
 | Discovery Call | 30-minute free consultation | Free |
 
 ## Key Differentiators
