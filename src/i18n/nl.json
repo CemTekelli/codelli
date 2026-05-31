@@ -40,13 +40,13 @@
     "title": "Wat wij voor u bouwen",
     "intro": "Drie manieren om met ons samen te werken, één aanspreekpunt. Design, ontwikkeling en AI onder één dak — scope, prijs en timing vastgelegd vóór de start.",
     "ai": {
-      "title": "AI & Automatisering",
+      "title": "AI",
       "tagline": "Chatbots, automatisering & intelligente agents",
       "desc": "Wij identificeren waar AI echte waarde creëert in uw bedrijf en bouwen het — van audit tot productie-implementatie.",
       "price": "Audit + PoC vanaf €3.500"
     },
     "web": {
-      "title": "Applicaties & SaaS",
+      "title": "Applicaties",
       "tagline": "Web-apps, mobiel & platformen op maat",
       "desc": "Full-stack ontwikkeling op maat — van MVP tot productieklaar product, web en mobiel.",
       "price": "MVP vanaf €12.000"

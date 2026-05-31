@@ -40,13 +40,13 @@
     "title": "Ce que nous créons pour vous",
     "intro": "Trois façons de travailler avec nous, un seul interlocuteur. Design, développement et IA sous le même toit — périmètre, prix et délai fixés avant de démarrer.",
     "ai": {
-      "title": "IA & Automatisation",
+      "title": "IA",
       "tagline": "Chatbots, automatisation & agents intelligents",
       "desc": "Nous identifions où l'IA crée de la vraie valeur dans votre entreprise et nous la construisons — de l'audit au déploiement en production.",
       "price": "Audit + POC à partir de 3 500 €"
     },
     "web": {
-      "title": "Applications & SaaS",
+      "title": "Applications",
       "tagline": "Apps web, mobile & plateformes sur mesure",
       "desc": "Développement full-stack sur mesure — du MVP au produit en production, web et mobile.",
       "price": "MVP à partir de 12 000 €"

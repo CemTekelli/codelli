@@ -1050,7 +1050,7 @@ body:has(.hero-top-bar--fixed) main {
     text-transform: none;
     will-change: transform, opacity;
     text-align: right;
-    max-width: 220px;
+    max-width: 300px;
     line-height: 1.5;
     transition: color 0.4s ease;
     align-self: center;
@@ -3232,7 +3232,7 @@ body:has(.hero-top-bar--fixed) main {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.3);
     line-height: 1.6;
-    max-width: 260px;
+    max-width: 340px;
     transition: color 0.4s ease;
 }
 

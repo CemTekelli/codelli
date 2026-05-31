@@ -40,13 +40,13 @@
     "title": "What we build for you",
     "intro": "Three ways to work with us, one point of contact. Design, development and AI under one roof — scope, price and timeline fixed before we start.",
     "ai": {
-      "title": "AI & Automation",
+      "title": "AI",
       "tagline": "Chatbots, automation & intelligent agents",
       "desc": "We identify where AI creates real value in your business and build it — from audit to production deployment.",
       "price": "Audit + PoC from €3,500"
     },
     "web": {
-      "title": "Applications & SaaS",
+      "title": "Applications",
       "tagline": "Web apps, mobile & custom platforms",
       "desc": "Custom full-stack development — from MVP to production product, web and mobile.",
       "price": "MVP from €12,000"
