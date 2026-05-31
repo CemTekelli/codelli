@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Codelli — AI Studio & Web Development B2B | Brussels, Belgium",
-    "description": "AI studio based in Brussels: ChatGPT & LLM integration, web and mobile app development for B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. Clear timelines, fixed price. Free consultation.",
+    "title": "Web development, AI & automation for SMEs — Brussels | Codelli",
+    "description": "Brussels digital studio: websites, AI chatbots and automation for SMEs in Belgium. Transparent pricing, GDPR-compliant. Free quote.",
     "keywords": "AI studio brussels, AI integration agency belgium, ChatGPT integration SME, LLM integration B2B, web development agency belgium, Cem Tekelli, Codelli, web developer belgium france luxembourg netherlands, mobile app development, digital studio brussels, React Vue.js FastAPI Node.js, AI automation n8n, chatbot development, startup belgium, MVP development europe",
     "og": {
       "title": "Codelli | AI Studio & Web Development B2B — Brussels",
@@ -362,7 +362,7 @@
   "person": {
     "meta": {
       "title": "Cem Tekelli — Founder of Codelli | Full-Stack Developer & AI Expert",
-      "description": "Cem Tekelli is the founder of Codelli, an AI digital studio based in Brussels. Expert full-stack developer specializing in React, Vue.js, FastAPI, Node.js and AI integration for SMEs and startups across Belgium, France, Luxembourg and the Netherlands."
+      "description": "Cem Tekelli, founder of Codelli — AI digital studio in Brussels. Full-stack developer (React, FastAPI, Node.js) and AI integration for SMEs in Belgium."
     },
     "nav": { "back": "Back to site" },
     "hero": {

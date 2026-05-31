@@ -1,8 +1,8 @@
 {
   "lang": "nl",
   "meta": {
-    "title": "Codelli — AI Studio & Digitaal Bureau | Brussel, België",
-    "description": "AI studio in Brussel: ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Duidelijke timing, vaste prijs. Gratis adviesgesprek.",
+    "title": "Website, AI-chatbot & automatisering voor kmo's — Brussel | Codelli",
+    "description": "Digitaal studio in Brussel: websites, AI-chatbots en automatisering voor kmo's in België. Transparante prijzen, AVG-conform. Gratis offerte.",
     "keywords": "AI studio brussel, AI integratie bureau belgie, ChatGPT integratie KMO, LLM integratie B2B, webontwikkeling B2B brussel, digitaal bureau nederland, Cem Tekelli, Codelli, app ontwikkeling amsterdam rotterdam, chatbot bedrijf, automatisering n8n, web developer belgie nederland, MVP ontwikkeling, startup belgie nederland luxemburg, React Vue.js FastAPI Node.js",
     "og": {
       "title": "Codelli | AI Studio & Webontwikkeling B2B — Brussel",
@@ -362,7 +362,7 @@
   "person": {
     "meta": {
       "title": "Cem Tekelli — Oprichter van Codelli | Full-Stack Developer & AI Expert",
-      "description": "Cem Tekelli is de oprichter van Codelli, een AI digitaal studio gevestigd in Brussel. Expert full-stack developer gespecialiseerd in React, Vue.js, FastAPI, Node.js en AI-integratie voor KMO's en startups in België, Nederland, Luxemburg en Frankrijk."
+      "description": "Cem Tekelli, oprichter van Codelli — AI digitaal studio in Brussel. Full-stack developer (React, FastAPI, Node.js) en AI-integratie voor kmo's in België."
     },
     "nav": { "back": "Terug naar site" },
     "hero": {

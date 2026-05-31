@@ -16,9 +16,9 @@ const canonical = '/cem-tekelli';
   navLangUrls={{ fr: '/cem-tekelli', nl: '/nl/cem-tekelli', en: '/en/cem-tekelli' }}
   navBackHref={localePath(lang, '/')}
   navBackLabel={t(lang, 'person.nav.back')}
+  ogType="profile"
 >
-  <!-- Override og:type and add profile meta via head slot -->
-  <meta property="og:type" content="profile" slot="head" />
+  <!-- Profile meta (og:type=profile is set via the ogType prop) -->
   <meta property="profile:first_name" content="Cem" slot="head" />
   <meta property="profile:last_name" content="Tekelli" slot="head" />
 

@@ -1,8 +1,8 @@
 {
   "lang": "fr",
   "meta": {
-    "title": "Codelli — Studio IA & Développement Web B2B | Bruxelles, Belgique",
-    "description": "Studio IA à Bruxelles : intégration ChatGPT & LLM, développement web et apps mobiles pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Délais clairs, prix fixe. Devis gratuit.",
+    "title": "Création de site web, IA & automatisation PME — Bruxelles | Codelli",
+    "description": "Studio digital à Bruxelles : création de sites web, chatbots IA et automatisation pour PME en Belgique. Prix transparents, conforme RGPD. Devis gratuit.",
     "keywords": "studio IA bruxelles, intégration IA PME belgique, agence intégration chatgpt belgique, développement web B2B bruxelles, automatisation n8n, chatbot entreprise belgique, agence IA france luxembourg, Cem Tekelli, Codelli, agence web bruxelles, développeur web belgique, création site internet france luxembourg pays-bas, développement application mobile, consulting digital, react node.js fastapi, startup belgique france luxembourg",
     "og": {
       "title": "Codelli | Studio IA & Développement Web B2B — Bruxelles",
@@ -362,7 +362,7 @@
   "person": {
     "meta": {
       "title": "Cem Tekelli — Fondateur de Codelli | Développeur Full-Stack & Expert IA",
-      "description": "Cem Tekelli est le fondateur de Codelli, studio digital IA basé à Bruxelles. Développeur full-stack spécialisé en React, Vue.js, FastAPI, Node.js et intégration IA pour PME et startups en Belgique, France, Luxembourg et Pays-Bas."
+      "description": "Cem Tekelli, fondateur de Codelli — studio digital IA à Bruxelles. Développeur full-stack (React, FastAPI, Node.js) et intégration IA pour PME en Belgique."
     },
     "nav": { "back": "Retour au site" },
     "hero": {

@@ -12,6 +12,7 @@ export interface Props {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  ogType?: string;
   bodyClass?: string;
   hreflangUrls?: Partial<Record<Lang, string>>;
   /** Override lang switcher URLs in the nav (for sub-pages with translated slugs). */
@@ -28,6 +29,7 @@ const {
   description,
   canonical,
   ogImage,
+  ogType,
   bodyClass = 'loading',
   hreflangUrls,
   navLangUrls,
@@ -42,6 +44,7 @@ const {
   description={description}
   canonical={canonical}
   ogImage={ogImage}
+  ogType={ogType}
   bodyClass={bodyClass}
   hreflangUrls={hreflangUrls}
 >

@@ -11,6 +11,8 @@ export interface Props {
   canonical?: string;
   /** OG image URL (absolute) */
   ogImage?: string;
+  /** OG type: website | article | profile */
+  ogType?: string;
   /** Additional <head> content passed via named slot */
   bodyClass?: string;
   /**
@@ -26,6 +28,7 @@ const {
   description,
   canonical,
   ogImage = 'https://codelli.tech/og-image.jpg',
+  ogType = 'website',
   bodyClass = 'loading',
   hreflangUrls,
 } = Astro.props;
@@ -43,6 +46,7 @@ const twitterDesc    = meta.twitter?.description ?? ogDesc;
 
 const siteUrl        = 'https://codelli.tech';
 const canonicalHref  = canonical ? `${siteUrl}${canonical}` : `${siteUrl}${Astro.url.pathname}`;
+const ogImageHref    = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage.startsWith('/') ? '' : '/'}${ogImage}`;
 
 // OG locale — dynamic per language
 const ogLocale = lang === 'nl' ? 'nl_BE' : lang === 'en' ? 'en' : 'fr_BE';
@@ -118,11 +122,11 @@ const hreflangAlternates = (() => {
   <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content={ogType} />
   <meta property="og:url" content={canonicalHref} />
   <meta property="og:title" content={ogTitle} />
   <meta property="og:description" content={ogDesc} />
-  <meta property="og:image" content={ogImage} />
+  <meta property="og:image" content={ogImageHref} />
   <meta property="og:locale" content={ogLocale} />
   {ogLocaleAlternates.map(alt => <meta property="og:locale:alternate" content={alt} />)}
   <meta property="og:site_name" content="Codelli" />
@@ -132,7 +136,7 @@ const hreflangAlternates = (() => {
   <meta property="twitter:url" content={canonicalHref} />
   <meta property="twitter:title" content={twitterTitle} />
   <meta property="twitter:description" content={twitterDesc} />
-  <meta property="twitter:image" content={ogImage} />
+  <meta property="twitter:image" content={ogImageHref} />
 
   <!-- Schema.org (slot for page-specific JSON-LD) -->
   <slot name="schema" />
