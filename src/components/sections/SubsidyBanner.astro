@@ -15,7 +15,10 @@ const { lang } = Astro.props;
 >
   <div class="subsidy-container">
     <p class="subsidy-tag">{t(lang, 'subsidy.tag')}</p>
-    <p class="subsidy-headline">{t(lang, 'subsidy.headline')}</p>
+    <div class="subsidy-text">
+      <p class="subsidy-headline">{t(lang, 'subsidy.headline')}</p>
+      <p class="subsidy-desc">{t(lang, 'subsidy.desc')}</p>
+    </div>
     <a
       href={localePath(lang, '/audit-ia')}
       class="subsidy-cta"

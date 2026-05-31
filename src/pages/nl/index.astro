@@ -67,16 +67,14 @@ const canonical = '/nl/';
         ],
         "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
         "priceRange": "$$-$$$",
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
+        "vatID": "BE1006208714",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Codelli Diensten",
           "itemListElement": [
-            { "@type": "OfferCatalog", "name": "Presentatiewebsite & Landing Pages" },
-            { "@type": "OfferCatalog", "name": "AI-integratie & Automatisering" },
-            { "@type": "OfferCatalog", "name": "Webontwikkeling" },
-            { "@type": "OfferCatalog", "name": "Mobiele app-ontwikkeling" },
-            { "@type": "OfferCatalog", "name": "UX/UI Design" }
+            { "@type": "OfferCatalog", "name": "Website — vitrines & landing pages" },
+            { "@type": "OfferCatalog", "name": "AI & Automatisering" },
+            { "@type": "OfferCatalog", "name": "Applicaties & SaaS" }
           ]
         }
       },
@@ -100,10 +98,43 @@ const canonical = '/nl/';
         "sameAs": ["https://www.linkedin.com/in/cemtekelli/", "https://www.linkedin.com/company/codelli-engineering/"]
       },
       {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-showcase",
+        "serviceType": "Website Design",
+        "name": "Website — vitrines & landing pages",
+        "description": "Presentatiewebsites en landing pages op maat voor kmo's en startups. Design, content en performance geoptimaliseerd voor conversie. Online in 2 tot 4 weken.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "2900", "priceCurrency": "EUR", "description": "Vanaf €2.900" },
+        "areaServed": [{"@type": "Country", "name": "België"}, {"@type": "Country", "name": "Frankrijk"}, {"@type": "Country", "name": "Luxemburg"}, {"@type": "Country", "name": "Nederland"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/nl/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-ai",
+        "serviceType": "AI Integration",
+        "name": "AI & Automatisering",
+        "description": "Codelli bouwt AI-chatbots, intelligente agenten en automatiseringssystemen (n8n) op maat voor kmo's en startups. Van use-case-audit tot productie-implementatie.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "3500", "priceCurrency": "EUR", "description": "Audit + PoC vanaf €3.500; project in productie €12.000 tot €30.000" },
+        "areaServed": [{"@type": "Country", "name": "België"}, {"@type": "Country", "name": "Frankrijk"}, {"@type": "Country", "name": "Luxemburg"}, {"@type": "Country", "name": "Nederland"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/nl/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-web",
+        "serviceType": "Web Development",
+        "name": "Applicaties & SaaS",
+        "description": "Web- en mobiele applicaties, SaaS-platformen op maat (web en mobiel inbegrepen). Stack React, Vue.js, Next.js, FastAPI, Node.js, React Native. Van MVP tot productieklaar product.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "12000", "priceCurrency": "EUR", "description": "MVP vanaf €12.000; maatwerk €12.000 tot €50.000" },
+        "areaServed": [{"@type": "Country", "name": "België"}, {"@type": "Country", "name": "Frankrijk"}, {"@type": "Country", "name": "Luxemburg"}, {"@type": "Country", "name": "Nederland"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/nl/#contact" }
+      },
+      {
         "@type": "HowTo",
         "@id": "https://codelli.tech/nl/#process",
         "name": "Hoe Codelli uw digitaal project levert",
-        "description": "Het ontwikkelingsproces van Codelli in 4 stappen — van ontdekking tot lancering. Levering in 6 weken.",
+        "description": "Het ontwikkelingsproces van Codelli in 4 stappen — van ontdekking tot lancering. Reken op 6 tot 8 weken voor een standaardproject.",
         "totalTime": "PT6W",
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "Ontdekking (1–2 weken)", "text": "We leren uw bedrijf kennen, definiëren de scope, het budget en de planning. Een gratis ontdekkingsgesprek van 30 minuten om te beginnen.", "url": "https://codelli.tech/nl/#process" },
@@ -116,16 +147,16 @@ const canonical = '/nl/';
         "@type": "FAQPage",
         "@id": "https://codelli.tech/nl/#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "Wat is Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Codelli ontwerpt, ontwikkelt en integreert kunstmatige intelligentie voor kmo's en startups: websites, mobiele applicaties, chatbots, automatisering en intelligente agenten. Levering in 6 weken." } },
+          { "@type": "Question", "name": "Wat is Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Codelli ontwerpt, ontwikkelt en integreert kunstmatige intelligentie voor kmo's en startups: websites, mobiele applicaties, chatbots, automatisering en intelligente agenten. Van concept tot lancering in 6 tot 8 weken voor een standaardproject." } },
           { "@type": "Question", "name": "Wie is Cem Tekelli?", "acceptedAnswer": { "@type": "Answer", "text": "Cem Tekelli is de oprichter en lead developer van Codelli, een digitaal studio gevestigd in Brussel, België. Expert in full-stack webontwikkeling (React, Vue.js, FastAPI, Node.js), mobiele ontwikkeling (React Native) en AI-integratie voor Belgische en Europese kmo's en startups." } },
-          { "@type": "Question", "name": "Welke diensten biedt Codelli aan?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli biedt vier hoofddiensten aan: (1) Presentatiewebsite & Landing Pages — presentatiesites, vanaf €1.000; (2) AI-integratie & Automatisering — chatbots, AI-agenten, n8n workflows, vanaf €2.500; (3) Web- en App-ontwikkeling — web-apps, SaaS-platforms, vanaf €10.000; (4) UX/UI Design — conversiegericht ontwerp, vanaf €2.000." } },
-          { "@type": "Question", "name": "Hoeveel kost een website?", "acceptedAnswer": { "@type": "Answer", "text": "De prijs van een website varieert naargelang de complexiteit. Een presentatiewebsite begint vanaf €1.000, terwijl een e-commerce of maatwerk webapplicatie kan variëren van €10.000 tot €25.000+. Neem contact op voor een gratis gepersonaliseerde offerte." } },
-          { "@type": "Question", "name": "Hoe lang duurt een project?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli levert in 6 weken dankzij AI-ondersteunde workflows. Een presentatiewebsite duurt 2 tot 4 weken. Een complexe web- of mobiele applicatie kan 2 tot 4 maanden vergen. We stellen een nauwkeurige planning en vaste prijs vast bij de start van het project." } },
-          { "@type": "Question", "name": "Kunnen Belgische kmo's subsidies krijgen voor een AI-project?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Belgische kmo's profiteren van meerdere programma's: Innoviris (Brussel) dekt tot 75% via de Start AI-voucher; Chèques-entreprises (Wallonië) dekt tot 50%; KMO-portefeuille (VLAIO, Vlaanderen) biedt 20-30% korting. Codelli helpt u uw subsidiabiliteit te controleren en het dossier samen te stellen." } },
+          { "@type": "Question", "name": "Welke diensten biedt Codelli aan?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli biedt drie diensten aan: (1) Website — vitrines & landing pages, vanaf €2.900; (2) AI & Automatisering — chatbots, AI-agenten, n8n workflows, audit/PoC vanaf €3.500 (project in productie €12.000 tot €30.000); (3) Applicaties & SaaS — web-apps, mobiel en platformen op maat, MVP vanaf €12.000. Design is inbegrepen in elk project." } },
+          { "@type": "Question", "name": "Hoeveel kost een website?", "acceptedAnswer": { "@type": "Answer", "text": "De prijs hangt af van de complexiteit. Een website start vanaf €2.900. Een maatwerk web- of mobiele applicatie gaat van €12.000 tot €50.000. Alle projecten tegen vaste prijs — neem contact op voor een gratis gepersonaliseerde offerte." } },
+          { "@type": "Question", "name": "Hoe lang duurt een project?", "acceptedAnswer": { "@type": "Answer", "text": "De doorlooptijd hangt af van het project: een website duurt 2 tot 4 weken, een maatwerkproject (app, SaaS, AI-integratie) 6 tot 12 weken afhankelijk van de scope. We stellen een nauwkeurige planning en vaste prijs vast bij de start van het project." } },
+          { "@type": "Question", "name": "Kunnen Belgische kmo's subsidies krijgen voor een AI-project?", "acceptedAnswer": { "@type": "Answer", "text": "Er bestaan verschillende regionale regelingen (bedragen en beschikbaarheid variëren — per geval te controleren). In Wallonië dekt de cheque \"Digitale maturiteit\" (Chèques-entreprises) 50% van strategisch advies/diagnose. In Vlaanderen subsidieert de KMO-portefeuille opleidingen (20-30%) en cybersecurity-advies (35-45%). In Brussel is de Innoviris Start AI-voucher (tot 75% van de AI-studie) opgeschort in 2026. Codelli helpt u de regelingen te identificeren die u echt kunt gebruiken en het dossier op te stellen." } },
           { "@type": "Question", "name": "Wat maakt Codelli anders dan een traditioneel webbureau?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli combineert design, ontwikkeling en AI onder één dak, zonder uitbesteding. Dankzij AI in het ontwikkelingsproces leveren we 2-3x sneller dan een traditioneel bureau. Alle projecten worden geleverd tegen een vaste prijs en binnen de aangekondigde deadline." } },
-          { "@type": "Question", "name": "Hoe integreer ik ChatGPT of een LLM in mijn bedrijf?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyseert uw bestaand systeem, identificeert waardevolle use cases en bouwt de integratie via OpenAI, Anthropic API's of open-source modellen (Mistral, LLaMA). Budget vanaf €2.500. Doorlooptijd: 4 tot 6 weken. Een werkende proof of concept wordt geleverd voor enige langetermijnverplichting." } },
+          { "@type": "Question", "name": "Hoe integreer ik ChatGPT of een LLM in mijn bedrijf?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyseert uw bestaand systeem, identificeert waardevolle use cases en bouwt de integratie via OpenAI, Anthropic API's of open-source modellen (Mistral, LLaMA). Audit + PoC vanaf €3.500, project in productie €12.000 tot €30.000. Een werkende proof of concept wordt geleverd voor enige langetermijnverplichting." } },
           { "@type": "Question", "name": "Werkt Codelli ook met bedrijven in Nederland, Frankrijk en Luxemburg?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Codelli bedient B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Alle opdrachten kunnen volledig op afstand worden uitgevoerd. We communiceren in het Frans, Nederlands en Engels en begrijpen de lokale regelgeving van elke markt." } },
-          { "@type": "Question", "name": "Wat is de ROI van AI-integratie voor een kmo?", "acceptedAnswer": { "@type": "Answer", "text": "Onze B2B-klanten zien gemiddeld een vermindering van 30 tot 60% van de tijd besteed aan repetitieve taken binnen 3 maanden. Een AI-chatbot vermindert het supportvolume gemiddeld met 40%. De exacte ROI hangt af van het gebruik — we berekenen het samen tijdens het gratis kennismakingsgesprek." } }
+          { "@type": "Question", "name": "Wat is de ROI van AI-integratie voor een kmo?", "acceptedAnswer": { "@type": "Answer", "text": "Het voordeel hangt af van de use case: een repetitieve taak automatiseren of een deel van uw supportvragen afleiden maakt meetbare tijd vrij voor uw team. In plaats van een algemeen cijfer schatten we uw concrete ROI — volumes, kosten, doorlooptijden — tijdens het gratis kennismakingsgesprek." } }
         ]
       },
       {

@@ -16,31 +16,7 @@ const { lang } = Astro.props;
     </header>
 
     <div class="services-stack">
-      <!-- Service 1 — IA (featured) -->
-      <article class="service-block service-block--featured">
-        <div class="service-block-left">
-          <h3 class="service-title">{t(lang, 'services.ai.title')}</h3>
-        </div>
-        <div class="service-block-right">
-          <span class="service-tagline">{t(lang, 'services.ai.tagline')}</span>
-          <p class="service-desc">{t(lang, 'services.ai.desc')}</p>
-          <span class="service-price">{t(lang, 'services.ai.price')}</span>
-        </div>
-      </article>
-
-      <!-- Service 2 — Produit -->
-      <article class="service-block">
-        <div class="service-block-left">
-          <h3 class="service-title">{t(lang, 'services.web.title')}</h3>
-        </div>
-        <div class="service-block-right">
-          <span class="service-tagline">{t(lang, 'services.web.tagline')}</span>
-          <p class="service-desc">{t(lang, 'services.web.desc')}</p>
-          <span class="service-price">{t(lang, 'services.web.price')}</span>
-        </div>
-      </article>
-
-      <!-- Service 3 — Site vitrine -->
+      <!-- Service 1 — Site web -->
       <article class="service-block">
         <div class="service-block-left">
           <h3 class="service-title">{t(lang, 'services.showcase.title')}</h3>
@@ -52,15 +28,27 @@ const { lang } = Astro.props;
         </div>
       </article>
 
-      <!-- Service 4 — Design -->
-      <article class="service-block">
+      <!-- Service 2 — IA & Automatisation (featured) -->
+      <article class="service-block service-block--featured">
         <div class="service-block-left">
-          <h3 class="service-title">{t(lang, 'services.design.title')}</h3>
+          <h3 class="service-title">{t(lang, 'services.ai.title')}</h3>
         </div>
         <div class="service-block-right">
-          <span class="service-tagline">{t(lang, 'services.design.tagline')}</span>
-          <p class="service-desc">{t(lang, 'services.design.desc')}</p>
-          <span class="service-price">{t(lang, 'services.design.price')}</span>
+          <span class="service-tagline">{t(lang, 'services.ai.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.ai.desc')}</p>
+          <span class="service-price">{t(lang, 'services.ai.price')}</span>
+        </div>
+      </article>
+
+      <!-- Service 3 — Applications & SaaS -->
+      <article class="service-block">
+        <div class="service-block-left">
+          <h3 class="service-title">{t(lang, 'services.web.title')}</h3>
+        </div>
+        <div class="service-block-right">
+          <span class="service-tagline">{t(lang, 'services.web.tagline')}</span>
+          <p class="service-desc">{t(lang, 'services.web.desc')}</p>
+          <span class="service-price">{t(lang, 'services.web.price')}</span>
         </div>
       </article>
     </div>

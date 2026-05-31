@@ -67,16 +67,14 @@ const canonical = '/en/';
         ],
         "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
         "priceRange": "$$-$$$",
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
+        "vatID": "BE1006208714",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Codelli Services",
           "itemListElement": [
-            { "@type": "OfferCatalog", "name": "Showcase Website & Landing Pages" },
-            { "@type": "OfferCatalog", "name": "AI Integration & Automation" },
-            { "@type": "OfferCatalog", "name": "Web Development" },
-            { "@type": "OfferCatalog", "name": "Mobile App Development" },
-            { "@type": "OfferCatalog", "name": "UX/UI Design" }
+            { "@type": "OfferCatalog", "name": "Website — showcase & landing pages" },
+            { "@type": "OfferCatalog", "name": "AI & Automation" },
+            { "@type": "OfferCatalog", "name": "Applications & SaaS" }
           ]
         }
       },
@@ -100,10 +98,43 @@ const canonical = '/en/';
         "sameAs": ["https://www.linkedin.com/in/cemtekelli/", "https://www.linkedin.com/company/codelli-engineering/"]
       },
       {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-showcase",
+        "serviceType": "Website Design",
+        "name": "Website — showcase & landing pages",
+        "description": "Custom showcase sites, presentation websites and landing pages for SMEs and startups. Design, content and performance optimised for conversion. Live in 2 to 4 weeks.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "2900", "priceCurrency": "EUR", "description": "From €2,900" },
+        "areaServed": [{"@type": "Country", "name": "Belgium"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Netherlands"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/en/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-ai",
+        "serviceType": "AI Integration",
+        "name": "AI & Automation",
+        "description": "Codelli builds custom AI chatbots, intelligent agents and automation systems (n8n) for SMEs and startups. From use-case audit to production deployment.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "3500", "priceCurrency": "EUR", "description": "Audit + PoC from €3,500; production project €12,000 to €30,000" },
+        "areaServed": [{"@type": "Country", "name": "Belgium"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Netherlands"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/en/#contact" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://codelli.tech/#service-web",
+        "serviceType": "Web Development",
+        "name": "Applications & SaaS",
+        "description": "Custom web and mobile applications, SaaS platforms (web and mobile included). Stack React, Vue.js, Next.js, FastAPI, Node.js, React Native. From MVP to production product.",
+        "provider": { "@id": "https://codelli.tech/#organization" },
+        "offers": { "@type": "Offer", "price": "12000", "priceCurrency": "EUR", "description": "MVP from €12,000; custom €12,000 to €50,000" },
+        "areaServed": [{"@type": "Country", "name": "Belgium"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Netherlands"}],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/en/#contact" }
+      },
+      {
         "@type": "HowTo",
         "@id": "https://codelli.tech/en/#process",
         "name": "How Codelli delivers your digital project",
-        "description": "Codelli's development process in 4 steps — from discovery to launch. Delivery in 6 weeks.",
+        "description": "Codelli's development process in 4 steps — from discovery to launch. Around 6 to 8 weeks for a standard project.",
         "totalTime": "PT6W",
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "Discovery (1–2 weeks)", "text": "We learn your business, define scope, budget and timeline. A free 30-minute discovery call to get started.", "url": "https://codelli.tech/en/#process" },
@@ -116,16 +147,16 @@ const canonical = '/en/';
         "@type": "FAQPage",
         "@id": "https://codelli.tech/en/#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "What is Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. Codelli designs, develops and integrates artificial intelligence for SMEs and startups: websites, mobile applications, chatbots, automation and intelligent agents. Delivery in 6 weeks." } },
+          { "@type": "Question", "name": "What is Codelli?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. Codelli designs, develops and integrates artificial intelligence for SMEs and startups: websites, mobile applications, chatbots, automation and intelligent agents. From concept to launch in 6 to 8 weeks for a standard project." } },
           { "@type": "Question", "name": "Who is Cem Tekelli?", "acceptedAnswer": { "@type": "Answer", "text": "Cem Tekelli is the founder and lead developer of Codelli, a digital studio based in Brussels, Belgium. Expert in full-stack web development (React, Vue.js, FastAPI, Node.js), mobile development (React Native) and AI integration for Belgian and European SMEs and startups." } },
-          { "@type": "Question", "name": "What services does Codelli offer?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli offers four main services: (1) Showcase Website & Landing Pages — presentation sites, from €1,000; (2) AI Integration & Automation — chatbots, AI agents, n8n workflows, from €2,500; (3) Web & App Development — web apps, SaaS platforms, from €10,000; (4) UX/UI Design — conversion-focused interfaces, from €2,000." } },
-          { "@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": { "@type": "Answer", "text": "The price of a website varies by complexity. A showcase site starts from €1,000, while an e-commerce site or custom web application can range from €10,000 to €25,000+. Contact us for a free personalised quote." } },
-          { "@type": "Question", "name": "How long does a project take?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli delivers in 6 weeks thanks to AI-assisted workflows. A showcase site takes 2 to 4 weeks. A complex web or mobile application may require 2 to 4 months. We establish a precise timeline and fixed price from the start of the project." } },
-          { "@type": "Question", "name": "Can Belgian SMEs get subsidies for an AI project?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Belgian SMEs benefit from several programs: Innoviris (Brussels) covers up to 75% via the Start AI Voucher; Chèques-entreprises (Wallonia) covers up to 50%; KMO-portefeuille (VLAIO, Flanders) offers 20-30% reduction. Codelli helps you check eligibility and build the subsidy application." } },
+          { "@type": "Question", "name": "What services does Codelli offer?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli offers three services: (1) Website — showcase sites & landing pages, from €2,900; (2) AI & Automation — chatbots, AI agents, n8n workflows, audit/PoC from €3,500 (production project €12,000 to €30,000); (3) Applications & SaaS — web apps, mobile and custom platforms, MVP from €12,000. Design is included in every project." } },
+          { "@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": { "@type": "Answer", "text": "The price depends on complexity. A showcase website starts at €2,900. A custom web or mobile application ranges from €12,000 to €50,000. All projects are fixed-price — contact us for a free personalised quote." } },
+          { "@type": "Question", "name": "How long does a project take?", "acceptedAnswer": { "@type": "Answer", "text": "Timeline depends on the project: a showcase website takes 2 to 4 weeks, a custom project (app, SaaS, AI integration) 6 to 12 weeks depending on scope. We establish a precise timeline and fixed price from the start of the project." } },
+          { "@type": "Question", "name": "Can Belgian SMEs get subsidies for an AI project?", "acceptedAnswer": { "@type": "Answer", "text": "Several regional schemes exist (amounts and availability vary — to be checked case by case). In Wallonia, the \"Digital Maturity\" cheque (Chèques-entreprises) covers 50% of strategic consulting/diagnosis. In Flanders, the KMO-portefeuille subsidises training (20-30%) and cybersecurity consulting (35-45%). In Brussels, the Innoviris Start AI Voucher (up to 75% of the AI study) is suspended in 2026. Codelli helps you identify the schemes you can actually use and build the application." } },
           { "@type": "Question", "name": "What makes Codelli different from a traditional web agency?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli combines design, development and AI under one roof, with no subcontracting. Thanks to AI in the development process, we deliver 2-3x faster than a traditional agency. All projects are delivered at fixed price and within the announced deadline." } },
-          { "@type": "Question", "name": "How do I integrate ChatGPT or an LLM into my business?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyses your existing system, identifies high-value use cases and builds the integration via OpenAI, Anthropic APIs or open-source models (Mistral, LLaMA). Budget from €2,500. Timeline: 4 to 6 weeks. A working proof of concept is delivered before any long-term commitment." } },
+          { "@type": "Question", "name": "How do I integrate ChatGPT or an LLM into my business?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyses your existing system, identifies high-value use cases and builds the integration via OpenAI, Anthropic APIs or open-source models (Mistral, LLaMA). Audit + PoC from €3,500, production project €12,000 to €30,000. A working proof of concept is delivered before any long-term commitment." } },
           { "@type": "Question", "name": "Does Codelli work with companies in France, Luxembourg and the Netherlands?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Codelli serves B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. All engagements can be conducted fully remotely. We communicate in French, Dutch and English and understand the local regulatory context of each market." } },
-          { "@type": "Question", "name": "What is the ROI of AI integration for an SME?", "acceptedAnswer": { "@type": "Answer", "text": "Our B2B clients typically see a 30–60% reduction in time spent on repetitive tasks within 3 months. An AI chatbot reduces support volume by an average of 40%. The exact ROI depends on the use case — we calculate it together during the free discovery call." } }
+          { "@type": "Question", "name": "What is the ROI of AI integration for an SME?", "acceptedAnswer": { "@type": "Answer", "text": "The benefit depends on the use case: automating a repetitive task or deflecting part of your support requests frees up measurable time for your team. Rather than a generic figure, we estimate your concrete ROI — volumes, costs, timelines — during the free discovery call." } }
         ]
       },
       {

@@ -2,15 +2,15 @@
   "lang": "en",
   "meta": {
     "title": "Codelli — AI Studio & Web Development B2B | Brussels, Belgium",
-    "description": "AI studio based in Brussels: ChatGPT & LLM integration, web and mobile app development for B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. Delivery in 6 weeks. Free consultation.",
+    "description": "AI studio based in Brussels: ChatGPT & LLM integration, web and mobile app development for B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands. Clear timelines, fixed price. Free consultation.",
     "keywords": "AI studio brussels, AI integration agency belgium, ChatGPT integration SME, LLM integration B2B, web development agency belgium, Cem Tekelli, Codelli, web developer belgium france luxembourg netherlands, mobile app development, digital studio brussels, React Vue.js FastAPI Node.js, AI automation n8n, chatbot development, startup belgium, MVP development europe",
     "og": {
       "title": "Codelli | AI Studio & Web Development B2B — Brussels",
-      "description": "Brussels-based AI studio. ChatGPT & LLM integration, web and mobile app development for B2B SMEs. Active in Belgium, France, Luxembourg and the Netherlands. Delivery in 6 weeks."
+      "description": "Brussels-based AI studio. ChatGPT & LLM integration, web and mobile app development for B2B SMEs. Active in Belgium, France, Luxembourg and the Netherlands. Clear timelines, fixed price."
     },
     "twitter": {
       "title": "Codelli | AI Studio & Web Dev B2B — Brussels",
-      "description": "AI integration, web & mobile app development for B2B SMEs. AI studio in Brussels serving Belgium, France, Luxembourg and the Netherlands. 6-week delivery."
+      "description": "AI integration, web & mobile app development for B2B SMEs. AI studio in Brussels serving Belgium, France, Luxembourg and the Netherlands. Clear timelines, fixed price."
     }
   },
   "nav": {
@@ -28,45 +28,39 @@
     "line1": "We design,",
     "line2": "build &",
     "line3": "deliver with AI",
-    "subtitle": "AI studio in Brussels specialising in artificial intelligence integration, web and mobile app development. For B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands.",
+    "subtitle": "AI studio in Brussels: design, development and AI integration under one roof — delivered faster, at a fixed price. For B2B SMEs and startups in Belgium, France, Luxembourg and the Netherlands.",
     "primaryCta": "Book a free call",
     "secondaryCta": "See our services",
     "location": "Brussels, Belgium",
     "studio": "AI Studio",
-    "availability": "Available Q2 2026",
+    "availability": "Available — taking new projects",
     "cta": "Explore"
   },
   "services": {
     "title": "What we build for you",
-    "intro": "Showcase website from €1,000, AI integration from €2,500, web & mobile development from €10,000, design from €2,000. Fixed price, no subcontracting.",
+    "intro": "Three ways to work with us, one point of contact. Design, development and AI under one roof — scope, price and timeline fixed before we start.",
     "ai": {
-      "title": "AI",
+      "title": "AI & Automation",
       "tagline": "Chatbots, automation & intelligent agents",
-      "desc": "We identify where AI creates real value in your business and build it.",
-      "price": "From €2,500"
+      "desc": "We identify where AI creates real value in your business and build it — from audit to production deployment.",
+      "price": "Audit + PoC from €3,500"
     },
     "web": {
-      "title": "Product",
-      "tagline": "Web apps, mobile & platforms",
-      "desc": "Full-stack development delivered 2-3x faster with AI-powered workflows.",
-      "price": "From €10,000"
+      "title": "Applications & SaaS",
+      "tagline": "Web apps, mobile & custom platforms",
+      "desc": "Custom full-stack development — from MVP to production product, web and mobile.",
+      "price": "MVP from €12,000"
     },
     "showcase": {
-      "title": "Showcase",
-      "tagline": "Presentation websites & landing pages",
-      "desc": "A polished online presence built to convert — design, content and performance, ready in 2 to 3 weeks.",
-      "price": "From €1,000"
-    },
-    "design": {
-      "title": "Design",
-      "tagline": "Interfaces that convert",
-      "desc": "User experiences that look great and drive measurable business results.",
-      "price": "From €2,000"
+      "title": "Website",
+      "tagline": "Showcase sites & landing pages that convert",
+      "desc": "Custom presentation website — design, content and performance. Live in 2 to 4 weeks.",
+      "price": "From €2,900"
     }
   },
   "subsidy": {
-    "headline": "Belgian SME? Your project may be partially subsidised.",
-    "desc": "Depending on your region: Innoviris (Brussels), Chèques-entreprises (Wallonia) or VLAIO (Flanders) can cover part of the cost. We handle the application.",
+    "headline": "Belgian SME? Regional grants may co-fund part of your project.",
+    "desc": "Depending on your region and project (Wallonia, Flanders…), some schemes can cover part of the consulting or training. We help you identify what you can actually use.",
     "cta": "Check your eligibility →",
     "tag": "Belgian SME",
     "ariaLabel": "Belgian AI subsidies"
@@ -79,7 +73,7 @@
     "values": {
       "roof": {
         "title": "Everything under one roof",
-        "desc": "Design + Development + AI. One team, no subcontracting, no communication gaps."
+        "desc": "Design + Development + AI. One point of contact, no subcontracting, no communication gaps."
       },
       "ai": {
         "title": "AI-powered delivery",
@@ -91,7 +85,7 @@
       },
       "local": {
         "title": "Brussels-based, multilingual",
-        "desc": "Local team. We speak French, English, Dutch. We understand GDPR, Belgian subsidies, and EU regulations."
+        "desc": "Brussels-based, direct with the founder. We speak French, English, Dutch. We understand GDPR, Belgian subsidies, and EU regulations."
       }
     },
     "cta": "Book a free call"
@@ -117,8 +111,8 @@
     }
   },
   "portfolio": {
-    "title": "Results we've delivered",
-    "subtitle": "Selected projects we're proud of",
+    "title": "Recent projects",
+    "subtitle": "Real projects — delivered or launching soon.",
     "tags": {
       "web": "Web App",
       "mobile": "Mobile App",
@@ -166,7 +160,7 @@
       "build": {
         "name": "Build",
         "duration": "3–6 wks",
-        "desc": "AI-accelerated development. Delivered 2–3x faster than a traditional agency."
+        "desc": "Full-stack development accelerated by our AI workflows — working deliverables every week."
       },
       "launch": {
         "name": "Launch & Grow",
@@ -225,7 +219,8 @@
     "nav": {
       "back": "Back to site",
       "backBlog": "Back to blog",
-      "updated": "Updated"
+      "updated": "Updated",
+      "published": "Published"
     },
     "list": {
       "topics": "AI · Dev · Digitalisation",
@@ -291,14 +286,14 @@
   },
   "audit": {
     "meta": {
-      "title": "Free Discovery Call — Let's Start Your Project | Codelli",
+      "title": "Free AI Audit — 30-min Discovery Call | Codelli",
       "description": "Book a free 30-minute call with Codelli. We define your project together — design, development or AI integration. Digital studio in Brussels."
     },
     "nav": {
       "back": "Back to site"
     },
     "hero": {
-      "overline": "Discovery Call · Free · No commitment",
+      "overline": "Free AI audit · 30-min call · No commitment",
       "title1": "Let's start",
       "title2": "your project together",
       "intro": "Free 30-minute call, no commitment, to assess your project in Belgium, France, Luxembourg or the Netherlands. AI integration, web development or design — we define your roadmap and send it within 24h.",
@@ -308,7 +303,7 @@
         "freeLabel": "No commitment",
         "planVal": "Action plan",
         "planLabel": "Sent within 24h",
-        "locationLabel": "Local team",
+        "locationLabel": "Direct with the founder",
           "city": "Brussels"
       }
     },
@@ -321,7 +316,7 @@
       "step3Title": "A written action plan",
       "step3Desc": "Scope, estimated budget, next steps — sent by email within 24h.",
       "forWhomLabel": "Who it's for",
-      "forWhom1": "SMEs and startups with 5 to 100 employees in Belgium, France or Luxembourg.",
+      "forWhom1": "SMEs and startups with 5 to 100 employees in Belgium, France, Luxembourg or the Netherlands.",
       "forWhom2": "Founders who want a website, an app or an AI integration — and don't know where to start.",
       "forWhom3": "Companies looking for concrete answers, not PowerPoint presentations.",
       "subsidyLabel": "Belgian subsidies — SMEs",
@@ -329,13 +324,13 @@
         "brussels": {
           "tag": "Brussels",
           "title": "Innoviris — Start AI Voucher",
-          "desc": "Up to <strong>€10,000</strong>, covering <strong>75%</strong> of AI study costs for Brussels SMEs. Led by an approved expertise centre.",
+          "desc": "Up to <strong>€10,000</strong> (75% of AI study costs), via an approved expertise centre. <strong>Suspended in 2026</strong> — no new calls; applications already submitted may be funded in 2027.",
           "link": "innoviris.brussels →"
         },
         "wallonia": {
           "tag": "Wallonia",
           "title": "Chèques-entreprises — Digital Maturity",
-          "desc": "Up to <strong>€50,000 excl. VAT</strong> over 3 years, with a <strong>50%</strong> intervention rate. Electronic portfolio of €200,000 over 3 years (max. €100,000/year).",
+          "desc": "<strong>50%</strong> intervention rate, capped at <strong>€50,000 excl. VAT</strong> over 3 years. Covers <strong>strategic consulting/diagnosis</strong> — the build itself (development, implementation) is not eligible.",
           "link": "cheques-entreprises.be →"
         },
         "flanders": {
@@ -375,7 +370,7 @@
       "location": "Brussels, Belgium",
       "speciality": "Full-Stack & AI",
       "experience": "5 years enterprise",
-      "availability": "Available Q2 2026"
+      "availability": "Available — taking new projects"
     },
     "bio": {
       "label": "About",
@@ -404,7 +399,7 @@
       "cloud": "Cloud & DevOps"
     },
     "projects": {
-      "label": "Delivered Projects",
+      "label": "Recent projects",
       "1": { "title": "Baba Events", "tag": "Ticketing Platform", "desc": "Full platform with custom backoffice, QR scanner, Mollie payments and real-time reporting.", "r1": "3× online sales", "r2": "0 fraud" },
       "2": { "title": "Noctix", "tag": "SaaS Platform", "desc": "Sovereign Eventbrite alternative for independent organizers — 0% commission on sales.", "r1": "Currently in development", "r2": "0% commission" },
       "3": { "title": "Lead Gen Automation", "tag": "n8n Automation", "desc": "Automated B2B lead pipeline via Google Maps API — 3,000+ leads per campaign.", "r1": "+3,000 leads/campaign", "r2": "100% automated" }
@@ -420,17 +415,17 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "q1": "What is Codelli?",
-    "a1": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. We design, develop and integrate artificial intelligence for SMEs and startups — websites, mobile apps, chatbots and AI agents. From idea to launch in 6 weeks.",
+    "a1": "Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. We design, develop and integrate artificial intelligence for SMEs and startups — websites, mobile apps, chatbots and AI agents. From idea to launch in 6 to 8 weeks for a standard project.",
     "q2": "What services does Codelli offer?",
-    "a2": "Four services: Showcase website (presentation sites, landing pages — from €1,000), AI Integration & Automation (chatbots, AI agents, n8n — from €2,500), Web & App Development (apps, SaaS, platforms — from €10,000), and UX/UI Design (conversion-focused interfaces — from €2,000).",
+    "a2": "Three services: Website (showcase sites & landing pages — from €2,900), AI & Automation (chatbots, AI agents, n8n automation — audit/PoC from €3,500), and Applications & SaaS (web apps, mobile, platforms — MVP from €12,000). Design is included in every project.",
     "q3": "How much does a project cost?",
-    "a3": "A showcase website starts at €1,000. A custom web or mobile application ranges from €10,000 to €25,000+. All projects are delivered at a fixed price, no surprises. Contact us for a free quote.",
+    "a3": "A website starts at €2,900. A production AI integration ranges from €12,000 to €30,000. A custom application or SaaS, from €12,000 to €50,000 depending on scope. All projects are fixed-price, no surprises — free quote.",
     "q4": "Can Belgian SMEs get subsidies?",
-    "a4": "Yes. Innoviris (Brussels) covers up to 75% via the Voucher Start AI. Chèques-entreprises (Wallonia) covers up to 50%. KMO-portefeuille VLAIO (Flanders) offers 20-30% reduction. Codelli helps you check your eligibility.",
+    "a4": "It depends on your region and the type of service, and schemes change fast. In Wallonia, Chèques-entreprises co-funds 50% of strategic consulting/diagnosis (not the build). In Flanders, the KMO-portefeuille covers training (20-30%) and cybersecurity consulting (35-45%). In Brussels, the Innoviris Start AI Voucher (up to 75% of the AI study) is suspended in 2026. Codelli helps you identify the schemes you can actually use and build the application.",
     "q5": "What makes Codelli different from a traditional agency?",
     "a5": "Design, development and AI under one roof, no subcontracting. Thanks to our AI-assisted workflows, we deliver 2-3x faster than a traditional agency — at an equivalent or lower cost.",
     "q6": "Do you work outside Brussels?",
-    "a6": "Yes. We work with clients across Belgium (Liège, Antwerp, Namur, Ghent) and internationally (France, Luxembourg). We communicate in French, Dutch and English."
+    "a6": "Yes. We work with clients across Belgium (Liège, Antwerp, Namur, Ghent) and internationally (France, Luxembourg, the Netherlands). We communicate in French, Dutch and English."
   },
   "privacy": {
     "meta": {
@@ -447,7 +442,7 @@
     "legal": {
       "title": "Legal Notice",
       "label": {
-        "company": "Legal name:",
+        "company": "Editor:",
         "form": "Legal form:",
         "vat": "BCE / VAT:",
         "address": "Registered office:",
@@ -460,11 +455,11 @@
         "address": "Brussels, Belgium",
         "publisher": "Cem Tekelli"
       },
-      "desc": "The website <strong>codelli.tech</strong> is published by Codelli Engineering. All content on this site (texts, images, logos, graphics) is protected by copyright and remains the exclusive property of Codelli Engineering, unless otherwise stated."
+      "desc": "The website <strong>codelli.tech</strong> is published by Cem Tekelli, a sole proprietorship registered with the Belgian Crossroads Bank for Enterprises under number 1006.208.714, trading under the commercial name « Codelli ». All content on this site (texts, images, logos, graphics) is protected by copyright and remains the exclusive property of Cem Tekelli, unless otherwise stated."
     },
     "gdpr": {
       "title": "Privacy Policy (GDPR)",
-      "intro": "Codelli Engineering, as data controller, is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR — EU 2016/679) and applicable Belgian legislation.",
+      "intro": "Cem Tekelli (trading as Codelli), as data controller, is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR — EU 2016/679) and applicable Belgian legislation.",
       "dataTitle": "Data collected",
       "dataIntro": "When you use the site or get in touch, we may collect the following data:",
       "dataItems": {
@@ -481,14 +476,15 @@
         "3": "<strong>Analysing traffic and improving the site</strong> (via Google Analytics via GTM) — legal basis: consent"
       },
       "retentionTitle": "Data retention",
-      "retention": "Contact data is retained for <strong>3 years</strong> from the last exchange. Navigation data is retained for <strong>13 months</strong> in accordance with CNIL/DPA recommendations.",
+      "retention": "Contact data is retained for <strong>3 years</strong> from the last exchange. Navigation data from audience-measurement cookies is retained for <strong>13 months</strong> maximum, aligned with the default Google Analytics 4 retention.",
       "recipientsTitle": "Data recipients",
       "recipientsIntro": "Your data is not sold to third parties. It may be shared with:",
       "recipients": {
         "1": "<strong>Calendly Inc.</strong> — for appointment scheduling (policy available at calendly.com)",
-        "2": "<strong>Google LLC</strong> — for audience analysis (Google Analytics via GTM)"
+        "2": "<strong>Google LLC</strong> — for audience analysis (Google Analytics via GTM)",
+        "3": "<strong>Netlify, Inc.</strong> — for site hosting and processing of messages sent via the contact form"
       },
-      "recipientsNote": "These processors are subject to appropriate contractual safeguards (Standard Contractual Clauses or Privacy Shield successor) for any transfer outside the EU.",
+      "recipientsNote": "These processors provide appropriate safeguards for any transfer outside the EU: the European Commission's Standard Contractual Clauses (SCCs) and/or certification under the EU-US Data Privacy Framework (DPF), where applicable.",
       "rightsTitle": "Your rights",
       "rightsIntro": "In accordance with the GDPR, you have the following rights:",
       "rights": {
@@ -518,8 +514,8 @@
           "duration": "13 months"
         },
         "gtm": {
-          "purpose": "Tag management",
-          "duration": "Session"
+          "purpose": "Tag orchestration — sets no cookie; measurement tags only fire after consent",
+          "duration": "—"
         },
         "consent": {
           "provider": "Codelli (1st party)",
@@ -541,8 +537,8 @@
     },
     "liability": {
       "title": "Limitation of liability",
-      "p1": "Codelli Engineering strives to maintain accurate and up-to-date information on this site. However, we do not guarantee the accuracy, completeness or currency of the information published. Codelli Engineering cannot be held responsible for direct or indirect damages resulting from the use of this site.",
-      "p2": "Hyperlinks to third-party sites do not imply any responsibility on the part of Codelli Engineering for their content."
+      "p1": "Codelli strives to maintain accurate and up-to-date information on this site. However, we do not guarantee the accuracy, completeness or currency of the information published. Codelli cannot be held responsible for direct or indirect damages resulting from the use of this site.",
+      "p2": "Hyperlinks to third-party sites do not imply any responsibility on the part of Codelli for their content."
     },
     "contact": {
       "title": "Contact",

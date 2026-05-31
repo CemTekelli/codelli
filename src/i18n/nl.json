@@ -2,15 +2,15 @@
   "lang": "nl",
   "meta": {
     "title": "Codelli — AI Studio & Digitaal Bureau | Brussel, België",
-    "description": "AI studio in Brussel: ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken. Gratis adviesgesprek.",
+    "description": "AI studio in Brussel: ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg. Duidelijke timing, vaste prijs. Gratis adviesgesprek.",
     "keywords": "AI studio brussel, AI integratie bureau belgie, ChatGPT integratie KMO, LLM integratie B2B, webontwikkeling B2B brussel, digitaal bureau nederland, Cem Tekelli, Codelli, app ontwikkeling amsterdam rotterdam, chatbot bedrijf, automatisering n8n, web developer belgie nederland, MVP ontwikkeling, startup belgie nederland luxemburg, React Vue.js FastAPI Node.js",
     "og": {
       "title": "Codelli | AI Studio & Webontwikkeling B2B — Brussel",
-      "description": "AI studio in Brussel. ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's. Actief in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken."
+      "description": "AI studio in Brussel. ChatGPT & LLM-integratie, webontwikkeling en mobiele apps voor B2B-kmo's. Actief in België, Nederland, Frankrijk en Luxemburg. Duidelijke timing, vaste prijs."
     },
     "twitter": {
       "title": "Codelli | AI Studio & Webontwikkeling B2B — Brussel",
-      "description": "AI-integratie, webontwikkeling & mobiele apps voor B2B-kmo's. AI studio in Brussel actief in België, Nederland, Frankrijk en Luxemburg. Levering in 6 weken."
+      "description": "AI-integratie, webontwikkeling & mobiele apps voor B2B-kmo's. AI studio in Brussel actief in België, Nederland, Frankrijk en Luxemburg. Duidelijke timing, vaste prijs."
     }
   },
   "nav": {
@@ -28,46 +28,40 @@
     "line1": "Wij ontwerpen,",
     "line2": "bouwen &",
     "line3": "leveren met AI",
-    "subtitle": "AI studio in Brussel gespecialiseerd in integratie van artificiële intelligentie, webontwikkeling en mobiele apps. Voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg.",
+    "subtitle": "AI studio in Brussel: design, ontwikkeling en AI-integratie onder één dak — sneller geleverd, tegen een vaste prijs. Voor B2B-kmo's en startups in België, Nederland, Frankrijk en Luxemburg.",
     "primaryCta": "Reserveer een gratis gesprek",
     "secondaryCta": "Bekijk onze diensten",
     "location": "Brussel, België",
     "studio": "AI Studio",
-    "availability": "Beschikbaar Q2 2026",
+    "availability": "Beschikbaar — nieuwe projecten",
     "cta": "Ontdekken"
   },
   "services": {
     "title": "Wat wij voor u bouwen",
-    "intro": "Presentatiewebsite vanaf €1.000, AI-integratie vanaf €2.500, web- en mobiele ontwikkeling vanaf €10.000, design vanaf €2.000. Vaste prijs, geen uitbesteding.",
+    "intro": "Drie manieren om met ons samen te werken, één aanspreekpunt. Design, ontwikkeling en AI onder één dak — scope, prijs en timing vastgelegd vóór de start.",
     "ai": {
-      "title": "AI",
+      "title": "AI & Automatisering",
       "tagline": "Chatbots, automatisering & intelligente agents",
-      "desc": "Wij identificeren waar AI echte waarde creëert in uw bedrijf en bouwen het.",
-      "price": "Vanaf €2.500"
+      "desc": "Wij identificeren waar AI echte waarde creëert in uw bedrijf en bouwen het — van audit tot productie-implementatie.",
+      "price": "Audit + PoC vanaf €3.500"
     },
     "web": {
-      "title": "Product",
-      "tagline": "Web apps, mobiel & platformen",
-      "desc": "Full-stack ontwikkeling 2-3x sneller geleverd dankzij AI-ondersteunde workflows.",
-      "price": "Vanaf €10.000"
+      "title": "Applicaties & SaaS",
+      "tagline": "Web-apps, mobiel & platformen op maat",
+      "desc": "Full-stack ontwikkeling op maat — van MVP tot productieklaar product, web en mobiel.",
+      "price": "MVP vanaf €12.000"
     },
     "showcase": {
-      "title": "Vitrine",
-      "tagline": "Presentatiewebsites & landing pages",
-      "desc": "Verzorgde online aanwezigheid die converteert — design, content en performance, klaar in 2 tot 3 weken.",
-      "price": "Vanaf €1.000"
-    },
-    "design": {
-      "title": "Design",
-      "tagline": "Interfaces die converteren",
-      "desc": "Gebruikerservaringen die er mooi uitzien en meetbare bedrijfsresultaten opleveren.",
-      "price": "Vanaf €2.000"
+      "title": "Website",
+      "tagline": "Vitrines & landing pages die converteren",
+      "desc": "Presentatiewebsite op maat — design, content en performance. Online in 2 tot 4 weken.",
+      "price": "Vanaf €2.900"
     }
   },
   "subsidy": {
-    "headline": "Belgische KMO? Uw project kan gedeeltelijk gesubsidieerd worden.",
-    "desc": "Afhankelijk van uw regio: Innoviris (Brussel), Chèques-entreprises (Wallonië) of VLAIO (Vlaanderen) kunnen een deel van de kosten dekken. Wij helpen u met de aanvraag.",
-    "cta": "Controleer uw eligibiliteit →",
+    "headline": "Belgische kmo? Regionale steun kan een deel van uw project mee financieren.",
+    "desc": "Afhankelijk van uw regio en project (Wallonië, Vlaanderen…) kunnen bepaalde regelingen een deel van het advies of de opleiding dekken. Wij helpen u te bepalen wat u echt kunt gebruiken.",
+    "cta": "Controleer of u in aanmerking komt →",
     "tag": "Belgische KMO",
     "ariaLabel": "Belgische AI-subsidies"
   },
@@ -79,7 +73,7 @@
     "values": {
       "roof": {
         "title": "Alles onder één dak",
-        "desc": "Design + Ontwikkeling + AI. Één team, geen onderaanneming, geen informatieverlies tussen teams."
+        "desc": "Design + Ontwikkeling + AI. Één aanspreekpunt, geen onderaanneming, geen informatieverlies tussen de stappen."
       },
       "ai": {
         "title": "AI-versnelde levering",
@@ -91,7 +85,7 @@
       },
       "local": {
         "title": "Brusselse studio, meertalig",
-        "desc": "Lokaal team. Wij spreken Frans, Engels en Nederlands. Wij begrijpen de AVG, Belgische subsidies en EU-regelgeving."
+        "desc": "In Brussel, rechtstreeks met de oprichter. Wij spreken Frans, Engels en Nederlands. Wij begrijpen de AVG, Belgische subsidies en EU-regelgeving."
       }
     },
     "cta": "Reserveer een gratis gesprek"
@@ -117,8 +111,8 @@
     }
   },
   "portfolio": {
-    "title": "Resultaten die we hebben geleverd",
-    "subtitle": "Geselecteerde projecten waar we trots op zijn",
+    "title": "Recente projecten",
+    "subtitle": "Echte projecten — geleverd of binnenkort gelanceerd.",
     "tags": {
       "web": "Web App",
       "mobile": "Mobiele App",
@@ -166,7 +160,7 @@
       "build": {
         "name": "Bouwen",
         "duration": "3–6 wkn",
-        "desc": "AI-versnelde ontwikkeling. Opgeleverd 2–3x sneller dan een traditioneel bureau."
+        "desc": "Full-stack ontwikkeling versneld door onze AI-workflows — werkende deliverables elke week."
       },
       "launch": {
         "name": "Lancering & Groei",
@@ -225,7 +219,8 @@
     "nav": {
       "back": "Terug naar site",
       "backBlog": "Terug naar blog",
-      "updated": "Bijgewerkt"
+      "updated": "Bijgewerkt",
+      "published": "Gepubliceerd op"
     },
     "list": {
       "topics": "AI · Dev · Digitalisering",
@@ -291,14 +286,14 @@
   },
   "audit": {
     "meta": {
-      "title": "Gratis kennismakingsgesprek — Laten we uw project starten | Codelli",
+      "title": "Gratis AI-audit — Kennismakingsgesprek 30 min | Codelli",
       "description": "Reserveer een gratis gesprek van 30 minuten met Codelli. We definiëren samen uw project — design, ontwikkeling of AI-integratie. Digitaal studio in Brussel."
     },
     "nav": {
       "back": "Terug naar de site"
     },
     "hero": {
-      "overline": "Kennismakingsgesprek · Gratis · Zonder engagement",
+      "overline": "Gratis AI-audit · Gesprek van 30 min · Zonder engagement",
       "title1": "Laten we uw",
       "title2": "project starten",
       "intro": "Gratis gesprek van 30 minuten, zonder verplichting, om uw project in België, Nederland, Frankrijk of Luxemburg te analyseren. AI-integratie, webontwikkeling of design — wij stellen uw routekaart op en sturen die binnen 24u.",
@@ -308,7 +303,7 @@
         "freeLabel": "Zonder engagement",
         "planVal": "Actieplan",
         "planLabel": "Verstuurd binnen 24u",
-        "locationLabel": "Lokaal team",
+        "locationLabel": "Rechtstreeks met de oprichter",
           "city": "Brussel"
       }
     },
@@ -321,7 +316,7 @@
       "step3Title": "Een schriftelijk actieplan",
       "step3Desc": "Scope, geschatte budget, volgende stappen — per e-mail verstuurd binnen 24u.",
       "forWhomLabel": "Voor wie",
-      "forWhom1": "KMO's en startups van 5 tot 100 medewerkers in België, Frankrijk of Luxemburg.",
+      "forWhom1": "KMO's en startups van 5 tot 100 medewerkers in België, Frankrijk, Luxemburg of Nederland.",
       "forWhom2": "Bedrijfsleiders die een website, een app of een AI-integratie willen — en niet weten waar ze moeten beginnen.",
       "forWhom3": "Bedrijven die concrete antwoorden zoeken, geen PowerPoint-presentaties.",
       "subsidyLabel": "Belgische subsidies — KMO",
@@ -329,13 +324,13 @@
         "brussels": {
           "tag": "Brussel",
           "title": "Innoviris — Start AI Voucher",
-          "desc": "Tot <strong>€10.000</strong>, met dekking van <strong>75%</strong> van de AI-studiekosten voor Brusselse KMO's. Begeleid door een erkend expertisecentrum.",
+          "desc": "Tot <strong>€10.000</strong> (75% van de AI-studiekosten), via een erkend expertisecentrum. <strong>Opgeschort in 2026</strong> — geen nieuwe oproepen; reeds ingediende dossiers worden mogelijk in 2027 gefinancierd.",
           "link": "innoviris.brussels →"
         },
         "wallonia": {
           "tag": "Wallonië",
           "title": "Chèques-entreprises — Digitale Maturiteit",
-          "desc": "Tot <strong>€50.000 excl. btw</strong> over 3 jaar, met een interventievoet van <strong>50%</strong>. Elektronische portefeuille van €200.000 over 3 jaar (max. €100.000/jaar).",
+          "desc": "Interventievoet van <strong>50%</strong>, geplafonneerd op <strong>€50.000 excl. btw</strong> over 3 jaar. Dekt <strong>strategisch advies/diagnose</strong> — de realisatie zelf (ontwikkeling, implementatie) komt niet in aanmerking.",
           "link": "cheques-entreprises.be →"
         },
         "flanders": {
@@ -375,7 +370,7 @@
       "location": "Brussel, België",
       "speciality": "Full-Stack & AI",
       "experience": "5 jaar enterprise",
-      "availability": "Beschikbaar Q2 2026"
+      "availability": "Beschikbaar — nieuwe projecten"
     },
     "bio": {
       "label": "Over mij",
@@ -404,7 +399,7 @@
       "cloud": "Cloud & DevOps"
     },
     "projects": {
-      "label": "Geleverde projecten",
+      "label": "Recente projecten",
       "1": { "title": "Baba Events", "tag": "Ticketplatform", "desc": "Volledig platform met backoffice, QR-scanner, Mollie-betalingen en realtime rapportage.", "r1": "3× online verkoop", "r2": "0 fraude" },
       "2": { "title": "Noctix", "tag": "SaaS Platform", "desc": "Soeverein Eventbrite-alternatief voor onafhankelijke organisatoren — 0% commissie.", "r1": "In ontwikkeling", "r2": "0% commissie" },
       "3": { "title": "Lead Gen Automatisering", "tag": "n8n Automatisering", "desc": "Geautomatiseerde B2B-leadpipeline via Google Maps API — 3.000+ leads per campagne.", "r1": "+3.000 leads/campagne", "r2": "100% geautomatiseerd" }
@@ -420,17 +415,17 @@
   "faq": {
     "title": "Veelgestelde vragen",
     "q1": "Wat is Codelli?",
-    "a1": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Wij ontwerpen, ontwikkelen en integreren kunstmatige intelligentie voor KMO's en startups — websites, mobiele apps, chatbots en AI-agenten. Van idee tot lancering in 6 weken.",
+    "a1": "Codelli is een AI digitaal studio opgericht door Cem Tekelli, gevestigd in Brussel. Wij ontwerpen, ontwikkelen en integreren kunstmatige intelligentie voor KMO's en startups — websites, mobiele apps, chatbots en AI-agenten. Van idee tot lancering in 6 tot 8 weken voor een standaardproject.",
     "q2": "Welke diensten biedt Codelli aan?",
-    "a2": "Vier diensten: Presentatiewebsite (landing pages, presentatiesites — vanaf €1.000), AI-integratie & Automatisering (chatbots, AI-agenten, n8n — vanaf €2.500), Web- & App-ontwikkeling (apps, SaaS, platformen — vanaf €10.000), en UX/UI Design (conversiegericht — vanaf €2.000).",
+    "a2": "Drie diensten: Website (vitrines & landing pages — vanaf €2.900), AI & Automatisering (chatbots, AI-agenten, n8n-automatisering — audit/PoC vanaf €3.500), en Applicaties & SaaS (web-apps, mobiel, platformen — MVP vanaf €12.000). Design is inbegrepen in elk project.",
     "q3": "Wat kost een project?",
-    "a3": "Een presentatiewebsite begint vanaf €1.000. Een op maat gemaakte web- of mobiele applicatie loopt van €10.000 tot €25.000+. Alle projecten worden geleverd tegen een vaste prijs, geen verrassingen. Contacteer ons voor een gratis offerte.",
+    "a3": "Een website start vanaf €2.900. Een AI-integratie in productie gaat van €12.000 tot €30.000. Een applicatie of SaaS op maat, van €12.000 tot €50.000 afhankelijk van de scope. Alle projecten tegen vaste prijs, geen verrassingen — gratis offerte.",
     "q4": "Kunnen Belgische KMO's subsidies krijgen?",
-    "a4": "Ja. Innoviris (Brussel) dekt tot 75% via de Voucher Start AI. Chèques-entreprises (Wallonië) dekt tot 50%. KMO-portefeuille VLAIO (Vlaanderen) biedt 20-30% korting. Codelli helpt u uw subsidiemogelijkheden te controleren.",
+    "a4": "Dat hangt af van uw regio en het type prestatie, en de regelingen veranderen snel. In Wallonië cofinanciert Chèques-entreprises 50% van strategisch advies/diagnose (niet de realisatie). In Vlaanderen dekt de KMO-portefeuille opleidingen (20-30%) en cybersecurity-advies (35-45%). In Brussel is de Innoviris Start AI-voucher (tot 75% van de AI-studie) opgeschort in 2026. Codelli helpt u te bepalen welke steun u echt kunt gebruiken en stelt het dossier op.",
     "q5": "Wat maakt Codelli anders dan een traditioneel bureau?",
     "a5": "Design, ontwikkeling en AI onder één dak, geen uitbesteding. Dankzij onze AI-gestuurde workflows leveren wij 2-3x sneller dan een traditioneel bureau — tegen een gelijkwaardige of lagere kostprijs.",
     "q6": "Werken jullie buiten Brussel?",
-    "a6": "Ja. Wij werken met klanten door heel België (Luik, Antwerpen, Namen, Gent) en internationaal (Frankrijk, Luxemburg). Wij communiceren in het Frans, Nederlands en Engels."
+    "a6": "Ja. Wij werken met klanten door heel België (Luik, Antwerpen, Namen, Gent) en internationaal (Frankrijk, Luxemburg, Nederland). Wij communiceren in het Frans, Nederlands en Engels."
   },
   "privacy": {
     "meta": {
@@ -447,7 +442,7 @@
     "legal": {
       "title": "Juridische kennisgeving",
       "label": {
-        "company": "Bedrijfsnaam:",
+        "company": "Uitgever:",
         "form": "Rechtsvorm:",
         "vat": "KBO / BTW:",
         "address": "Maatschappelijke zetel:",
@@ -460,11 +455,11 @@
         "address": "Brussel, België",
         "publisher": "Cem Tekelli"
       },
-      "desc": "De website <strong>codelli.tech</strong> wordt uitgegeven door Codelli Engineering. Alle inhoud op deze site (teksten, afbeeldingen, logo's, graphics) is beschermd door het auteursrecht en blijft de exclusieve eigendom van Codelli Engineering, tenzij anders vermeld."
+      "desc": "De website <strong>codelli.tech</strong> wordt uitgegeven door Cem Tekelli, eenmanszaak ingeschreven in de Kruispuntbank van Ondernemingen onder nummer 1006.208.714, handelend onder de commerciële naam « Codelli ». Alle inhoud op deze site (teksten, afbeeldingen, logo's, graphics) is beschermd door het auteursrecht en blijft de exclusieve eigendom van Cem Tekelli, tenzij anders vermeld."
     },
     "gdpr": {
       "title": "Privacybeleid (AVG)",
-      "intro": "Codelli Engineering, als verwerkingsverantwoordelijke, verbindt zich ertoe uw persoonsgegevens te beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG — EU 2016/679) en de toepasselijke Belgische wetgeving.",
+      "intro": "Cem Tekelli (handelend onder de commerciële naam Codelli), als verwerkingsverantwoordelijke, verbindt zich ertoe uw persoonsgegevens te beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG — EU 2016/679) en de toepasselijke Belgische wetgeving.",
       "dataTitle": "Verzamelde gegevens",
       "dataIntro": "Bij uw gebruik van de site of het opnemen van contact kunnen we de volgende gegevens verzamelen:",
       "dataItems": {
@@ -481,14 +476,15 @@
         "3": "<strong>Analyse van verkeer en verbetering van de site</strong> (via Google Analytics via GTM) — rechtsgrond: toestemming"
       },
       "retentionTitle": "Bewaringstermijn",
-      "retention": "Contactgegevens worden bewaard gedurende <strong>3 jaar</strong> na het laatste contact. Navigatiegegevens worden bewaard gedurende <strong>13 maanden</strong> overeenkomstig de aanbevelingen van de CNIL/GBA.",
+      "retention": "Contactgegevens worden bewaard gedurende <strong>3 jaar</strong> na het laatste contact. Navigatiegegevens uit cookies voor publieksmeting worden maximaal <strong>13 maanden</strong> bewaard, afgestemd op de standaardbewaartermijn van Google Analytics 4.",
       "recipientsTitle": "Ontvangers van de gegevens",
       "recipientsIntro": "Uw gegevens worden niet verkocht aan derden. Ze kunnen worden gedeeld met:",
       "recipients": {
         "1": "<strong>Calendly Inc.</strong> — voor het inplannen van afspraken (beleid beschikbaar op calendly.com)",
-        "2": "<strong>Google LLC</strong> — voor publieksanalyse (Google Analytics via GTM)"
+        "2": "<strong>Google LLC</strong> — voor publieksanalyse (Google Analytics via GTM)",
+        "3": "<strong>Netlify, Inc.</strong> — voor de hosting van de site en de verwerking van berichten verzonden via het contactformulier"
       },
-      "recipientsNote": "Deze verwerkers zijn onderworpen aan passende contractuele waarborgen (Standaard Contractbepalingen of Privacy Shield opvolger) voor elke overdracht buiten de EU.",
+      "recipientsNote": "Deze verwerkers bieden passende waarborgen voor elke overdracht buiten de EU: de Standaard Contractbepalingen (SCC's) van de Europese Commissie en/of certificering onder het EU-US Data Privacy Framework (DPF), indien van toepassing.",
       "rightsTitle": "Uw rechten",
       "rightsIntro": "Overeenkomstig de AVG beschikt u over de volgende rechten:",
       "rights": {
@@ -518,8 +514,8 @@
           "duration": "13 maanden"
         },
         "gtm": {
-          "purpose": "Tagbeheer",
-          "duration": "Sessie"
+          "purpose": "Orkestratie van tags — plaatst geen cookie; meet-tags worden pas geactiveerd na toestemming",
+          "duration": "—"
         },
         "consent": {
           "provider": "Codelli (1st party)",
@@ -541,8 +537,8 @@
     },
     "liability": {
       "title": "Aansprakelijkheidsbeperking",
-      "p1": "Codelli Engineering streeft ernaar nauwkeurige en actuele informatie op deze site te onderhouden. We garanderen echter niet de juistheid, volledigheid of actualiteit van de gepubliceerde informatie. Codelli Engineering kan niet aansprakelijk worden gesteld voor directe of indirecte schade als gevolg van het gebruik van deze site.",
-      "p2": "Hyperlinks naar sites van derden impliceren geen aansprakelijkheid van Codelli Engineering voor hun inhoud."
+      "p1": "Codelli streeft ernaar nauwkeurige en actuele informatie op deze site te onderhouden. We garanderen echter niet de juistheid, volledigheid of actualiteit van de gepubliceerde informatie. Codelli kan niet aansprakelijk worden gesteld voor directe of indirecte schade als gevolg van het gebruik van deze site.",
+      "p2": "Hyperlinks naar sites van derden impliceren geen aansprakelijkheid van Codelli voor hun inhoud."
     },
     "contact": {
       "title": "Contact",

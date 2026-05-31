@@ -71,16 +71,14 @@ const canonical = '/';
         ],
         "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
         "priceRange": "$$-$$$",
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" },
+        "vatID": "BE1006208714",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Services Codelli",
           "itemListElement": [
-            { "@type": "OfferCatalog", "name": "Site Vitrine & Landing Pages" },
-            { "@type": "OfferCatalog", "name": "Intégration IA & Automatisation" },
-            { "@type": "OfferCatalog", "name": "Développement Web" },
-            { "@type": "OfferCatalog", "name": "Applications Mobiles" },
-            { "@type": "OfferCatalog", "name": "UX/UI Design" }
+            { "@type": "OfferCatalog", "name": "Site web — vitrines & landing pages" },
+            { "@type": "OfferCatalog", "name": "IA & Automatisation" },
+            { "@type": "OfferCatalog", "name": "Applications & SaaS" }
           ]
         },
       },
@@ -107,66 +105,40 @@ const canonical = '/';
         "@type": "Service",
         "@id": "https://codelli.tech/#service-showcase",
         "serviceType": "Website Design",
-        "name": "Site Vitrine & Landing Pages",
-        "description": "Création de sites vitrines, sites de présentation et landing pages sur mesure pour PME et startups. Design, contenu et performance optimisés pour la conversion. Livraison en 2 à 3 semaines.",
+        "name": "Site web — vitrines & landing pages",
+        "description": "Création de sites vitrines, sites de présentation et landing pages sur mesure pour PME et startups. Design, contenu et performance optimisés pour la conversion. En ligne en 2 à 4 semaines.",
         "provider": { "@id": "https://codelli.tech/#organization" },
-        "offers": { "@type": "Offer", "price": "1000", "priceCurrency": "EUR", "description": "À partir de 1.000€" },
+        "offers": { "@type": "Offer", "price": "2900", "priceCurrency": "EUR", "description": "À partir de 2 900 €" },
         "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Pays-Bas"}],
-        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
       },
       {
         "@type": "Service",
         "@id": "https://codelli.tech/#service-ai",
         "serviceType": "AI Integration",
-        "name": "Intégration IA & Automatisation",
-        "description": "Codelli développe des chatbots IA, agents intelligents et systèmes d'automatisation (n8n) sur mesure pour PME et startups. Nous identifions les cas d'usage à valeur réelle et construisons les solutions d'IA adaptées à votre entreprise.",
+        "name": "IA & Automatisation",
+        "description": "Codelli développe des chatbots IA, agents intelligents et systèmes d'automatisation (n8n) sur mesure pour PME et startups. De l'audit des cas d'usage au déploiement en production.",
         "provider": { "@id": "https://codelli.tech/#organization" },
-        "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "EUR", "description": "À partir de 2.500€" },
+        "offers": { "@type": "Offer", "price": "3500", "priceCurrency": "EUR", "description": "Audit + POC à partir de 3 500 € ; projet en production de 12 000 à 30 000 €" },
         "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Pays-Bas"}],
-        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
       },
       {
         "@type": "Service",
         "@id": "https://codelli.tech/#service-web",
         "serviceType": "Web Development",
-        "name": "Développement Web & Applications",
-        "description": "Création de sites internet, applications web et plateformes SaaS sur mesure. Stack React, Vue.js, Next.js, FastAPI, Node.js. Livraison 2-3x plus rapide qu'une agence traditionnelle grâce aux workflows assistés par IA.",
+        "name": "Applications & SaaS",
+        "description": "Applications web et mobiles, plateformes SaaS sur mesure (web et mobile inclus). Stack React, Vue.js, Next.js, FastAPI, Node.js, React Native. Du MVP au produit en production.",
         "provider": { "@id": "https://codelli.tech/#organization" },
-        "offers": { "@type": "Offer", "price": "10000", "priceCurrency": "EUR", "description": "À partir de 10.000€" },
+        "offers": { "@type": "Offer", "price": "12000", "priceCurrency": "EUR", "description": "MVP à partir de 12 000 € ; sur-mesure de 12 000 à 50 000 €" },
         "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Pays-Bas"}],
-        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://codelli.tech/#service-mobile",
-        "serviceType": "Mobile App Development",
-        "name": "Développement Mobile",
-        "description": "Création d'applications mobiles iOS, Android et cross-platform (React Native, Flutter). Applications natives et hybrides pour startups et PME belges.",
-        "provider": { "@id": "https://codelli.tech/#organization" },
-        "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Pays-Bas"}],
-        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://codelli.tech/#service-design",
-        "serviceType": "UX/UI Design",
-        "name": "UX/UI Design",
-        "description": "Conception d'interfaces utilisateur centrées sur la conversion et l'expérience. Maquettes validées avant tout développement. Design systems sur mesure.",
-        "provider": { "@id": "https://codelli.tech/#organization" },
-        "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "EUR", "description": "À partir de 2.000€" },
-        "areaServed": [{"@type": "Country", "name": "Belgique"}, {"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Pays-Bas"}],
-        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" }
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://codelli.tech/#contact" }
       },
       {
         "@type": "HowTo",
         "@id": "https://codelli.tech/#process",
         "name": "Comment Codelli livre votre projet digital",
-        "description": "Le processus de développement de Codelli en 4 étapes — de la découverte au lancement. Livraison en 6 semaines.",
+        "description": "Le processus de développement de Codelli en 4 étapes — de la découverte au lancement. Comptez 6 à 8 semaines pour un projet standard.",
         "totalTime": "PT6W",
         "step": [
           { "@type": "HowToStep", "position": 1, "name": "Découverte (1–2 semaines)", "text": "Nous apprenons votre métier, définissons le scope, le budget et le calendrier. Un appel découverte gratuit de 30 minutes pour démarrer.", "url": "https://codelli.tech/#processus" },
@@ -179,19 +151,19 @@ const canonical = '/';
         "@type": "FAQPage",
         "@id": "https://codelli.tech/#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "Qu'est-ce que Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Codelli conçoit, développe et intègre l'intelligence artificielle pour PME et startups : sites web, applications mobiles, chatbots, automatisation et agents intelligents. Livraison en 6 semaines." } },
+          { "@type": "Question", "name": "Qu'est-ce que Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Codelli conçoit, développe et intègre l'intelligence artificielle pour PME et startups : sites web, applications mobiles, chatbots, automatisation et agents intelligents. Du concept au lancement en 6 à 8 semaines pour un projet standard." } },
           { "@type": "Question", "name": "Qui est Cem Tekelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Cem Tekelli est le fondateur et développeur principal de Codelli, studio digital basé à Bruxelles, Belgique. Expert en développement web full-stack (React, Vue.js, FastAPI, Node.js), développement mobile (React Native) et intégration d'intelligence artificielle pour PME et startups belges et européens." } },
-          { "@type": "Question", "name": "Quels services propose Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli propose quatre services principaux : (1) Site Vitrine & Landing Pages — sites de présentation, à partir de 1.000€ ; (2) Intégration IA & Automatisation — chatbots, agents IA, workflows n8n, à partir de 2.500€ ; (3) Développement Web & Applications — apps web, SaaS, plateformes, à partir de 10.000€ ; (4) UX/UI Design — interfaces conversion-focused, à partir de 2.000€." } },
-          { "@type": "Question", "name": "Combien coûte la création d'un site web ?", "acceptedAnswer": { "@type": "Answer", "text": "Le prix d'un site web varie selon sa complexité. Un site vitrine démarre à partir de 1.000€, tandis qu'un e-commerce ou une application web sur mesure peut aller de 10.000€ à 25.000€+. Contactez-nous pour un devis personnalisé gratuit." } },
-          { "@type": "Question", "name": "Quel est le délai de développement d'un projet ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli livre en 6 semaines grâce à ses workflows assistés par IA. Un site vitrine prend 2 à 4 semaines. Une application web ou mobile complexe peut nécessiter 2 à 4 mois. Nous établissons un planning précis et un prix fixe dès le début du projet." } },
-          { "@type": "Question", "name": "Proposez-vous l'intégration d'intelligence artificielle pour les entreprises belges ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est la spécialité de Codelli. Nous développons des chatbots IA, agents intelligents, pipelines d'automatisation (n8n) et intégrations LLM pour PME et startups. Nous identifions les cas d'usage à valeur réelle et construisons les solutions sur mesure. À partir de 2.500€." } },
-          { "@type": "Question", "name": "Les PME belges peuvent-elles obtenir des subsides pour un projet IA ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Les PME belges bénéficient de plusieurs programmes : Innoviris (Bruxelles) couvre jusqu'à 75% via le Voucher Start AI ; les Chèques-entreprises (Wallonie) couvrent jusqu'à 50% ; le KMO-portefeuille (VLAIO, Flandre) offre 20-30% de réduction. Codelli vous aide à vérifier votre éligibilité et à constituer le dossier de subvention." } },
+          { "@type": "Question", "name": "Quels services propose Codelli ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli propose trois services : (1) Site web — vitrines et landing pages, à partir de 2 900 € ; (2) IA & Automatisation — chatbots, agents IA, workflows n8n, audit/POC à partir de 3 500 € (projet en production de 12 000 à 30 000 €) ; (3) Applications & SaaS — apps web, mobile et plateformes sur mesure, MVP à partir de 12 000 €. Le design est inclus dans chaque projet." } },
+          { "@type": "Question", "name": "Combien coûte la création d'un site web ?", "acceptedAnswer": { "@type": "Answer", "text": "Le prix dépend de la complexité. Un site web vitrine démarre à 2 900 €. Une application web ou mobile sur mesure va de 12 000 à 50 000 €. Tous nos projets sont à prix fixe — contactez-nous pour un devis personnalisé gratuit." } },
+          { "@type": "Question", "name": "Quel est le délai de développement d'un projet ?", "acceptedAnswer": { "@type": "Answer", "text": "Le délai dépend du projet : un site web vitrine prend 2 à 4 semaines, un projet sur mesure (app, SaaS, intégration IA) 6 à 12 semaines selon le périmètre. Nous établissons un planning précis et un prix fixe dès le début du projet." } },
+          { "@type": "Question", "name": "Proposez-vous l'intégration d'intelligence artificielle pour les entreprises belges ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est la spécialité de Codelli. Nous développons des chatbots IA, agents intelligents, pipelines d'automatisation (n8n) et intégrations LLM pour PME et startups. Nous commençons par un audit + POC (à partir de 3 500 €) avant tout déploiement en production (12 000 à 30 000 € selon le périmètre)." } },
+          { "@type": "Question", "name": "Les PME belges peuvent-elles obtenir des subsides pour un projet IA ?", "acceptedAnswer": { "@type": "Answer", "text": "Plusieurs dispositifs régionaux existent (montants et disponibilité variables — à vérifier au cas par cas). En Wallonie, le Chèque « Maturité numérique » (Chèques-entreprises) couvre 50% du conseil/diagnostic stratégique. En Flandre, le KMO-portefeuille subventionne les formations (20-30%) et le conseil en cybersécurité (35-45%). À Bruxelles, le Voucher Start AI d'Innoviris (jusqu'à 75% de l'étude IA) est suspendu en 2026. Codelli vous aide à identifier les aides réellement mobilisables et à monter le dossier." } },
           { "@type": "Question", "name": "Quelle est la différence entre Codelli et une agence web traditionnelle ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli combine design, développement et IA sous un même toit, sans sous-traitance. Grâce à l'IA dans le processus de développement, nous livrons 2-3x plus vite qu'une agence traditionnelle. Tous les projets sont livrés à prix fixe et dans les délais annoncés." } },
-          { "@type": "Question", "name": "Travaillez-vous avec des clients hors de Bruxelles ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Bien que basés à Bruxelles, nous travaillons avec des clients dans toute la Belgique (Liège, Anvers, Namur, Gand) ainsi qu'en France et au Luxembourg. Nous communiquons en français, néerlandais et anglais." } },
+          { "@type": "Question", "name": "Travaillez-vous avec des clients hors de Bruxelles ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Bien que basés à Bruxelles, nous travaillons avec des clients dans toute la Belgique (Liège, Anvers, Namur, Gand) ainsi qu'en France, au Luxembourg et aux Pays-Bas. Nous communiquons en français, néerlandais et anglais." } },
           { "@type": "Question", "name": "Proposez-vous la maintenance des sites web ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous proposons des contrats de maintenance incluant les mises à jour de sécurité, sauvegardes, corrections de bugs et support technique. Cela garantit la pérennité et la sécurité de votre site." } },
-          { "@type": "Question", "name": "Comment intégrer ChatGPT ou un LLM dans mon entreprise en Belgique ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyse votre système existant, identifie les cas d'usage à valeur réelle puis développe l'intégration via les APIs OpenAI, Anthropic ou des modèles open-source (Mistral, LLaMA). Budget à partir de 2.500€. Délai : 4 à 6 semaines. Un PoC fonctionnel est livré avant tout engagement long terme." } },
+          { "@type": "Question", "name": "Comment intégrer ChatGPT ou un LLM dans mon entreprise en Belgique ?", "acceptedAnswer": { "@type": "Answer", "text": "Codelli analyse votre système existant, identifie les cas d'usage à valeur réelle puis développe l'intégration via les APIs OpenAI, Anthropic ou des modèles open-source (Mistral, LLaMA). Audit + POC à partir de 3 500 €, projet en production de 12 000 à 30 000 €. Un PoC fonctionnel est livré avant tout engagement long terme." } },
           { "@type": "Question", "name": "Codelli travaille-t-il avec des entreprises en France, au Luxembourg et aux Pays-Bas ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Codelli accompagne des PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Toutes les missions peuvent se dérouler entièrement à distance. Nous communiquons en français, néerlandais et anglais et comprenons les contextes réglementaires locaux de chaque marché." } },
-          { "@type": "Question", "name": "Quel est le retour sur investissement d'une intégration IA pour une PME ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos clients B2B constatent en moyenne une réduction de 30 à 60% du temps consacré aux tâches répétitives. Un chatbot IA réduit le volume de questions au support de 40% en moyenne. Le ROI exact dépend du cas d'usage — nous le calculons ensemble lors de l'appel découverte gratuit." } }
+          { "@type": "Question", "name": "Quel est le retour sur investissement d'une intégration IA pour une PME ?", "acceptedAnswer": { "@type": "Answer", "text": "Le gain dépend du cas d'usage : automatiser une tâche répétitive ou dévier une partie des demandes au support libère un temps mesurable pour vos équipes. Plutôt qu'un chiffre générique, nous estimons votre ROI concret — volumes, coûts, délais — lors de l'appel découverte gratuit." } }
         ]
       },
       {

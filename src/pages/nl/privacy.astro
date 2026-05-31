@@ -28,9 +28,9 @@ const canonical = '/nl/privacy';
         <h2 class="priv-section-title">{t(lang, 'privacy.legal.title')}</h2>
 
         <div class="priv-info-box">
-          <p><strong>{t(lang, 'privacy.legal.label.company')}</strong> Codelli Engineering</p>
+          <p><strong>{t(lang, 'privacy.legal.label.company')}</strong> Cem Tekelli</p>
           <p><strong>{t(lang, 'privacy.legal.label.form')}</strong> {t(lang, 'privacy.legal.value.form')}</p>
-          <p><strong>{t(lang, 'privacy.legal.label.vat')}</strong> 1006.208.714</p>
+          <p><strong>{t(lang, 'privacy.legal.label.vat')}</strong> BE 1006.208.714</p>
           <p><strong>{t(lang, 'privacy.legal.label.address')}</strong> {t(lang, 'privacy.legal.value.address')}</p>
           <p><strong>{t(lang, 'privacy.legal.label.email')}</strong> <a href="mailto:info@codelli.tech">info@codelli.tech</a></p>
           <p><strong>{t(lang, 'privacy.legal.label.phone')}</strong> +32 472 62 84 30</p>
@@ -71,6 +71,7 @@ const canonical = '/nl/privacy';
         <ul>
           <li set:html={t(lang, 'privacy.gdpr.recipients.1')} />
           <li set:html={t(lang, 'privacy.gdpr.recipients.2')} />
+          <li set:html={t(lang, 'privacy.gdpr.recipients.3')} />
         </ul>
         <p>{t(lang, 'privacy.gdpr.recipientsNote')}</p>
 
@@ -112,7 +113,7 @@ const canonical = '/nl/privacy';
                 <td>{t(lang, 'privacy.cookiePolicy.rows.ga.duration')}</td>
               </tr>
               <tr>
-                <td><code>_gtm_*</code></td>
+                <td>—</td>
                 <td>Google Tag Manager</td>
                 <td>{t(lang, 'privacy.cookiePolicy.rows.gtm.purpose')}</td>
                 <td>{t(lang, 'privacy.cookiePolicy.rows.gtm.duration')}</td>
@@ -154,7 +155,7 @@ const canonical = '/nl/privacy';
       <section class="priv-section">
         <h2 class="priv-section-title">{t(lang, 'privacy.contact.title')}</h2>
         <div class="priv-info-box">
-          <p><strong>Codelli Engineering</strong></p>
+          <p><strong>Cem Tekelli — Codelli</strong></p>
           <p>{t(lang, 'privacy.contact.address')}</p>
           <p><a href="mailto:info@codelli.tech">info@codelli.tech</a></p>
           <p>+32 472 62 84 30</p>

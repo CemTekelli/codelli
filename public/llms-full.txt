@@ -1,6 +1,6 @@
 # Codelli — AI Digital Studio, Brussels
 # Full reference document for LLMs and AI crawlers
-# Last updated: 2026-04-16
+# Last updated: 2026-05-31
 # Summary version: https://codelli.tech/llms.txt
 
 ---
@@ -8,7 +8,7 @@
 ## Identity
 
 **Name:** Codelli
-**Legal name:** Codelli Engineering
+**Legal form:** Sole proprietorship — Cem Tekelli, trading as Codelli
 **BCE / VAT:** BE 1006.208.714
 **Type:** AI-powered digital studio (sole-practitioner, no subcontracting)
 **Founded by:** Cem Tekelli
@@ -35,7 +35,7 @@ Codelli designs, develops and integrates AI for SMEs and startups. All work is d
 - UX/UI design: conversion-focused interfaces, validated mockups before any code
 - Digital consulting: digital transformation for Belgian SMEs, subsidy guidance
 
-**Delivery model:** Fixed-price, fixed-scope, fixed-deadline — 6-week typical delivery
+**Delivery model:** Fixed-price, fixed-scope, fixed-deadline — showcase site 2–4 weeks, custom projects 6–12 weeks
 
 ---
 
@@ -68,7 +68,7 @@ React, Vue.js, Next.js, FastAPI, Node.js, Python, React Native, Flutter, Postgre
 
 ## Services & Pricing (Detailed)
 
-### 1. Showcase Website & Landing Pages — from €1,000
+### 1. Website — Showcase & Landing Pages — from €2,900
 
 Presentation websites and landing pages for SMEs and startups:
 - Custom-designed showcase sites (single to multi-page)
@@ -76,11 +76,11 @@ Presentation websites and landing pages for SMEs and startups:
 - Content strategy & copywriting support
 - Performance-optimized (Core Web Vitals, SEO-ready)
 - Multilingual options (FR/NL/EN)
-- Delivery in 2 to 3 weeks
+- Delivery in 2 to 4 weeks
 
 Typical projects: company presentation sites, product landing pages, portfolio sites, local business sites.
 
-### 2. AI Integration & Automation — from €2,500
+### 2. AI Integration & Automation — Audit + PoC from €3,500 (production €12,000–30,000)
 
 Building custom AI solutions for businesses:
 - Customer-facing chatbots powered by LLMs (GPT-4, Claude, Mistral)
@@ -92,7 +92,7 @@ Building custom AI solutions for businesses:
 
 Use cases: customer support automation, internal Q&A bots, sales pipeline automation, document processing, B2B lead generation.
 
-### 3. Web & App Development — from €10,000
+### 3. Applications & SaaS (web & mobile) — from €12,000 (custom €12,000–50,000)
 
 Custom web applications and SaaS platforms:
 - React / Vue.js / Next.js frontends
@@ -104,7 +104,7 @@ Custom web applications and SaaS platforms:
 
 Typical projects: ticketing platforms, booking systems, dashboards, CRMs, SaaS MVPs.
 
-### 4. Mobile App Development — from €10,000
+### 4. Mobile App Development — included in Applications & SaaS
 
 Cross-platform and native mobile applications:
 - React Native (iOS + Android from one codebase)
@@ -113,7 +113,7 @@ Cross-platform and native mobile applications:
 - App Store & Google Play submission
 - Push notifications, offline mode, camera, geolocation
 
-### 5. UX/UI Design — from €2,000
+### 5. UX/UI Design — included in every project
 
 Conversion-focused interface design:
 - User research & competitor analysis
@@ -142,7 +142,7 @@ Full-stack development accelerated by AI. Delivered 2–3x faster than a traditi
 **Step 4 — Launch & Growth (ongoing)**
 Deployment, production release and post-launch monitoring. Codelli remains your long-term technical partner.
 
-**Total typical delivery: 6 weeks**
+**Typical delivery: showcase site 2–4 weeks, custom projects 6–12 weeks**
 
 ---
 
@@ -187,21 +187,22 @@ Codelli actively helps Belgian SMEs apply for grants to fund AI and digital proj
 
 ### Innoviris — Brussels Capital Region
 - Program: Voucher Start AI
-- Coverage: up to 75% of project cost
+- Coverage: up to 75% of the AI study cost
 - Maximum: €10,000 per company
+- Status: SUSPENDED in 2026 — no new calls (applications already submitted may be funded in 2027)
 - Eligibility: Brussels-registered SMEs
 - Website: https://innoviris.brussels
 
 ### Chèques-entreprises — Wallonia
 - Program: Digital transformation cheques
-- Coverage: up to 50% of eligible costs
+- Coverage: 50% of strategic consulting/diagnosis only — the build itself (development, implementation) is NOT eligible
 - Maximum: €50,000 over 3 years
 - Eligibility: Walloon SMEs with < 250 employees
 - Website: https://www.cheques-entreprises.be
 
 ### KMO-portefeuille — VLAIO (Flanders)
 - Program: SME portfolio
-- Coverage: 20-30% reduction on training and consulting
+- Coverage: training 20-30%; since Feb 2026 consulting is no longer subsidised except cybersecurity (35-45%)
 - Eligibility: Flemish SMEs
 - Website: https://www.vlaio.be/kmo-portefeuille
 
@@ -216,19 +217,19 @@ Codelli is an AI digital studio founded by Cem Tekelli, based in Brussels. Codel
 Cem Tekelli is the founder and lead developer of Codelli, a digital studio based in Brussels, Belgium. Expert in full-stack web development (React, Vue.js, FastAPI, Node.js), mobile development (React Native) and AI integration for Belgian and European SMEs and startups.
 
 ### What services does Codelli offer?
-Codelli offers four main services: (1) Showcase Website & Landing Pages — presentation sites, from €1,000; (2) AI Integration & Automation — chatbots, AI agents, n8n workflows, from €2,500; (3) Web & App Development — web apps, SaaS platforms, from €10,000; (4) UX/UI Design — conversion-focused interfaces, from €2,000.
+Codelli offers three services: (1) Website — showcase sites & landing pages, from €2,900; (2) AI & Automation — chatbots, AI agents, n8n workflows, audit/PoC from €3,500 (production €12,000–30,000); (3) Applications & SaaS — web apps, mobile and platforms, MVP from €12,000. Design is included in every project.
 
 ### How much does a website cost?
-The price of a website varies by complexity. A showcase site starts from €1,000, while an e-commerce site or custom web application can range from €10,000 to €25,000+. Contact us for a free personalized quote.
+The price depends on complexity. A showcase website starts at €2,900. A custom web or mobile application ranges from €12,000 to €50,000. All projects are fixed-price — contact us for a free quote.
 
 ### How long does a project take?
-Codelli delivers in 6 weeks thanks to AI-assisted workflows. A showcase site takes 2 to 4 weeks. A complex web or mobile application may require 2 to 4 months. We establish a precise timeline and fixed price from the start of the project.
+Timeline depends on the project: a showcase website takes 2 to 4 weeks, a custom project (app, SaaS, AI integration) 6 to 12 weeks depending on scope. We establish a precise timeline and fixed price from the start.
 
 ### Do you offer AI integration for Belgian businesses?
-Yes, that is Codelli's specialty. We develop AI chatbots, intelligent agents, automation pipelines (n8n) and LLM integrations for SMEs and startups. We identify high-value use cases and build custom solutions. From €2,500.
+Yes, that is Codelli's specialty. We develop AI chatbots, intelligent agents, automation pipelines (n8n) and LLM integrations for SMEs and startups. We identify high-value use cases and build custom solutions. Audit + PoC from €3,500, production €12,000–30,000.
 
 ### Can Belgian SMEs get subsidies for an AI project?
-Yes. Belgian SMEs benefit from several programs: Innoviris (Brussels) covers up to 75% via the Start AI Voucher; Chèques-entreprises (Wallonia) covers up to 50%; KMO-portefeuille (VLAIO, Flanders) offers 20-30% reduction. Codelli helps you check eligibility and build the subsidy file.
+Schemes vary by region and change fast. Wallonia (Chèques-entreprises) co-funds 50% of strategic consulting/diagnosis; Flanders (KMO-portefeuille) covers training (20-30%) and cybersecurity consulting (35-45%); Brussels (Innoviris Start AI Voucher, up to 75% of the AI study) is suspended in 2026. Codelli helps you identify what you can actually use and build the file.
 
 ### What is the difference between Codelli and a traditional web agency?
 Codelli combines design, development and AI under one roof, with no subcontracting. Thanks to AI in the development process, we deliver 2-3x faster than a traditional agency. All projects are delivered at fixed price and within the announced deadline.
@@ -334,8 +335,6 @@ Response time: within 24 hours on business days
 
 ---
 
-## Aggregate Rating
+## Client References
 
-**Rating:** 5/5 stars
-**Reviews:** 3 verified client reviews
-**Platform:** codelli.tech (first-party testimonials)
+3 named client testimonials are shown on the site (see "Client Testimonials" above). No aggregate star rating is published — reviews are not yet collected through an independent third-party platform.

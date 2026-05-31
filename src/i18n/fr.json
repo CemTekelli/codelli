@@ -2,15 +2,15 @@
   "lang": "fr",
   "meta": {
     "title": "Codelli — Studio IA & Développement Web B2B | Bruxelles, Belgique",
-    "description": "Studio IA à Bruxelles : intégration ChatGPT & LLM, développement web et apps mobiles pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines. Devis gratuit.",
+    "description": "Studio IA à Bruxelles : intégration ChatGPT & LLM, développement web et apps mobiles pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas. Délais clairs, prix fixe. Devis gratuit.",
     "keywords": "studio IA bruxelles, intégration IA PME belgique, agence intégration chatgpt belgique, développement web B2B bruxelles, automatisation n8n, chatbot entreprise belgique, agence IA france luxembourg, Cem Tekelli, Codelli, agence web bruxelles, développeur web belgique, création site internet france luxembourg pays-bas, développement application mobile, consulting digital, react node.js fastapi, startup belgique france luxembourg",
     "og": {
       "title": "Codelli | Studio IA & Développement Web B2B — Bruxelles",
-      "description": "Studio IA basé à Bruxelles. Intégration ChatGPT & LLM, développement web et apps mobiles pour PME B2B. Actif en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines."
+      "description": "Studio IA basé à Bruxelles. Intégration ChatGPT & LLM, développement web et apps mobiles pour PME B2B. Actif en Belgique, France, Luxembourg et Pays-Bas. Délais clairs, prix fixe."
     },
     "twitter": {
       "title": "Codelli | Studio IA & Dev Web B2B — Bruxelles",
-      "description": "Intégration IA, développement web & apps mobiles pour PME B2B. Studio IA à Bruxelles actif en Belgique, France, Luxembourg et Pays-Bas. Livraison en 6 semaines."
+      "description": "Intégration IA, développement web & apps mobiles pour PME B2B. Studio IA à Bruxelles actif en Belgique, France, Luxembourg et Pays-Bas. Délais clairs, prix fixe."
     }
   },
   "nav": {
@@ -28,45 +28,39 @@
     "line1": "Nous concevons,",
     "line2": "développons &",
     "line3": "livrons avec l'IA",
-    "subtitle": "Studio IA à Bruxelles spécialisé en intégration d'intelligence artificielle, développement web et apps mobiles. Pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas.",
+    "subtitle": "Studio IA à Bruxelles : design, développement et intégration d'intelligence artificielle sous un même toit — livré plus vite, à prix fixe. Pour PME et startups B2B en Belgique, France, Luxembourg et Pays-Bas.",
     "primaryCta": "Réservez un appel gratuit",
     "secondaryCta": "Voir nos services",
     "location": "Bruxelles, Belgique",
     "studio": "AI Studio",
-    "availability": "Disponible Q2 2026",
+    "availability": "Disponible — nouveaux projets",
     "cta": "Découvrir"
   },
   "services": {
     "title": "Ce que nous créons pour vous",
-    "intro": "Site vitrine à partir de 1 000 €, intégration IA à partir de 2 500 €, développement web & mobile à partir de 10 000 €, design à partir de 2 000 €. Prix fixe, zéro sous-traitance.",
+    "intro": "Trois façons de travailler avec nous, un seul interlocuteur. Design, développement et IA sous le même toit — périmètre, prix et délai fixés avant de démarrer.",
     "ai": {
-      "title": "IA",
+      "title": "IA & Automatisation",
       "tagline": "Chatbots, automatisation & agents intelligents",
-      "desc": "Nous identifions où l'IA crée de la vraie valeur dans votre entreprise et nous la construisons.",
-      "price": "À partir de 2 500 €"
+      "desc": "Nous identifions où l'IA crée de la vraie valeur dans votre entreprise et nous la construisons — de l'audit au déploiement en production.",
+      "price": "Audit + POC à partir de 3 500 €"
     },
     "web": {
-      "title": "Produit",
-      "tagline": "Apps web, mobile & plateformes",
-      "desc": "Développement full-stack livré 2-3x plus vite grâce à nos workflows assistés par IA.",
-      "price": "À partir de 10 000 €"
+      "title": "Applications & SaaS",
+      "tagline": "Apps web, mobile & plateformes sur mesure",
+      "desc": "Développement full-stack sur mesure — du MVP au produit en production, web et mobile.",
+      "price": "MVP à partir de 12 000 €"
     },
     "showcase": {
-      "title": "Vitrine",
-      "tagline": "Sites web de présentation & landing pages",
-      "desc": "Présence en ligne soignée pour convertir — design, contenu et performance, prêts en 2 à 3 semaines.",
-      "price": "À partir de 1 000 €"
-    },
-    "design": {
-      "title": "Design",
-      "tagline": "Interfaces qui convertissent",
-      "desc": "Expériences utilisateur qui allient esthétique et résultats business mesurables.",
-      "price": "À partir de 2 000 €"
+      "title": "Site web",
+      "tagline": "Vitrines & landing pages qui convertissent",
+      "desc": "Site de présentation sur mesure — design, contenu et performance. En ligne en 2 à 4 semaines.",
+      "price": "À partir de 2 900 €"
     }
   },
   "subsidy": {
-    "headline": "PME belge ? Votre projet peut être partiellement subventionné.",
-    "desc": "Selon votre région : Innoviris (Bruxelles), Chèques-entreprises (Wallonie) ou VLAIO (Flandre) peuvent couvrir une partie du coût. Nous gérons le dossier.",
+    "headline": "PME belge ? Certaines aides régionales peuvent cofinancer votre projet.",
+    "desc": "Selon votre région et votre projet (Wallonie, Flandre…), des dispositifs peuvent couvrir une partie du conseil ou de la formation. Nous vous aidons à identifier ce qui est réellement mobilisable.",
     "cta": "Vérifiez votre éligibilité →",
     "tag": "PME Belge",
     "ariaLabel": "Subsides belges pour l'IA"
@@ -79,7 +73,7 @@
     "values": {
       "roof": {
         "title": "Tout sous un même toit",
-        "desc": "Design + Développement + IA. Une seule équipe, zéro sous-traitance, zéro perte d'information entre les équipes."
+        "desc": "Design + Développement + IA. Un seul interlocuteur, zéro sous-traitance, zéro perte d'information entre les étapes."
       },
       "ai": {
         "title": "Livraison assistée par IA",
@@ -91,7 +85,7 @@
       },
       "local": {
         "title": "Basé à Bruxelles, multilingue",
-        "desc": "Équipe locale. Nous parlons français, anglais et néerlandais. Nous comprenons le RGPD, les subsides belges et les réglementations européennes."
+        "desc": "Basé à Bruxelles, en direct avec le fondateur. Nous parlons français, anglais et néerlandais. Nous comprenons le RGPD, les subsides belges et les réglementations européennes."
       }
     },
     "cta": "Réservez un appel gratuit"
@@ -117,8 +111,8 @@
     }
   },
   "portfolio": {
-    "title": "Résultats que nous avons livrés",
-    "subtitle": "Une sélection de projets dont nous sommes fiers",
+    "title": "Projets récents",
+    "subtitle": "Des projets réels — livrés ou en cours de lancement.",
     "tags": {
       "web": "Application Web",
       "mobile": "Application Mobile",
@@ -166,7 +160,7 @@
       "build": {
         "name": "Développement",
         "duration": "3–6 sem.",
-        "desc": "Développement accéléré par IA. Livraison 2–3x plus rapide qu'une agence traditionnelle."
+        "desc": "Développement full-stack accéléré par nos workflows IA — des livrables fonctionnels chaque semaine."
       },
       "launch": {
         "name": "Lancement & Croissance",
@@ -225,7 +219,8 @@
     "nav": {
       "back": "Retour au site",
       "backBlog": "Retour au blog",
-      "updated": "Mis à jour"
+      "updated": "Mis à jour",
+      "published": "Publié le"
     },
     "list": {
       "topics": "IA · Dev · Digitalisation",
@@ -291,14 +286,14 @@
   },
   "audit": {
     "meta": {
-      "title": "Appel découverte gratuit — Démarrons votre projet | Codelli",
+      "title": "Audit IA gratuit — Appel découverte 30 min | Codelli",
       "description": "Réservez un appel gratuit de 30 minutes avec Codelli. Nous définissons ensemble votre projet — design, développement ou intégration IA. Studio digital à Bruxelles."
     },
     "nav": {
       "back": "Retour au site"
     },
     "hero": {
-      "overline": "Appel découverte · Gratuit · Sans engagement",
+      "overline": "Audit IA gratuit · Appel de 30 min · Sans engagement",
       "title1": "Démarrons votre",
       "title2": "projet ensemble",
       "intro": "Appel de 30 minutes gratuit et sans engagement pour analyser votre projet en Belgique, France, Luxembourg ou Pays-Bas. Intégration IA, développement web ou design — nous définissons votre feuille de route et l'envoyons dans les 24h.",
@@ -308,7 +303,7 @@
         "freeLabel": "Sans engagement",
         "planVal": "Plan d'action",
         "planLabel": "Envoyé dans les 24h",
-        "locationLabel": "Équipe locale",
+        "locationLabel": "Direct avec le fondateur",
           "city": "Bruxelles"
       }
     },
@@ -321,7 +316,7 @@
       "step3Title": "Un plan d'action par écrit",
       "step3Desc": "Périmètre, budget estimé, prochaines étapes — envoyé par email dans les 24h.",
       "forWhomLabel": "Pour qui",
-      "forWhom1": "PME et startups de 5 à 100 employés en Belgique, France ou Luxembourg.",
+      "forWhom1": "PME et startups de 5 à 100 employés en Belgique, France, Luxembourg ou aux Pays-Bas.",
       "forWhom2": "Dirigeants qui veulent un site, une app ou une intégration IA — et ne savent pas par où commencer.",
       "forWhom3": "Entreprises qui cherchent des réponses concrètes, pas des présentations PowerPoint.",
       "subsidyLabel": "Subventions belges — PME",
@@ -329,13 +324,13 @@
         "brussels": {
           "tag": "Bruxelles",
           "title": "Innoviris — Voucher Start AI",
-          "desc": "Jusqu'à <strong>€10.000</strong>, couvrant <strong>75%</strong> des frais d'étude IA pour les PME bruxelloises. Conduit par un centre d'expertise agréé.",
+          "desc": "Jusqu'à <strong>€10.000</strong> (75% des frais d'étude IA), via un centre d'expertise agréé. <strong>Suspendu en 2026</strong> — aucun nouvel appel ; les dossiers déjà déposés pourraient être financés en 2027.",
           "link": "innoviris.brussels →"
         },
         "wallonia": {
           "tag": "Wallonie",
           "title": "Chèques-entreprises — Maturité Numérique",
-          "desc": "Jusqu'à <strong>€50.000 HTVA</strong> sur 3 ans, avec un taux d'intervention de <strong>50%</strong>. Portefeuille électronique de €200.000 sur 3 ans (max. €100.000/an).",
+          "desc": "Taux d'intervention de <strong>50%</strong>, plafond <strong>€50.000 HTVA</strong> sur 3 ans. Couvre le <strong>conseil/diagnostic stratégique</strong> — la réalisation (développement, implémentation) n'est pas éligible.",
           "link": "cheques-entreprises.be →"
         },
         "flanders": {
@@ -375,7 +370,7 @@
       "location": "Bruxelles, Belgique",
       "speciality": "Full-Stack & IA",
       "experience": "5 ans enterprise",
-      "availability": "Disponible Q2 2026"
+      "availability": "Disponible — nouveaux projets"
     },
     "bio": {
       "label": "À propos",
@@ -404,7 +399,7 @@
       "cloud": "Cloud & DevOps"
     },
     "projects": {
-      "label": "Projets livrés",
+      "label": "Projets récents",
       "1": { "title": "Baba Events", "tag": "Plateforme billetterie", "desc": "Plateforme complète avec backoffice, scanner QR, paiements Mollie et reporting temps réel.", "r1": "3× ventes en ligne", "r2": "0 fraude" },
       "2": { "title": "Noctix", "tag": "SaaS Platform", "desc": "Alternative souveraine à Eventbrite pour organisateurs indépendants — 0% commission.", "r1": "En cours de build", "r2": "0% commission" },
       "3": { "title": "Lead Gen Automation", "tag": "Automatisation n8n", "desc": "Pipeline B2B automatisé via Google Maps API — 3.000+ leads par campagne.", "r1": "+3.000 leads/campagne", "r2": "100% automatisé" }
@@ -420,17 +415,17 @@
   "faq": {
     "title": "Questions fréquentes",
     "q1": "Qu'est-ce que Codelli ?",
-    "a1": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Nous concevons, développons et intégrons l'intelligence artificielle pour PME et startups — sites web, applications mobiles, chatbots et agents intelligents. De l'idée au lancement en 6 semaines.",
+    "a1": "Codelli est un studio digital IA fondé par Cem Tekelli, basé à Bruxelles. Nous concevons, développons et intégrons l'intelligence artificielle pour PME et startups — sites web, applications mobiles, chatbots et agents intelligents. De l'idée au lancement en 6 à 8 semaines pour un projet standard.",
     "q2": "Quels services propose Codelli ?",
-    "a2": "Quatre services : Site vitrine (présentation, landing pages — dès 1.000€), Intégration IA & Automatisation (chatbots, agents IA, n8n — dès 2.500€), Développement Web & Applications (apps, SaaS, plateformes — dès 10.000€), et UX/UI Design (interfaces conversion-focused — dès 2.000€).",
+    "a2": "Trois services : Site web (vitrines & landing pages — dès 2 900 €), IA & Automatisation (chatbots, agents IA, automatisation n8n — audit/POC dès 3 500 €), et Applications & SaaS (apps web, mobile, plateformes — MVP dès 12 000 €). Le design est inclus dans chaque projet.",
     "q3": "Combien coûte un projet ?",
-    "a3": "Un site vitrine démarre à 1.000€. Une application web ou mobile sur mesure de 10.000€ à 25.000€+. Tous les projets sont livrés à prix fixe, sans surprises. Contactez-nous pour un devis gratuit.",
+    "a3": "Un site web démarre à 2 900 €. Un projet d'intégration IA en production va de 12 000 à 30 000 €. Une application ou un SaaS sur mesure, de 12 000 à 50 000 € selon le périmètre. Tous nos projets sont à prix fixe, sans surprise — devis gratuit.",
     "q4": "Les PME belges peuvent-elles être subventionnées ?",
-    "a4": "Oui. Innoviris (Bruxelles) couvre jusqu'à 75% via le Voucher Start AI. Les Chèques-entreprises (Wallonie) couvrent jusqu'à 50%. Le KMO-portefeuille VLAIO (Flandre) offre 20-30% de réduction. Codelli vous aide à vérifier votre éligibilité.",
+    "a4": "Cela dépend de votre région et du type de prestation, et les dispositifs évoluent vite. En Wallonie, les Chèques-entreprises cofinancent 50% du conseil/diagnostic stratégique (pas la réalisation). En Flandre, le KMO-portefeuille couvre les formations (20-30%) et le conseil en cybersécurité (35-45%). À Bruxelles, le Voucher Start AI d'Innoviris (jusqu'à 75% de l'étude IA) est suspendu en 2026. Codelli vous aide à identifier les aides réellement mobilisables et à monter le dossier.",
     "q5": "Quelle est la différence avec une agence web classique ?",
     "a5": "Design, développement et IA sous un même toit, sans sous-traitance. Grâce à nos workflows assistés par IA, nous livrons 2-3x plus vite qu'une agence traditionnelle — à tarif équivalent ou inférieur.",
     "q6": "Travaillez-vous hors de Bruxelles ?",
-    "a6": "Oui. Nous travaillons avec des clients dans toute la Belgique (Liège, Anvers, Namur, Gand) et à l'international (France, Luxembourg). Nous communiquons en français, néerlandais et anglais."
+    "a6": "Oui. Nous travaillons avec des clients dans toute la Belgique (Liège, Anvers, Namur, Gand) et à l'international (France, Luxembourg, Pays-Bas). Nous communiquons en français, néerlandais et anglais."
   },
   "privacy": {
     "meta": {
@@ -447,7 +442,7 @@
     "legal": {
       "title": "Mentions légales",
       "label": {
-        "company": "Dénomination sociale :",
+        "company": "Éditeur :",
         "form": "Forme juridique :",
         "vat": "BCE / TVA :",
         "address": "Siège social :",
@@ -460,11 +455,11 @@
         "address": "Bruxelles, Belgique",
         "publisher": "Cem Tekelli"
       },
-      "desc": "Le site <strong>codelli.tech</strong> est édité par Codelli Engineering. Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Codelli Engineering, sauf mention contraire."
+      "desc": "Le site <strong>codelli.tech</strong> est édité par Cem Tekelli, entreprise individuelle inscrite à la Banque-Carrefour des Entreprises sous le numéro 1006.208.714, exerçant sous le nom commercial « Codelli ». Tout contenu présent sur ce site (textes, images, logos, graphiques) est protégé par le droit d'auteur et reste la propriété exclusive de Cem Tekelli, sauf mention contraire."
     },
     "gdpr": {
       "title": "Politique de confidentialité (RGPD)",
-      "intro": "Codelli Engineering, en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.",
+      "intro": "Cem Tekelli (exerçant sous le nom commercial Codelli), en tant que responsable du traitement, s'engage à protéger vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD — UE 2016/679) et à la législation belge applicable.",
       "dataTitle": "Données collectées",
       "dataIntro": "Lors de votre utilisation du site ou de la prise de contact, nous pouvons collecter les données suivantes :",
       "dataItems": {
@@ -481,14 +476,15 @@
         "3": "<strong>Analyser le trafic et améliorer le site</strong> (via Google Analytics via GTM) — base légale : consentement"
       },
       "retentionTitle": "Durée de conservation",
-      "retention": "Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation sont conservées <strong>13 mois</strong> conformément aux recommandations de la CNIL/APD.",
+      "retention": "Les données de contact sont conservées <strong>3 ans</strong> à compter du dernier échange. Les données de navigation issues des cookies de mesure d'audience sont conservées <strong>13 mois</strong> maximum, durée alignée sur la rétention par défaut de Google Analytics 4.",
       "recipientsTitle": "Destinataires des données",
       "recipientsIntro": "Vos données ne sont pas vendues à des tiers. Elles peuvent être partagées avec :",
       "recipients": {
         "1": "<strong>Calendly Inc.</strong> — pour la prise de rendez-vous (politique disponible sur calendly.com)",
-        "2": "<strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)"
+        "2": "<strong>Google LLC</strong> — pour l'analyse d'audience (Google Analytics via GTM)",
+        "3": "<strong>Netlify, Inc.</strong> — pour l'hébergement du site et le traitement des messages envoyés via le formulaire de contact"
       },
-      "recipientsNote": "Ces sous-traitants sont soumis à des garanties contractuelles appropriées (Clauses Contractuelles Types ou Privacy Shield successor) pour tout transfert hors UE.",
+      "recipientsNote": "Ces sous-traitants présentent des garanties appropriées pour tout transfert hors UE : Clauses Contractuelles Types (CCT) de la Commission européenne et/ou certification au titre du EU-US Data Privacy Framework (DPF), le cas échéant.",
       "rightsTitle": "Vos droits",
       "rightsIntro": "Conformément au RGPD, vous disposez des droits suivants :",
       "rights": {
@@ -518,8 +514,8 @@
           "duration": "13 mois"
         },
         "gtm": {
-          "purpose": "Gestion des balises de tracking",
-          "duration": "Session"
+          "purpose": "Orchestration des balises — ne dépose pas de cookie ; les balises de mesure ne se déclenchent qu'après consentement",
+          "duration": "—"
         },
         "consent": {
           "provider": "Codelli (1st party)",
@@ -541,8 +537,8 @@
     },
     "liability": {
       "title": "Limitation de responsabilité",
-      "p1": "Codelli Engineering s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli Engineering ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.",
-      "p2": "Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli Engineering quant à leur contenu."
+      "p1": "Codelli s'efforce de maintenir des informations exactes et à jour sur ce site. Cependant, nous ne garantissons pas l'exactitude, la complétude ou l'actualité des informations publiées. Codelli ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ce site.",
+      "p2": "Les liens hypertextes vers des sites tiers n'engagent pas la responsabilité de Codelli quant à leur contenu."
     },
     "contact": {
       "title": "Contact",

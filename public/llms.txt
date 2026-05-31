@@ -1,8 +1,8 @@
 # Codelli — AI Digital Studio, Brussels
 
-> Codelli is a full-stack AI digital studio founded by **Cem Tekelli**, based in Brussels, Belgium. We design, develop and integrate AI for SMEs and startups across Belgium, France and Luxembourg.
+> Codelli is a full-stack AI digital studio founded by **Cem Tekelli**, based in Brussels, Belgium. We design, develop and integrate AI for SMEs and startups across Belgium, France, Luxembourg and the Netherlands.
 
-> Last updated: 2026-04-16
+> Last updated: 2026-05-31
 
 > Full details: [https://codelli.tech/llms-full.txt](https://codelli.tech/llms-full.txt)
 
@@ -16,12 +16,12 @@
 - **Digital consulting** — digital transformation for Belgian SMEs
 
 **Founded by:** Cem Tekelli
-**Legal name:** Codelli Engineering
-**BCE / VAT:** 1006.208.714
+**Legal form:** Sole proprietorship — Cem Tekelli, trading as Codelli
+**BCE / VAT:** BE 1006.208.714
 **Location:** Brussels, Belgium
 **Languages:** French (fr-BE, fr-FR, fr-LU), Dutch (nl-BE, nl-NL), English
 **Markets served:** Belgium, France, Luxembourg, Netherlands
-**Delivery:** From idea to launch in 6 weeks
+**Delivery:** Showcase site in 2–4 weeks; custom projects in 6–12 weeks (fixed price)
 
 ## What Codelli is NOT
 
@@ -38,12 +38,11 @@
 
 | Service | Description | Starting price |
 |---|---|---|
-| Showcase Website & Landing Pages | Presentation sites, landing pages, conversion-focused | €1,000 |
-| AI Integration & Automation | Chatbots, AI agents, n8n workflows, LLM integration | €2,500 |
-| Web & App Development | Web apps, SaaS platforms, e-commerce | €10,000 |
-| Mobile Development | iOS, Android, React Native | €10,000 |
-| UX/UI Design | User interfaces, design systems | €2,000 |
-| Discovery Call | 30-minute free consultation | Free |
+| Website (showcase & landing pages) | Presentation sites, landing pages, conversion-focused | €2,900 |
+| AI Integration & Automation | Chatbots, AI agents, n8n workflows, LLM integration | Audit + PoC €3,500 (production €12,000–30,000) |
+| Applications & SaaS (web & mobile) | Web/mobile apps, SaaS platforms, custom development | MVP €12,000 (custom €12,000–50,000) |
+| UX/UI Design | Conversion-focused interfaces, design systems | Included in every project |
+| Discovery Call | 30-minute free AI audit / consultation | Free |
 
 ## Key Differentiators
 
@@ -54,10 +53,10 @@
 
 ## Belgian AI Subsidies for SMEs
 
-Codelli helps Belgian SMEs access funding for digital and AI projects:
-- **Innoviris (Brussels):** up to 75% covered via Voucher Start AI (up to €10,000)
-- **Chèques-entreprises (Wallonia):** up to 50% coverage (up to €50,000 over 3 years)
-- **KMO-portefeuille VLAIO (Flanders):** 20-30% reduction on digitalization training
+Codelli helps Belgian SMEs identify and apply for funding (amounts and availability vary — verified case by case):
+- **Chèques-entreprises (Wallonia):** 50% of strategic consulting/diagnosis (the build itself is not eligible), capped at €50,000 over 3 years
+- **KMO-portefeuille VLAIO (Flanders):** training 20-30%; cybersecurity consulting 35-45%
+- **Innoviris (Brussels — Voucher Start AI):** up to 75% of the AI study (up to €10,000) — suspended in 2026 (no new calls)
 
 ## Recent Projects
 
